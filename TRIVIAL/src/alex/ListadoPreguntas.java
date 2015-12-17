@@ -306,9 +306,9 @@ public class ListadoPreguntas {
 				
 				
 				
+			//LISTADO ARRAY DE PROGRAMACIÓN	
 				
-				
-				String [][] listado ={
+				String [][] listadoProgramacion ={
 						
 						{pregProgALE1,opcAProgALE1,opcBProgALE1,opcCProgALE1},
 						{pregProgALE2,opcAProgALE2,opcBProgALE2,opcCProgALE2},
@@ -316,8 +316,45 @@ public class ListadoPreguntas {
 						{pregProgALE4,opcAProgALE4,opcBProgALE4,opcCProgALE4},
 						{pregProgALE5,opcAProgALE5,opcBProgALE5,opcCProgALE5},
 						{pregProgCAR1,opcAProgCAR1,opcBProgCAR1,opcCProgCAR1},
+						{pregProgCAR2,opcAProgCAR2,opcBProgCAR2,opcCProgCAR2},
+						{pregProgCAR3,opcAProgCAR3,opcBProgCAR3,opcCProgCAR3},
+						{pregProgCAR4,opcAProgCAR4,opcBProgCAR4,opcCProgCAR4},
+						{pregProgCAR5,opcAProgCAR5,opcBProgCAR5,opcCProgCAR5},
 				
 				}	;
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				//LISTADO ARRAY DE BASE DE DATOS	
+				
+				String [][] listadoBBDD = {
+						
+						{pregBBDDALE1,opcABBDDALE1,opcBBBDDALE1,opcCBBDDALE1},
+						{pregBBDDALE2,opcABBDDALE2,opcBBBDDALE2,opcCBBDDALE2},
+						{pregBBDDALE3,opcABBDDALE3,opcBBBDDALE3,opcCBBDDALE3},
+						{pregBBDDALE4,opcABBDDALE4,opcBBBDDALE4,opcCBBDDALE4},
+						{pregBBDDALE5,opcABBDDALE5,opcBBBDDALE5,opcCBBDDALE5},
+						{pregBBDDCAR1,opcABBDDCAR1,opcBBBDDCAR1,opcCBBDDCAR1},
+						{pregBBDDCAR2,opcABBDDCAR2,opcBBBDDCAR2,opcCBBDDCAR2},
+						{pregBBDDCAR3,opcABBDDCAR3,opcBBBDDCAR3,opcCBBDDCAR3},
+						{pregBBDDCAR4,opcABBDDCAR4,opcBBBDDCAR4,opcCBBDDCAR4},
+						{pregBBDDCAR5,opcABBDDCAR5,opcBBBDDCAR5,opcCBBDDCAR5},
+						
+				};
+						
+						
+						
+						
+						
+						
+						
+				}
 
 
 
