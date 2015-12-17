@@ -301,16 +301,68 @@ public class ListadoPreguntas {
 				String opcCCOLCAR5="'Todos' en el Dominos";
 	
 	
+				
+				
+				
+				
+				
+				
+				
+				String [][] listado ={
+						
+						{pregProgALE1,opcAProgALE1,opcBProgALE1,opcCProgALE1},
+						{pregProgALE2,opcAProgALE2,opcBProgALE2,opcCProgALE2},
+						{pregProgALE3,opcAProgALE3,opcBProgALE3,opcCProgALE3},
+						{pregProgALE4,opcAProgALE4,opcBProgALE4,opcCProgALE4},
+						{pregProgALE5,opcAProgALE5,opcBProgALE5,opcCProgALE5},
+						{pregProgCAR1,opcAProgCAR1,opcBProgCAR1,opcCProgCAR1},
+				
+				}	;
+
+
+
+
+
+
+
+
+
+				
+				
+				
+				
+				
+				
 	
 	
 	// CONSTRUCTORES
 
 	
 	
-	// Mï¿½TODOS
+	// MÉTODOS
 
+	
+				
+				
+				
+				
+				
+				
+				
+				
 		
 		
 	// GETTERS, SETTERS Y TOSTRINGS
 
+				public String[][] getListado() {
+					return listado;
+				}
+				public void setListado(String[][] listado) {
+					this.listado = listado;
+				}	
+								
+				
+				
+				
+				
 }
