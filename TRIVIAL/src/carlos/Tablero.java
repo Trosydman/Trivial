@@ -1,5 +1,7 @@
 package carlos;
 
+import alex.ListadoPreguntas;
+
 public class Tablero {
 	String[][] tableroBI = new String[28][69];
 	static Casilla[][] casillasTabl = new Casilla[7][7];
@@ -63,15 +65,15 @@ public class Tablero {
 			for (int j = 0; j < tableroBI[i].length; j += 10) {
 				if (tableroBI[i][j] != " ") {
 					if (tableroBI[i][j].equals("*")) {
-						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.PROG);
+						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, ListadoPreguntas.PROG);
 					} else if (tableroBI[i][j].equals("-")) {
-						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.BBDD);
+						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, ListadoPreguntas.BBDD);
 					} else if (tableroBI[i][j].equals("+")) {
-						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.HTML);
+						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, ListadoPreguntas.HTML);
 					} else if (tableroBI[i][j].equals("/")) {
-						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.SIS);
+						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, ListadoPreguntas.SIS);
 					} else if (tableroBI[i][j].equals("=")) {
-						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.COL);
+						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, ListadoPreguntas.COL);
 					}
 
 					if (!(tableroBI[i][j].equals("=")) && tableroBI[i][j + 1].equals("=")) {

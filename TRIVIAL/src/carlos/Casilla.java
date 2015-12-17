@@ -12,11 +12,6 @@ public class Casilla {
 	
 	int tipo;
 	boolean quesito;
-	static final int PROG = 0;
-	static final int BBDD = 1;
-	static final int HTML = 2;
-	static final int SIS = 3;
-	static final int COL = 4;
 	
 	public Casilla(int posX, int posY, int tipo) {
 		this.posYEq1 = posX;
