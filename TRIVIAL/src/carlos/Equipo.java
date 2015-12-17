@@ -14,12 +14,12 @@ public class Equipo {
 	}
 
 	public Equipo(String nombreEquipo, String[] jugadores) {
-		this.nombreEq = nombreEquipo.substring(0, 3).toUpperCase();
+		this.nombreEq = nombreEquipo;//Esto sería para escribirlo en las casillas nombreEquipo.substring(0, 3).toUpperCase();
 		this.jugadores = jugadores;
 	}
 		
 		
-	// MÃ‰TODOS
+	// MÉTODOS
 
 		
 		
