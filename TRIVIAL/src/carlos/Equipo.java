@@ -19,7 +19,7 @@ public class Equipo {
 	}
 		
 		
-	// M�TODOS
+	// MÉTODOS
 
 		
 		
