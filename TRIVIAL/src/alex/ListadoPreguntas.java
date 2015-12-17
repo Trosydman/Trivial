@@ -405,14 +405,44 @@ public class ListadoPreguntas {
 						
 						
 						
+				//LISTADO ARRAY DE BASE DE DATOS		
 						
+				String [][]listadoHTML = {
+						{pregHTMLALE1,opcAHTMLALE1,opcBHTMLALE1,opcCHTMLALE1},
+						{pregHTMLALE2,opcAHTMLALE2,opcBHTMLALE2,opcCHTMLALE2},
+						{pregHTMLALE3,opcAHTMLALE3,opcBHTMLALE3,opcCHTMLALE3},
+						{pregHTMLALE4,opcAHTMLALE4,opcBHTMLALE4,opcCHTMLALE4},
+						{pregHTMLALE5,opcAHTMLALE5,opcBHTMLALE5,opcCHTMLALE5},
+						{pregHTMLCAR1,opcAHTMLCAR1,opcBHTMLCAR1,opcCHTMLCAR1},
+						{pregHTMLCAR2,opcAHTMLCAR2,opcBHTMLCAR2,opcCHTMLCAR2},
+						{pregHTMLCAR3,opcAHTMLCAR3,opcBHTMLCAR3,opcCHTMLCAR3},
+						{pregHTMLCAR4,opcAHTMLCAR4,opcBHTMLCAR4,opcCHTMLCAR4},
+						{pregHTMLCAR5,opcAHTMLCAR5,opcBHTMLCAR5,opcCHTMLCAR5},
+					
 						
-						
+					};		
 						
 				
 
-
-
+				//LISTADO ARRAY DE BASE DE DATOS
+				
+				String [][]listadoSIS = {
+						{pregSISALE1,opcASISALE1,opcBSISALE1,opcCSISALE1},
+						{pregSISALE2,opcASISALE2,opcBSISALE2,opcCSISALE2},
+						{pregSISALE3,opcASISALE3,opcBSISALE3,opcCSISALE3},
+						{pregSISALE4,opcASISALE4,opcBSISALE4,opcCSISALE4},
+						{pregSISALE5,opcASISALE5,opcBSISALE5,opcCSISALE5},
+						{pregSISCAR1,opcASISCAR1,opcBSISCAR1,opcCSISCAR1},
+						{pregSISCAR2,opcASISCAR2,opcBSISCAR2,opcCSISCAR2},
+						{pregSISCAR3,opcASISCAR3,opcBSISCAR3,opcCSISCAR3},
+						{pregSISCAR4,opcASISCAR4,opcBSISCAR4,opcCSISCAR4},
+						{pregSISCAR5,opcASISCAR5,opcBSISCAR5,opcCSISCAR5},
+						
+						
+						
+						
+				};
+					
 
 
 
@@ -446,11 +476,29 @@ public class ListadoPreguntas {
 		
 	// GETTERS, SETTERS Y TOSTRINGS
 
-				public String[][] getListado() {
-					return listado;
+				public String[][] getListadoProgramacion() {
+					return listadoProgramacion;
 				}
-				public void setListado(String[][] listado) {
-					this.listado = listado;
+				public void setListadoProgramacion(String[][] listadoProgramacion) {
+					this.listadoProgramacion = listadoProgramacion;
+				}
+				public String[][] getListadoBBDD() {
+					return listadoBBDD;
+				}
+				public void setListadoBBDD(String[][] listadoBBDD) {
+					this.listadoBBDD = listadoBBDD;
+				}
+				public String[][] getListadoHTML() {
+					return listadoHTML;
+				}
+				public void setListadoHTML(String[][] listadoHTML) {
+					this.listadoHTML = listadoHTML;
+				}
+				public String[][] getListadoSIS() {
+					return listadoSIS;
+				}
+				public void setListadoSIS(String[][] listadoSIS) {
+					this.listadoSIS = listadoSIS;
 				}	
 								
 				
