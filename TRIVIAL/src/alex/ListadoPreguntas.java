@@ -62,7 +62,32 @@ public class ListadoPreguntas {
 			String opcBProgCAR5="verdadero.";
 			String opcCProgCAR5="Si se instala la extensión previamente sí, ya que no viene por defecto.";
 		
-		
+		String pregProgFEL1="Las instancias de una clase son:";
+			String opcAProgFEL1="Los objetos creados.";
+			String opcBProgFEL1="Darle valores a todos los atributos.";
+			String opcCProgFEL1="Establecer los constructores de la clase.";
+
+		String pregProgFEL2="Generar un to String en una clase consigue:";
+			String opcAProgFEL2="Imprimir los valores que esten guardados en los atributos.";
+			String opcBProgFEL2="Comprobar los valores que esten guardados sean correctos.";
+			String opcCProgFEL2="Reestablecer valores en los atributos.";
+
+		String pregProgFEL3="Un método es:";
+			String opcAProgFEL3="Una operacion que se realiza solo cuando es llamadoUna operacion que se realiza solo cuando es llamado.";
+			String opcBProgFEL3="Una operacion que se realiza automaticamente al ejecutar el programa.";
+			String opcCProgFEL3="Una operacion que solo se dedica a imprimir resultados.";
+
+
+		String pregProgFEL4="La regla general de JAVA a la hora de dar nombres a metodos y atributos. Si tiene varias palabras...";
+			String opcAProgFEL4="La primera letra de cada palabra debe ser mayuscula y sin espacios entre palabras.";
+			String opcBProgFEL4="Deben ir todas las letras en mayusculas y entre palabras con barra baja.";
+			String opcCProgFEL4="Deben ir las letras en minusculas y puedes poner espacios entre palabras.";
+
+
+		String pregProgFEL5="En un arrays se puede guardar cualquier dato/objeto.";
+			String opcAProgFEL5="Sí, siempre y cuando sean del mismo tipo que se ha establecido.";
+			String opcBProgFEL5="Sí, pero solo cuando tiene la misma longitud de caracteres.";
+			String opcCprogFEL5="No, porque en un arrays no se puede guardar nada.";
 			
 			
 			
@@ -122,6 +147,36 @@ public class ListadoPreguntas {
 			String opcABBDDCAR5="Sí";
 			String opcBBBDDCAR5="No";
 			String opcCBBDDCAR5="Ninguna de las anteriores";
+			
+		String pregBBDDFEL1="Indica la condicion que debe cumplir una tupla.";
+			String opcABBDDFEL1="Cada tupla se debe corresponder con un elemento del mundo real.";
+			String opcBBBDDFEL1="Todas las tuplas deben estar llenas de datos.";
+			String opcCBBDDFEL1="Puede haber dos tuplas iguales(con todos los valores iguales).";
+
+
+		String pregBBDDFEL2="El grado...";
+			String opcABBDDFEL2="Cuanto mayor es el grado de una relacion, mayor es su complejidad.";
+			String opcBBBDDFEL2="Cuanto menor es el grado de una relacion, mayor es su complejidad.";
+			String opcCBBDDFEL2="Cuanto mayor es el grado de una relacion, menor es su complejidad.";
+
+
+		String pregBBDDFEL3="Un sinónimo de atributo es...";
+				String opcABBDDFEL3="Campo.";
+				String opcBBBDDFEL3="Registro.";
+				String opcCBBDDFEL3="Fichero.";
+
+
+		String pregBBDDFEL4="Usando la aritmética clásica en valores lógicos. Si 0.5 es nulo, 1 y 0, respectivamente, son...";
+			String opcABBDDFEL4="Verdadero y falso.";
+			String opcBBBDDFEL4="Falso y Verdadero.";
+			String opcCBBDDFEL4="Ninguna de las otras dos respuestas.";
+
+
+		String pregBBDDFEL5="Cómo se denomina la tabla que proporciona Oracle para realizar consultas a modo de prueba.";
+			String opcABBDDFEL5="DUAL.";
+			String opcBBBDDFEL5="EMPLOYEES.";
+			String opcCBBDDFEL5="PROOF.";
+
 		
 			
 			
