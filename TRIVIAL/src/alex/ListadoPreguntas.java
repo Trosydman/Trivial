@@ -1,14 +1,7 @@
 package alex;
 
 public class ListadoPreguntas {
-	//ATRIBUTOS
-	public static final int PROG = 0;
-	public static final int BBDD = 1;
-	public static final int HTML = 2;
-	public static final int SIS = 3;
-	public static final int COL = 4;
-	
-	
+
 	
 	//PREGUNTAS DE PROGAMACIÓN
 
@@ -405,7 +398,7 @@ public class ListadoPreguntas {
 						
 						
 						
-				//LISTADO ARRAY DE BASE DE DATOS		
+				//LISTADO ARRAY DE HTML		
 						
 				String [][]listadoHTML = {
 						{pregHTMLALE1,opcAHTMLALE1,opcBHTMLALE1,opcCHTMLALE1},
@@ -424,7 +417,7 @@ public class ListadoPreguntas {
 						
 				
 
-				//LISTADO ARRAY DE BASE DE DATOS
+				//LISTADO ARRAY DE SISTEMAS
 				
 				String [][]listadoSIS = {
 						{pregSISALE1,opcASISALE1,opcBSISALE1,opcCSISALE1},
@@ -438,12 +431,27 @@ public class ListadoPreguntas {
 						{pregSISCAR4,opcASISCAR4,opcBSISCAR4,opcCSISCAR4},
 						{pregSISCAR5,opcASISCAR5,opcBSISCAR5,opcCSISCAR5},
 						
-						
-						
-						
+								
 				};
 					
-
+				
+				
+				//LISADO ARRAY DE COLEGIO
+				
+				String [][]listadoCOL = {
+						{pregCOLALE1,opcACOLALE1,opcBCOLALE1,opcCCOLALE1},
+						{pregCOLALE2,opcACOLALE2,opcBCOLALE2,opcCCOLALE2},
+						{pregCOLALE3,opcACOLALE3,opcBCOLALE3,opcCCOLALE3},
+						{pregCOLALE4,opcACOLALE4,opcBCOLALE4,opcCCOLALE4},
+						{pregCOLALE5,opcACOLALE5,opcBCOLALE5,opcCCOLALE5},
+						{pregCOLCAR1,opcACOLCAR1,opcBCOLCAR1,opcCCOLCAR1},
+						{pregCOLCAR2,opcACOLCAR2,opcBCOLCAR2,opcCCOLCAR2},
+						{pregCOLCAR3,opcACOLCAR3,opcBCOLCAR3,opcCCOLCAR3},
+						{pregCOLCAR4,opcACOLCAR4,opcBCOLCAR4,opcCCOLCAR4},
+						{pregCOLCAR5,opcACOLCAR5,opcBCOLCAR5,opcCCOLCAR5},
+						
+								
+				};
 
 
 
@@ -462,7 +470,9 @@ public class ListadoPreguntas {
 	
 	
 	// MÉTODOS
-
+			
+				
+			
 	
 				
 				
@@ -499,6 +509,12 @@ public class ListadoPreguntas {
 				}
 				public void setListadoSIS(String[][] listadoSIS) {
 					this.listadoSIS = listadoSIS;
+				}
+				public String[][] getListadoCOL() {
+					return listadoCOL;
+				}
+				public void setListadoCOL(String[][] listadoCOL) {
+					this.listadoCOL = listadoCOL;
 				}	
 								
 				
