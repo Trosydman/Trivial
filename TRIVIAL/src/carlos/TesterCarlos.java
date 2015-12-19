@@ -1,15 +1,17 @@
 package carlos;
 
-import leer_por_teclado.Leer;
-
 public class TesterCarlos {
 
 	public static void main(String[] args) {
 		Tablero tabl = new Tablero();
-		Equipo eq;
+		Equipo eqJug=new Equipo("Carlos");
+		String[] jug = {"Carlos", "Felipe", "Alex", "Germán", "Norberto"};
+		Equipo eqEq= new Equipo("DAM", jug);
+		
+		System.out.println(eqJug+"\n\n"+eqEq);
+		
 		
 		tabl.imprimeTablero();
-		
 		tabl.identificaCasilla();
 		
 		for (int i = 0; i < Tablero.casillasTabl.length; i++) {
@@ -17,14 +19,14 @@ public class TesterCarlos {
 				System.out.println(Tablero.casillasTabl[i][j]);
 			}
 		}
-		String jug1;
-		String[] jugadores = new String [6];
-		
-		System.out.println("Primer jugador:");
-		jug1 = Leer.dato();
-		jugadores[0] = jug1;
-		eq = new Equipo(Leer.dato()/*NOMBRE EQUIPO*/, jugadores);
-		System.out.println(eq);
+//		String jug1;
+//		String[] jugadores = new String [6];
+//		
+//		System.out.println("Primer jugador:");
+//		jug1 = Leer.dato();
+//		jugadores[0] = jug1;
+//		eq = new Equipo(Leer.dato()/*NOMBRE EQUIPO*/, jugadores);
+//		System.out.println(eq);
 	}
 
 }
