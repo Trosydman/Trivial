@@ -82,10 +82,33 @@ public class ListadoPreguntas {
 			String opcBProgFEL5="S�, pero solo cuando tiene la misma longitud de caracteres.";
 			String opcCprogFEL5="No, porque en un arrays no se puede guardar nada.";
 			
+		String preProNOL1="Cuantas opciones tenemos para generar números aleatorios...";	
+		    String opcAProgNOl1="Dos";
+		    String opcBProgNOL1="Cinco";
+		    String opcCProgNOL1="Tres";
 			
 			
-			
-			
+	    String preProNOL2="Que es mas importante para un programador las clases o los objetos";	
+		    String opcAProgNOl2="Ambos son importantes";
+		    String opcBProgNOL2="Los objetos";
+		    String opcCProgNOL2="Las clases";
+		    
+		    
+		String preProNOL3="CUando  una clase es no publica de que tipo es su nivel de acceso?";	
+		    String opcAProgNOl3="Default";
+		    String opcBProgNOL3="Private";
+		    String opcCProgNOL3="Abstract";
+		    
+	    String preProNOL4="Qué sucede cuando un objeto modifica una variable de clase";	
+		    String opcAProgNOl4="Al modificarla se hace  visible a todos los objetos";
+		    String opcBProgNOL4="Se hace visible solo parta el objeto que  la modificó";
+		    String opcCProgNOL4="Ninguna de las anteriores";    
+		    
+		    
+	    String preProNOL5="En que momento se invoca el método constructor";	
+		    String opcAProgNOl5="Despues de crear un objeto";
+		    String opcBProgNOL5="Cuando se crea el main";
+		    String opcCProgNOL5="Cuando es llamado por un objeto";
 			
 		
 		//PREGUNTAS DE BASE DE DATOS
@@ -170,11 +193,31 @@ public class ListadoPreguntas {
 			String opcBBBDDFEL5="EMPLOYEES.";
 			String opcCBBDDFEL5="PROOF.";
 
-		
+
+		String pregBBDDNOL1="En que año se publica el documento que definio el modelo relacional";
+				String opcABBDDNOL1="1970";
+				String opcBBBDDNOL1="1972";
+				String opcCBBDDNOL1="1968";
 			
+	    String pregBBDDNOL2="Cuantas formas normales existen en el modelo relacional";
+				String opcABBDDNOL2="Seis";
+				String opcBBBDDNOL2="Ocho";
+				String opcCBBDDNOL2="Diez";
 			
-			
-			
+		String pregBBDDNOL3="En que momento utiliza la plicación del látigo luismi";
+				String opcABBDDNOL3="En los examenes";
+				String opcBBBDDNOL3="AL corregir los ejercicios";
+				String opcCBBDDNOL3="En los ejercicios de evaluacion";
+				
+		String pregBBDDNOL4="Para que sirve la palabra DISTINCT en una base de datos";
+				String opcABBDDNOL4="Para no mostrar los valores duplicados";
+				String opcBBBDDNOL4="Para diferenciar una tabla de otra";
+				String opcCBBDDNOL4="Para mostrar varias tuplas";
+				
+		String pregBBDDNOL5="Qué es SQL";
+				String opcABBDDNOL5="una interfas de usuario";
+				String opcBBBDDNOL5="Un programa de oracle";
+				String opcCBBDDNOL5="Un lenguaje de programacion";
 			
 			
 		//PREGUNTAS DE HTML	
@@ -232,8 +275,30 @@ public class ListadoPreguntas {
 			
 			
 			
+		String pregHTMLNOL1="Para que sirve el lenguaje de programacion CSS";
+			String opcAHTMLNOL1="Para dar estilo a una pagina web";
+			String opcBHTMLNOL1="Para crear una pagina web";
+			String opcCHTMLNOL1="Para que el navegador la sea mas rapido";
 			
+		String pregHTMLNOL2="Qué es HTML5";
+			String opcAHTMLNOL2="Un concepto nuevo para la creacion de paginas web";
+			String opcBHTMLNOL2="Una mejora de esta ya antigua tecnología";
+			String opcCHTMLNOL2="Una vercion del antiguo lenguaje de etiquetas";
 			
+		String pregHTMLNOL3="Cuantas caracteristicas provee HTML5";
+			String opcAHTMLNOL3="Tres";
+			String opcBHTMLNOL3="Cien";
+			String opcCHTMLNOL3="Treinta";
+			
+		String pregHTMLNOL4="En que momento vemos mas serio a rafa";
+			String opcAHTMLNOL4="En los examnes y ejercicios de evaluacion";
+			String opcBHTMLNOL4="En el recreo";
+			String opcCHTMLNOL4="Explicando en clase";
+			
+		String pregHTMLNOL5="<header>, <nav>, <section>, <aside>, <footer>, <article>, <figure>... Que son? ";
+			String opcAHTMLNOL5="Elementos";
+			String opcBHTMLNOL5="Etiquetas";
+			String opcCHTMLNOL5="Cajas o contenedores";
 			
 			
 			
@@ -291,8 +356,30 @@ public class ListadoPreguntas {
 				
 				
 				
+			String pregSISNOL1="Que es el microprocesador";
+				String opcASISNOL1="El circuito integrado mas complejo de un sistema informatico";
+				String opcBSISNOL1="La memoria del ordenador";
+				String opcCSISNOL1="Un circuito de coneccion de la placa base";
 				
+		    String pregSISNOL2="Segun la ley de Moore, la capacidad de computacion de un ordenador se duplica cada...";
+				String opcASISNOL2="18 meses";
+				String opcBSISNOL2="20 meses";
+				String opcCSISNOL2="36 meses";
 				
+			String pregSISNOL3="El termino RAM se utiliza como sinonimo de...";
+				String opcASISNOL3="Memoria principal";
+				String opcBSISNOL3="Memoria mayor";
+				String opcCSISNOL3="Memoria rapida";
+				
+			String pregSISNOL4="Que es subneting";
+				String opcASISNOL4="Es dividir una red IP fisica en subredes logicas";
+				String opcBSISNOL4="Es un conjunto de redes";
+				String opcCSISNOL4="Es una subred que roba bits destinados a host";
+				
+			String pregSISNOL5="Cuantas clases de direcciones IP hay clasificadas";
+				String opcASISNOL5="Cuatro";
+				String opcBSISNOL5="Dos";
+				String opcCSISNOL5="Nueve";
 				
 			
 			//PREGUNTAS SOBRE EL COLEGIO
@@ -349,10 +436,30 @@ public class ListadoPreguntas {
 				String opcCCOLCAR5="'Todos' en el Dominos";
 	
 	
+			String pregCOLNOL1="Como se llama el jefe de estudios de FP";
+				String opcACOLNOL1="Ángel";
+				String opcBCOLNOL1="Luismi";
+				String opcCCOLNOL1="Rafa";
+							
+			String pregCOLNOL2="A que hora se entra del recreo";
+				String opcACOLNOL2="11:30";
+				String opcBCOLNOL2="11:40";
+				String opcCCOLNOL2="11:25";
 				
+			String pregCOLNOL3="Nombre del actual director del colegio Salesianos de triana";
+				String opcACOLNOL3="Fernando Bañez Martin";
+				String opcBCOLNOL3="Francisco Vázquez Adorna";
+				String opcCCOLNOL3="Enrique Vargas Marquez";
 				
+			String pregCOLNOL4="En que año fue inagurado solemnemente el colegio";
+				String opcACOLNOL4="1935";
+				String opcBCOLNOL4="1930";
+				String opcCCOLNOL4="1926";
 				
-				
+			String pregCOLNOL5="Con cuantas aulas comenzo a funcionar el colegio";
+				String opcACOLNOL5="Tres";
+				String opcBCOLNOL5="Nueve";
+				String opcCCOLNOL5="Quince";
 				
 			//LISTADO ARRAY DE PROGRAMACI�N	
 				
