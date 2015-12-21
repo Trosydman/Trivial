@@ -3,57 +3,57 @@ package alex;
 public class ListadoPreguntas {
 
 	
-	//PREGUNTAS DE PROGAMACI�N
+	//PREGUNTAS DE PROGAMACIï¿½N
 
-		String pregProgALE1=" �Que es una cadena?";
+		String pregProgALE1=" ï¿½Que es una cadena?";
 			String opcAProgALE1=" Es una clase que no puede ser instanciada";
 			String opcBProgALE1=" Secuencia de caracteres delimitada entre dobles comillas";
 			String opcCProgALE1=" Secuencia de caracteres delimitada entre comillas simples";
 			
-		String pregProgALE2="�Cu�l es la descripci�n que crees que define mejor el concepto 'clase' en la programaci�n orientada a objetos?";
+		String pregProgALE2="ï¿½Cuï¿½l es la descripciï¿½n que crees que define mejor el concepto 'clase' en la programaciï¿½n orientada a objetos?";
 			String opcAProgALE2=" Es un tipo particular de variable";
 			String opcBProgALE2=" Es un modelo o plantilla a partir de la cual creamos objetos";
 			String opcCProgALE2=" Es una categoria de datos ordenada secuencialmente";
 		
-		String pregProgALE3=" �Qu� elementos crees que definen a un objeto?";
+		String pregProgALE3=" ï¿½Quï¿½ elementos crees que definen a un objeto?";
 			String opcAProgALE3=" Sus cardinalidad y su tipo";
-			String opcBProgALE3=" Sus atributos y sus m�todos";
-			String opcCProgALE3=" La forma en que establece comunicaci�n e intercambia mensajes ";
+			String opcBProgALE3=" Sus atributos y sus mï¿½todos";
+			String opcCProgALE3=" La forma en que establece comunicaciï¿½n e intercambia mensajes ";
 		
-		String pregProgALE4=" �Qu� significa instanciar una clase?";
+		String pregProgALE4=" ï¿½Quï¿½ significa instanciar una clase?";
 			String opcAProgALE4=" Duplicar una clase";
-			String opcBProgALE4=" Conectar dos clases entre s�";
+			String opcBProgALE4=" Conectar dos clases entre sï¿½";
 			String opcCProgALE4=" Crear un objeto a partir de la clase";
 		
-		String pregProgALE5=" �Qu� significa sobrecargar (overload) un m�todo?";
-			String opcAProgALE5=" Crear un m�todo con el mismo nombre pero diferentes argumentos";
-			String opcBProgALE5=" Cambiarle el nombre dej�ndolo con la misma funcionalidad";
-			String opcCProgALE5=" A�adirle funcionalidades a un m�todo";
+		String pregProgALE5=" ï¿½Quï¿½ significa sobrecargar (overload) un mï¿½todo?";
+			String opcAProgALE5=" Crear un mï¿½todo con el mismo nombre pero diferentes argumentos";
+			String opcBProgALE5=" Cambiarle el nombre dejï¿½ndolo con la misma funcionalidad";
+			String opcCProgALE5=" Aï¿½adirle funcionalidades a un mï¿½todo";
 			
-		String pregProgCAR1="�A qu� hace referencia el comando 'syso'?";
+		String pregProgCAR1="ï¿½A quï¿½ hace referencia el comando 'syso'?";
 			String opcAProgCAR1="System.out.println();";
 			String opcBProgCAR1="System.out.println('');";
 			String opcCProgCAR1="System.out.println()";
 
-		String pregProgCAR2="Hemos aprendido que existen arrays unidimensionales y bidimensionales, pero...�se pueden hacer arrays con m�s dimensiones?";
-			String opcAProgCAR2="S�, se pueden hacer de infinitas dimensiones.";
-			String opcBProgCAR2="No, s�lo se pueden hacer de las 2 formas mencionadas.";
-			String opcCProgCAR2="No, el l�mite est� en 6 dimensiones.";
+		String pregProgCAR2="Hemos aprendido que existen arrays unidimensionales y bidimensionales, pero...ï¿½se pueden hacer arrays con mï¿½s dimensiones?";
+			String opcAProgCAR2="Sï¿½, se pueden hacer de infinitas dimensiones.";
+			String opcBProgCAR2="No, sï¿½lo se pueden hacer de las 2 formas mencionadas.";
+			String opcCProgCAR2="No, el lï¿½mite estï¿½ en 6 dimensiones.";
 
 		String pregProgCAR3="if(!isMenorDeEdad && calcetines.getColor().equals(Color.WHITE) && ropa.isFea?true:false)";
-			String opcAProgCAR3="cliente.darFajoBilletes()?System.out.println('No lo hab�a reconocido Cristiano, pase y disfrute.');:System.out.println('NO ENTRAS');";
+			String opcAProgCAR3="cliente.darFajoBilletes()?System.out.println('No lo habï¿½a reconocido Cristiano, pase y disfrute.');:System.out.println('NO ENTRAS');";
 			String opcBProgCAR3="System.out.println('NO ENTRAS');";
 			String opcCProgCAR3="System.out.println('Puedes entrar.');";
 
-		String pregProgCAR4="�Qu� es un String?";
+		String pregProgCAR4="ï¿½Quï¿½ es un String?";
 			String opcAProgCAR4="Un objeto, aunque le puedas pasar directamente una cadena";
 			String opcBProgCAR4="Un tipo de variable, ya que se le puede pasar directamente una cadena";
 			String opcCProgCAR4="Un atributo";
 
-		String pregProgCAR5="El Javadoc se genera autom�ticamente al correr el programa en Eclipse.";
+		String pregProgCAR5="El Javadoc se genera automï¿½ticamente al correr el programa en Eclipse.";
 			String opcAProgCAR5="Falso, se crea de forma independiente.";
 			String opcBProgCAR5="verdadero.";
-			String opcCProgCAR5="Si se instala la extensi�n previamente s�, ya que no viene por defecto.";
+			String opcCProgCAR5="Si se instala la extensiï¿½n previamente sï¿½, ya que no viene por defecto.";
 		
 		String pregProgFEL1="Las instancias de una clase son:";
 			String opcAProgFEL1="Los objetos creados.";
@@ -65,7 +65,7 @@ public class ListadoPreguntas {
 			String opcBProgFEL2="Comprobar los valores que esten guardados sean correctos.";
 			String opcCProgFEL2="Reestablecer valores en los atributos.";
 
-		String pregProgFEL3="Un m�todo es:";
+		String pregProgFEL3="Un mï¿½todo es:";
 			String opcAProgFEL3="Una operacion que se realiza solo cuando es llamadoUna operacion que se realiza solo cuando es llamado.";
 			String opcBProgFEL3="Una operacion que se realiza automaticamente al ejecutar el programa.";
 			String opcCProgFEL3="Una operacion que solo se dedica a imprimir resultados.";
@@ -78,11 +78,11 @@ public class ListadoPreguntas {
 
 
 		String pregProgFEL5="En un arrays se puede guardar cualquier dato/objeto.";
-			String opcAProgFEL5="S�, siempre y cuando sean del mismo tipo que se ha establecido.";
-			String opcBProgFEL5="S�, pero solo cuando tiene la misma longitud de caracteres.";
+			String opcAProgFEL5="Sï¿½, siempre y cuando sean del mismo tipo que se ha establecido.";
+			String opcBProgFEL5="Sï¿½, pero solo cuando tiene la misma longitud de caracteres.";
 			String opcCprogFEL5="No, porque en un arrays no se puede guardar nada.";
 			
-		String preProNOL1="Cuantas opciones tenemos para generar números aleatorios...";	
+		String preProNOL1="Cuantas opciones tenemos para generar nÃºmeros aleatorios...";	
 		    String opcAProgNOl1="Dos";
 		    String opcBProgNOL1="Cinco";
 		    String opcCProgNOL1="Tres";
@@ -99,68 +99,95 @@ public class ListadoPreguntas {
 		    String opcBProgNOL3="Private";
 		    String opcCProgNOL3="Abstract";
 		    
-	    String preProNOL4="Qué sucede cuando un objeto modifica una variable de clase";	
+	    String preProNOL4="QuÃ© sucede cuando un objeto modifica una variable de clase";	
 		    String opcAProgNOl4="Al modificarla se hace  visible a todos los objetos";
-		    String opcBProgNOL4="Se hace visible solo parta el objeto que  la modificó";
+		    String opcBProgNOL4="Se hace visible solo parta el objeto que  la modificÃ³";
 		    String opcCProgNOL4="Ninguna de las anteriores";    
 		    
 		    
-	    String preProNOL5="En que momento se invoca el método constructor";	
+	    String preProNOL5="En que momento se invoca el mÃ©todo constructor";	
 		    String opcAProgNOl5="Despues de crear un objeto";
 		    String opcBProgNOL5="Cuando se crea el main";
 		    String opcCProgNOL5="Cuando es llamado por un objeto";
+		    
+		String pregProgGER1="Los datos elementales están compuestos por...";
+			String opcAProgGER1="Númericos, Alfanuméricos y Lógicos/Booleanos."; //*
+			String opcBProgGER1="Númericos, Alfanuméricos y Cardinales.";
+			String opcCProgGER1="Númericos, Hexadecimales y Lógicos/Booleanos.";
+
+		String pregProgGER2="En la tabla de Tokens podemos encontrar palabras como...";
+			String opcAProgGER2="break, new, true, return, final."; //*
+			String opcBProgGER2="break, old, true, return, final.";
+			String opcCProgGER2="break, old, true, retorno, final.";
+
+		String pregProgGER3="En llas estructuras de repetición podemos encontrarnos con ...";
+			String opcAProgGER3="while, do...while y for."; //*
+			String opcBProgGER3="while, dont't...while y forgiven.";
+			String opcCProgGER3="while, do...while y forgiven.";
+
+		String pregProgGER4="En las estructuras de selección podemos encontrar...";
+			String opcAProgGER4="if, if-also y switch.";
+			String opcBProgGER4="if, if-else y switcher.";
+			String opcCProgGER4="if, if-else y switch."; //*
+
+		String pregProgGER5="Un valor de un boolean por defecto es...";
+			String opcAProgGER5="true.";
+			String opcBProgGER5="false."; //*
+			String opcCProgGER5="ninguna, o se define o no compila.";
+
+
 			
 		
 		//PREGUNTAS DE BASE DE DATOS
 		
 		
-		String pregBBDDALE1=" �Qu� es el grado de una relaci�n?";
-			String opcABBDDALE1="  Es el n�mero de atributos que contiene la relaci�n";
-			String opcBBBDDALE1=" Es el n�mero de tuplas que contiene la relaci�n";
+		String pregBBDDALE1=" ï¿½Quï¿½ es el grado de una relaciï¿½n?";
+			String opcABBDDALE1="  Es el nï¿½mero de atributos que contiene la relaciï¿½n";
+			String opcBBBDDALE1=" Es el nï¿½mero de tuplas que contiene la relaciï¿½n";
 			String opcCBBDDALE1=" Ninguna de las respuestas anteriores es correcta";
 			
 		String pregBBDDALE2=" Oracle es un SGBD que cumple el modelo:";
 			String opcABBDDALE2=" Modelo de base de datos en red";
-			String opcBBBDDALE2=" Modelo de base de datos jer�rquico";
+			String opcBBBDDALE2=" Modelo de base de datos jerï¿½rquico";
 			String opcCBBDDALE2=" Modelo de base de datos relacional";
 			
-		String pregBBDDALE3=" La sentencia SQL �SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULL�, �qu� resultado tendr�a?";
-			String opcABBDDALE3=" Visualiza todos los empleados que no tienen comisi�n";
+		String pregBBDDALE3=" La sentencia SQL ï¿½SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULLï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
+			String opcABBDDALE3=" Visualiza todos los empleados que no tienen comisiï¿½n";
 			String opcBBBDDALE3=" Visualiza todos los empleados con sus respectivos salarios y comisiones";
 			String opcCBBDDALE3=" Ninguna de las respuestas anteriores es correcta";
 			
-		String pregBBDDALE4=" La sentencia SQL �SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE �A_%� �, �qu� resultado tendr�a?";
-			String opcABBDDALE4=" Visualiza todos los productos que empiecen con el car�cter �A� despu�s el car�cter �_� y despu�s el car�cter %";
-			String opcBBBDDALE4=" Visualiza todos los productos que no empiecen con el car�cter �A� ni despu�s tengan el car�cter �_� ni despu�s el car�cter %";
-			String opcCBBDDALE4=" Visualiza todos los productos que no empiezan con A y despu�s no tienen otro car�cter m�s como m�nimo";
+		String pregBBDDALE4=" La sentencia SQL ï¿½SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE ï¿½A_%ï¿½ ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
+			String opcABBDDALE4=" Visualiza todos los productos que empiecen con el carï¿½cter ï¿½Aï¿½ despuï¿½s el carï¿½cter ï¿½_ï¿½ y despuï¿½s el carï¿½cter %";
+			String opcBBBDDALE4=" Visualiza todos los productos que no empiecen con el carï¿½cter ï¿½Aï¿½ ni despuï¿½s tengan el carï¿½cter ï¿½_ï¿½ ni despuï¿½s el carï¿½cter %";
+			String opcCBBDDALE4=" Visualiza todos los productos que no empiezan con A y despuï¿½s no tienen otro carï¿½cter mï¿½s como mï¿½nimo";
 			
-		String pregBBDDALE5="La sentencia SQL �SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 �, �qu� resultado tendr�a?";
-			String opcABBDDALE5=" Visualiza los empleados que han gestionado el pedido n�mero 10";
-			String opcBBBDDALE5=" Visualiza los empleados que han realizado un n�mero de pedidos igual a 10";
-			String opcCBBDDALE5=" Visualiza todos los empleados y el n�mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
+		String pregBBDDALE5="La sentencia SQL ï¿½SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
+			String opcABBDDALE5=" Visualiza los empleados que han gestionado el pedido nï¿½mero 10";
+			String opcBBBDDALE5=" Visualiza los empleados que han realizado un nï¿½mero de pedidos igual a 10";
+			String opcCBBDDALE5=" Visualiza todos los empleados y el nï¿½mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
 			
-		String pregBBDDCAR1="�Qu� trimestre de BBDD viene con curvas?";
+		String pregBBDDCAR1="ï¿½Quï¿½ trimestre de BBDD viene con curvas?";
 			String opcABBDDCAR1="Todos vienen con curvas y vaselina gratis.";
-			String opcBBBDDCAR1="El 2�";
-			String opcCBBDDCAR1="El 1�";
+			String opcBBBDDCAR1="El 2ï¿½";
+			String opcCBBDDCAR1="El 1ï¿½";
 
-		String pregBBDDCAR2="�Para que sirve la funci�n SOUNDEX?";
-			String opcABBDDCAR2="Devuelve el valor fon�tico del texto.";
-			String opcBBBDDCAR2="Devuelve la posici�n del texto.";
+		String pregBBDDCAR2="ï¿½Para que sirve la funciï¿½n SOUNDEX?";
+			String opcABBDDCAR2="Devuelve el valor fonï¿½tico del texto.";
+			String opcBBBDDCAR2="Devuelve la posiciï¿½n del texto.";
 			String opcCBBDDCAR2="Devuelve el ex-valor del texto";
 
-		String pregBBDDCAR3="�C�mo se consigue el produccto cartesiano de 2 tablas?";
+		String pregBBDDCAR3="ï¿½Cï¿½mo se consigue el produccto cartesiano de 2 tablas?";
 			String opcABBDDCAR3="FROM TABLA1, TABLA2";
 			String opcBBBDDCAR3="FROM TABLA1 JOIN TABLA2 USING(ID)";
 			String opcCBBDDCAR3="FROM TABLA1 RIGHT JOIN TABLA2";
 
-		String pregBBDDCAR4="�Qu� base de datos es una de las m�s liosas y con m�s tablas con que hemos trabajado?";
+		String pregBBDDCAR4="ï¿½Quï¿½ base de datos es una de las mï¿½s liosas y con mï¿½s tablas con que hemos trabajado?";
 			String opcABBDDCAR4="NORTHWIND";
 			String opcBBBDDCAR4="BUSES";
 			String opcCBBDDCAR4="SYSTEM";
 
-		String pregBBDDCAR5="�Se puede escribir en min�scula las consultas de BBDD?";
-			String opcABBDDCAR5="S�";
+		String pregBBDDCAR5="ï¿½Se puede escribir en minï¿½scula las consultas de BBDD?";
+			String opcABBDDCAR5="Sï¿½";
 			String opcBBBDDCAR5="No";
 			String opcCBBDDCAR5="Ninguna de las anteriores";
 			
@@ -176,25 +203,25 @@ public class ListadoPreguntas {
 			String opcCBBDDFEL2="Cuanto mayor es el grado de una relacion, menor es su complejidad.";
 
 
-		String pregBBDDFEL3="Un sin�nimo de atributo es...";
+		String pregBBDDFEL3="Un sinï¿½nimo de atributo es...";
 				String opcABBDDFEL3="Campo.";
 				String opcBBBDDFEL3="Registro.";
 				String opcCBBDDFEL3="Fichero.";
 
 
-		String pregBBDDFEL4="Usando la aritm�tica cl�sica en valores l�gicos. Si 0.5 es nulo, 1 y 0, respectivamente, son...";
+		String pregBBDDFEL4="Usando la aritmï¿½tica clï¿½sica en valores lï¿½gicos. Si 0.5 es nulo, 1 y 0, respectivamente, son...";
 			String opcABBDDFEL4="Verdadero y falso.";
 			String opcBBBDDFEL4="Falso y Verdadero.";
 			String opcCBBDDFEL4="Ninguna de las otras dos respuestas.";
 
 
-		String pregBBDDFEL5="C�mo se denomina la tabla que proporciona Oracle para realizar consultas a modo de prueba.";
+		String pregBBDDFEL5="Cï¿½mo se denomina la tabla que proporciona Oracle para realizar consultas a modo de prueba.";
 			String opcABBDDFEL5="DUAL.";
 			String opcBBBDDFEL5="EMPLOYEES.";
 			String opcCBBDDFEL5="PROOF.";
 
 
-		String pregBBDDNOL1="En que año se publica el documento que definio el modelo relacional";
+		String pregBBDDNOL1="En que aÃ±o se publica el documento que definio el modelo relacional";
 				String opcABBDDNOL1="1970";
 				String opcBBBDDNOL1="1972";
 				String opcCBBDDNOL1="1968";
@@ -204,7 +231,7 @@ public class ListadoPreguntas {
 				String opcBBBDDNOL2="Ocho";
 				String opcCBBDDNOL2="Diez";
 			
-		String pregBBDDNOL3="En que momento utiliza la plicación del látigo luismi";
+		String pregBBDDNOL3="En que momento utiliza la plicaciÃ³n del lÃ¡tigo luismi";
 				String opcABBDDNOL3="En los examenes";
 				String opcBBBDDNOL3="AL corregir los ejercicios";
 				String opcCBBDDNOL3="En los ejercicios de evaluacion";
@@ -214,62 +241,87 @@ public class ListadoPreguntas {
 				String opcBBBDDNOL4="Para diferenciar una tabla de otra";
 				String opcCBBDDNOL4="Para mostrar varias tuplas";
 				
-		String pregBBDDNOL5="Qué es SQL";
+		String pregBBDDNOL5="QuÃ© es SQL";
 				String opcABBDDNOL5="una interfas de usuario";
 				String opcBBBDDNOL5="Un programa de oracle";
 				String opcCBBDDNOL5="Un lenguaje de programacion";
 			
-			
+		String pregBBDDGER1="En los ficheros indexados una de las características es...";
+				String opcABBDDGER1="El lento acceso."; //*
+				String opcBBBDDGER1="El acceso rápido o lento según la rapidez del procesador.";
+				String opcCBBDDGER1="El rápido acceso.";
+
+		String pregBBDDGER2="En los ficheros con resgistros de tamaño dinámico encontramos...";
+				String opcABBDDGER2="Difícil acceso, lo cual es una desventaja."; //*
+				String opcBBBDDGER2="Difícil acceso, lo cual es una ventaja.";
+				String opcCBBDDGER2="Acceso remoto, lo cual es una desventaja.";
+
+
+		String pregBBDDGER3="En los ficheros con registros de tamaño estatico...";
+				String opcABBDDGER3="Hay difícil acceso y baja flexibilidad."; //*
+				String opcBBBDDGER3="Hay fácil acceso y baja flexibilidad."; 
+				String opcCBBDDGER3="Hay fácil acceso y alta flexibilidad."; 
+
+		String pregBBDDGER4="Una propiedad de una tabla indica que...";
+				String opcABBDDGER4="Cada atributo de la tabla toma varios valores en cada tupla.";
+				String opcBBBDDGER4="Cada atributo de la tabla toma dos valores en cada tupla.";
+				String opcCBBDDGER4="Cada atributo de la tabla toma un solo valor en cada tupla."; //*
+
+		String pregBBDDGER5="En los valores lógicos de una consulta nos podemos encontrar como operador de valores lógicos...";
+				String opcABBDDGER5="AND, OF, YES.";
+				String opcBBBDDGER5="AND, OR, YES.";
+				String opcCBBDDGER5="AND, OR, NOT."; //*
+				
 		//PREGUNTAS DE HTML	
 			
-		String pregHTMLALE1=" �Cu�l es la forma correcta de insertar un comentario? ";
+		String pregHTMLALE1=" ï¿½Cuï¿½l es la forma correcta de insertar un comentario? ";
 			String opcAHTMLALE1=" <!--...--> ";
-			String opcBHTMLALE1=" <�--...--!>";
+			String opcBHTMLALE1=" <ï¿½--...--!>";
 			String opcCHTMLALE1=" <comment>";
 			
 			
-		String pregHTMLALE2="�Qu� entiende por HTML?";
+		String pregHTMLALE2="ï¿½Quï¿½ entiende por HTML?";
 			String opcAHTMLALE2=" Hyper Text Mask Language";
 			String opcBHTMLALE2=" Hard Text Markup Language";
 			String opcCHTMLALE2=" Hyper Text Markup Language";
 		
-		String pregHTMLALE3=" �C�mo definimos un color en sistema hexadecimal?";
+		String pregHTMLALE3=" ï¿½Cï¿½mo definimos un color en sistema hexadecimal?";
 			String opcAHTMLALE3=" <beige>";
 			String opcBHTMLALE3=" <245,245,220>s";
 			String opcCHTMLALE3=" <#F5F5DC> ";
 		
-		String pregHTMLALE4=" �Qu� etiquetas pueden figurar en la secci�n <head>?";
+		String pregHTMLALE4=" ï¿½Quï¿½ etiquetas pueden figurar en la secciï¿½n <head>?";
 			String opcAHTMLALE4="<style>, <meta>, <table>";
 			String opcBHTMLALE4=" link>, <title>, <base>";
 			String opcCHTMLALE4=" <link>, <meta>, <p>";
 		
-		String pregHTMLALE5=" �Cu�l crees que es la mejor manera de aplicar estilos a una p�gina web? ";
+		String pregHTMLALE5=" ï¿½Cuï¿½l crees que es la mejor manera de aplicar estilos a una pï¿½gina web? ";
 			String opcAHTMLALE5=" Incluir los estilos en las etiquetas HTML para que se carguen y ejecuten antes";
 			String opcBHTMLALE5=" Incluirlos en un fichero externo vinculado a ese fichero HTML";
-			String opcCHTMLALE5=" Incluirlos en la secci�n cabecera ('head') para agruparlos en unmismo sitio en la misma p�gina";
+			String opcCHTMLALE5=" Incluirlos en la secciï¿½n cabecera ('head') para agruparlos en unmismo sitio en la misma pï¿½gina";
 			
 		String pregHTMLCAR1="Sigue la frase: Header arriba, el contenido en medio y...";
 			String opcAHTMLCAR1="... footer abajo.";
-			String opcBHTMLCAR1="... no me maqueta la p�gina.";
+			String opcBHTMLCAR1="... no me maqueta la pï¿½gina.";
 			String opcCHTMLCAR1="... Rafa me pierdo.";
 
-		String pregHTMLCAR2="Comando para imprimir espacios en blanco en una p�gina web.";
+		String pregHTMLCAR2="Comando para imprimir espacios en blanco en una pï¿½gina web.";
 			String opcAHTMLCAR2="&nbsp;";
 			String opcBHTMLCAR2="' '";
 			String opcCHTMLCAR2="white-space";
 
-		String pregHTMLCAR3="�Qu� etiquetas(entre otras), utilizamos en el head para que nos permita introducir car�cteres con tilde y especiales?";
+		String pregHTMLCAR3="ï¿½Quï¿½ etiquetas(entre otras), utilizamos en el head para que nos permita introducir carï¿½cteres con tilde y especiales?";
 			String opcAHTMLCAR3="<meta charset='UTF-8'>";
 			String opcBHTMLCAR3="<meta charset='UTF'>";
 			String opcCHTMLCAR3="<data charconfig='UTF8'>";
 
-		String pregHTMLCAR4="�Qu� comando de css sustituye a la etiqueta pre?";
+		String pregHTMLCAR4="ï¿½Quï¿½ comando de css sustituye a la etiqueta pre?";
 			String opcAHTMLCAR4="white-space: pre;";
 			String opcBHTMLCAR4="white-space: pro;";
 			String opcCHTMLCAR4="white space: pre;";
 
-		String pregHTMLCAR5="�Qu� le ocurre a Rafa si hay lenguaje a �ltima hora?";
-			String opcAHTMLCAR5="Le entra el sue�o.";
+		String pregHTMLCAR5="ï¿½Quï¿½ le ocurre a Rafa si hay lenguaje a ï¿½ltima hora?";
+			String opcAHTMLCAR5="Le entra el sueï¿½o.";
 			String opcBHTMLCAR5="Se enfada.";
 			String opcCHTMLCAR5="Le entre risa tonta.";
 			
@@ -280,9 +332,9 @@ public class ListadoPreguntas {
 			String opcBHTMLNOL1="Para crear una pagina web";
 			String opcCHTMLNOL1="Para que el navegador la sea mas rapido";
 			
-		String pregHTMLNOL2="Qué es HTML5";
+		String pregHTMLNOL2="QuÃ© es HTML5";
 			String opcAHTMLNOL2="Un concepto nuevo para la creacion de paginas web";
-			String opcBHTMLNOL2="Una mejora de esta ya antigua tecnología";
+			String opcBHTMLNOL2="Una mejora de esta ya antigua tecnologÃ­a";
 			String opcCHTMLNOL2="Una vercion del antiguo lenguaje de etiquetas";
 			
 		String pregHTMLNOL3="Cuantas caracteristicas provee HTML5";
@@ -299,35 +351,58 @@ public class ListadoPreguntas {
 			String opcAHTMLNOL5="Elementos";
 			String opcBHTMLNOL5="Etiquetas";
 			String opcCHTMLNOL5="Cajas o contenedores";
-			
-			
+
+		String pregHTMLGER1="Una herramienta con la que podemos editar de manera eficiente HTML es... ";
+			String opcAHTMLGER1="Sublime Text."; //*
+			String opcBHTMLGER1="Sublime Texteo.";
+			String opcCHTMLGER1="Texteo Sublime.";
+		
+		String pregHTMLGER2="Elija la etiqueta apropiada para un texto en negrita.";
+			String opcAHTMLGER2="<bold>";
+			String opcBHTMLGER2="<bb>";
+			String opcCHTMLGER2="<b>"; //*
+		
+		String pregHTMLGER3="Elija la etiqueta que nos dá el título más grande.";
+			String opcAHTMLGER3="<h1>"; //*
+			String opcBHTMLGER3="<h6>";
+			String opcCHTMLGER3="<head>";
+		
+		String pregHTMLGER4="¿Qué etiqueta define un salto de línea?";
+			String opcAHTMLGER4="<br>"; //*
+			String opcBHTMLGER4="<break>";
+			String opcCHTMLGER4="<linebreak>";
+		
+		String pregHTMLGER5="¿Qué etiqueta utilizamos para insertar una línea horizontal? ";
+			String opcAHTMLGER5="<br>";
+			String opcBHTMLGER5="<hr>"; //*
+			String opcCHTMLGER5="<line>";	
 			
 			//PREGUNTAS DE SISTEMAS
 
-			String pregSISALE1=" �El n�mero 1010 en binario a qu� n�mero decimal corresponde?";
+			String pregSISALE1=" ï¿½El nï¿½mero 1010 en binario a quï¿½ nï¿½mero decimal corresponde?";
 				String opcASISALE1=" 10";
 				String opcBSISALE1=" 100";
 				String opcCSISALE1=" 1000";
 				
-			String pregSISALE2="�Podemos a�adir un disco duro nuevo a una m�quina virtual que est� iniciada?";
-				String opcASISALE2=" No podemos a�adirlo hasta que la m�quina no est� apagada ";
-				String opcBSISALE2=" S� podemos, pero es necesario reiniciar el sistema operativo iniciado para que �ste reconozca el nuevo disco";
-				String opcCSISALE2=" S� podemos y el disco duro es reconocido directamente por el sistema operativo que est� iniciado";
+			String pregSISALE2="ï¿½Podemos aï¿½adir un disco duro nuevo a una mï¿½quina virtual que estï¿½ iniciada?";
+				String opcASISALE2=" No podemos aï¿½adirlo hasta que la mï¿½quina no estï¿½ apagada ";
+				String opcBSISALE2=" Sï¿½ podemos, pero es necesario reiniciar el sistema operativo iniciado para que ï¿½ste reconozca el nuevo disco";
+				String opcCSISALE2=" Sï¿½ podemos y el disco duro es reconocido directamente por el sistema operativo que estï¿½ iniciado";
 			
-			String pregSISALE3=" �Qu� es una partici�n?";
-				String opcASISALE3=" Una divisi�n l�gica de un disco";
-				String opcBSISALE3=" Una divisi�n f�sica de un disco";
-				String opcCSISALE3=" Una divisi�n de un disco que puede ser f�sica o l�gica";
+			String pregSISALE3=" ï¿½Quï¿½ es una particiï¿½n?";
+				String opcASISALE3=" Una divisiï¿½n lï¿½gica de un disco";
+				String opcBSISALE3=" Una divisiï¿½n fï¿½sica de un disco";
+				String opcCSISALE3=" Una divisiï¿½n de un disco que puede ser fï¿½sica o lï¿½gica";
 			
-			String pregSISALE4=" �Qu� tipos de particiones existen?";
-				String opcASISALE4=" Primarias y l�gicas";
-				String opcBSISALE4=" Primarias, extendidas y l�gicas";
+			String pregSISALE4=" ï¿½Quï¿½ tipos de particiones existen?";
+				String opcASISALE4=" Primarias y lï¿½gicas";
+				String opcBSISALE4=" Primarias, extendidas y lï¿½gicas";
 				String opcCSISALE4=" Primarias y secundarias";
 			
-			String pregSISALE5=" �Qu� significa sobrecargar (overload) un m�todo?";
-				String opcASISALE5=" Crear un m�todo con el mismo nombre pero diferentes argumentos";
-				String opcBSISALE5=" Cambiarle el nombre dej�ndolo con la misma funcionalidad";
-				String opcCSISALE5=" A�adirle funcionalidades a un m�todo";
+			String pregSISALE5=" ï¿½Quï¿½ significa sobrecargar (overload) un mï¿½todo?";
+				String opcASISALE5=" Crear un mï¿½todo con el mismo nombre pero diferentes argumentos";
+				String opcBSISALE5=" Cambiarle el nombre dejï¿½ndolo con la misma funcionalidad";
+				String opcCSISALE5=" Aï¿½adirle funcionalidades a un mï¿½todo";
 			
 			String pregSISCAR1="Hemos trabajado con";
 				String opcASISCAR1="Arduino UNO";
@@ -339,12 +414,12 @@ public class ListadoPreguntas {
 				String opcBSISCAR2="RAIDPRO";
 				String opcCSISCAR2="RAID2";
 
-			String pregSISCAR3="�A qu� 'muerte' se asemeja la muerte de Alan Turing?";
+			String pregSISCAR3="ï¿½A quï¿½ 'muerte' se asemeja la muerte de Alan Turing?";
 				String opcASISCAR3="A la de Blancanieves.";
 				String opcBSISCAR3="A la de Bambi.";
 				String opcCSISCAR3="Ninguna de las otras.";
 
-			String pregSISCAR4="�De qu� a�o es el Windows Server que utilizamos en sistemas?";
+			String pregSISCAR4="ï¿½De quï¿½ aï¿½o es el Windows Server que utilizamos en sistemas?";
 				String opcASISCAR4="2003";
 				String opcBSISCAR4="2000";
 				String opcCSISCAR4="2001";
@@ -379,65 +454,89 @@ public class ListadoPreguntas {
 			String pregSISNOL5="Cuantas clases de direcciones IP hay clasificadas";
 				String opcASISNOL5="Cuatro";
 				String opcBSISNOL5="Dos";
-				String opcCSISNOL5="Nueve";
-				
+				String opcCSISNOL5="Nueve";	
 			
+			String pregSISGER1="¿Qué es Byte?";
+				String opcASISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 8 bits contiguos."; //*
+				String opcBSISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 16 bits contiguos.";
+				String opcCSISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 32 bits contiguos.";
+			
+			String pregSISGER2="¿Qué es ubunto?";
+				String opcASISGER2="Es una distribución Mac OS.";
+				String opcBSISGER2="Es una distribución Linux."; //*
+				String opcCSISGER2="Es una distribución de Windows,";
+			
+			String pregSISGER3="¿Qué es el bus?";
+				String opcASISGER3="Es una red de ordenadores conectada a la red Skynet. ";
+				String opcBSISGER3="Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
+				String opcCSISGER3="Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) "; //*
+			
+			String pregSISGER4="¿Que es FAT?";
+				String opcASISGER4="Un sistema de archivos desarrollado para MS-DOS."; //*
+				String opcBSISGER4="Se le llama vulgarmente así a discos duros que pesan mucho.";
+				String opcCSISGER4="Es un tipo de Tarjetas gráficas con las que actualmente se juega al Fallout 4 a 120fps a 4K. ";
+			
+			String pregSISGER5="¿Cuál no es un dispositivo de salida?";
+				String opcASISGER5="Impresora.";
+				String opcBSISGER5="Monitor.";
+				String opcCSISGER5="Teclado."; //*
+				
 			//PREGUNTAS SOBRE EL COLEGIO
 			
 			
-			String pregCOLALE1=" �D�nde se lleva a cabo el 'buenos dias' de los jueves?";
+			String pregCOLALE1=" ï¿½Dï¿½nde se lleva a cabo el 'buenos dias' de los jueves?";
 				String opcACOLALE1=" Clase";
 				String opcBCOLALE1=" Teatro";
 				String opcCCOLALE1=" Iglesia";
 				
-			String pregCOLALE2=" �Que necesitamos antes de un ex�men de base de datos?";
+			String pregCOLALE2=" ï¿½Que necesitamos antes de un exï¿½men de base de datos?";
 				String opcACOLALE2=" Vaselina";
 				String opcBCOLALE2=" Una pata de conejo";
 				String opcCCOLALE2=" Una caja de gambas y una paletilla";
 				
-			String pregCOLALE3=" �Qui�n fracas� en su intento de ser delegado de clase, cuya madre lo humill� a�n mas esa misma tarde siendo elegida delegada de padres?";
+			String pregCOLALE3=" ï¿½Quiï¿½n fracasï¿½ en su intento de ser delegado de clase, cuya madre lo humillï¿½ aï¿½n mas esa misma tarde siendo elegida delegada de padres?";
 				String opcACOLALE3=" Miguel Casado";
-				String opcBCOLALE3=" Jaime M�rquez ";
+				String opcBCOLALE3=" Jaime Mï¿½rquez ";
 				String opcCCOLALE3=" Ninguna de las respuestas anteriores es correcta";
 				
-			String pregCOLALE4=" �?";
-				String opcACOLALE4=" Visualiza todos los productos que empiecen con el car�cter �A� despu�s el car�cter �_� y despu�s el car�cter %";
-				String opcBCOLALE4=" Visualiza todos los productos que no empiecen con el car�cter �A� ni despu�s tengan el car�cter �_� ni despu�s el car�cter %";
-				String opcCCOLALE4=" Visualiza todos los productos que no empiezan con A y despu�s no tienen otro car�cter m�s como m�nimo";
+			String pregCOLALE4=" ï¿½?";
+				String opcACOLALE4=" Visualiza todos los productos que empiecen con el carï¿½cter ï¿½Aï¿½ despuï¿½s el carï¿½cter ï¿½_ï¿½ y despuï¿½s el carï¿½cter %";
+				String opcBCOLALE4=" Visualiza todos los productos que no empiecen con el carï¿½cter ï¿½Aï¿½ ni despuï¿½s tengan el carï¿½cter ï¿½_ï¿½ ni despuï¿½s el carï¿½cter %";
+				String opcCCOLALE4=" Visualiza todos los productos que no empiezan con A y despuï¿½s no tienen otro carï¿½cter mï¿½s como mï¿½nimo";
 				
-			String pregCOLALE5="La sentencia SQL �SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 �, �qu� resultado tendr�a?";
-				String opcACOLALE5=" Visualiza los empleados que han gestionado el pedido n�mero 10";
-				String opcBCOLALE5=" Visualiza los empleados que han realizado un n�mero de pedidos igual a 10";
-				String opcCCOLALE5=" Visualiza todos los empleados y el n�mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
+			String pregCOLALE5="La sentencia SQL ï¿½SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
+				String opcACOLALE5=" Visualiza los empleados que han gestionado el pedido nï¿½mero 10";
+				String opcBCOLALE5=" Visualiza los empleados que han realizado un nï¿½mero de pedidos igual a 10";
+				String opcCCOLALE5=" Visualiza todos los empleados y el nï¿½mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
 				
-			String pregCOLCAR1="�Qu� cantidad media de mensajes de WhatsApp entran el d�a anterior de entregar un bolet�n de BBDD?";
+			String pregCOLCAR1="ï¿½Quï¿½ cantidad media de mensajes de WhatsApp entran el dï¿½a anterior de entregar un boletï¿½n de BBDD?";
 				String opcACOLCAR1="100-200";
 				String opcBCOLCAR1="0, nadie sabe hacerlo.";
 				String opcCCOLCAR1="5-10";
 
-			String pregCOLCAR2="�Cu�l fue la primera din�mica de grupo qu� hicimos con Miguel?";
+			String pregCOLCAR2="ï¿½Cuï¿½l fue la primera dinï¿½mica de grupo quï¿½ hicimos con Miguel?";
 				String opcACOLCAR2="Ambas cosas";
 				String opcBCOLCAR2="Comida de convivencia";
-				String opcCCOLCAR2="Preguntas personales a los compa�eros y aviones de papel";
+				String opcCCOLCAR2="Preguntas personales a los compaï¿½eros y aviones de papel";
 
-			String pregCOLCAR3="�Quienes reventaron un led RGB en sistemas?";
+			String pregCOLCAR3="ï¿½Quienes reventaron un led RGB en sistemas?";
 				String opcACOLCAR3="Felipe y Rafa";
 				String opcBCOLCAR3="Fernando Carmona y Galiani";
 				String opcCCOLCAR3="Miguel Campos";
 
-			String pregCOLCAR4="�C�mo se llama el portero?";
+			String pregCOLCAR4="ï¿½Cï¿½mo se llama el portero?";
 				String opcACOLCAR4="Manolo";
 				String opcBCOLCAR4="Rafa";
 				String opcCCOLCAR4="Pedro";
 
-			String pregCOLCAR5="�Qu� foto se puso inicialmente en el grupo de WhatsApp de clase?";
+			String pregCOLCAR5="ï¿½Quï¿½ foto se puso inicialmente en el grupo de WhatsApp de clase?";
 				String opcACOLCAR5="Alan Turing";
 				String opcBCOLCAR5="Don Bosco a lo Kanye West";
 				String opcCCOLCAR5="'Todos' en el Dominos";
 	
 	
 			String pregCOLNOL1="Como se llama el jefe de estudios de FP";
-				String opcACOLNOL1="Ángel";
+				String opcACOLNOL1="Ã�ngel";
 				String opcBCOLNOL1="Luismi";
 				String opcCCOLNOL1="Rafa";
 							
@@ -447,11 +546,11 @@ public class ListadoPreguntas {
 				String opcCCOLNOL2="11:25";
 				
 			String pregCOLNOL3="Nombre del actual director del colegio Salesianos de triana";
-				String opcACOLNOL3="Fernando Bañez Martin";
-				String opcBCOLNOL3="Francisco Vázquez Adorna";
+				String opcACOLNOL3="Fernando BaÃ±ez Martin";
+				String opcBCOLNOL3="Francisco VÃ¡zquez Adorna";
 				String opcCCOLNOL3="Enrique Vargas Marquez";
 				
-			String pregCOLNOL4="En que año fue inagurado solemnemente el colegio";
+			String pregCOLNOL4="En que aÃ±o fue inagurado solemnemente el colegio";
 				String opcACOLNOL4="1935";
 				String opcBCOLNOL4="1930";
 				String opcCCOLNOL4="1926";
@@ -459,9 +558,36 @@ public class ListadoPreguntas {
 			String pregCOLNOL5="Con cuantas aulas comenzo a funcionar el colegio";
 				String opcACOLNOL5="Tres";
 				String opcBCOLNOL5="Nueve";
-				String opcCCOLNOL5="Quince";
+				String opcCCOLNOL5="Quince";	
+			
+			String pregCOLGER1="Juan Melchor Bosco Occhiena nació en...";
+				String opcACOLGER1="Italia."; //*
+				String opcBCOLGER1="Rumania.";
+				String opcCCOLGER1="España.";
+			
+			String pregCOLGER2="La Congregación Salesiana nace el...";
+				String opcACOLGER2="8 de enero de 1960 en Valparaiso (Chile).";
+				String opcBCOLGER2="18 de diciembre de 1859 en Valdocco (Turín)."; //*
+				String opcCCOLGER2="28 de febrero de 1902 en Madrid(España).";
+			
+			String pregCOLGER3="El nombre secular del PAPA es...";
+				String opcACOLGER3="Ben Stiller.";
+				String opcBCOLGER3="Humberto Janeiro López.";
+				String opcCCOLGER3="Jorge Mario Bergoglio."; //*
+			
+			String pregCOLGER4="¿Deben practicar los católicos la abstinencia alguna vez al año?";
+				String opcACOLGER4="Sí."; //*
+				String opcBCOLGER4="No.";
+				String opcCCOLGER4="Solo el día de reyes.";
+			
+			String pregCOLGER5="¿Qué significa la palabra biblia?";
+				String opcACOLGER5="Libro sagrado.";
+				String opcBCOLGER5="La ley.";
+				String opcCCOLGER5="Los libros."; //*
+
+	
 				
-			//LISTADO ARRAY DE PROGRAMACI�N	
+			//LISTADO ARRAY DE PROGRAMACIï¿½N	
 				
 				
 				
@@ -563,7 +689,7 @@ public class ListadoPreguntas {
 
 	
 	
-	// M�TODOS
+	// Mï¿½TODOS
 			public void imprimirPregPROG() {
 				String [][] listadoProgramacion ={
 						
