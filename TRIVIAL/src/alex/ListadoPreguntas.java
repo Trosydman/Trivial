@@ -643,13 +643,10 @@ public class ListadoPreguntas {
 				String opcCCOLGER4="Solo el día de reyes.";
 			
 			String pregCOLGER5="¿Qué significa la palabra biblia?";
-				String opcCCOLGER5="Los libros."; 
-				String opcACOLGER5="Libro sagrado.";
-				String opcBCOLGER5="La ley.";
-<<<<<<< HEAD
-				
-=======
-				String opcCCOLGER5="Los libros."; //*
+				String opcACOLGER5="Los libros."; 
+				String opcBCOLGER5="Libro sagrado.";
+				String opcCCOLGER5="La ley.";
+
 				
 			String pregCOLFEL1="¿Cual es el año de escritura de los terrenos donde esta hubicado el colegio Salesianos San Pedro?";
 				String opcACOLFEL1="1925";
@@ -677,7 +674,7 @@ public class ListadoPreguntas {
 				String opcACOLFEL5="COLSPE.";
 				String opcBCOLFEL5="Triana F.C.";
 				String opcCCOLFEL5="Balompédica Trianera.";
->>>>>>> origin/master
+
 
 	
 				
