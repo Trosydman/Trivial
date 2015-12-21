@@ -38,6 +38,7 @@ public class Tablero {
 		for (int i = 0; i < tablero.length; i++) {
 			tableroBI[i] = tablero[i].split("");
 		}
+		identificaCasilla();
 	}
 
 	public void imprimeTablero() {
