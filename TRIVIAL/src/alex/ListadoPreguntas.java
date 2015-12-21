@@ -720,7 +720,6 @@ public class ListadoPreguntas {
 			if(list[preg][res3].equals(list[preg][1]))
 				System.out.println("Respuesta correcta");
 			break;
-		
 		}
 		
 		
