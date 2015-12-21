@@ -12,11 +12,24 @@ public class TesterCarlos {
 		
 		
 		tabl.imprimeTablero();
+		
+		for (int i = 0; i < 3; i++) {
+			tabl.tableroBI[eqJug.getPosEq()[0]][eqJug.getPosEq()[1]+i]=eqJug.getJugadores()[0].substring(0,3).toUpperCase().substring(i, i+1);
+		}
+		
+		tabl.imprimeTablero();
+		
+		for (int i = 0; i < 3; i++) {
+			tabl.tableroBI[eqEq.getPosEq()[0]][eqEq.getPosEq()[1]+i]=eqEq.getNombreEq().substring(0,3).toUpperCase().substring(i, i+1);
+		}
+		
+		tabl.imprimeTablero();
+		
 		tabl.identificaCasilla();
 		
-		for (int i = 0; i < Tablero.casillasTabl.length; i++) {
-			for (int j = 0; j < Tablero.casillasTabl[i].length; j++) {
-				System.out.println(Tablero.casillasTabl[i][j]);
+		for (int i = 0; i < tabl.casillasTabl.length; i++) {
+			for (int j = 0; j < tabl.casillasTabl[i].length; j++) {
+				System.out.println(tabl.casillasTabl[i][j]);
 			}
 		}
 //		String jug1;

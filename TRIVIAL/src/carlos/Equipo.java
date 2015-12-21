@@ -13,7 +13,7 @@ public class Equipo {
 
 	// CONSTRUCTORES
 	public Equipo(String jugadores) {
-		Equipo.numEq++;
+		Equipo.numEq+=1;
 		this.jugadores[0] = jugadores;
 		/*
 		 * La posición (31,13) representa la casilla inicial desde dónde
@@ -78,10 +78,43 @@ public class Equipo {
 	// MÉTODOS
 
 	// GETTERS, SETTERS Y TOSTRINGS
+	
 	@Override
 	public String toString() {
 		return "Equipo [nombreEq=" + nombreEq + ", jugadores=" + Arrays.toString(jugadores) + ", quesitos="
 				+ Arrays.toString(quesitos) + ", posEq=" + Arrays.toString(posEq) + "]";
+	}
+
+	public String getNombreEq() {
+		return nombreEq;
+	}
+
+	public void setNombreEq(String nombreEq) {
+		this.nombreEq = nombreEq;
+	}
+
+	public String[] getJugadores() {
+		return jugadores;
+	}
+
+	public void setJugadores(String[] jugadores) {
+		this.jugadores = jugadores;
+	}
+
+	public boolean[] getQuesitos() {
+		return quesitos;
+	}
+
+	public void setQuesitos(boolean[] quesitos) {
+		this.quesitos = quesitos;
+	}
+
+	public int[] getPosEq() {
+		return posEq;
+	}
+
+	public void setPosEq(int[] posEq) {
+		this.posEq = posEq;
 	}
 
 }

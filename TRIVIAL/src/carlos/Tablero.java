@@ -2,7 +2,7 @@ package carlos;
 
 public class Tablero {
 	String[][] tableroBI = new String[28][69];
-	static Casilla[][] casillasTabl = new Casilla[7][7];
+	Casilla[][] casillasTabl = new Casilla[7][7];
 	// String princTab = "┏━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━┓";
 	// String finTab = "┗━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━┛";
 	String[] tablero = { "********* +++++++++ ///////// *===*===* --------- +++++++++ /////////",
