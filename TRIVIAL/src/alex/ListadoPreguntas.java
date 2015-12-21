@@ -377,6 +377,35 @@ public class ListadoPreguntas {
 			String opcBHTMLGER5="<hr>"; //*
 			String opcCHTMLGER5="<line>";	
 			
+		String pregHTMLFEL1="Indica el elemento para que un texto aparezca con sombras.";
+			String opcAHTMLFEL1="text-shadows.";
+			String opcBHTMLFEL1="text-align.";
+			String opcCHTMLFEL1="text-indent.";
+
+
+		String pregHTMLFEL2="La fuente 'arial black' a que tipo de fuente corresponde.";
+			String opcAHTMLFEL2="sans-serif.";
+			String opcBHTMLFEL2="serif.";
+			String opcCHTMLFEL2="fantasy.";
+
+
+		String pregHTMLFEL3="'em' es una...";
+			String opcAHTMLFEL3="medida.";
+			String opcBHTMLFEL3="etiqueta.";
+			String opcCHTMLFEL3="condicion.";
+
+
+		String pregHTMLFEL4="Las siglas 'CSS' corresponde a:";
+			String opcAHTMLFEL4="Cascading Style Sheets.";
+			String opcBHTMLFEL4="Center Style Sheets.";
+			String opcCHTMLFEL4="Can She Shave";
+
+		String pregHTMLFEL5="Las siglas 'HTML' corresponde a:";
+			String opcAHTMLFEL5="Hyper Text Markup Language";
+			String opcBHTMLFEL5="Hall To Main Language";
+			String opcCHTMLFEL5="High Text Markup Language";
+
+			
 			//PREGUNTAS DE SISTEMAS
 
 			String pregSISALE1=" ï¿½El nï¿½mero 1010 en binario a quï¿½ nï¿½mero decimal corresponde?";
@@ -481,6 +510,35 @@ public class ListadoPreguntas {
 				String opcBSISGER5="Monitor.";
 				String opcCSISGER5="Teclado."; //*
 				
+			String pregSISFEL1="Un diso duro dinamico se denomina:";
+				String opcASISFEL1="SDD";
+				String opcBSISFEL1="USB";
+				String opcCSISFEL1="HDD";
+
+
+			String pregSISFEL2="El conectorIEEE1394 conecta a...";
+				String opcASISFEL2="Camara de video.";
+				String opcBSISFEL2="Proyector.";
+				String opcCSISFEL2="Impresora láser.";
+
+
+			String pregSISFEL3="Cuantas clavijas tiene el conector en el PC de la corriente.";
+				String opcASISFEL3="3";
+				String opcBSISFEL3="1";
+				String opcCSISFEL3="2";
+
+
+			String pregSISFEL4="De que color es el conector de audio(entrante):";
+				String opcASISFEL4="Azul";
+				String opcBSISFEL4="Rosa.";
+				String opcCSISFEL4="Verde.";
+
+
+			String pregSISFEL5="¿Cómo se denomina la ley para calcular el valor de las resistencias?";
+				String opcASISFEL5="Ley de ohm.";
+				String opcBSISFEL5="Ley de kirchhoff.";
+				String opcCSISFEL5="Ley de de watt.";
+				
 			//PREGUNTAS SOBRE EL COLEGIO
 			
 			
@@ -584,6 +642,33 @@ public class ListadoPreguntas {
 				String opcACOLGER5="Libro sagrado.";
 				String opcBCOLGER5="La ley.";
 				String opcCCOLGER5="Los libros."; //*
+				
+			String pregCOLFEL1="¿Cual es el año de escritura de los terrenos donde esta hubicado el colegio Salesianos San Pedro?";
+				String opcACOLFEL1="1925";
+				String opcBCOLFEL1="1935";
+				String opcCCOLFEL1="1955";
+
+			String pregCOLFEL2="¿Qué Cardenal bendeció las instalaciones del Colegio Salesianos de Triana?";
+				String opcACOLFEL2="Cardenal Ilundain";
+				String opcBCOLFEL2="Cardenal Amigo Vallejo";
+				String opcCCOLFEL2="Cardenal Bueno Monreal";
+
+
+			String pregCOLFEL3="¿Qué año fue inaugurada la Capilla de Maria Auxiliadora(actual Capilla San Juan Bosco)?";
+				String opcACOLFEL3="1944";
+				String opcBCOLFEL3="1934";
+				String opcCCOLFEL3="1962";
+
+
+			String pregCOLFEL4="¿Qué director celebró el 75 aniversario de la Casa Salesiana en Triana?";
+				String opcACOLFEL4="José Carmelo Pulido Morales";
+				String opcBCOLFEL4="Francisco Vázquez Adorna";
+				String opcCCOLFEL4="Fernando Báñez Martín";
+
+			String pregCOL5FEL5="A base de alumnos del Colegio de los Salesianos de Triana ¿qué equipo en los años 70 se forjó en este colegio?";
+				String opcACOLFEL5="COLSPE.";
+				String opcBCOLFEL5="Triana F.C.";
+				String opcCCOLFEL5="Balompédica Trianera.";
 
 	
 				
