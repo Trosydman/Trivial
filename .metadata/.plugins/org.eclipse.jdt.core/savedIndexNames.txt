@@ -1,6 +1,0 @@
-INDEX VERSION 1.127+F:\apuntes\Programación\Trivial\.metadata\.plugins\org.eclipse.jdt.core
-1249452966.index
-3811948445.index
-1936551660.index
-2689061861.index
-4247270281.index
