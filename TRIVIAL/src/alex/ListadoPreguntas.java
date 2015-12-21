@@ -1,23 +1,27 @@
 package alex;
 
+import java.util.Random;
+
+import leer_por_teclado.Leer;
+
 public class ListadoPreguntas {
 
-	// PREGUNTAS DE PROGAMACIï¿½N
+	// PREGUNTAS DE PROGAMACIÓN
 
-	String pregProgALE1 = " ï¿½Que es una cadena?";
+	String pregProgALE1 = " ¿Qué es una cadena?";
 	String opcAProgALE1 = " Es una clase que no puede ser instanciada";
 	String opcBProgALE1 = " Secuencia de caracteres delimitada entre dobles comillas";
 	String opcCProgALE1 = " Secuencia de caracteres delimitada entre comillas simples";
 
-	String pregProgALE2 = "ï¿½Cuï¿½l es la descripciï¿½n que crees que define mejor el concepto 'clase' en la programaciï¿½n orientada a objetos?";
+	String pregProgALE2 = "¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programaciónn orientada a objetos?";
 	String opcAProgALE2 = " Es un tipo particular de variable";
 	String opcBProgALE2 = " Es un modelo o plantilla a partir de la cual creamos objetos";
 	String opcCProgALE2 = " Es una categoria de datos ordenada secuencialmente";
 
-	String pregProgALE3 = " ï¿½Quï¿½ elementos crees que definen a un objeto?";
+	String pregProgALE3 = " ¿Qué elementos crees que definen a un objeto?";
 	String opcAProgALE3 = " Sus cardinalidad y su tipo";
-	String opcBProgALE3 = " Sus atributos y sus mï¿½todos";
-	String opcCProgALE3 = " La forma en que establece comunicaciï¿½n e intercambia mensajes ";
+	String opcBProgALE3 = " Sus atributos y sus métodos";
+	String opcCProgALE3 = " La forma en que establece comunicación e intercambia mensajes ";
 
 	String pregProgALE4 = " ï¿½Quï¿½ significa instanciar una clase?";
 	String opcAProgALE4 = " Duplicar una clase";
@@ -667,14 +671,61 @@ public class ListadoPreguntas {
 				{ pregProgCAR5, opcAProgCAR5, opcBProgCAR5, opcCProgCAR5 },
 
 		};
-
-		for (int i = 0, j = 0; i < 10; i++) {
-			System.out.println(listadoProgramacion[i][j] + "\n" + "\t" + "a) " + listadoProgramacion[i][j + 1] + "\n"
-					+ "\t" + "b) " + listadoProgramacion[i][j + 2] + "\n" + "\t" + "c) "
-					+ listadoProgramacion[i][j + 3]);
-			System.out.println(" ");
-		}
+		
+		
+		Random num = new Random(System.nanoTime());
+		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta2;
+		int numRespuesta3;
+		
+		
+		int numPregunta = num.nextInt((listadoProgramacion.length - 1 ) - 0 + 1) + 0;
+		
+			System.out.println(listadoProgramacion[numPregunta][0]);
+			System.out.println( "\t" + "a) " + listadoProgramacion[numPregunta][numRespuesta1]);
+		
+			do{
+			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			}while (numRespuesta1 == numRespuesta2);
+	
+			System.out.println( "\t" + "b) " + listadoProgramacion[numPregunta][numRespuesta2]);
+			
+			do{
+				numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+				}while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+			
+			
+			
+			System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
+			System.out.println("Introduzca la respuesta(1,2,3)");
+			
+			comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1,numRespuesta2,numRespuesta3);
+			
 	}
+		
+	public void  comprobarRespuesta(String[][] list, int preg, int res1,int res2,int res3){
+		
+		
+		
+		switch (Leer.datoInt()){
+		case 1:
+			if(list[preg][res1].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			break;
+		case 2:	
+			if(list[preg][res2].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			break;
+		case 3:
+			if(list[preg][res3].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			break;
+		
+		}
+		
+		
+	}
+	
 
 	public void imprimirPregBBDD() {
 		String[][] listadoBBDD = {
@@ -758,6 +809,12 @@ public class ListadoPreguntas {
 		}
 	}
 
+	
+	
+	
+	
+	
+	
 	// GETTERS, SETTERS Y TOSTRINGS
 
 }

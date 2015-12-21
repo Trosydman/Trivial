@@ -6,7 +6,9 @@ public class TesterAlex {
 
 		
 		
+		ListadoPreguntas list = new ListadoPreguntas();
 		
+		list.imprimirPregPROG();
 		
 		
 		
