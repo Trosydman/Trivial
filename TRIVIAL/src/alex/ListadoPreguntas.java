@@ -111,28 +111,28 @@ public class ListadoPreguntas {
 		    String opcCProgNOL5="Cuando es llamado por un objeto";
 		    
 		String pregProgGER1="Los datos elementales están compuestos por...";
-			String opcAProgGER1="Númericos, Alfanuméricos y Lógicos/Booleanos."; //*
+			String opcAProgGER1="Númericos, Alfanuméricos y Lógicos/Booleanos."; 
 			String opcBProgGER1="Númericos, Alfanuméricos y Cardinales.";
 			String opcCProgGER1="Númericos, Hexadecimales y Lógicos/Booleanos.";
 
 		String pregProgGER2="En la tabla de Tokens podemos encontrar palabras como...";
-			String opcAProgGER2="break, new, true, return, final."; //*
+			String opcAProgGER2="break, new, true, return, final."; 
 			String opcBProgGER2="break, old, true, return, final.";
 			String opcCProgGER2="break, old, true, retorno, final.";
 
 		String pregProgGER3="En llas estructuras de repetición podemos encontrarnos con ...";
-			String opcAProgGER3="while, do...while y for."; //*
+			String opcAProgGER3="while, do...while y for."; 
 			String opcBProgGER3="while, dont't...while y forgiven.";
 			String opcCProgGER3="while, do...while y forgiven.";
 
 		String pregProgGER4="En las estructuras de selección podemos encontrar...";
-			String opcAProgGER4="if, if-also y switch.";
+			String opcAProgGER4="if, if-else y switch."; 
 			String opcBProgGER4="if, if-else y switcher.";
-			String opcCProgGER4="if, if-else y switch."; //*
+			String opcCProgGER4="if, if-also y switch.";
 
 		String pregProgGER5="Un valor de un boolean por defecto es...";
-			String opcAProgGER5="true.";
-			String opcBProgGER5="false."; //*
+			String opcAProgGER5="false.";
+			String opcBProgGER5="true."; 
 			String opcCProgGER5="ninguna, o se define o no compila.";
 
 
@@ -247,30 +247,30 @@ public class ListadoPreguntas {
 				String opcCBBDDNOL5="Un lenguaje de programacion";
 			
 		String pregBBDDGER1="En los ficheros indexados una de las características es...";
-				String opcABBDDGER1="El lento acceso."; //*
+				String opcABBDDGER1="El lento acceso."; 
 				String opcBBBDDGER1="El acceso rápido o lento según la rapidez del procesador.";
 				String opcCBBDDGER1="El rápido acceso.";
 
 		String pregBBDDGER2="En los ficheros con resgistros de tamaño dinámico encontramos...";
-				String opcABBDDGER2="Difícil acceso, lo cual es una desventaja."; //*
+				String opcABBDDGER2="Difícil acceso, lo cual es una desventaja."; 
 				String opcBBBDDGER2="Difícil acceso, lo cual es una ventaja.";
 				String opcCBBDDGER2="Acceso remoto, lo cual es una desventaja.";
 
 
 		String pregBBDDGER3="En los ficheros con registros de tamaño estatico...";
-				String opcABBDDGER3="Hay difícil acceso y baja flexibilidad."; //*
+				String opcABBDDGER3="Hay difícil acceso y baja flexibilidad."; 
 				String opcBBBDDGER3="Hay fácil acceso y baja flexibilidad."; 
 				String opcCBBDDGER3="Hay fácil acceso y alta flexibilidad."; 
 
 		String pregBBDDGER4="Una propiedad de una tabla indica que...";
-				String opcABBDDGER4="Cada atributo de la tabla toma varios valores en cada tupla.";
-				String opcBBBDDGER4="Cada atributo de la tabla toma dos valores en cada tupla.";
-				String opcCBBDDGER4="Cada atributo de la tabla toma un solo valor en cada tupla."; //*
-
+				String opcABBDDGER4="Cada atributo de la tabla toma un solo valor en cada tupla.";
+				String opcBBBDDGER4="Cada atributo de la tabla toma varios valores en cada tupla.";
+				String opcCBBDDGER4="Cada atributo de la tabla toma dos valores en cada tupla.";
+			
 		String pregBBDDGER5="En los valores lógicos de una consulta nos podemos encontrar como operador de valores lógicos...";
-				String opcABBDDGER5="AND, OF, YES.";
+				String opcABBDDGER5="AND, OR, NOT."; 		
 				String opcBBBDDGER5="AND, OR, YES.";
-				String opcCBBDDGER5="AND, OR, NOT."; //*
+				String opcCBBDDGER5="AND, OF, YES.";
 				
 		//PREGUNTAS DE HTML	
 			
@@ -353,28 +353,29 @@ public class ListadoPreguntas {
 			String opcCHTMLNOL5="Cajas o contenedores";
 
 		String pregHTMLGER1="Una herramienta con la que podemos editar de manera eficiente HTML es... ";
-			String opcAHTMLGER1="Sublime Text."; //*
+			String opcAHTMLGER1="Sublime Text."; 
 			String opcBHTMLGER1="Sublime Texteo.";
 			String opcCHTMLGER1="Texteo Sublime.";
 		
 		String pregHTMLGER2="Elija la etiqueta apropiada para un texto en negrita.";
-			String opcAHTMLGER2="<bold>";
-			String opcBHTMLGER2="<bb>";
-			String opcCHTMLGER2="<b>"; //*
+			String opcAHTMLGER2="<b>"; 
+			String opcBHTMLGER2="<bold>";
+			String opcCHTMLGER2="<bb>";
+			
 		
 		String pregHTMLGER3="Elija la etiqueta que nos dá el título más grande.";
-			String opcAHTMLGER3="<h1>"; //*
+			String opcAHTMLGER3="<h1>"; 
 			String opcBHTMLGER3="<h6>";
 			String opcCHTMLGER3="<head>";
 		
 		String pregHTMLGER4="¿Qué etiqueta define un salto de línea?";
-			String opcAHTMLGER4="<br>"; //*
+			String opcAHTMLGER4="<br>"; 
 			String opcBHTMLGER4="<break>";
 			String opcCHTMLGER4="<linebreak>";
 		
 		String pregHTMLGER5="¿Qué etiqueta utilizamos para insertar una línea horizontal? ";
-			String opcAHTMLGER5="<br>";
-			String opcBHTMLGER5="<hr>"; //*
+			String opcAHTMLGER5="<hr>"; 
+			String opcBHTMLGER5="<br>";
 			String opcCHTMLGER5="<line>";	
 			
 			//PREGUNTAS DE SISTEMAS
@@ -457,29 +458,32 @@ public class ListadoPreguntas {
 				String opcCSISNOL5="Nueve";	
 			
 			String pregSISGER1="¿Qué es Byte?";
-				String opcASISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 8 bits contiguos."; //*
+				String opcASISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 8 bits contiguos."; 
 				String opcBSISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 16 bits contiguos.";
 				String opcCSISGER1="Es la unidad fundamental de datos en los ordenadores personales, un byte son 32 bits contiguos.";
 			
 			String pregSISGER2="¿Qué es ubunto?";
-				String opcASISGER2="Es una distribución Mac OS.";
-				String opcBSISGER2="Es una distribución Linux."; //*
+				String opcASISGER2="Es una distribución Linux."; 
+				String opcBSISGER2="Es una distribución Mac OS.";
 				String opcCSISGER2="Es una distribución de Windows,";
 			
 			String pregSISGER3="¿Qué es el bus?";
-				String opcASISGER3="Es una red de ordenadores conectada a la red Skynet. ";
-				String opcBSISGER3="Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
-				String opcCSISGER3="Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) "; //*
+				
+				String opcASISGER3="Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) "; 
+				String opcBSISGER3="Es una red de ordenadores conectada a la red Skynet. ";
+				String opcCSISGER3="Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
+				
 			
 			String pregSISGER4="¿Que es FAT?";
-				String opcASISGER4="Un sistema de archivos desarrollado para MS-DOS."; //*
+				String opcASISGER4="Un sistema de archivos desarrollado para MS-DOS."; 
 				String opcBSISGER4="Se le llama vulgarmente así a discos duros que pesan mucho.";
 				String opcCSISGER4="Es un tipo de Tarjetas gráficas con las que actualmente se juega al Fallout 4 a 120fps a 4K. ";
 			
 			String pregSISGER5="¿Cuál no es un dispositivo de salida?";
-				String opcASISGER5="Impresora.";
-				String opcBSISGER5="Monitor.";
-				String opcCSISGER5="Teclado."; //*
+				String opcASISGER5="Teclado."; 
+				String opcBSISGER5="Impresora.";
+				String opcCSISGER5="Monitor.";
+				
 				
 			//PREGUNTAS SOBRE EL COLEGIO
 			
@@ -561,29 +565,30 @@ public class ListadoPreguntas {
 				String opcCCOLNOL5="Quince";	
 			
 			String pregCOLGER1="Juan Melchor Bosco Occhiena nació en...";
-				String opcACOLGER1="Italia."; //*
+				String opcACOLGER1="Italia.";
 				String opcBCOLGER1="Rumania.";
 				String opcCCOLGER1="España.";
 			
 			String pregCOLGER2="La Congregación Salesiana nace el...";
-				String opcACOLGER2="8 de enero de 1960 en Valparaiso (Chile).";
-				String opcBCOLGER2="18 de diciembre de 1859 en Valdocco (Turín)."; //*
+				String opcACOLGER2="18 de diciembre de 1859 en Valdocco (Turín)."; 	
+				String opcBCOLGER2="8 de enero de 1960 en Valparaiso (Chile).";
 				String opcCCOLGER2="28 de febrero de 1902 en Madrid(España).";
 			
 			String pregCOLGER3="El nombre secular del PAPA es...";
-				String opcACOLGER3="Ben Stiller.";
-				String opcBCOLGER3="Humberto Janeiro López.";
-				String opcCCOLGER3="Jorge Mario Bergoglio."; //*
+				String opcACOLGER3="Jorge Mario Bergoglio."; 	
+				String opcBCOLGER3="Ben Stiller.";
+				String opcCCOLGER3="Humberto Janeiro López.";
 			
 			String pregCOLGER4="¿Deben practicar los católicos la abstinencia alguna vez al año?";
-				String opcACOLGER4="Sí."; //*
+				String opcACOLGER4="Sí."; 
 				String opcBCOLGER4="No.";
 				String opcCCOLGER4="Solo el día de reyes.";
 			
 			String pregCOLGER5="¿Qué significa la palabra biblia?";
+				String opcCCOLGER5="Los libros."; 
 				String opcACOLGER5="Libro sagrado.";
 				String opcBCOLGER5="La ley.";
-				String opcCCOLGER5="Los libros."; //*
+				
 
 	
 				
