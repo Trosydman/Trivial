@@ -47,7 +47,7 @@ public class Trivial {
 		String nomJug;
 		System.out.println("Indicamelo churrita:");
 		System.out.println("1.alone in the world");
-		System.out.println("2.sa peña");
+		System.out.println("2.sa peï¿½a");
 		menu=Leer.datoInt();
 		
 		switch(menu){
@@ -71,12 +71,34 @@ public class Trivial {
 			break;
 			
 		case 2:
+			
+			System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
+			jug=Leer.datoInt();
+			if(jug<=4 && jug>0){
+				
+				Equipo[] peticionEqs = new Equipo[jug]; 
+				
+				for(int i=0;i<peticionEqs.length;i++){
+					System.out.println("Diga el nombre del jugador"+peticionEqs[i]+":");
+					nomJug=Leer.dato();
+					
+				}
+				
+			}else{
+				System.out.println("churri te has colao");
+			}
+			
 			break;
 		}
 		
 		
 	}
 	 
+	
+	
+	
+	
+	
 	
 	//TODO metodo que va en jugar partida donde se comprueba el nombre con un aleatorio y el array de turnos
 	
@@ -87,9 +109,11 @@ public class Trivial {
 				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
 
-
+	//metodo para tirar el dado para saber los movimientos
 	public int dado(){
 		int num;
+		System.out.println("Intro para tirar los dados");
+		Leer.dato();
 		Random numAle= new Random();
 		num=numAle.nextInt(6-1)+1;
 		return num;
@@ -98,7 +122,8 @@ public class Trivial {
 	
 	
 	/*
-	 * metodo con switch eleccion individual equipo , luego cuantos son y luego creo los jugadores equipos
+	 * metodo con switch eleccion individual equipo , luego cuantos son 
+	 * y luego creo los jugadores equipos
 	 */
 	
 	
