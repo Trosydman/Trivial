@@ -40,11 +40,17 @@ public class Trivial {
 	
 	
 	//M�TODOS
-	//TODO termina switch de elecion de jugadores
+	
+	
+	
+	
+	
+	//ladilla termina switch de elecion de jugadores
 	public void jugarPartida(){
-		int menu;
-		int jug;
-		String nomJug;
+		int jug, menu;
+		
+		
+		
 		System.out.println("Indicamelo churrita:");
 		System.out.println("1.alone in the world");
 		System.out.println("2.sa pe�a");
@@ -53,46 +59,50 @@ public class Trivial {
 		switch(menu){
 		case 1:
 			
-			System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
-			jug=Leer.datoInt();
-			if (jug<=4 && jug>0){
-				
-				Equipo[] peticionEqs = new Equipo[jug]; 
-				
-				for(int i=0;i<peticionEqs.length;i++){
-					System.out.println("Diga el nombre del jugador"+peticionEqs[i]+":");
-					nomJug=Leer.dato();
+			do {
+				System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
+				jug=Leer.datoInt();
+			
+				if (jug<=4 && jug>0){
+						
+						//ladilla el syso se cambia por el metodo german
+						
+						cogerNombre(jug);
+						
 					
+				}else{
+					System.out.println("pichita te estas equivocando");
 				}
-				
-			}else{
-				System.out.println("pichita te estas equivocando");
-			}
+				}while(jug>4 && jug<=0);
 			break;
 			
 		case 2:
-			
+			//TODO  ladilla meter bucles
 			System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
 			jug=Leer.datoInt();
 			if(jug<=4 && jug>0){
 				
-				Equipo[] peticionEqs = new Equipo[jug]; 
+				//ladilla el syso se cambia por el metodo german
 				
-				for(int i=0;i<peticionEqs.length;i++){
-					System.out.println("Diga el nombre del jugador"+peticionEqs[i]+":");
-					nomJug=Leer.dato();
-					
-				}
+				cogerNombre(jug);
+				
+				
 				
 			}else{
 				System.out.println("churri te has colao");
 			}
 			
 			break;
+		
+		default:
+			System.out.println("no se contempla esa opcion");
+			break;
+		
 		}
-		
-		
+		System.out.println(eq1);
+		System.out.println(eq2);
 	}
+	
 	 
 	
 	
@@ -100,31 +110,99 @@ public class Trivial {
 	
 	
 	
-	//TODO metodo que va en jugar partida donde se comprueba el nombre con un aleatorio y el array de turnos
 	
-	@Override
-	public String toString() {
-		return "Trivial [eq1=" + eq1 + ", eq2=" + eq2 + ", eq3=" + eq3 + ", eq4=" + eq4 + ", turno="
-				+ Arrays.toString(turno) + ", dado()=" + dado() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
-	}
-
-	//metodo para tirar el dado para saber los movimientos
+	
+	
+	
+	
+	
+	
+	
+	
+	//ladilla metodo para tirar el dado para saber los movimientos
 	public int dado(){
-		int num;
+		int num,hasta=6, desde=1;
 		System.out.println("Intro para tirar los dados");
 		Leer.dato();
 		Random numAle= new Random();
-		num=numAle.nextInt(6-1)+1;
+		num=numAle.nextInt(hasta-desde+1)+desde;
 		return num;
 	}
 	
 	
 	
-	/*
-	 * metodo con switch eleccion individual equipo , luego cuantos son 
-	 * y luego creo los jugadores equipos
-	 */
+	
+	
+	
+	//ladilla pide los nombres de los jugadores y distribuye con un metodo el orden de los turnos
+	public void cogerNombre(int jug) {
+		int  numJ=1;
+		String nomJug;
+		
+		
+		turno= new Equipo[jug];
+		
+		for(int i=0;i<jug;i++){
+			System.out.println("Diga el nombre del jugador "+numJ+":");
+			nomJug=Leer.dato();
+			numJ++;
+			
+			switch(i) {
+				case 0:
+					eq1=new Equipo(nomJug);
+					atribuirTurno(eq1);
+					break;
+			
+				case 1:
+					eq2=new Equipo(nomJug);
+					atribuirTurno(eq2);
+					break;
+			
+				case 2:
+					eq3=new Equipo(nomJug);
+					atribuirTurno(eq3);
+					break;
+			
+				case 3:
+					eq4=new Equipo(nomJug);
+					atribuirTurno(eq4);
+					break;
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// ladilla metodo para asignar turno aleatoriamente
+	
+	
+		public void atribuirTurno(Equipo eqTurn){
+			
+			int num,hasta=turno.length-1,desde=0;
+			boolean fin = false;
+			
+			do {
+				Random numAle=new Random();
+				num=numAle.nextInt(hasta-desde+1)+desde;
+				if(turno[num]==null){
+					turno[num]=eqTurn;
+					fin = true;
+				}
+			}while(turno[num]!=null && fin == false);
+		}
+	
+	
+	
+	
+	
+	
 	
 	
 	//GETTERS, SETTERS Y TOSTRINGS
