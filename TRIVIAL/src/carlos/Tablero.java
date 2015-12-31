@@ -3,8 +3,6 @@ package carlos;
 public class Tablero {
 	String[][] tableroBI = new String[28][69];
 	Casilla[][] casillasTabl = new Casilla[7][7];
-	// String princTab = "┏━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━┓";
-	// String finTab = "┗━━━━━━━━━━━━━━━━━━━━ ━━━━━━━━━━━━━━━━━━━━┛";
 	String[] tablero = { "********* +++++++++ ///////// *===*===* --------- +++++++++ /////////",
 			"*       * +       + /       / =       = -       - +       + /       /",
 			"*       * +       + /       / =       = -       - +       + /       /",
@@ -40,22 +38,7 @@ public class Tablero {
 		}
 		identificaCasilla();
 	}
-
-	public void imprimeTablero() {
-		// System.out.println(princTab);
-		for (int i = 0; i < tableroBI.length; i++) {
-			for (int j = 0, cont = 1; j < tableroBI[i].length; j++) {
-				System.out.print(tableroBI[i][j]);
-				if (cont == tablero[i].length()) {
-					System.out.println("");
-					cont = 1;
-				} else
-					cont++;
-			}
-		}
-		// System.out.println(finTab);
-	}
-
+	
 	public void identificaCasilla() {
 		int contCasFIL = 0;
 		int contCasCOL = 0;
@@ -63,6 +46,7 @@ public class Tablero {
 		for (int i = 0; i < tableroBI.length; i += 4) {
 			for (int j = 0; j < tableroBI[i].length; j += 10) {
 				if (tableroBI[i][j] != " ") {
+					//TODO tal vez le venga mejor un switch...
 					if (tableroBI[i][j].equals("*")) {
 						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.PROG);
 					} else if (tableroBI[i][j].equals("-")) {
@@ -85,6 +69,24 @@ public class Tablero {
 			contCasCOL = 0;
 		}
 
+	}
+
+	public void imprimeTablero() {
+		for (int i = 0; i < tableroBI.length; i++) {
+			for (int j = 0; j < tableroBI[i].length; j++) {
+				System.out.print(tableroBI[i][j]);
+			}
+			System.out.println();
+		}
+	}
+	
+	public void establecerEqTablero(Equipo eq) {
+		for (int i = 0; i < 3; i++) {
+			if(eq.getJugador() != null)
+				tableroBI[eq.getPosEq()[0]][eq.getPosEq()[1]+i]=eq.getJugador().substring(0,3).toUpperCase().substring(i, i+1);
+			else
+				tableroBI[eq.getPosEq()[0]][eq.getPosEq()[1]+i]=eq.getNombreEq().substring(0,3).toUpperCase().substring(i, i+1);
+		}
 	}
 
 }
