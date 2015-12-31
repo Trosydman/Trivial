@@ -4,17 +4,27 @@ import java.util.Arrays;
 
 public class Equipo {
 	// ATRIBUTOS
-	public static int numEq = 0;
+	/*
+	 * El número de "equipo2(numEq) tiene que ser static para que
+	 * el resto de números de "equipos" sea correlativo, sino 
+	 * todos serían el mismo número.
+	 */
+	private static int numEq = 0;
 	private String nombreEq;
 	//Creo que los nombres de los jugadores no son imprescindibles
-	private String[] jugadores = new String[6];
+	private String jugador;
 	private boolean[] quesitos = new boolean[6];
 	private int[] posEq = new int[2];
 
+	
+	
 	// CONSTRUCTORES
-	public Equipo(String jugadores) {
+	public Equipo(String nombre, boolean isEquipo) {
 		Equipo.numEq+=1;
-		this.jugadores[0] = jugadores;
+		if(isEquipo)
+			this.nombreEq = nombre;
+		else
+			this.jugador = nombre;
 		/*
 		 * La posición (31,13) representa la casilla inicial desde dónde
 		 * todos empiezan la partida.
@@ -43,45 +53,17 @@ public class Equipo {
 		}
 	}
 
-	public Equipo(String nombreEquipo, String[] jugadores) {
-		Equipo.numEq++;
-		this.nombreEq = nombreEquipo;// Esto será para escribirlo en las
-										// casillas: nombreEquipo.substring(0,
-										// 3).toUpperCase();
-		this.jugadores = jugadores;
-		
-		/*
-		 * Aclaraciones en el constructor anterior.
-		 */
-		switch (Equipo.numEq) {
-		case 1:
-			posEq[0]=13;
-			posEq[1]=31;
-			break;
-		case 2:
-			posEq[0]=13;
-			posEq[1]=31+4;
-			break;
-		case 3:
-			posEq[0]=13+1;
-			posEq[1]=31;
-			break;
-		case 4:
-			posEq[0]=13+1;
-			posEq[1]=31+4;
-			break;
-		default:
-			break;
-		}
-	}
-
+	
+	
 	// MÉTODOS
 
+	
+	
 	// GETTERS, SETTERS Y TOSTRINGS
 	
 	@Override
 	public String toString() {
-		return "Equipo [nombreEq=" + nombreEq + ", jugadores=" + Arrays.toString(jugadores) + ", quesitos="
+		return "Equipo [nombreEq=" + nombreEq + ", jugadores=" + jugador + ", quesitos="
 				+ Arrays.toString(quesitos) + ", posEq=" + Arrays.toString(posEq) + "]";
 	}
 
@@ -93,12 +75,12 @@ public class Equipo {
 		this.nombreEq = nombreEq;
 	}
 
-	public String[] getJugadores() {
-		return jugadores;
+	public String getJugador() {
+		return jugador;
 	}
 
-	public void setJugadores(String[] jugadores) {
-		this.jugadores = jugadores;
+	public void setJugador(String jugador) {
+		this.jugador = jugador;
 	}
 
 	public boolean[] getQuesitos() {
