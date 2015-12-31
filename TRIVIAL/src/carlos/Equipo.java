@@ -20,6 +20,13 @@ public class Equipo {
 	
 	// CONSTRUCTORES
 	public Equipo(String nombre, boolean isEquipo) {
+		/*
+		 * Si se quisiera volver a jugar, el número de equipo
+		 * tiene que inicializarse a 0;
+		 */
+		if(Equipo.numEq == 4)
+			Equipo.numEq=0;
+		
 		Equipo.numEq+=1;
 		if(isEquipo)
 			this.nombreEq = nombre;
