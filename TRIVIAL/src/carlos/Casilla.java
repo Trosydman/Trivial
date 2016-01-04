@@ -13,6 +13,7 @@ public class Casilla {
 	private int[] posEq4 = new int[2];
 	
 	private int tipo;
+
 	private boolean quesito;
 	
 	public Casilla(int posFIL, int posCOL, int tipo) {
@@ -29,6 +30,10 @@ public class Casilla {
 		this.posEq4[1] = posCOL+1;
 		
 		this.tipo = tipo;
+	}
+	
+	public int getTipo() {
+		return tipo;
 	}
 	
 	public int[] getPosEq1() {
