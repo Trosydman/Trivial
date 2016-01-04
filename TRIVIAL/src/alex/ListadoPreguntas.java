@@ -137,30 +137,30 @@ public class ListadoPreguntas {
 
 	// PREGUNTAS DE BASE DE DATOS
 
-	String pregBBDDALE1 = " ï¿½Quï¿½ es el grado de una relaciï¿½n?";
-	String opcABBDDALE1 = "  Es el nï¿½mero de atributos que contiene la relaciï¿½n";
-	String opcBBBDDALE1 = " Es el nï¿½mero de tuplas que contiene la relaciï¿½n";
+	String pregBBDDALE1 = " ¿Qué es el grado de una relación?";
+	String opcABBDDALE1 = " Es el número de atributos que contiene la relación";
+	String opcBBBDDALE1 = " Es el número de tuplas que contiene la relación";
 	String opcCBBDDALE1 = " Ninguna de las respuestas anteriores es correcta";
 
 	String pregBBDDALE2 = " Oracle es un SGBD que cumple el modelo:";
-	String opcABBDDALE2 = " Modelo de base de datos en red";
-	String opcBBBDDALE2 = " Modelo de base de datos jerï¿½rquico";
-	String opcCBBDDALE2 = " Modelo de base de datos relacional";
+	String opcABBDDALE2 = " Modelo de base de datos relacional";
+	String opcBBBDDALE2 = " Modelo de base de datos jerárquico";
+	String opcCBBDDALE2 = " Modelo de base de datos en red";
 
-	String pregBBDDALE3 = " La sentencia SQL ï¿½SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULLï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
-	String opcABBDDALE3 = " Visualiza todos los empleados que no tienen comisiï¿½n";
-	String opcBBBDDALE3 = " Visualiza todos los empleados con sus respectivos salarios y comisiones";
+	String pregBBDDALE3 = " La sentencia SQL “SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULL”, ¿qué resultado tendría?";
+	String opcABBDDALE3 = " Visualiza todos los empleados con sus respectivos salarios y comisiones";
+	String opcBBBDDALE3 = " Visualiza todos los empleados que no tienen comisión";
 	String opcCBBDDALE3 = " Ninguna de las respuestas anteriores es correcta";
 
-	String pregBBDDALE4 = " La sentencia SQL ï¿½SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE ï¿½A_%ï¿½ ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
-	String opcABBDDALE4 = " Visualiza todos los productos que empiecen con el carï¿½cter ï¿½Aï¿½ despuï¿½s el carï¿½cter ï¿½_ï¿½ y despuï¿½s el carï¿½cter %";
-	String opcBBBDDALE4 = " Visualiza todos los productos que no empiecen con el carï¿½cter ï¿½Aï¿½ ni despuï¿½s tengan el carï¿½cter ï¿½_ï¿½ ni despuï¿½s el carï¿½cter %";
-	String opcCBBDDALE4 = " Visualiza todos los productos que no empiezan con A y despuï¿½s no tienen otro carï¿½cter mï¿½s como mï¿½nimo";
+	String pregBBDDALE4 = " La sentencia SQL “SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE ‘A_%’ ”, ¿qué resultado tendría?";
+	String opcABBDDALE4 = " Visualiza todos los productos que no empiezan con A y después no tienen otro carácter más como mínimo";
+	String opcBBBDDALE4 = " Visualiza todos los productos que no empiecen con el carácter “A” ni después tengan el carácter “_” ni después el carácter %";
+	String opcCBBDDALE4 = " Visualiza todos los productos que empiecen con el carácter “A” después el carácter “_” y después el carácter %";
 
-	String pregBBDDALE5 = "La sentencia SQL ï¿½SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
-	String opcABBDDALE5 = " Visualiza los empleados que han gestionado el pedido nï¿½mero 10";
-	String opcBBBDDALE5 = " Visualiza los empleados que han realizado un nï¿½mero de pedidos igual a 10";
-	String opcCBBDDALE5 = " Visualiza todos los empleados y el nï¿½mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
+	String pregBBDDALE5 = "La sentencia SQL “SELECT AVG(salario*14) FROM empleados ”, ¿qué resultado tendría?";
+	String opcABBDDALE5 = " Visualiza la media de salario anual a partir del sueldo anual de todos los empleados";
+	String opcBBBDDALE5 = " Visualiza, para cada empleado, su media de salario al año";
+	String opcCBBDDALE5 = "  Visualiza, para cada empleado, su total de salario al año";
 
 	String pregBBDDCAR1 = "ï¿½Quï¿½ trimestre de BBDD viene con curvas?";
 	String opcABBDDCAR1 = "Todos vienen con curvas y vaselina gratis.";
@@ -264,30 +264,30 @@ public class ListadoPreguntas {
 
 	// PREGUNTAS DE HTML
 
-	String pregHTMLALE1 = " ï¿½Cuï¿½l es la forma correcta de insertar un comentario? ";
+	String pregHTMLALE1 = " ¿Cuál es la forma correcta de insertar un comentario? ";
 	String opcAHTMLALE1 = " <!--...--> ";
-	String opcBHTMLALE1 = " <ï¿½--...--!>";
+	String opcBHTMLALE1 = " <!--...--!>";
 	String opcCHTMLALE1 = " <comment>";
 
-	String pregHTMLALE2 = "ï¿½Quï¿½ entiende por HTML?";
-	String opcAHTMLALE2 = " Hyper Text Mask Language";
+	String pregHTMLALE2 = "¿Qué se entiende por HTML?";
+	String opcAHTMLALE2 = " Hyper Text Markup Language";
 	String opcBHTMLALE2 = " Hard Text Markup Language";
-	String opcCHTMLALE2 = " Hyper Text Markup Language";
+	String opcCHTMLALE2 = " Hyper Text Mask Language";
 
-	String pregHTMLALE3 = " ï¿½Cï¿½mo definimos un color en sistema hexadecimal?";
-	String opcAHTMLALE3 = " <beige>";
-	String opcBHTMLALE3 = " <245,245,220>s";
-	String opcCHTMLALE3 = " <#F5F5DC> ";
+	String pregHTMLALE3 = " ¿Cómo definimos un color en sistema hexadecimal?";
+	String opcAHTMLALE3 = " <#F5F5DC>";
+	String opcBHTMLALE3 = " <245,245,220>";
+	String opcCHTMLALE3 = " <beige>";
 
-	String pregHTMLALE4 = " ï¿½Quï¿½ etiquetas pueden figurar en la secciï¿½n <head>?";
-	String opcAHTMLALE4 = "<style>, <meta>, <table>";
-	String opcBHTMLALE4 = " link>, <title>, <base>";
+	String pregHTMLALE4 = " ¿Qué etiquetas pueden figurar en la sección <head>?";
+	String opcAHTMLALE4 = " <link>, <title>, <base>";
+	String opcBHTMLALE4 = " <style>, <meta>, <table>";
 	String opcCHTMLALE4 = " <link>, <meta>, <p>";
 
-	String pregHTMLALE5 = " ï¿½Cuï¿½l crees que es la mejor manera de aplicar estilos a una pï¿½gina web? ";
-	String opcAHTMLALE5 = " Incluir los estilos en las etiquetas HTML para que se carguen y ejecuten antes";
-	String opcBHTMLALE5 = " Incluirlos en un fichero externo vinculado a ese fichero HTML";
-	String opcCHTMLALE5 = " Incluirlos en la secciï¿½n cabecera ('head') para agruparlos en unmismo sitio en la misma pï¿½gina";
+	String pregHTMLALE5 = " ¿Cuál crees que es la mejor manera de aplicar estilos a una página web? ";
+	String opcAHTMLALE5 = " Incluirlos en un fichero externo vinculado a ese fichero HTML";
+	String opcBHTMLALE5 = " Incluir los estilos en las etiquetas HTML para que se carguen y ejecuten antes";
+	String opcCHTMLALE5 = " Incluirlos en la sección cabecera ('head') para agruparlos en unmismo sitio en la misma página";
 
 	String pregHTMLCAR1 = "Sigue la frase: Header arriba, el contenido en medio y...";
 	String opcAHTMLCAR1 = "... footer abajo.";
@@ -391,30 +391,30 @@ public class ListadoPreguntas {
 
 	// PREGUNTAS DE SISTEMAS
 
-	String pregSISALE1 = " ï¿½El nï¿½mero 1010 en binario a quï¿½ nï¿½mero decimal corresponde?";
+	String pregSISALE1 = "¿El número 1010 en binario a qué número decimal corresponde?";
 	String opcASISALE1 = " 10";
 	String opcBSISALE1 = " 100";
 	String opcCSISALE1 = " 1000";
 
-	String pregSISALE2 = "ï¿½Podemos aï¿½adir un disco duro nuevo a una mï¿½quina virtual que estï¿½ iniciada?";
-	String opcASISALE2 = " No podemos aï¿½adirlo hasta que la mï¿½quina no estï¿½ apagada ";
-	String opcBSISALE2 = " Sï¿½ podemos, pero es necesario reiniciar el sistema operativo iniciado para que ï¿½ste reconozca el nuevo disco";
-	String opcCSISALE2 = " Sï¿½ podemos y el disco duro es reconocido directamente por el sistema operativo que estï¿½ iniciado";
+	String pregSISALE2 = "¿Podemos añadir un disco duro nuevo a una máquina virtual que está iniciada?";
+	String opcASISALE2 = " No podemos añadirlo hasta que la máquina no esté apagada ";
+	String opcBSISALE2 = " Sí podemos, pero es necesario reiniciar el sistema operativo iniciado para que éste reconozca el nuevo disco";
+	String opcCSISALE2 = " Sí podemos, y el disco duro es reconocido directamente por el sistema operativo que esté iniciado";
 
-	String pregSISALE3 = " ï¿½Quï¿½ es una particiï¿½n?";
-	String opcASISALE3 = " Una divisiï¿½n lï¿½gica de un disco";
-	String opcBSISALE3 = " Una divisiï¿½n fï¿½sica de un disco";
-	String opcCSISALE3 = " Una divisiï¿½n de un disco que puede ser fï¿½sica o lï¿½gica";
+	String pregSISALE3 = " ¿Qué es una partición?";
+	String opcASISALE3 = " Una división lógica de un disco";
+	String opcBSISALE3 = " Una división física de un disco";
+	String opcCSISALE3 = " Una división de un disco que puede ser física o lógica";
 
-	String pregSISALE4 = " ï¿½Quï¿½ tipos de particiones existen?";
-	String opcASISALE4 = " Primarias y lï¿½gicas";
-	String opcBSISALE4 = " Primarias, extendidas y lï¿½gicas";
+	String pregSISALE4 = " ¿Qué tipos de particiones existen?";
+	String opcASISALE4 = " Primarias, extendidas y lógicas";
+	String opcBSISALE4 = " Primarias y lógicas";
 	String opcCSISALE4 = " Primarias y secundarias";
 
-	String pregSISALE5 = " ï¿½Quï¿½ significa sobrecargar (overload) un mï¿½todo?";
-	String opcASISALE5 = " Crear un mï¿½todo con el mismo nombre pero diferentes argumentos";
-	String opcBSISALE5 = " Cambiarle el nombre dejï¿½ndolo con la misma funcionalidad";
-	String opcCSISALE5 = " Aï¿½adirle funcionalidades a un mï¿½todo";
+	String pregSISALE5 = " ¿Qué significa sobrecargar (overload) un método?";
+	String opcASISALE5 = " Crear un método con el mismo nombre pero diferentes argumentos";
+	String opcBSISALE5 = " Cambiarle el nombre dejándolo con la misma funcionalidad";
+	String opcCSISALE5 = " Añadirle funcionalidades a un método";
 
 	String pregSISCAR1 = "Hemos trabajado con";
 	String opcASISCAR1 = "Arduino UNO";
@@ -456,66 +456,65 @@ public class ListadoPreguntas {
 	String opcBSISNOL3 = "Memoria mayor";
 	String opcCSISNOL3 = "Memoria rapida";
 
-	String pregSISNOL4 = "Que es subneting";
-	String opcASISNOL4 = "Es dividir una red IP fisica en subredes logicas";
-	String opcBSISNOL4 = "Es un conjunto de redes";
-	String opcCSISNOL4 = "Es una subred que roba bits destinados a host";
+	String pregSISNOL4 = " Que es subneting";
+	String opcASISNOL4 = " Es dividir una red IP fisica en subredes logicas";
+	String opcBSISNOL4 = " Es un conjunto de redes";
+	String opcCSISNOL4 = " Es una subred que roba bits destinados a host";
 
-	String pregSISNOL5 = "Cuantas clases de direcciones IP hay clasificadas";
-	String opcASISNOL5 = "Cuatro";
-	String opcBSISNOL5 = "Dos";
-	String opcCSISNOL5 = "Nueve";
+	String pregSISNOL5 = " Cuantas clases de direcciones IP hay clasificadas";
+	String opcASISNOL5 = " Cuatro";
+	String opcBSISNOL5 = " Dos";
+	String opcCSISNOL5 = " Nueve";
 
-	String pregSISGER1 = "¿Qué es Byte?";
-	String opcASISGER1 = "Es la unidad fundamental de datos en los ordenadores personales, un byte son 8 bits contiguos.";
-	String opcBSISGER1 = "Es la unidad fundamental de datos en los ordenadores personales, un byte son 16 bits contiguos.";
-	String opcCSISGER1 = "Es la unidad fundamental de datos en los ordenadores personales, un byte son 32 bits contiguos.";
+	String pregSISGER1 = " ¿Qué es Byte?";
+	String opcASISGER1 = " Es la unidad fundamental de datos en los ordenadores personales, un byte son 8 bits contiguos.";
+	String opcBSISGER1 = " Es la unidad fundamental de datos en los ordenadores personales, un byte son 16 bits contiguos.";
+	String opcCSISGER1 = " Es la unidad fundamental de datos en los ordenadores personales, un byte son 32 bits contiguos.";
 
-	String pregSISGER2 = "¿Qué es ubunto?";
-	String opcASISGER2 = "Es una distribución Linux.";
-	String opcBSISGER2 = "Es una distribución Mac OS.";
-	String opcCSISGER2 = "Es una distribución de Windows,";
+	String pregSISGER2 = " ¿Qué es ubunto?";
+	String opcASISGER2 = " Es una distribución Linux.";
+	String opcBSISGER2 = " Es una distribución Mac OS.";
+	String opcCSISGER2 = " Es una distribución de Windows,";
 
-	String pregSISGER3 = "¿Qué es el bus?";
+	String pregSISGER3 = " ¿Qué es el bus?";
+	String opcASISGER3 = " Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) ";
+	String opcBSISGER3 = " Es una red de ordenadores conectada a la red Skynet. ";
+	String opcCSISGER3 = " Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
 
-	String opcASISGER3 = "Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) ";
-	String opcBSISGER3 = "Es una red de ordenadores conectada a la red Skynet. ";
-	String opcCSISGER3 = "Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
+	String pregSISGER4 = " ¿Que es FAT?";
+	String opcASISGER4 = " Un sistema de archivos desarrollado para MS-DOS.";
+	String opcBSISGER4 = " Se le llama vulgarmente así a discos duros que pesan mucho.";
+	String opcCSISGER4 = " Es un tipo de Tarjetas gráficas con las que actualmente se juega al Fallout 4 a 120fps a 4K. ";
 
-	String pregSISGER4 = "¿Que es FAT?";
-	String opcASISGER4 = "Un sistema de archivos desarrollado para MS-DOS.";
-	String opcBSISGER4 = "Se le llama vulgarmente así a discos duros que pesan mucho.";
-	String opcCSISGER4 = "Es un tipo de Tarjetas gráficas con las que actualmente se juega al Fallout 4 a 120fps a 4K. ";
+	String pregSISGER5 = " ¿Cuál no es un dispositivo de salida?";
+	String opcASISGER5 = " Teclado.";
+	String opcBSISGER5 = " Impresora.";
+	String opcCSISGER5 = " Monitor.";
 
-	String pregSISGER5 = "¿Cuál no es un dispositivo de salida?";
-	String opcASISGER5 = "Teclado.";
-	String opcBSISGER5 = "Impresora.";
-	String opcCSISGER5 = "Monitor.";
+	String pregSISFEL1 = " Un diso duro dinamico se denomina:";
+	String opcASISFEL1 = " SDD";
+	String opcBSISFEL1 = " USB";
+	String opcCSISFEL1 = " HDD";
 
-	String pregSISFEL1 = "Un diso duro dinamico se denomina:";
-	String opcASISFEL1 = "SDD";
-	String opcBSISFEL1 = "USB";
-	String opcCSISFEL1 = "HDD";
+	String pregSISFEL2 = " El conectorIEEE1394 conecta a...";
+	String opcASISFEL2 = " Camara de video.";
+	String opcBSISFEL2 = " Proyector.";
+	String opcCSISFEL2 = " Impresora láser.";
 
-	String pregSISFEL2 = "El conectorIEEE1394 conecta a...";
-	String opcASISFEL2 = "Camara de video.";
-	String opcBSISFEL2 = "Proyector.";
-	String opcCSISFEL2 = "Impresora láser.";
+	String pregSISFEL3 = " Cuantas clavijas tiene el conector en el PC de la corriente.";
+	String opcASISFEL3 = " 3";
+	String opcBSISFEL3 = " 1";
+	String opcCSISFEL3 = " 2";
 
-	String pregSISFEL3 = "Cuantas clavijas tiene el conector en el PC de la corriente.";
-	String opcASISFEL3 = "3";
-	String opcBSISFEL3 = "1";
-	String opcCSISFEL3 = "2";
+	String pregSISFEL4 = " De que color es el conector de audio(entrante):";
+	String opcASISFEL4 = " Azul";
+	String opcBSISFEL4 = " Rosa.";
+	String opcCSISFEL4 = " Verde.";
 
-	String pregSISFEL4 = "De que color es el conector de audio(entrante):";
-	String opcASISFEL4 = "Azul";
-	String opcBSISFEL4 = "Rosa.";
-	String opcCSISFEL4 = "Verde.";
-
-	String pregSISFEL5 = "¿Cómo se denomina la ley para calcular el valor de las resistencias?";
-	String opcASISFEL5 = "Ley de ohm.";
-	String opcBSISFEL5 = "Ley de kirchhoff.";
-	String opcCSISFEL5 = "Ley de de watt.";
+	String pregSISFEL5 = " ¿Cómo se denomina la ley para calcular el valor de las resistencias?";
+	String opcASISFEL5 = " Ley de ohm.";
+	String opcBSISFEL5 = " Ley de kirchhoff.";
+	String opcCSISFEL5 = " Ley de de watt.";
 
 	// PREGUNTAS SOBRE EL COLEGIO
 
