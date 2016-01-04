@@ -37,7 +37,7 @@ public class Movimiento {
 				    x.setPosEq(pos[num[0]][num[1]+i].getPosEq4()) ;
 			  break;
 			  default:
-				    System.out.println("Equipo no existente.");
+				    System.out.println("Este equipo no existe.");
 			  break;	
 			}
 			
@@ -48,18 +48,90 @@ public class Movimiento {
 	
 	public void moverIzq(Equipo x, int dado, Casilla [][] pos)
 	{
-	  	
+	  	int []num=identifiCasilla(x, pos);
+	  	for (int i=1; i<=dado; i++)
+	  	{
+	  	   switch (x.getNumEq())
+	  	   {
+	  	   case 1:
+	  		     x.setPosEq(pos[num[0]][num[1]-i].getPosEq1()); 
+	  	   break;
+	  	   
+	  	   case 2:
+	  		     x.setPosEq(pos[num[0]][num[1]-i].getPosEq2());
+	  	   break;
+	  	   
+	  	   case 3:
+	  		     x.setPosEq(pos[num[0]][num[1]-i].getPosEq3());
+	  	   break;
+	  	   
+	  	   case 4:
+	  		     x.setPosEq(pos[num[0]][num[1]-i].getPosEq4());
+	  	   break;
+	  	   default:
+	  		     System.out.println("Este equipo no existe.");
+	  	   break;	      
+	  	   }
+	  	}
 	}
 	
 	
-	public void moverNort()
+	public void moverNort(Equipo x, int dado, Casilla [][] pos)
 	{
-		
+		int []num=identifiCasilla(x, pos);
+		for (int i=1; i<=dado; i++)
+		{
+			switch (x.getNumEq())
+			{
+			case 1:
+				  x.setPosEq(pos[num[0]-i][num[1]].getPosEq1());
+		    break;
+		    
+			case 2:
+				  x.setPosEq(pos[num[0]-i][num[1]].getPosEq2());
+			break;
+			
+			case 3:
+				  x.setPosEq(pos[num[0]-i][num[1]].getPosEq3());
+			break;
+			
+			case 4:
+				  x.setPosEq(pos[num[0]-i][num[1]].getPosEq4());
+		    break;
+		    default:
+		    	System.out.println("Este equipo no existe.");
+		    break;				  
+			}
+		}
 	}
 	
-	public void moverSur()
+	public void moverSur(Equipo x, int dado, Casilla[][]pos)
 	{
-		
+		int []num=identifiCasilla(x, pos);
+		for (int i=1; i<=dado; i++)
+		{
+			switch (x.getNumEq())
+			{
+			case 1:
+				  x.setPosEq(pos[num[0]+i][num[1]].getPosEq1());
+			break;
+			
+			case 2:
+				  x.setPosEq(pos[num[0]+i][num[1]].getPosEq2());
+			break;
+			
+			case 3:
+				  x.setPosEq(pos[num[0]+i][num[1]].getPosEq3());
+			break;
+			    
+			case 4:
+				  x.setPosEq(pos[num[0]+i][num[1]].getPosEq4());
+			break;
+			default:
+				 System.out.println("Este equipo no existe.");
+			break;	 
+			}
+		}
 	}
 
 	

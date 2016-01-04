@@ -14,7 +14,7 @@ public class TesterNorberto {
 		System.out.println(equip.toString());
 		tablet.establecerEqTablero(equip);
 		tablet.imprimeTablero();
-		mov.moverDer(equip, 4, tablet.getCasillasTabl());
+		mov.moverNort(equip, 3, tablet.getCasillasTabl());
 		tablet.establecerEqTablero(equip);
 		tablet.imprimeTablero();
 		System.out.println(equip.toString());
