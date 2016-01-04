@@ -2,6 +2,8 @@ package alex;
 
 import java.util.Random;
 
+import carlos.Casilla;
+import carlos.Equipo;
 import leer_por_teclado.Leer;
 
 public class ListadoPreguntas {
@@ -9,109 +11,109 @@ public class ListadoPreguntas {
 	// PREGUNTAS DE PROGAMACIÓN
 
 	String pregProgALE1 = " ¿Qué es una cadena?";
-	String opcAProgALE1 = " Es una clase que no puede ser instanciada";
-	String opcBProgALE1 = " Secuencia de caracteres delimitada entre dobles comillas";
+	String opcAProgALE1 = " Secuencia de caracteres delimitada entre dobles comillas";
+	String opcBProgALE1 = " Es una clase que no puede ser instanciada";
 	String opcCProgALE1 = " Secuencia de caracteres delimitada entre comillas simples";
 
-	String pregProgALE2 = "¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programaciónn orientada a objetos?";
-	String opcAProgALE2 = " Es un tipo particular de variable";
-	String opcBProgALE2 = " Es un modelo o plantilla a partir de la cual creamos objetos";
+	String pregProgALE2 = " ¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programaciónn orientada a objetos?";
+	String opcAProgALE2 = " Es un modelo o plantilla a partir de la cual creamos objetos";
+	String opcBProgALE2 = " Es un tipo particular de variable";
 	String opcCProgALE2 = " Es una categoria de datos ordenada secuencialmente";
 
 	String pregProgALE3 = " ¿Qué elementos crees que definen a un objeto?";
-	String opcAProgALE3 = " Sus cardinalidad y su tipo";
-	String opcBProgALE3 = " Sus atributos y sus métodos";
+	String opcAProgALE3 = " Sus atributos y sus métodos";
+	String opcBProgALE3 = " Sus cardinalidad y su tipo";
 	String opcCProgALE3 = " La forma en que establece comunicación e intercambia mensajes ";
 
-	String pregProgALE4 = " ï¿½Quï¿½ significa instanciar una clase?";
-	String opcAProgALE4 = " Duplicar una clase";
-	String opcBProgALE4 = " Conectar dos clases entre sï¿½";
-	String opcCProgALE4 = " Crear un objeto a partir de la clase";
+	String pregProgALE4 = " ¿Qué significa instanciar una clase?";
+	String opcAProgALE4 = " Crear un objeto a partir de la clase";
+	String opcBProgALE4 = " Conectar dos clases entre sí";
+	String opcCProgALE4 = " Duplicar una clase";
 
-	String pregProgALE5 = " ï¿½Quï¿½ significa sobrecargar (overload) un mï¿½todo?";
-	String opcAProgALE5 = " Crear un mï¿½todo con el mismo nombre pero diferentes argumentos";
-	String opcBProgALE5 = " Cambiarle el nombre dejï¿½ndolo con la misma funcionalidad";
-	String opcCProgALE5 = " Aï¿½adirle funcionalidades a un mï¿½todo";
+	String pregProgALE5 = " ¿Qué significa sobrecargar (overload) un método?";
+	String opcAProgALE5 = " Crear un método con el mismo nombre pero diferentes argumentos";
+	String opcBProgALE5 = " Cambiarle el nombre dejándolo con la misma funcionalidad";
+	String opcCProgALE5 = " Añadirle funcionalidades a un método";
 
-	String pregProgCAR1 = "ï¿½A quï¿½ hace referencia el comando 'syso'?";
-	String opcAProgCAR1 = "System.out.println();";
-	String opcBProgCAR1 = "System.out.println('');";
-	String opcCProgCAR1 = "System.out.println()";
+	String pregProgCAR1 = " ¿A qué hace referencia el comando 'syso'?";
+	String opcAProgCAR1 = " System.out.println();";
+	String opcBProgCAR1 = " System.out.println('');";
+	String opcCProgCAR1 = " System.out.println()";
 
-	String pregProgCAR2 = "Hemos aprendido que existen arrays unidimensionales y bidimensionales, pero...ï¿½se pueden hacer arrays con mï¿½s dimensiones?";
-	String opcAProgCAR2 = "Sï¿½, se pueden hacer de infinitas dimensiones.";
-	String opcBProgCAR2 = "No, sï¿½lo se pueden hacer de las 2 formas mencionadas.";
-	String opcCProgCAR2 = "No, el lï¿½mite estï¿½ en 6 dimensiones.";
+	String pregProgCAR2 = " Hemos aprendido que existen arrays unidimensionales y bidimensionales, pero...¿se pueden hacer arrays con más dimensiones?";
+	String opcAProgCAR2 = " Sí, se pueden hacer de infinitas dimensiones.";
+	String opcBProgCAR2 = " No, sólo se pueden hacer de las 2 formas mencionadas.";
+	String opcCProgCAR2 = " No, el límite está en 6 dimensiones.";
 
-	String pregProgCAR3 = "if(!isMenorDeEdad && calcetines.getColor().equals(Color.WHITE) && ropa.isFea?true:false)";
-	String opcAProgCAR3 = "cliente.darFajoBilletes()?System.out.println('No lo habï¿½a reconocido Cristiano, pase y disfrute.');:System.out.println('NO ENTRAS');";
-	String opcBProgCAR3 = "System.out.println('NO ENTRAS');";
-	String opcCProgCAR3 = "System.out.println('Puedes entrar.');";
+	String pregProgCAR3 = " if(!isMenorDeEdad && calcetines.getColor().equals(Color.WHITE) && ropa.isFea?true:false)";
+	String opcAProgCAR3 = " cliente.darFajoBilletes()?System.out.println('No lo había reconocido Cristiano, pase y disfrute.');:System.out.println('NO ENTRAS');";
+	String opcBProgCAR3 = " System.out.println('NO ENTRAS');";
+	String opcCProgCAR3 = " System.out.println('Puedes entrar.');";
 
-	String pregProgCAR4 = "ï¿½Quï¿½ es un String?";
-	String opcAProgCAR4 = "Un objeto, aunque le puedas pasar directamente una cadena";
-	String opcBProgCAR4 = "Un tipo de variable, ya que se le puede pasar directamente una cadena";
-	String opcCProgCAR4 = "Un atributo";
+	String pregProgCAR4 = " ¿Qué es un String?";
+	String opcAProgCAR4 = " Un objeto, aunque le puedas pasar directamente una cadena";
+	String opcBProgCAR4 = " Un tipo de variable, ya que se le puede pasar directamente una cadena";
+	String opcCProgCAR4 = " Un atributo";
 
-	String pregProgCAR5 = "El Javadoc se genera automï¿½ticamente al correr el programa en Eclipse.";
-	String opcAProgCAR5 = "Falso, se crea de forma independiente.";
-	String opcBProgCAR5 = "verdadero.";
-	String opcCProgCAR5 = "Si se instala la extensiï¿½n previamente sï¿½, ya que no viene por defecto.";
+	String pregProgCAR5 = " El Javadoc se genera automáticamente al correr el programa en Eclipse.";
+	String opcAProgCAR5 = " Falso, se crea de forma independiente.";
+	String opcBProgCAR5 = " verdadero.";
+	String opcCProgCAR5 = " Si se instala la extensión previamente sí, ya que no viene por defecto.";
 
-	String pregProgFEL1 = "Las instancias de una clase son:";
-	String opcAProgFEL1 = "Los objetos creados.";
-	String opcBProgFEL1 = "Darle valores a todos los atributos.";
-	String opcCProgFEL1 = "Establecer los constructores de la clase.";
+	String pregProgFEL1 = " Las instancias de una clase son:";
+	String opcAProgFEL1 = " Los objetos creados.";
+	String opcBProgFEL1 = " Darle valores a todos los atributos.";
+	String opcCProgFEL1 = " Establecer los constructores de la clase.";
 
-	String pregProgFEL2 = "Generar un to String en una clase consigue:";
-	String opcAProgFEL2 = "Imprimir los valores que esten guardados en los atributos.";
-	String opcBProgFEL2 = "Comprobar los valores que esten guardados sean correctos.";
-	String opcCProgFEL2 = "Reestablecer valores en los atributos.";
+	String pregProgFEL2 = " Generar un to String en una clase consigue:";
+	String opcAProgFEL2 = " Imprimir los valores que esten guardados en los atributos.";
+	String opcBProgFEL2 = " Comprobar los valores que esten guardados sean correctos.";
+	String opcCProgFEL2 = " Reestablecer valores en los atributos.";
 
-	String pregProgFEL3 = "Un mï¿½todo es:";
-	String opcAProgFEL3 = "Una operacion que se realiza solo cuando es llamadoUna operacion que se realiza solo cuando es llamado.";
-	String opcBProgFEL3 = "Una operacion que se realiza automaticamente al ejecutar el programa.";
-	String opcCProgFEL3 = "Una operacion que solo se dedica a imprimir resultados.";
+	String pregProgFEL3 = " Un método es:";
+	String opcAProgFEL3 = " Una operacion que se realiza solo cuando es llamado";
+	String opcBProgFEL3 = " Una operacion que se realiza automaticamente al ejecutar el programa.";
+	String opcCProgFEL3 = " Una operacion que solo se dedica a imprimir resultados.";
 
-	String pregProgFEL4 = "La regla general de JAVA a la hora de dar nombres a metodos y atributos. Si tiene varias palabras...";
-	String opcAProgFEL4 = "La primera letra de cada palabra debe ser mayuscula y sin espacios entre palabras.";
-	String opcBProgFEL4 = "Deben ir todas las letras en mayusculas y entre palabras con barra baja.";
-	String opcCProgFEL4 = "Deben ir las letras en minusculas y puedes poner espacios entre palabras.";
+	String pregProgFEL4 = " La regla general de JAVA a la hora de dar nombres a metodos y atributos. Si tiene varias palabras...";
+	String opcAProgFEL4 = " La primera letra de cada palabra debe ser mayuscula y sin espacios entre palabras.";
+	String opcBProgFEL4 = " Deben ir todas las letras en mayusculas y entre palabras con barra baja.";
+	String opcCProgFEL4 = " Deben ir las letras en minusculas y puedes poner espacios entre palabras.";
 
-	String pregProgFEL5 = "En un arrays se puede guardar cualquier dato/objeto.";
-	String opcAProgFEL5 = "Sï¿½, siempre y cuando sean del mismo tipo que se ha establecido.";
-	String opcBProgFEL5 = "Sï¿½, pero solo cuando tiene la misma longitud de caracteres.";
-	String opcCProgFEL5 = "No, porque en un arrays no se puede guardar nada.";
+	String pregProgFEL5 = " En un arrays se puede guardar cualquier dato/objeto.";
+	String opcAProgFEL5 = " Sí, siempre y cuando sean del mismo tipo que se ha establecido.";
+	String opcBProgFEL5 = " Sí, pero solo cuando tiene la misma longitud de caracteres.";
+	String opcCProgFEL5 = " No, porque en un arrays no se puede guardar nada.";
 
-	String preProNOL1 = "Cuantas opciones tenemos para generar nÃºmeros aleatorios...";
-	String opcAProgNOl1 = "Dos";
-	String opcBProgNOL1 = "Cinco";
-	String opcCProgNOL1 = "Tres";
+	String pregProgNOL1 = " ¿Cuantas opciones tenemos para generar números aleatorios...?";
+	String opcAProgNOL1 = " Dos";
+	String opcBProgNOL1 = " Cinco";
+	String opcCProgNOL1 = " Tres";
 
-	String preProNOL2 = "Que es mas importante para un programador las clases o los objetos";
-	String opcAProgNOl2 = "Ambos son importantes";
-	String opcBProgNOL2 = "Los objetos";
-	String opcCProgNOL2 = "Las clases";
+	String pregProgNOL2 = " ¿Qué es mas importante para un programador las clases o los objetos";
+	String opcAProgNOL2 = " Ambos son importantes";
+	String opcBProgNOL2 = " Los objetos";
+	String opcCProgNOL2 = " Las clases";
 
-	String preProNOL3 = "CUando  una clase es no publica de que tipo es su nivel de acceso?";
-	String opcAProgNOl3 = "Default";
-	String opcBProgNOL3 = "Private";
-	String opcCProgNOL3 = "Abstract";
+	String pregProgNOL3 = " ¿Cuando  una clase no es publica de que tipo es su nivel de acceso?";
+	String opcAProgNOL3 = " Private";
+	String opcBProgNOL3 = " Default";
+	String opcCProgNOL3 = " Abstract";
 
-	String preProNOL4 = "QuÃ© sucede cuando un objeto modifica una variable de clase";
-	String opcAProgNOl4 = "Al modificarla se hace  visible a todos los objetos";
-	String opcBProgNOL4 = "Se hace visible solo parta el objeto que  la modificÃ³";
-	String opcCProgNOL4 = "Ninguna de las anteriores";
+	String pregProgNOL4 = " ¿Qué sucede cuando un objeto modifica una variable de clase?";
+	String opcAProgNOL4 = " Al modificarla se hace  visible a todos los objetos";
+	String opcBProgNOL4 = " Se hace visible solo parta el objeto que  la modifica";
+	String opcCProgNOL4 = " Ninguna de las anteriores";
 
-	String preProNOL5 = "En que momento se invoca el mÃ©todo constructor";
-	String opcAProgNOl5 = "Despues de crear un objeto";
+	String pregProgNOL5 = " ¿En que momento se invoca el método constructor?";
+	String opcAProgNOL5 = "Después de crear un objeto";
 	String opcBProgNOL5 = "Cuando se crea el main";
 	String opcCProgNOL5 = "Cuando es llamado por un objeto";
 
-	String pregProgGER1 = "Los datos elementales están compuestos por...";
-	String opcAProgGER1 = "Númericos, Alfanuméricos y Lógicos/Booleanos.";
-	String opcBProgGER1 = "Númericos, Alfanuméricos y Cardinales.";
-	String opcCProgGER1 = "Númericos, Hexadecimales y Lógicos/Booleanos.";
+	String pregProgGER1 = " Los datos elementales están compuestos por...";
+	String opcAProgGER1 = " Numéricos, Alfanuméricos y Lógicos/Booleanos.";
+	String opcBProgGER1 = " Numéricos, Alfanuméricos y Cardinales.";
+	String opcCProgGER1 = " Numéricos, Hexadecimales y Lógicos/Booleanos.";
 
 	String pregProgGER2 = "En la tabla de Tokens podemos encontrar palabras como...";
 	String opcAProgGER2 = "break, new, true, return, final.";
@@ -517,22 +519,22 @@ public class ListadoPreguntas {
 
 	// PREGUNTAS SOBRE EL COLEGIO
 
-	String pregCOLALE1 = " ï¿½Dï¿½nde se lleva a cabo el 'buenos dias' de los jueves?";
+	String pregCOLALE1 = " ¿Dónde se lleva a cabo el 'buenos dias' de los jueves?";
 	String opcACOLALE1 = " Clase";
 	String opcBCOLALE1 = " Teatro";
 	String opcCCOLALE1 = " Iglesia";
 
-	String pregCOLALE2 = " ï¿½Que necesitamos antes de un exï¿½men de base de datos?";
+	String pregCOLALE2 = " ¿Qué necesitamos antes de un exámen de base de datos?";
 	String opcACOLALE2 = " Vaselina";
 	String opcBCOLALE2 = " Una pata de conejo";
 	String opcCCOLALE2 = " Una caja de gambas y una paletilla";
 
-	String pregCOLALE3 = " ï¿½Quiï¿½n fracasï¿½ en su intento de ser delegado de clase, cuya madre lo humillï¿½ aï¿½n mas esa misma tarde siendo elegida delegada de padres?";
+	String pregCOLALE3 = " ¿Quién fracasó en su intento de ser delegado de clase, cuya madre lo humilló aún más esa misma tarde siendo elegida delegada de padres?";
 	String opcACOLALE3 = " Miguel Casado";
-	String opcBCOLALE3 = " Jaime Mï¿½rquez ";
+	String opcBCOLALE3 = " Jaime Márquez ";
 	String opcCCOLALE3 = " Ninguna de las respuestas anteriores es correcta";
 
-	String pregCOLALE4 = " ï¿½?";
+	String pregCOLALE4 = " ";
 	String opcACOLALE4 = " Visualiza todos los productos que empiecen con el carï¿½cter ï¿½Aï¿½ despuï¿½s el carï¿½cter ï¿½_ï¿½ y despuï¿½s el carï¿½cter %";
 	String opcBCOLALE4 = " Visualiza todos los productos que no empiecen con el carï¿½cter ï¿½Aï¿½ ni despuï¿½s tengan el carï¿½cter ï¿½_ï¿½ ni despuï¿½s el carï¿½cter %";
 	String opcCCOLALE4 = " Visualiza todos los productos que no empiezan con A y despuï¿½s no tienen otro carï¿½cter mï¿½s como mï¿½nimo";
@@ -637,7 +639,7 @@ public class ListadoPreguntas {
 	String opcBCOLFEL4 = "Francisco Vázquez Adorna";
 	String opcCCOLFEL4 = "Fernando Báñez Martín";
 
-	String pregCOL5FEL5 = "A base de alumnos del Colegio de los Salesianos de Triana ¿qué equipo en los años 70 se forjó en este colegio?";
+	String pregCOLFEL5 = "A base de alumnos del Colegio de los Salesianos de Triana ¿qué equipo en los años 70 se forjó en este colegio?";
 	String opcACOLFEL5 = "COLSPE.";
 	String opcBCOLFEL5 = "Triana F.C.";
 	String opcCCOLFEL5 = "Balompédica Trianera.";
@@ -664,67 +666,45 @@ public class ListadoPreguntas {
 				{ pregProgFEL3, opcAProgFEL3, opcBProgFEL3, opcCProgFEL3 },
 				{ pregProgFEL4, opcAProgFEL4, opcBProgFEL4, opcCProgFEL4 },
 				{ pregProgFEL5, opcAProgFEL5, opcBProgFEL5, opcCProgFEL5 },
-				{ pregProgCAR1, opcAProgCAR1, opcBProgCAR1, opcCProgCAR1 },
-				{ pregProgCAR2, opcAProgCAR2, opcBProgCAR2, opcCProgCAR2 },
-				{ pregProgCAR3, opcAProgCAR3, opcBProgCAR3, opcCProgCAR3 },
-				{ pregProgCAR4, opcAProgCAR4, opcBProgCAR4, opcCProgCAR4 },
-				{ pregProgCAR5, opcAProgCAR5, opcBProgCAR5, opcCProgCAR5 },
+				{ pregProgGER1, opcAProgGER1, opcBProgGER1, opcCProgGER1 },
+				{ pregProgGER2, opcAProgGER2, opcBProgGER2, opcCProgGER2 },
+				{ pregProgGER3, opcAProgGER3, opcBProgGER3, opcCProgGER2 },
+				{ pregProgGER4, opcAProgGER4, opcBProgGER4, opcCProgGER4 },
+				{ pregProgGER5, opcAProgGER5, opcBProgGER5, opcCProgGER5 },
+				{ pregProgNOL1, opcAProgNOL1, opcBProgNOL1, opcCProgNOL1 },
+				{ pregProgNOL2, opcAProgNOL2, opcBProgNOL2, opcCProgNOL2 },
+				{ pregProgNOL3, opcAProgNOL3, opcBProgNOL3, opcCProgNOL3 },
+				{ pregProgNOL4, opcAProgNOL4, opcBProgNOL4, opcCProgNOL4 },
+				{ pregProgNOL5, opcAProgNOL5, opcBProgNOL5, opcCProgNOL5 },
 
 		};
-		
-		
+
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
 		int numRespuesta2;
 		int numRespuesta3;
-		
-		
-		int numPregunta = num.nextInt((listadoProgramacion.length - 1 ) - 0 + 1) + 0;
-		
-			System.out.println(listadoProgramacion[numPregunta][0]);
-			System.out.println( "\t" + "a) " + listadoProgramacion[numPregunta][numRespuesta1]);
-		
-			do{
+
+		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - 0 + 1) + 0;
+
+		System.out.println(listadoProgramacion[numPregunta][0]);
+		System.out.println("\t" + "a) " + listadoProgramacion[numPregunta][numRespuesta1]);
+
+		do {
 			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
-			}while (numRespuesta1 == numRespuesta2);
-	
-			System.out.println( "\t" + "b) " + listadoProgramacion[numPregunta][numRespuesta2]);
-			
-			do{
-				numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
-				}while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
-			
-			
-			
-			System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
-			System.out.println("Introduzca la respuesta(1,2,3)");
-			
-			comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1,numRespuesta2,numRespuesta3);
-			
+		} while (numRespuesta1 == numRespuesta2);
+
+		System.out.println("\t" + "b) " + listadoProgramacion[numPregunta][numRespuesta2]);
+
+		do {
+			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+
+		System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
+		System.out.println("Introduzca la respuesta(1,2,3)");
+
+		comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+
 	}
-		
-	public void  comprobarRespuesta(String[][] list, int preg, int res1,int res2,int res3){
-		
-		
-		
-		switch (Leer.datoInt()){
-		case 1:
-			if(list[preg][res1].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			break;
-		case 2:	
-			if(list[preg][res2].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			break;
-		case 3:
-			if(list[preg][res3].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			break;
-		}
-		
-		
-	}
-	
 
 	public void imprimirPregBBDD() {
 		String[][] listadoBBDD = {
@@ -739,13 +719,49 @@ public class ListadoPreguntas {
 				{ pregBBDDCAR3, opcABBDDCAR3, opcBBBDDCAR3, opcCBBDDCAR3 },
 				{ pregBBDDCAR4, opcABBDDCAR4, opcBBBDDCAR4, opcCBBDDCAR4 },
 				{ pregBBDDCAR5, opcABBDDCAR5, opcBBBDDCAR5, opcCBBDDCAR5 },
+				{ pregBBDDNOL1, opcABBDDNOL1, opcBBBDDNOL1, opcCBBDDNOL1 },
+				{ pregBBDDNOL2, opcABBDDNOL2, opcBBBDDNOL2, opcCBBDDNOL2 },
+				{ pregBBDDNOL3, opcABBDDNOL3, opcBBBDDNOL3, opcCBBDDNOL3 },
+				{ pregBBDDNOL4, opcABBDDNOL4, opcBBBDDNOL4, opcCBBDDNOL4 },
+				{ pregBBDDNOL5, opcABBDDNOL5, opcBBBDDNOL5, opcCBBDDNOL5 },
+				{ pregBBDDFEL1, opcABBDDFEL1, opcBBBDDFEL1, opcCBBDDFEL1 },
+				{ pregBBDDFEL2, opcABBDDFEL2, opcBBBDDFEL2, opcCBBDDFEL2 },
+				{ pregBBDDFEL3, opcABBDDFEL3, opcBBBDDFEL3, opcCBBDDFEL3 },
+				{ pregBBDDFEL4, opcABBDDFEL4, opcBBBDDFEL4, opcCBBDDFEL4 },
+				{ pregBBDDFEL5, opcABBDDFEL5, opcBBBDDFEL5, opcCBBDDFEL5 },
+				{ pregBBDDGER1, opcABBDDGER1, opcBBBDDGER1, opcCBBDDGER1 },
+				{ pregBBDDGER2, opcABBDDGER2, opcBBBDDGER2, opcCBBDDGER2 },
+				{ pregBBDDGER3, opcABBDDGER3, opcBBBDDGER3, opcCBBDDGER3 },
+				{ pregBBDDGER4, opcABBDDGER4, opcBBBDDGER4, opcCBBDDGER4 },
+				{ pregBBDDGER5, opcABBDDGER5, opcBBBDDGER5, opcCBBDDGER5 },
 
 		};
-		for (int i = 0, j = 0; i < 10; i++) {
-			System.out.println(listadoBBDD[i][j] + "\n" + "\t" + "a) " + listadoBBDD[i][j + 1] + "\n" + "\t" + "b) "
-					+ listadoBBDD[i][j + 2] + "\n" + "\t" + "c) " + listadoBBDD[i][j + 3]);
-			System.out.println(" ");
-		}
+
+		Random num = new Random(System.nanoTime());
+		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta2;
+		int numRespuesta3;
+
+		int numPregunta = num.nextInt((listadoBBDD.length - 1) - 0 + 1) + 0;
+
+		System.out.println(listadoBBDD[numPregunta][0]);
+		System.out.println("\t" + "a) " + listadoBBDD[numPregunta][numRespuesta1]);
+
+		do {
+			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta2);
+
+		System.out.println("\t" + "b) " + listadoBBDD[numPregunta][numRespuesta2]);
+
+		do {
+			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+
+		System.out.println("\t" + "c) " + listadoBBDD[numPregunta][numRespuesta3]);
+		System.out.println("Introduzca la respuesta(1,2,3)");
+
+		comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+
 	}
 
 	public void imprimirPregHTML() {
@@ -759,13 +775,46 @@ public class ListadoPreguntas {
 				{ pregHTMLCAR3, opcAHTMLCAR3, opcBHTMLCAR3, opcCHTMLCAR3 },
 				{ pregHTMLCAR4, opcAHTMLCAR4, opcBHTMLCAR4, opcCHTMLCAR4 },
 				{ pregHTMLCAR5, opcAHTMLCAR5, opcBHTMLCAR5, opcCHTMLCAR5 },
+				{ pregHTMLFEL1, opcAHTMLFEL1, opcBHTMLFEL1, opcCHTMLFEL1 },
+				{ pregHTMLFEL2, opcAHTMLFEL2, opcBHTMLFEL2, opcCHTMLFEL2 },
+				{ pregHTMLFEL3, opcAHTMLFEL3, opcBHTMLFEL3, opcCHTMLFEL3 },
+				{ pregHTMLFEL4, opcAHTMLFEL4, opcBHTMLFEL4, opcCHTMLFEL4 },
+				{ pregHTMLFEL5, opcAHTMLFEL5, opcBHTMLFEL5, opcCHTMLFEL5 },
+				{ pregHTMLNOL1, opcAHTMLNOL1, opcBHTMLNOL1, opcCHTMLNOL1 },
+				{ pregHTMLNOL2, opcAHTMLNOL2, opcBHTMLNOL2, opcCHTMLNOL2 },
+				{ pregHTMLNOL3, opcAHTMLNOL3, opcBHTMLNOL3, opcCHTMLNOL3 },
+				{ pregHTMLNOL4, opcAHTMLNOL4, opcBHTMLNOL4, opcCHTMLNOL4 },
+				{ pregHTMLNOL5, opcAHTMLNOL5, opcBHTMLNOL5, opcCHTMLNOL5 },
+				{ pregHTMLGER1, opcAHTMLGER1, opcBHTMLGER1, opcCHTMLGER1 },
+				{ pregHTMLGER2, opcAHTMLGER2, opcBHTMLGER2, opcCHTMLGER2 },
+				{ pregHTMLGER3, opcAHTMLGER3, opcBHTMLGER3, opcCHTMLGER3 },
+				{ pregHTMLGER4, opcAHTMLGER4, opcBHTMLGER4, opcCHTMLGER4 },
+				{ pregHTMLGER5, opcAHTMLGER5, opcBHTMLGER5, opcCHTMLGER5 }, };
+		Random num = new Random(System.nanoTime());
+		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta2;
+		int numRespuesta3;
 
-		};
-		for (int i = 0, j = 0; i < 10; i++) {
-			System.out.println(listadoHTML[i][j] + "\n" + "\t" + "a) " + listadoHTML[i][j + 1] + "\n" + "\t" + "b) "
-					+ listadoHTML[i][j + 2] + "\n" + "\t" + "c) " + listadoHTML[i][j + 3]);
-			System.out.println(" ");
-		}
+		int numPregunta = num.nextInt((listadoHTML.length - 1) - 0 + 1) + 0;
+
+		System.out.println(listadoHTML[numPregunta][0]);
+		System.out.println("\t" + "a) " + listadoHTML[numPregunta][numRespuesta1]);
+
+		do {
+			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta2);
+
+		System.out.println("\t" + "b) " + listadoHTML[numPregunta][numRespuesta2]);
+
+		do {
+			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+
+		System.out.println("\t" + "c) " + listadoHTML[numPregunta][numRespuesta3]);
+		System.out.println("Introduzca la respuesta(1,2,3)");
+
+		comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+
 	}
 
 	public void imprimirPregSIS() {
@@ -779,13 +828,48 @@ public class ListadoPreguntas {
 				{ pregSISCAR3, opcASISCAR3, opcBSISCAR3, opcCSISCAR3 },
 				{ pregSISCAR4, opcASISCAR4, opcBSISCAR4, opcCSISCAR4 },
 				{ pregSISCAR5, opcASISCAR5, opcBSISCAR5, opcCSISCAR5 },
+				{ pregSISNOL1, opcASISNOL1, opcBSISNOL1, opcCSISNOL1 },
+				{ pregSISNOL2, opcASISNOL2, opcBSISNOL2, opcCSISNOL2 },
+				{ pregSISNOL3, opcASISNOL3, opcBSISNOL3, opcCSISNOL3 },
+				{ pregSISNOL4, opcASISNOL4, opcBSISNOL4, opcCSISNOL4 },
+				{ pregSISNOL5, opcASISNOL5, opcBSISNOL5, opcCSISNOL5 },
+				{ pregSISGER1, opcASISGER1, opcBSISGER1, opcCSISGER1 },
+				{ pregSISGER2, opcASISGER2, opcBSISGER2, opcCSISGER2 },
+				{ pregSISGER3, opcASISGER3, opcBSISGER3, opcCSISGER3 },
+				{ pregSISGER4, opcASISGER4, opcBSISGER4, opcCSISGER4 },
+				{ pregSISGER5, opcASISGER5, opcBSISGER5, opcCSISGER5 },
+				{ pregSISFEL1, opcASISFEL1, opcBSISFEL1, opcCSISFEL1 },
+				{ pregSISFEL2, opcASISFEL2, opcBSISFEL2, opcCSISFEL2 },
+				{ pregSISFEL3, opcASISFEL3, opcBSISFEL3, opcCSISFEL3 },
+				{ pregSISFEL4, opcASISFEL4, opcBSISFEL4, opcCSISFEL4 },
+				{ pregSISFEL5, opcASISFEL5, opcBSISFEL5, opcCSISFEL5 },
 
 		};
-		for (int i = 0, j = 0; i < 10; i++) {
-			System.out.println(listadoSIS[i][j] + "\n" + "\t" + "a) " + listadoSIS[i][j + 1] + "\n" + "\t" + "b) "
-					+ listadoSIS[i][j + 2] + "\n" + "\t" + "c) " + listadoSIS[i][j + 3]);
-			System.out.println(" ");
-		}
+		Random num = new Random(System.nanoTime());
+		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta2;
+		int numRespuesta3;
+
+		int numPregunta = num.nextInt((listadoSIS.length - 1) - 0 + 1) + 0;
+
+		System.out.println(listadoSIS[numPregunta][0]);
+		System.out.println("\t" + "a) " + listadoSIS[numPregunta][numRespuesta1]);
+
+		do {
+			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta2);
+
+		System.out.println("\t" + "b) " + listadoSIS[numPregunta][numRespuesta2]);
+
+		do {
+			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+
+		System.out.println("\t" + "c) " + listadoSIS[numPregunta][numRespuesta3]);
+		System.out.println("Introduzca la respuesta(1,2,3)");
+
+		comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+
 	}
 
 	public void imprimirPregCOL() {
@@ -799,21 +883,89 @@ public class ListadoPreguntas {
 				{ pregCOLCAR3, opcACOLCAR3, opcBCOLCAR3, opcCCOLCAR3 },
 				{ pregCOLCAR4, opcACOLCAR4, opcBCOLCAR4, opcCCOLCAR4 },
 				{ pregCOLCAR5, opcACOLCAR5, opcBCOLCAR5, opcCCOLCAR5 },
+				{ pregCOLGER1, opcACOLGER1, opcBCOLGER1, opcCCOLGER1 },
+				{ pregCOLGER2, opcACOLGER2, opcBCOLGER2, opcCCOLGER2 },
+				{ pregCOLGER3, opcACOLGER3, opcBCOLGER3, opcCCOLGER3 },
+				{ pregCOLGER4, opcACOLGER4, opcBCOLGER4, opcCCOLGER4 },
+				{ pregCOLGER5, opcACOLGER5, opcBCOLGER5, opcCCOLGER5 },
+				{ pregCOLNOL1, opcACOLNOL1, opcBCOLNOL1, opcCCOLNOL1 },
+				{ pregCOLNOL2, opcACOLNOL2, opcBCOLNOL2, opcCCOLNOL2 },
+				{ pregCOLNOL3, opcACOLNOL3, opcBCOLNOL3, opcCCOLNOL3 },
+				{ pregCOLNOL4, opcACOLNOL4, opcBCOLNOL4, opcCCOLNOL4 },
+				{ pregCOLNOL5, opcACOLNOL5, opcBCOLNOL5, opcCCOLNOL5 },
+				{ pregCOLFEL1, opcACOLFEL1, opcBCOLFEL1, opcCCOLFEL1 },
+				{ pregCOLFEL2, opcACOLFEL2, opcBCOLFEL2, opcCCOLFEL2 },
+				{ pregCOLFEL3, opcACOLFEL3, opcBCOLFEL3, opcCCOLFEL3 },
+				{ pregCOLFEL4, opcACOLFEL4, opcBCOLFEL4, opcCCOLFEL4 },
+				{ pregCOLFEL5, opcACOLFEL5, opcBCOLFEL5, opcCCOLFEL5 },
 
 		};
-		for (int i = 0, j = 0; i < 10; i++) {
-			System.out.println(listadoCOL[i][j] + "\n" + "\t" + "a) " + listadoCOL[i][j + 1] + "\n" + "\t" + "b) "
-					+ listadoCOL[i][j + 2] + "\n" + "\t" + "c) " + listadoCOL[i][j + 3]);
-			System.out.println(" ");
-		}
+		Random num = new Random(System.nanoTime());
+		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta2;
+		int numRespuesta3;
+
+		int numPregunta = num.nextInt((listadoCOL.length - 1) - 0 + 1) + 0;
+
+		System.out.println(listadoCOL[numPregunta][0]);
+		System.out.println("\t" + "a) " + listadoCOL[numPregunta][numRespuesta1]);
+
+		do {
+			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta2);
+
+		System.out.println("\t" + "b) " + listadoCOL[numPregunta][numRespuesta2]);
+
+		do {
+			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
+
+		System.out.println("\t" + "c) " + listadoCOL[numPregunta][numRespuesta3]);
+		System.out.println("Introduzca la respuesta(1,2,3)");
+
+		comprobarRespuesta(listadoCOL, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+
 	}
 
-	
-	
-	
-	
-	
-	
-	// GETTERS, SETTERS Y TOSTRINGS
+	public void comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
 
+		switch (Leer.datoInt()) {
+		case 1:
+			if (list[preg][res1].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			else
+				System.out.println("Respuesta incorrecta");
+			break;
+
+		case 2:
+			if (list[preg][res2].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			else
+				System.out.println("Respuesta incorrecta");
+			break;
+
+		case 3:
+			if (list[preg][res3].equals(list[preg][1]))
+				System.out.println("Respuesta correcta");
+			else
+				System.out.println("Respuesta incorrecta");
+			break;
+		}
+
+	}
+
+	public void darQuesito(Casilla cas, Equipo eq) {
+		boolean[] aux = eq.getQuesitos();
+		aux[cas.getTipo()]= true;
+			eq.setQuesitos(aux);
+		}
+
+	
+
+	public void quitarQuesito(Casilla cas, Equipo eq) {
+		boolean[] aux = eq.getQuesitos();
+		aux[cas.getTipo()]= false;
+			eq.setQuesitos(aux);
+
+	}
 }
