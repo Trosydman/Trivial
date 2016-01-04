@@ -13,7 +13,7 @@ public class Equipo {
 	private String nombreEq;
 	//Creo que los nombres de los jugadores no son imprescindibles
 	private String jugador;
-	private boolean[] quesitos = new boolean[6];
+	private boolean[] quesitos = new boolean[5];
 	private int[] posEq = new int[2];
 
 	
