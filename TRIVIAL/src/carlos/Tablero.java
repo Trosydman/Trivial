@@ -88,7 +88,16 @@ public class Tablero {
 				tableroBI[eq.getPosEq()[0]][eq.getPosEq()[1]+i]=eq.getNombreEq().substring(0,3).toUpperCase().substring(i, i+1);
 		}
 	}
-
+	
+	public void borrarEqTablero(Equipo eq) {
+		for (int i = 0; i < 3; i++) {
+			if(eq.getJugador() != null)
+				tableroBI[eq.getPosEq()[0]][eq.getPosEq()[1]+i]=" ";
+			else
+				tableroBI[eq.getPosEq()[0]][eq.getPosEq()[1]+i]=" ";
+		}
+	}
+	
 	public Casilla[][] getCasillasTabl() {
 		return casillasTabl;
 	}
