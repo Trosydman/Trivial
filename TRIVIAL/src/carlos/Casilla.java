@@ -15,18 +15,18 @@ public class Casilla {
 	private int tipo;
 	private boolean quesito;
 	
-	public Casilla(int posX, int posY, int tipo) {
-		this.posEq1[1] = posX;
-		this.posEq1[0] = posY;
+	public Casilla(int posFIL, int posCOL, int tipo) {
+		this.posEq1[0] = posFIL;
+		this.posEq1[1] = posCOL;
 		
-		this.posEq2[1] = posX+4;
-		this.posEq2[0] = posY;
+		this.posEq2[0] = posFIL+4;
+		this.posEq2[1] = posCOL;
 		
-		this.posEq3[1] = posX;
-		this.posEq3[0] = posY+1;
+		this.posEq3[0] = posFIL;
+		this.posEq3[1] = posCOL+1;
 		
-		this.posEq4[1] = posX+4;
-		this.posEq4[0] = posY+1;
+		this.posEq4[0] = posFIL+4;
+		this.posEq4[1] = posCOL+1;
 		
 		this.tipo = tipo;
 	}
