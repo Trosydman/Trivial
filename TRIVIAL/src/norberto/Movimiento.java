@@ -23,8 +23,7 @@ public class Movimiento {
 			switch (x.getNumEquipo())
 			{
 			  case 1: 
-				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq1;
-				    
+				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq1();
 			  break;
 			
 			  case 2:
@@ -39,7 +38,7 @@ public class Movimiento {
 				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq4();
 			  break;
 			  default:
-				    System.out.println("Equupo no existente.");
+				    System.out.println("Equipo no existente.");
 			  break;	
 			}
 			
