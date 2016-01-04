@@ -89,4 +89,8 @@ public class Tablero {
 		}
 	}
 
+	public Casilla[][] getCasillasTabl() {
+		return casillasTabl;
+	}
+
 }
