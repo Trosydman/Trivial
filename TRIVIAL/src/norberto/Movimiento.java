@@ -16,26 +16,25 @@ public class Movimiento {
 	// MÉTODOS	
 	public  void moverDer(Equipo x, int dado, Casilla [][] pos)
 	{
-		
 		int[]num=identifiCasilla(x, pos);
-		for (int i=0; i<dado; i++)
+		for (int i=1; i<=dado; i++)
 		{
-			switch (x.getNumEquipo())
+			switch (x.getNumEq())
 			{
 			  case 1: 
-				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq1();
+				    x.setPosEq(pos[num[0]][num[1]+i].getPosEq1()) ;
 			  break;
 			
 			  case 2:
-				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq2();
+				    x.setPosEq(pos[num[0]][num[1]+i].getPosEq2()) ;
 		      break;
 		      
 			  case 3:
-				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq3();
+				    x.setPosEq(pos[num[0]][num[1]+i].getPosEq3()) ;
 			  break;
 			  
 			  case 4:
-				    x.getPosEq()= pos[num[0]][num[1]+1].getPosEq4();
+				    x.setPosEq(pos[num[0]][num[1]+i].getPosEq4()) ;
 			  break;
 			  default:
 				    System.out.println("Equipo no existente.");
@@ -47,13 +46,13 @@ public class Movimiento {
 		
 	}
 	
-	public void moverIzq()
+	public void moverIzq(Equipo x, int dado, Casilla [][] pos)
 	{
-		
+	  	
 	}
 	
 	
-	public void moverNor()
+	public void moverNort()
 	{
 		
 	}
@@ -70,14 +69,16 @@ public class Movimiento {
 		boolean salir= false;
 		for(int i=0; i<pos.length&&salir==false; i++)
 		{
-			if (uno.getPosEq()[i].equals(pos[i][0].getPosEq1()[0]))
+			if (uno.getPosEq()[0]== pos[i][0].getPosEq1()[0])
 			{	
-			   for(int j=0;j<pos[i].length&&salir==false; i++)
+				posit[0]=i;
+				i=0;
+			   for(int j=0;j<pos[i].length&&salir==false; j++)
 			  {
-				if (uno.getPosEq()[j].equals(pos[i][j].getPosEq1()[1]))	
+				if (uno.getPosEq()[1] == pos[i][j].getPosEq1()[1])	
 				{
-					posit[0]=j;
-					posit[1]=i;
+					
+					posit[1]=j;
 					salir=true;
 				}
 				
