@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Random;
 import leer_por_teclado.Leer;
 import carlos.Equipo;
+import carlos.Tablero;
 
 public class Trivial {
 	//ATRIBUTOS
@@ -11,25 +12,12 @@ public class Trivial {
 	Equipo eq3;
 	Equipo eq4;
 	Equipo[] turno;
+	Tablero tab= new Tablero();
 	
 	
 	//CONSTRUCTORES
 	public Trivial() {
-		
-	
-	
-	
-	//la cantidad de jugadores/equipos se mete por teclado
-		
-		/*
-		 * Preguntar: individual o por grupos?
-		 * 
-		 * 
-		 * INDIVIDUAL: Pedir nombre de los jugadores
-		 * GRUPOS: Pedir número de jugadores
-		 * 		   Pedir nombre equipo.
-		 */
-		
+			
 		
 		/*
 		 * Llamar a un método para escoger
@@ -47,7 +35,7 @@ public class Trivial {
 	
 	//ladilla termina switch de elecion de jugadores
 	public void jugarPartida(){
-		int jug, menu;
+		int jug, menu, dado;
 		
 		
 		
@@ -60,14 +48,14 @@ public class Trivial {
 		case 1:
 			
 			do {
-				System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
+				System.out.println("indica cuantos jugadores sois\nrecuerda que maximo cuatro jugadores:");
 				jug=Leer.datoInt();
 			
 				if (jug<=4 && jug>0){
 						
 						//ladilla el syso se cambia por el metodo german
 						
-						cogerNombre(jug);
+						cogerNombre(jug, false);
 						
 					
 				}else{
@@ -78,13 +66,13 @@ public class Trivial {
 			
 		case 2:
 			//TODO  ladilla meter bucles
-			System.out.println("indica cuantos sois\nrecuerda que maximo cuatro jugadores:");
+			System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
 			jug=Leer.datoInt();
 			if(jug<=4 && jug>0){
 				
 				//ladilla el syso se cambia por el metodo german
 				
-				cogerNombre(jug);
+				cogerNombre(jug, true);
 				
 				
 				
@@ -99,8 +87,15 @@ public class Trivial {
 			break;
 		
 		}
-		System.out.println(eq1);
-		System.out.println(eq2);
+		
+		for (int i = 0; i < turno.length; i++) {
+			tab.imprimeTablero();
+			System.out.println("El es el turno de"+turno[i].getNombreEq());
+			dado=lanzarDado();
+			System.out.println(dado);
+		}
+		
+		
 	}
 	
 	 
@@ -120,7 +115,7 @@ public class Trivial {
 	
 	
 	//ladilla metodo para tirar el dado para saber los movimientos
-	public int dado(){
+	public int lanzarDado(){
 		int num,hasta=6, desde=1;
 		System.out.println("Intro para tirar los dados");
 		Leer.dato();
@@ -135,7 +130,7 @@ public class Trivial {
 	
 	
 	//ladilla pide los nombres de los jugadores y distribuye con un metodo el orden de los turnos
-	public void cogerNombre(int jug) {
+	public void cogerNombre(int jug, boolean tipoEquipo) {
 		int  numJ=1;
 		String nomJug;
 		
@@ -143,29 +138,43 @@ public class Trivial {
 		turno= new Equipo[jug];
 		
 		for(int i=0;i<jug;i++){
-			System.out.println("Diga el nombre del jugador "+numJ+":");
+			
+			if(tipoEquipo){
+				System.out.println("Diga el nombre del equipo "+numJ+"(Min 3 caracteres):");
+			}else{
+				System.out.println("Diga el nombre del jugador "+numJ+"(Min 3 caracteres):");
+			}
+			do{
 			nomJug=Leer.dato();
+			if(nomJug.length()<3){
+			System.out.println("El nombre debe de tener minimo 3 caractereres.");
+			}
+			}while(nomJug.length()<3);
 			numJ++;
 			
 			switch(i) {
 				case 0:
-					eq1=new Equipo(nomJug);
+					eq1=new Equipo(nomJug, tipoEquipo);
 					atribuirTurno(eq1);
+					tab.establecerEqTablero(eq1);
 					break;
 			
 				case 1:
-					eq2=new Equipo(nomJug);
+					eq2=new Equipo(nomJug, tipoEquipo);
 					atribuirTurno(eq2);
+					tab.establecerEqTablero(eq2);
 					break;
 			
 				case 2:
-					eq3=new Equipo(nomJug);
+					eq3=new Equipo(nomJug,tipoEquipo);
 					atribuirTurno(eq3);
+					tab.establecerEqTablero(eq3);
 					break;
 			
 				case 3:
-					eq4=new Equipo(nomJug);
+					eq4=new Equipo(nomJug, tipoEquipo );
 					atribuirTurno(eq4);
+					tab.establecerEqTablero(eq4);
 					break;
 			}
 		}
@@ -180,6 +189,9 @@ public class Trivial {
 	
 	
 	
+	
+
+
 	// ladilla metodo para asignar turno aleatoriamente
 	
 	
@@ -197,6 +209,9 @@ public class Trivial {
 				}
 			}while(turno[num]!=null && fin == false);
 		}
+
+
+		
 	
 	
 	
@@ -208,5 +223,12 @@ public class Trivial {
 	//GETTERS, SETTERS Y TOSTRINGS
 	
 	
-	
+		public Tablero getTab() {
+			return tab;
+		}
+
+
+		public void setTab(Tablero tab) {
+			this.tab = tab;
+		}
 }
