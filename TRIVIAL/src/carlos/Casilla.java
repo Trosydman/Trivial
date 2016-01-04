@@ -30,6 +30,38 @@ public class Casilla {
 		
 		this.tipo = tipo;
 	}
+	
+	public int[] getPosEq1() {
+		return posEq1;
+	}
+
+	public void setPosEq1(int[] posEq1) {
+		this.posEq1 = posEq1;
+	}
+
+	public int[] getPosEq2() {
+		return posEq2;
+	}
+
+	public void setPosEq2(int[] posEq2) {
+		this.posEq2 = posEq2;
+	}
+
+	public int[] getPosEq3() {
+		return posEq3;
+	}
+
+	public void setPosEq3(int[] posEq3) {
+		this.posEq3 = posEq3;
+	}
+
+	public int[] getPosEq4() {
+		return posEq4;
+	}
+
+	public void setPosEq4(int[] posEq4) {
+		this.posEq4 = posEq4;
+	}
 
 	public boolean isQuesito() {
 		return quesito;

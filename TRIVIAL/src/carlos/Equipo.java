@@ -74,6 +74,12 @@ public class Equipo {
 				+ Arrays.toString(quesitos) + ", posEq=" + Arrays.toString(posEq) + "]";
 	}
 
+	public static int getNumEq() {
+		return numEq;
+	}
+
+
+
 	public String getNombreEq() {
 		return nombreEq;
 	}
