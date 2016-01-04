@@ -1,9 +1,12 @@
 package carlos;
 
+import norberto.Movimiento;
+
 public class TesterCarlos {
 
 	public static void main(String[] args) {
 		Tablero tabl = new Tablero();
+		Movimiento mov = new Movimiento();
 		
 		//PROBANDO CON JUGADORES
 		Equipo eqJug1=new Equipo("Carlos", false);
@@ -18,6 +21,13 @@ public class TesterCarlos {
 		tabl.establecerEqTablero(eqJug3);
 		tabl.establecerEqTablero(eqJug4);
 		System.out.println();
+		tabl.imprimeTablero();
+		
+		tabl.borrarEqTablero(eqJug1);
+		System.out.println("\nMoviendo a la derecha a Carlos");
+		mov.moverIzq(eqJug1, 1, tabl.getCasillasTabl());
+		tabl.establecerEqTablero(eqJug1);
+		System.out.println(eqJug1);
 		tabl.imprimeTablero();
 		
 		//PROBANDO CON EQUIPOS
