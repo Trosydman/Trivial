@@ -11,65 +11,82 @@ public class Movimiento {
 	int intro;
 
 	// MÉTODOS
-	public void moverDer(Equipo x, int dado, Casilla[][] pos) {
+	public boolean moverDer(Equipo x, int dado, Casilla[][] pos) {
 		int[] num = identifiCasilla(x, pos);
-		for (int i = 1; i <= dado; i++) {
-			switch (x.getNumEq()) {
-			case 1:
-				x.setPosEq(pos[num[0]][num[1] + i].getPosEq1());
-				break;
+		boolean movi = true;
+		for (int i = 1; i <= dado && movi == true; i++) {
+			if ((num[0] >= 0 && num[0] <= 6) && (num[1] + i >= 0 && num[1] + i <= 6)) {
+				switch (x.getNumEq()) {
+				case 1:
+					x.setPosEq(pos[num[0]][num[1] + i].getPosEq1());
+					break;
 
-			case 2:
-				x.setPosEq(pos[num[0]][num[1] + i].getPosEq2());
-				break;
+				case 2:
+					x.setPosEq(pos[num[0]][num[1] + i].getPosEq2());
+					break;
 
-			case 3:
-				x.setPosEq(pos[num[0]][num[1] + i].getPosEq3());
-				break;
+				case 3:
+					x.setPosEq(pos[num[0]][num[1] + i].getPosEq3());
+					break;
 
-			case 4:
-				x.setPosEq(pos[num[0]][num[1] + i].getPosEq4());
-				break;
-			default:
-				System.out.println("Este equipo no existe.");
-				break;
-			}
-
+				case 4:
+					x.setPosEq(pos[num[0]][num[1] + i].getPosEq4());
+					break;
+				default:
+					System.out.println("Este equipo no existe.");
+					break;
+				}
+				if (pos[num[0]][num[1] + i].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(x, dado - i, pos);
+					dado = 0;
+				}
+			} else
+				movi = false;
 		}
-
+		return movi;
 	}
 
-	public void moverIzq(Equipo x, int dado, Casilla[][] pos) {
+	public boolean moverIzq(Equipo x, int dado, Casilla[][] pos) {
 		int[] num = identifiCasilla(x, pos);
+		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
-			switch (x.getNumEq()) {
-			case 1:
-				x.setPosEq(pos[num[0]][num[1] - i].getPosEq1());
-				break;
+			if ((num[0] >= 0 && num[0] <= 6) && (num[1] - i >= 0 && num[1] - i <= 6)) {
+				switch (x.getNumEq()) {
+				case 1:
+					x.setPosEq(pos[num[0]][num[1] - i].getPosEq1());
+					break;
 
-			case 2:
-				x.setPosEq(pos[num[0]][num[1] - i].getPosEq2());
-				break;
+				case 2:
+					x.setPosEq(pos[num[0]][num[1] - i].getPosEq2());
+					break;
 
-			case 3:
-				x.setPosEq(pos[num[0]][num[1] - i].getPosEq3());
-				break;
+				case 3:
+					x.setPosEq(pos[num[0]][num[1] - i].getPosEq3());
+					break;
 
-			case 4:
-				x.setPosEq(pos[num[0]][num[1] - i].getPosEq4());
-				break;
-			default:
-				System.out.println("Este equipo no existe.");
-				break;
-			}
+				case 4:
+					x.setPosEq(pos[num[0]][num[1] - i].getPosEq4());
+					break;
+				default:
+					System.out.println("Este equipo no existe.");
+					break;
+				}
+				if (pos[num[0]][num[1] - i].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(x, dado - i, pos);
+					dado = 0;
+				}
+			} else
+				movi = false;
+
 		}
+		return movi;
 	}
 
-	public void moverNort(Equipo x, int dado, Casilla[][] pos) {
+	public boolean moverNort(Equipo x, int dado, Casilla[][] pos) {
 		int[] num = identifiCasilla(x, pos);
+		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
-			if(i != dado)
-			{
+			if ((num[0] - i >= 0 && num[0] - i <= 6) && (num[1] >= 0 && num[1] <= 6)) {
 				switch (x.getNumEq()) {
 				case 1:
 					x.setPosEq(pos[num[0] - i][num[1]].getPosEq1());
@@ -90,39 +107,53 @@ public class Movimiento {
 					System.out.println("Este equipo no existe.");
 					break;
 				}
-			  if(i == dado-1) {
-				    girar(x, dado-i, pos);
-			}
-			}
+				if (pos[num[0] - i][num[1]].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(x, dado - i, pos);
+					dado = 0;
+				}
+			} else
+				movi = false;
 		}
+		return movi;
 	}
 
-	public void moverSur(Equipo x, int dado, Casilla[][] pos) {
+	public boolean moverSur(Equipo x, int dado, Casilla[][] pos) {
 		int[] num = identifiCasilla(x, pos);
+		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
-			switch (x.getNumEq()) {
-			case 1:
-				x.setPosEq(pos[num[0] + i][num[1]].getPosEq1());
-				break;
+			if ((num[0] + i >= 0 && num[0] + i <= 6) && (num[1] >= 0 && num[1] <= 6)) {
+				switch (x.getNumEq()) {
+				case 1:
+					x.setPosEq(pos[num[0] + i][num[1]].getPosEq1());
+					break;
 
-			case 2:
-				x.setPosEq(pos[num[0] + i][num[1]].getPosEq2());
-				break;
+				case 2:
+					x.setPosEq(pos[num[0] + i][num[1]].getPosEq2());
+					break;
 
-			case 3:
-				x.setPosEq(pos[num[0] + i][num[1]].getPosEq3());
-				break;
+				case 3:
+					x.setPosEq(pos[num[0] + i][num[1]].getPosEq3());
+					break;
 
-			case 4:
-				x.setPosEq(pos[num[0] + i][num[1]].getPosEq4());
-				break;
-			default:
-				System.out.println("Este equipo no existe.");
-				break;
-			}
+				case 4:
+					x.setPosEq(pos[num[0] + i][num[1]].getPosEq4());
+					break;
+				default:
+					System.out.println("Este equipo no existe.");
+					break;
+				}
+				if (pos[num[0] + i][num[1]].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(x, dado - i, pos);
+					dado = 0;
+				}
+			} else
+				movi = false;
 		}
+		return movi;
 	}
 
+	
+	
 	public int[] identifiCasilla(Equipo uno, Casilla[][] pos) {
 		int posit[] = new int[2];
 		boolean salir = false;
@@ -145,33 +176,35 @@ public class Movimiento {
 		return posit;
 	}
 
-	private void girar(Equipo x, int dado, Casilla[][] pos) {
-		System.out.println("Para donde quieres girar.\n" 
-	                     + "Pulsa 1 para ir a la derecha.\n"
-				         + "Pulsa 2 Para ir a la Izquierda.\n"  
-	                     + "Pulsa 3 Para ir arriba.\n" 
-				         + "Pulsa 4 para ir abajo.\n");
-		intro = Leer.datoInt();
-		switch (intro) {
-		case 1:
-			moverDer(x, dado, pos);
-			break;
+	public void escogerMovimiento(Equipo x, int dado, Casilla[][] pos) {
+		boolean comprobar = true;
+		do {
+			if (comprobar == false) {
+				System.out.println("no puedes realizar este movimiento, escoge otro");
+			}
+			System.out.println("Para donde quieres moverte.\n" + "Pulsa 1 para ir a la derecha.\n"
+					+ "Pulsa 2 Para ir a la Izquierda.\n" + "Pulsa 3 Para ir arriba.\n" + "Pulsa 4 para ir abajo.\n");
+			intro = Leer.datoInt();
+			switch (intro) {
+			case 1:
+				comprobar = moverDer(x, dado, pos);
+				break;
 
-		case 2:
-			moverIzq(x, dado, pos);
-			break;
+			case 2:
+				comprobar = moverIzq(x, dado, pos);
+				break;
 
-		case 3:
-			moverNort(x, dado, pos);
-			break;
+			case 3:
+				comprobar = moverNort(x, dado, pos);
+				break;
 
-		case 4:
-			moverSur(x, dado, pos);
-			break;
+			case 4:
+				comprobar = moverSur(x, dado, pos);
+				break;
 
-		default:
-			break;
-		}
+			}
+
+		} while (comprobar == false);
 
 	}
 

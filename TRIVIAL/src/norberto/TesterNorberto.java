@@ -16,7 +16,7 @@ public class TesterNorberto {
 		tablet.imprimeTablero();
 		
 		
-		mov.moverNort(equip, 4, tablet.getCasillasTabl());
+		mov.escogerMovimiento(equip, 5, tablet.getCasillasTabl());
 	    tablet.establecerEqTablero(equip);
 		tablet.imprimeTablero();
 		System.out.println(equip.toString());
