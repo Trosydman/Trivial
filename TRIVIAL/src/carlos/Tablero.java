@@ -75,9 +75,9 @@ public class Tablero {
 	private void comprobInters() {
 		for(int i = 0; i < casillasTabl.length; i++) {
 			for (int j = 0; j < casillasTabl[i].length; j++) {
-				if((i==0 && j==0) || (i==0 && j==4) || (i==0 && j==7) || 
-						(i==4 && j==0) || (i==4 && j==4) || (i==4 && j==7)
-						|| (i==7 && j==0) || (i==7 && j==4) || (i==7 && j==7)) {
+				if((i==0 && j==0) || (i==0 && j==3) || (i==0 && j==6) || 
+						(i==3 && j==0) || (i==3 && j==3) || (i==3 && j==6)
+						|| (i==6 && j==0) || (i==6 && j==3) || (i==6 && j==6)) {
 					casillasTabl[i][j].setInterseccion(true);
 				}
 			}

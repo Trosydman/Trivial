@@ -46,12 +46,12 @@ public class TesterCarlos {
 		System.out.println();
 		tabl.imprimeTablero();
 		
-//		for (int i = 0; i < tabl.casillasTabl.length; i++) {
-//			for (int j = 0; j < tabl.casillasTabl[i].length; j++) {
-//				System.out.println(tabl.casillasTabl[i][j]);
-//			}
-//		}
-//		
+		for (int i = 0; i < tabl.casillasTabl.length; i++) {
+			for (int j = 0; j < tabl.casillasTabl[i].length; j++) {
+				System.out.println(tabl.casillasTabl[i][j]);
+			}
+		}
+		
 	}
 
 }

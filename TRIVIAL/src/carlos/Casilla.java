@@ -85,7 +85,7 @@ public class Casilla {
 	public String toString() {
 		return "Casilla [\n\tposXEq1=" + posEq1[1] + ", posYEq1=" + posEq1[0] + "\n\tposXEq2=" + posEq2[1] + ", posYEq2=" + posEq2[0]
 				+ "\n\tposXEq3=" + posEq3[1] + ", posYEq3=" + posEq3[0] + "\n\tposXEq4=" + posEq4[1] + ", posYEq4=" + posEq4[0]
-				+ "\ntipo=" + tipo + ", quesito=" + quesito + "]\n";
+				+ "\ntipo=" + tipo + ", quesito=" + quesito + ", intersección=" + interseccion + "]\n";
 	}
 
 	
