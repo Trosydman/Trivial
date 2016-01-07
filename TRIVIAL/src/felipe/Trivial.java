@@ -2,6 +2,7 @@ package felipe;
 import java.util.Arrays;
 import java.util.Random;
 import leer_por_teclado.Leer;
+import norberto.Movimiento;
 import carlos.Equipo;
 import carlos.Tablero;
 import alex.ListadoPreguntas;
@@ -13,19 +14,14 @@ public class Trivial {
 	Equipo eq3;
 	Equipo eq4;
 	Equipo[] turno;
-	ListadoPreguntas [] quesos; 
+	ListadoPreguntas cache=new ListadoPreguntas();
 	Tablero tab= new Tablero();
+	Movimiento mov = new Movimiento();
 	
 	
 	//CONSTRUCTORES
 	public Trivial() {
 			
-		
-		/*
-		 * Llamar a un método para escoger
-		 * aleatoriamente el turno por equipos/
-		 * jugadores
-		 */
 	}
 	
 	
@@ -34,18 +30,21 @@ public class Trivial {
 	
 	//ladilla termina switch de elecion de jugadores
 	public void jugarPartida(){
-		int jug, menu, dado;
+		int jug, menu, i=0,dado;
+		boolean comproB=true;
 		
-		
+		do{
 		
 		System.out.println("Indicamelo churrita:");
 		System.out.println("1.alone in the world");
 		System.out.println("2.sa pe�a");
 		menu=Leer.datoInt();
+		}while(menu<0 &&  menu >=2);
 		
 		switch(menu){
 		case 1:
 			
+			comproB=false;
 			do {
 				System.out.println("indica cuantos jugadores sois\nrecuerda que maximo cuatro jugadores:");
 				jug=Leer.datoInt();
@@ -53,18 +52,17 @@ public class Trivial {
 				if (jug<=4 && jug>0){
 						
 						//TODO ladilla el syso se cambia por el metodo german
-						
-						cogerNombre(jug, false);
+						cogerNombre(jug, comproB);
 						
 					
 				}else{
-					System.out.println("El numero de jugadores no es el correcto");
+					System.out.println("El numero de jugadores no es el correcto\n");
 				}
-			}while(jug>4 && jug<=0);
+			}while(jug>4 || jug<=0);
 			break;
 			
 		case 2:
-			//TODO  ladilla meter bucles
+			
 			
 			do{
 				System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
@@ -73,13 +71,13 @@ public class Trivial {
 				
 				//TODO ladilla el syso se cambia por el metodo german
 				
-					cogerNombre(jug, true);
+					cogerNombre(jug, comproB);
 				
 				}else{
-				System.out.println("El numero de jugadores no es el correcto");
+				System.out.println("El numero de jugadores no es el correcto\n");
 				}
 			
-			}while(jug>4 && jug<=0);
+			}while(jug>4 || jug<=0);
 			break;
 		
 		default:
@@ -89,17 +87,38 @@ public class Trivial {
 		}
 		
 		
-		//
-		/*
 		do{
-			for (int i = 0; i < turno.length; i++) {
-				tab.imprimeTablero();
-				System.out.println("El es el turno de "+turno[i].getNombreEq());
-				dado=lanzarDado();
-				System.out.println(dado);
-		}
-		}while(comprobarAllQuesitos(eq1) || comprobarAllQuesitos(eq2) || comprobarAllQuesitos(eq3) || comprobarAllQuesitos(eq4));
-		*/
+			tab.imprimeTablero();
+			
+			if(comproB){
+			System.out.println("Es el turno de "+turno[i].getNombreEq());
+			}else{
+				System.out.println("Es el turno de "+turno[i].getJugador());
+			}
+			dado=lanzarDado();
+			System.out.println(dado);
+			
+			tab.borrarEqTablero(turno[i]);
+			mov.escogerMovimiento(turno[i], dado, tab.getCasillasTabl());
+			tab.establecerEqTablero(turno[i]);
+			tab.imprimeTablero();
+			cache.imprimirPregBBDD();
+			i++;
+			if(i==turno.length){
+				i=0;
+			}
+			
+			
+			/*hay que meter un boleano en las respuestas correctas o incorrectas para que si es correcta se 
+			 * conserve el turno y si es incorrecta se salga del metdo de imprimir preguntar y le pase el turno
+			 * al siguiente jugador*/
+		}while(comprobarAllQuesitos(turno[i]) || i<turno.length);
+		
+		
+		
+		
+		
+		
 	}
 	
 	 
@@ -133,7 +152,7 @@ public class Trivial {
 				
 				nomJug=Leer.dato();
 				if(nomJug.length()<3){
-					System.out.println("El nombre debe de tener minimo 3 caractereres.");
+					System.out.println("El nombre debe de tener minimo 3 caractereres.\n Prueba de nuevo: ");
 				}
 				}while(nomJug.length()<3);
 				numJ++;
