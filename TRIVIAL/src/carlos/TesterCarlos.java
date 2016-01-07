@@ -29,6 +29,7 @@ public class TesterCarlos {
 		tabl.establecerEqTablero(eqJug1);
 		System.out.println(eqJug1);
 		tabl.imprimeTablero();
+		tabl.borrarEqTablero(eqJug1);
 		
 		//PROBANDO CON EQUIPOS
 		Equipo eqEq1=new Equipo("Actimel", true);
