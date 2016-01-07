@@ -14,6 +14,7 @@ public class Casilla {
 	
 	private int tipo;
 
+	private boolean interseccion;	
 	private boolean quesito;
 	
 	public Casilla(int posFIL, int posCOL, int tipo) {
@@ -74,6 +75,10 @@ public class Casilla {
 
 	public void setQuesito(boolean quesito) {
 		this.quesito = quesito;
+	}
+
+	public void setInterseccion(boolean interseccion) {
+		this.interseccion = interseccion;
 	}
 
 	@Override

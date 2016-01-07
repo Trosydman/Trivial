@@ -68,7 +68,20 @@ public class Tablero {
 			contCasFIL++;
 			contCasCOL = 0;
 		}
+		comprobInters();
 
+	}
+
+	private void comprobInters() {
+		for(int i = 0; i < casillasTabl.length; i++) {
+			for (int j = 0; j < casillasTabl[i].length; j++) {
+				if((i==0 && j==0) || (i==0 && j==4) || (i==0 && j==7) || 
+						(i==4 && j==0) || (i==4 && j==4) || (i==4 && j==7)
+						|| (i==7 && j==0) || (i==7 && j==4) || (i==7 && j==7)) {
+					casillasTabl[i][j].setInterseccion(true);
+				}
+			}
+		}
 	}
 
 	public void imprimeTablero() {
