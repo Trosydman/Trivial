@@ -76,6 +76,10 @@ public class Casilla {
 	public void setQuesito(boolean quesito) {
 		this.quesito = quesito;
 	}
+	
+	public boolean isInterseccion() {
+		return interseccion;
+	}
 
 	public void setInterseccion(boolean interseccion) {
 		this.interseccion = interseccion;
