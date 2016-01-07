@@ -4,6 +4,7 @@ import java.util.Random;
 import leer_por_teclado.Leer;
 import carlos.Equipo;
 import carlos.Tablero;
+import alex.ListadoPreguntas;
 
 public class Trivial {
 	//ATRIBUTOS
@@ -12,6 +13,7 @@ public class Trivial {
 	Equipo eq3;
 	Equipo eq4;
 	Equipo[] turno;
+	ListadoPreguntas [] quesos; 
 	Tablero tab= new Tablero();
 	
 	
@@ -27,10 +29,7 @@ public class Trivial {
 	}
 	
 	
-	//M�TODOS
-	
-	
-	
+	//MÉTODOS
 	
 	
 	//ladilla termina switch de elecion de jugadores
@@ -53,33 +52,34 @@ public class Trivial {
 			
 				if (jug<=4 && jug>0){
 						
-						//ladilla el syso se cambia por el metodo german
+						//TODO ladilla el syso se cambia por el metodo german
 						
 						cogerNombre(jug, false);
 						
 					
 				}else{
-					System.out.println("pichita te estas equivocando");
+					System.out.println("El numero de jugadores no es el correcto");
 				}
-				}while(jug>4 && jug<=0);
+			}while(jug>4 && jug<=0);
 			break;
 			
 		case 2:
 			//TODO  ladilla meter bucles
-			System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
-			jug=Leer.datoInt();
-			if(jug<=4 && jug>0){
-				
-				//ladilla el syso se cambia por el metodo german
-				
-				cogerNombre(jug, true);
-				
-				
-				
-			}else{
-				System.out.println("churri te has colao");
-			}
 			
+			do{
+				System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
+				jug=Leer.datoInt();
+				if(jug<=4 && jug>0){
+				
+				//TODO ladilla el syso se cambia por el metodo german
+				
+					cogerNombre(jug, true);
+				
+				}else{
+				System.out.println("El numero de jugadores no es el correcto");
+				}
+			
+			}while(jug>4 && jug<=0);
 			break;
 		
 		default:
@@ -88,14 +88,18 @@ public class Trivial {
 		
 		}
 		
-		for (int i = 0; i < turno.length; i++) {
-			tab.imprimeTablero();
-			System.out.println("El es el turno de"+turno[i].getNombreEq());
-			dado=lanzarDado();
-			System.out.println(dado);
+		
+		//
+		/*
+		do{
+			for (int i = 0; i < turno.length; i++) {
+				tab.imprimeTablero();
+				System.out.println("El es el turno de "+turno[i].getNombreEq());
+				dado=lanzarDado();
+				System.out.println(dado);
 		}
-		
-		
+		}while(comprobarAllQuesitos(eq1) || comprobarAllQuesitos(eq2) || comprobarAllQuesitos(eq3) || comprobarAllQuesitos(eq4));
+		*/
 	}
 	
 	 
@@ -106,89 +110,74 @@ public class Trivial {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	//ladilla metodo para tirar el dado para saber los movimientos
-	public int lanzarDado(){
-		int num,hasta=6, desde=1;
-		System.out.println("Intro para tirar los dados");
-		Leer.dato();
-		Random numAle= new Random();
-		num=numAle.nextInt(hasta-desde+1)+desde;
-		return num;
-	}
-	
-	
-	
-	
-	
-	
 	//ladilla pide los nombres de los jugadores y distribuye con un metodo el orden de los turnos
 	public void cogerNombre(int jug, boolean tipoEquipo) {
 		int  numJ=1;
 		String nomJug;
-		
-		
 		turno= new Equipo[jug];
+		
+		
 		
 		for(int i=0;i<jug;i++){
 			
 			if(tipoEquipo){
+				
 				System.out.println("Diga el nombre del equipo "+numJ+"(Min 3 caracteres):");
+			
 			}else{
+				
 				System.out.println("Diga el nombre del jugador "+numJ+"(Min 3 caracteres):");
 			}
+			
 			do{
-			nomJug=Leer.dato();
-			if(nomJug.length()<3){
-			System.out.println("El nombre debe de tener minimo 3 caractereres.");
-			}
-			}while(nomJug.length()<3);
-			numJ++;
+				
+				nomJug=Leer.dato();
+				if(nomJug.length()<3){
+					System.out.println("El nombre debe de tener minimo 3 caractereres.");
+				}
+				}while(nomJug.length()<3);
+				numJ++;
 			
-			switch(i) {
-				case 0:
-					eq1=new Equipo(nomJug, tipoEquipo);
-					atribuirTurno(eq1);
-					tab.establecerEqTablero(eq1);
-					break;
+				switch(i) {
+					case 0:
+						eq1=new Equipo(nomJug, tipoEquipo);
+						atribuirTurno(eq1);
+						tab.establecerEqTablero(eq1);
+						break;
 			
-				case 1:
-					eq2=new Equipo(nomJug, tipoEquipo);
-					atribuirTurno(eq2);
-					tab.establecerEqTablero(eq2);
-					break;
+					case 1:
+						eq2=new Equipo(nomJug, tipoEquipo);
+						atribuirTurno(eq2);
+						tab.establecerEqTablero(eq2);
+						break;
 			
-				case 2:
-					eq3=new Equipo(nomJug,tipoEquipo);
-					atribuirTurno(eq3);
-					tab.establecerEqTablero(eq3);
-					break;
+					case 2:
+						eq3=new Equipo(nomJug,tipoEquipo);
+						atribuirTurno(eq3);
+						tab.establecerEqTablero(eq3);
+						break;
 			
-				case 3:
-					eq4=new Equipo(nomJug, tipoEquipo );
-					atribuirTurno(eq4);
-					tab.establecerEqTablero(eq4);
-					break;
-			}
+					case 3:
+						eq4=new Equipo(nomJug, tipoEquipo );
+						atribuirTurno(eq4);
+						tab.establecerEqTablero(eq4);
+						break;
+				}
 		}
 		
 	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
+	//ladilla metodo para tirar el dado para saber los movimientos
+		public int lanzarDado(){
+			int num,hasta=6, desde=1;
+			System.out.println("Intro para tirar los dados");
+			Leer.dato();
+			Random numAle= new Random();
+			num=numAle.nextInt(hasta-desde+1)+desde;
+			return num;
+		}
 	
 
 
@@ -209,9 +198,23 @@ public class Trivial {
 				}
 			}while(turno[num]!=null && fin == false);
 		}
-
-
 		
+	/* ladilla metodo para comprobar ganador y establecer fin del juego. 
+	 * Se utilizara como condicion para salir del bucle que cogera al metodo jugarpartida.
+	 */
+
+		public boolean comprobarAllQuesitos(Equipo eq){
+			boolean [] proB =eq.getQuesitos();
+			boolean fin = true;
+			
+			for(int i=0;i<proB.length && fin==true;i++){
+				
+				if(false==proB[i]){
+					fin = false;
+				}
+			}	
+			return fin;
+		}
 	
 	
 	
