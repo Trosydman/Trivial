@@ -9,7 +9,7 @@ public class Equipo {
 	 * el resto de números de "equipos" sea correlativo, sino 
 	 * todos serían el mismo número.
 	 */
-	private static int numEq = 0;
+	private int numEq = 0;
 	private String nombreEq;
 	//Creo que los nombres de los jugadores no son imprescindibles
 	private String jugador;
@@ -19,15 +19,17 @@ public class Equipo {
 	
 	
 	// CONSTRUCTORES
-	public Equipo(String nombre, boolean isEquipo) {
+	public Equipo(int numEq, String nombre, boolean isEquipo) {
 		/*
 		 * Si se quisiera volver a jugar, el número de equipo
 		 * tiene que inicializarse a 0;
 		 */
-		if(Equipo.numEq == 4)
-			Equipo.numEq=0;
+		if(numEq == 4)
+			numEq=0;
+		else
+			this.numEq = numEq;
 		
-		Equipo.numEq+=1;
+		numEq+=1;
 		if(isEquipo)
 			this.nombreEq = nombre;
 		else
@@ -38,7 +40,7 @@ public class Equipo {
 		 * Las sumas son las diferentes posiciones de los distintos
 		 * componentes en la casilla.
 		 */
-		switch (Equipo.numEq) {
+		switch (numEq) {
 		case 1:
 			posEq[0]=13;
 			posEq[1]=31;
@@ -74,7 +76,7 @@ public class Equipo {
 				+ Arrays.toString(quesitos) + ", posEq=" + Arrays.toString(posEq) + "]";
 	}
 
-	public static int getNumEq() {
+	public int getNumEq() {
 		return numEq;
 	}
 
