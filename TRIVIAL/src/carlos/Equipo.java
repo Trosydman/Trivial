@@ -29,7 +29,6 @@ public class Equipo {
 		else
 			this.numEq = numEq;
 		
-		numEq+=1;
 		if(isEquipo)
 			this.nombreEq = nombre;
 		else

@@ -156,34 +156,34 @@ public class Trivial {
 				if(nomJug.length()<3){
 					System.out.println("El nombre debe de tener minimo 3 caractereres.\n Prueba de nuevo: ");
 				}
-				}while(nomJug.length()<3);
-				numJ++;
+				}while(nomJug.length()<3);				
 			
 				switch(i) {
 					case 0:
-						eq1=new Equipo(nomJug, tipoEquipo);
+						eq1=new Equipo(numJ, nomJug, tipoEquipo);
 						atribuirTurno(eq1);
 						tab.establecerEqTablero(eq1);
 						break;
 			
 					case 1:
-						eq2=new Equipo(nomJug, tipoEquipo);
+						eq2=new Equipo(numJ, nomJug, tipoEquipo);
 						atribuirTurno(eq2);
 						tab.establecerEqTablero(eq2);
 						break;
 			
 					case 2:
-						eq3=new Equipo(nomJug,tipoEquipo);
+						eq3=new Equipo(numJ, nomJug,tipoEquipo);
 						atribuirTurno(eq3);
 						tab.establecerEqTablero(eq3);
 						break;
 			
 					case 3:
-						eq4=new Equipo(nomJug, tipoEquipo );
+						eq4=new Equipo(numJ, nomJug, tipoEquipo );
 						atribuirTurno(eq4);
 						tab.establecerEqTablero(eq4);
 						break;
 				}
+				numJ++;
 		}
 		
 	}
