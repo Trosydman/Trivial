@@ -88,6 +88,7 @@ public class Trivial {
 		
 		
 		do{
+			
 			tab.imprimeTablero();
 			
 			if(comproB){
@@ -102,16 +103,17 @@ public class Trivial {
 			mov.escogerMovimiento(turno[i], dado, tab.getCasillasTabl());
 			tab.establecerEqTablero(turno[i]);
 			tab.imprimeTablero();
+			
 			cache.imprimirPregBBDD();
+			
 			i++;
+			
 			if(i==turno.length){
 				i=0;
 			}
 			
 			
-			/*hay que meter un boleano en las respuestas correctas o incorrectas para que si es correcta se 
-			 * conserve el turno y si es incorrecta se salga del metdo de imprimir preguntar y le pase el turno
-			 * al siguiente jugador*/
+			
 		}while(comprobarAllQuesitos(turno[i]) || i<turno.length);
 		
 		

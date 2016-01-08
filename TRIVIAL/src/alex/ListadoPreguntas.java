@@ -927,11 +927,12 @@ public class ListadoPreguntas {
 	}
 
 	public boolean comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
-		boolean aux=true;
+		boolean aux=false;
 		switch (Leer.datoInt()) {
 		case 1:
 			if (list[preg][res1].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");aux = true;
+				System.out.println("Respuesta correcta");
+				aux = true;
 				}
 			else{
 				System.out.println("Respuesta incorrecta");
@@ -940,7 +941,8 @@ public class ListadoPreguntas {
 
 		case 2:
 			if (list[preg][res2].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");aux = true;
+				System.out.println("Respuesta correcta");
+				aux = true;
 			}
 			else{
 				System.out.println("Respuesta incorrecta");
@@ -949,7 +951,8 @@ public class ListadoPreguntas {
 
 		case 3:
 			if (list[preg][res3].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");aux=true;
+				System.out.println("Respuesta correcta");
+				aux=true;
 			}
 			else{
 				System.out.println("Respuesta incorrecta");
