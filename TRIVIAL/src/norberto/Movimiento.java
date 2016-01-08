@@ -8,10 +8,35 @@ import leer_por_teclado.Leer;
 
 public class Movimiento {
 
-	// MÉTODOS
-	public void escogerMovimiento(Equipo x, int dado, Casilla[][] pos) {
+	/**
+	 *Este  método sirve para escoger el tipo de movimiento que se desea realizar,
+	 *también se utiliza o es llamado en el momento que uno de los movimientos escogidos
+	 *se encuentra en una intercepción y da la opción de escoger otro movimiento que sea 
+	 *adecuado.  
+	 * 
+	 * @param triv, este  es el equipo que se quiere mover.
+	 * @param dado, este es el número aleatorio que indica la cantidad de casillas que debe 
+	 * mover el equipo
+	 * @param punto, Array bidimencional que conforma las casillas del tablero.
+	 */	
+	public void escogerMovimiento(Equipo triv, int dado, Casilla[][] punto) {
 		int intro;
+		
+		/*
+		 *Variable booleana que al ser verdadera permitirá ver el menú de los movimientos
+		 *que se pueden realizar y ejecutarlo, si la variable es falsa se ejecuta un mensaje que nos
+		 *dice que el movimiento no puede ser realizado.
+		 *Será verdadera cuando se pueda realizar el movimiento y
+		 *será falsa cuando el movimiento no se pueda realizar. 
+		 *   
+		 */
 		boolean comprobar = true;
+		/*
+		 * En el caso de que el ususario quiera ir para arriba o para abajo, debera
+		 * seguir esa dirección y no podra ir para abajo o para arriba respectivamente
+		 */
+		boolean puedeVertical = true;
+		boolean puedeHorizontal= true;
 		
 		do {
 			if (comprobar == false) {
@@ -22,19 +47,19 @@ public class Movimiento {
 			intro = Leer.datoInt();
 			switch (intro) {
 			case 1:
-				comprobar = moverDer(x, dado, pos);
+				comprobar = moverDer(triv, dado, punto);
 				break;
 
 			case 2:
-				comprobar = moverIzq(x, dado, pos);
+				comprobar = moverIzq(triv, dado, punto);
 				break;
 
 			case 3:
-				comprobar = moverNort(x, dado, pos);
+				comprobar = moverNort(triv, dado, punto);
 				break;
 
 			case 4:
-				comprobar = moverSur(x, dado, pos);
+				comprobar = moverSur(triv, dado, punto);
 				break;
 
 			}
@@ -43,31 +68,38 @@ public class Movimiento {
 
 	}
 	
-	public boolean moverDer(Equipo x, int dado, Casilla[][] pos) {
-		int[] num = identifiCasilla(x, pos);
+	/**
+	 * 
+	 * @param triv
+	 * @param dado
+	 * @param punto
+	 * @return
+	 */
+	public boolean moverDer(Equipo triv, int dado, Casilla[][] punto) {
+		int[] num = identifiCasilla(triv, punto);
 		boolean movi = true;
 		for (int i = 1; i <= dado && movi == true; i++) {
 			if ((num[0] >= 0 && num[0] <= 6) && (num[1] + i >= 0 && num[1] + i <= 6)
-					&& pos[num[0]][num[1] + i] != null) {
-				switch (x.getNumEq()) {
+					&& punto[num[0]][num[1] + i] != null) {
+				switch (triv.getNumEq()) {
 				case 1:
-					x.setPosEq(pos[num[0]][num[1] + i].getPosEq1());
-					break;
+					triv.setPosEq(punto[num[0]][num[1] + i].getPosEq1());
+					break;					
 
 				case 2:
-					x.setPosEq(pos[num[0]][num[1] + i].getPosEq2());
+					triv.setPosEq(punto[num[0]][num[1] + i].getPosEq2());
 					break;
 
 				case 3:
-					x.setPosEq(pos[num[0]][num[1] + i].getPosEq3());
+					triv.setPosEq(punto[num[0]][num[1] + i].getPosEq3());
 					break;
 
 				case 4:
-					x.setPosEq(pos[num[0]][num[1] + i].getPosEq4());
+					triv.setPosEq(punto[num[0]][num[1] + i].getPosEq4());
 					break;
 				}
-				if (pos[num[0]][num[1] + i].isInterseccion() && i >= 2 && i != dado) {
-					escogerMovimiento(x, dado - i, pos);
+				if (punto[num[0]][num[1] + i].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(triv, dado - i, punto);
 					dado = 0;
 				}
 			} else
@@ -76,31 +108,31 @@ public class Movimiento {
 		return movi;
 	}
 
-	public boolean moverIzq(Equipo x, int dado, Casilla[][] pos) {
-		int[] num = identifiCasilla(x, pos);
+	public boolean moverIzq(Equipo triv, int dado, Casilla[][] punto) {
+		int[] num = identifiCasilla(triv, punto);
 		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
 			if ((num[0] >= 0 && num[0] <= 6) && (num[1] - i >= 0 && num[1] - i <= 6)
-					&& pos[num[0]][num[1] - i] != null) {
-				switch (x.getNumEq()) {
+					&& punto[num[0]][num[1] - i] != null) {
+				switch (triv.getNumEq()) {
 				case 1:
-					x.setPosEq(pos[num[0]][num[1] - i].getPosEq1());
+					triv.setPosEq(punto[num[0]][num[1] - i].getPosEq1());
 					break;
 
 				case 2:
-					x.setPosEq(pos[num[0]][num[1] - i].getPosEq2());
+					triv.setPosEq(punto[num[0]][num[1] - i].getPosEq2());
 					break;
 
 				case 3:
-					x.setPosEq(pos[num[0]][num[1] - i].getPosEq3());
+					triv.setPosEq(punto[num[0]][num[1] - i].getPosEq3());
 					break;
 
 				case 4:
-					x.setPosEq(pos[num[0]][num[1] - i].getPosEq4());
+					triv.setPosEq(punto[num[0]][num[1] - i].getPosEq4());
 					break;
 				}
-				if (pos[num[0]][num[1] - i].isInterseccion() && i >= 2 && i != dado) {
-					escogerMovimiento(x, dado - i, pos);
+				if (punto[num[0]][num[1] - i].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(triv, dado - i, punto);
 					dado = 0;
 				}
 			} else
@@ -110,31 +142,31 @@ public class Movimiento {
 		return movi;
 	}
 
-	public boolean moverNort(Equipo x, int dado, Casilla[][] pos) {
-		int[] num = identifiCasilla(x, pos);
+	public boolean moverNort(Equipo triv, int dado, Casilla[][] punto) {
+		int[] num = identifiCasilla(triv, punto);
 		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
 			if ((num[0] - i >= 0 && num[0] - i <= 6) && (num[1] >= 0 && num[1] <= 6)
-					&& pos[num[0] - i][num[1]] != null) {
-				switch (x.getNumEq()) {
+					&& punto[num[0] - i][num[1]] != null) {
+				switch (triv.getNumEq()) {
 				case 1:
-					x.setPosEq(pos[num[0] - i][num[1]].getPosEq1());
+					triv.setPosEq(punto[num[0] - i][num[1]].getPosEq1());
 					break;
 
 				case 2:
-					x.setPosEq(pos[num[0] - i][num[1]].getPosEq2());
+					triv.setPosEq(punto[num[0] - i][num[1]].getPosEq2());
 					break;
 
 				case 3:
-					x.setPosEq(pos[num[0] - i][num[1]].getPosEq3());
+					triv.setPosEq(punto[num[0] - i][num[1]].getPosEq3());
 					break;
 
 				case 4:
-					x.setPosEq(pos[num[0] - i][num[1]].getPosEq4());
+					triv.setPosEq(punto[num[0] - i][num[1]].getPosEq4());
 					break;
 				}
-				if (pos[num[0] - i][num[1]].isInterseccion() && i >= 2 && i != dado) {
-					escogerMovimiento(x, dado - i, pos);
+				if (punto[num[0] - i][num[1]].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(triv, dado - i, punto);
 					dado = 0;
 				}
 			} else
@@ -143,31 +175,31 @@ public class Movimiento {
 		return movi;
 	}
 
-	public boolean moverSur(Equipo x, int dado, Casilla[][] pos) {
-		int[] num = identifiCasilla(x, pos);
+	public boolean moverSur(Equipo triv, int dado, Casilla[][] punto) {
+		int[] num = identifiCasilla(triv, punto);
 		boolean movi = true;
 		for (int i = 1; i <= dado; i++) {
 			if ((num[0] + i >= 0 && num[0] + i <= 6) && (num[1] >= 0 && num[1] <= 6)
-					&& pos[num[0] + i][num[1]] != null) {
-				switch (x.getNumEq()) {
+					&& punto[num[0] + i][num[1]] != null) {
+				switch (triv.getNumEq()) {
 				case 1:
-					x.setPosEq(pos[num[0] + i][num[1]].getPosEq1());
+					triv.setPosEq(punto[num[0] + i][num[1]].getPosEq1());
 					break;
 
 				case 2:
-					x.setPosEq(pos[num[0] + i][num[1]].getPosEq2());
+					triv.setPosEq(punto[num[0] + i][num[1]].getPosEq2());
 					break;
 
 				case 3:
-					x.setPosEq(pos[num[0] + i][num[1]].getPosEq3());
+					triv.setPosEq(punto[num[0] + i][num[1]].getPosEq3());
 					break;
 
 				case 4:
-					x.setPosEq(pos[num[0] + i][num[1]].getPosEq4());
+					triv.setPosEq(punto[num[0] + i][num[1]].getPosEq4());
 					break;
 				}
-				if (pos[num[0] + i][num[1]].isInterseccion() && i >= 2 && i != dado) {
-					escogerMovimiento(x, dado - i, pos);
+				if (punto[num[0] + i][num[1]].isInterseccion() && i >= 2 && i != dado) {
+					escogerMovimiento(triv, dado - i, punto);
 					dado = 0;
 				}
 			} else
@@ -176,13 +208,13 @@ public class Movimiento {
 		return movi;
 	}
 
-	public int[] identifiCasilla(Equipo uno, Casilla[][] pos) {
+	public int[] identifiCasilla(Equipo triv, Casilla[][] punto) {
 		int posit[] = new int[2];
 		boolean salir = false;
-		for (int i = 0; i < pos.length && salir == false; i++) {
-			switch (uno.getNumEq()) {
+		for (int i = 0; i < punto.length && salir == false; i++) {
+			switch (triv.getNumEq()) {
 			case 1:
-				if (uno.getPosEq()[0] == pos[i][0].getPosEq1()[0]) {
+				if (triv.getPosEq()[0] == punto[i][0].getPosEq1()[0]) {
 					posit[0] = i;
 					i = 0;
 					salir = true;
@@ -190,14 +222,14 @@ public class Movimiento {
 				break;
 
 			case 2:
-				if (uno.getPosEq()[0] == pos[i][0].getPosEq2()[0]) {
+				if (triv.getPosEq()[0] == punto[i][0].getPosEq2()[0]) {
 					posit[0] = i;
 					i = 0;
 					salir = true;
 				}
 				break;
 			case 3:
-				if (uno.getPosEq()[0] == pos[i][0].getPosEq3()[0]) {
+				if (triv.getPosEq()[0] == punto[i][0].getPosEq3()[0]) {
 					posit[0] = i;
 					i = 0;
 					salir = true;
@@ -205,7 +237,7 @@ public class Movimiento {
 				break;
 
 			case 4:
-				if (uno.getPosEq()[0] == pos[i][0].getPosEq4()[0]) {
+				if (triv.getPosEq()[0] == punto[i][0].getPosEq4()[0]) {
 					posit[0] = i;
 					i = 0;
 					salir = true;
@@ -214,31 +246,31 @@ public class Movimiento {
 			}
 		}
 		salir=false;
-		for (int j = 0; j < pos[posit[0]].length && salir == false; j++) {
-			if (pos[posit[0]][j] != null) {
-				switch (uno.getNumEq()) {
+		for (int j = 0; j < punto[posit[0]].length && salir == false; j++) {
+			if (punto[posit[0]][j] != null) {
+				switch (triv.getNumEq()) {
 				case 1:
-					if (uno.getPosEq()[1] == pos[posit[0]][j].getPosEq1()[1]) {
+					if (triv.getPosEq()[1] == punto[posit[0]][j].getPosEq1()[1]) {
 						posit[1] = j;
 						salir = true;
 					}
 					break;
 
 				case 2:
-					if (uno.getPosEq()[1] == pos[posit[0]][j].getPosEq2()[1]) {
+					if (triv.getPosEq()[1] == punto[posit[0]][j].getPosEq2()[1]) {
 						posit[1] = j;
 						salir = true;
 					}
 					break;
 				case 3:
-					if (uno.getPosEq()[1] == pos[posit[0]][j].getPosEq3()[1]) {
+					if (triv.getPosEq()[1] == punto[posit[0]][j].getPosEq3()[1]) {
 						posit[1] = j;
 						salir = true;
 					}
 					break;
 
 				case 4:
-					if (uno.getPosEq()[1] == pos[posit[0]][j].getPosEq4()[1]) {
+					if (triv.getPosEq()[1] == punto[posit[0]][j].getPosEq4()[1]) {
 						posit[1] = j;
 						salir = true;
 					}
@@ -247,9 +279,8 @@ public class Movimiento {
 			}
 
 		}
-
-		return posit;
-
+		  return posit;
 	}
-
+	
+	
 }
