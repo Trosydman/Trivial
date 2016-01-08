@@ -104,14 +104,13 @@ public class Trivial {
 			tab.establecerEqTablero(turno[i]);
 			tab.imprimeTablero();
 			
-			cache.imprimirPregBBDD();
 			
+			if(cache.imprimirPregBBDD()==false){
 			i++;
-			
 			if(i==turno.length){
 				i=0;
 			}
-			
+			}
 			
 			
 		}while(comprobarAllQuesitos(turno[i]) || i<turno.length);

@@ -647,7 +647,7 @@ public class ListadoPreguntas {
 
 	// MÉTODOS
 
-	public void imprimirPregPROG() {
+	public boolean imprimirPregPROG() {
 		String[][] listadoProgramacion = {
 
 				{ pregProgALE1, opcAProgALE1, opcBProgALE1, opcCProgALE1 },
@@ -701,11 +701,11 @@ public class ListadoPreguntas {
 		System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
-		comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+		return comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
-	public void imprimirPregBBDD() {
+	public boolean imprimirPregBBDD() {
 		String[][] listadoBBDD = {
 
 				{ pregBBDDALE1, opcABBDDALE1, opcBBBDDALE1, opcCBBDDALE1 },
@@ -759,11 +759,11 @@ public class ListadoPreguntas {
 		System.out.println("\t" + "c) " + listadoBBDD[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
-		comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+		return comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
-	public void imprimirPregHTML() {
+	public boolean imprimirPregHTML() {
 		String[][] listadoHTML = { { pregHTMLALE1, opcAHTMLALE1, opcBHTMLALE1, opcCHTMLALE1 },
 				{ pregHTMLALE2, opcAHTMLALE2, opcBHTMLALE2, opcCHTMLALE2 },
 				{ pregHTMLALE3, opcAHTMLALE3, opcBHTMLALE3, opcCHTMLALE3 },
@@ -812,11 +812,11 @@ public class ListadoPreguntas {
 		System.out.println("\t" + "c) " + listadoHTML[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
-		comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+		return comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
-	public void imprimirPregSIS() {
+	public boolean imprimirPregSIS() {
 		String[][] listadoSIS = { { pregSISALE1, opcASISALE1, opcBSISALE1, opcCSISALE1 },
 				{ pregSISALE2, opcASISALE2, opcBSISALE2, opcCSISALE2 },
 				{ pregSISALE3, opcASISALE3, opcBSISALE3, opcCSISALE3 },
@@ -867,11 +867,11 @@ public class ListadoPreguntas {
 		System.out.println("\t" + "c) " + listadoSIS[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
-		comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+		return comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
-	public void imprimirPregCOL() {
+	public boolean imprimirPregCOL() {
 		String[][] listadoCOL = { { pregCOLALE1, opcACOLALE1, opcBCOLALE1, opcCCOLALE1 },
 				{ pregCOLALE2, opcACOLALE2, opcBCOLALE2, opcCCOLALE2 },
 				{ pregCOLALE3, opcACOLALE3, opcBCOLALE3, opcCCOLALE3 },
@@ -922,7 +922,7 @@ public class ListadoPreguntas {
 		System.out.println("\t" + "c) " + listadoCOL[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
-		comprobarRespuesta(listadoCOL, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
+		return comprobarRespuesta(listadoCOL, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
