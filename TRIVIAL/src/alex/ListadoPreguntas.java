@@ -926,31 +926,37 @@ public class ListadoPreguntas {
 
 	}
 
-	public void comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
-
+	public boolean comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
+		boolean aux=true;
 		switch (Leer.datoInt()) {
 		case 1:
-			if (list[preg][res1].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			else
+			if (list[preg][res1].equals(list[preg][1])){
+				System.out.println("Respuesta correcta");aux = true;
+				}
+			else{
 				System.out.println("Respuesta incorrecta");
+			}
 			break;
 
 		case 2:
-			if (list[preg][res2].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			else
+			if (list[preg][res2].equals(list[preg][1])){
+				System.out.println("Respuesta correcta");aux = true;
+			}
+			else{
 				System.out.println("Respuesta incorrecta");
+			}
 			break;
 
 		case 3:
-			if (list[preg][res3].equals(list[preg][1]))
-				System.out.println("Respuesta correcta");
-			else
+			if (list[preg][res3].equals(list[preg][1])){
+				System.out.println("Respuesta correcta");aux=true;
+			}
+			else{
 				System.out.println("Respuesta incorrecta");
+			}
 			break;
 		}
-
+		return aux;
 	}
 
 	public void darQuesito(Casilla cas, Equipo eq) {
