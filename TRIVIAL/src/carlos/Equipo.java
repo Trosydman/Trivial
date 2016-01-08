@@ -24,10 +24,10 @@ public class Equipo {
 		 * Si se quisiera volver a jugar, el número de equipo
 		 * tiene que inicializarse a 0;
 		 */
-		if(numEq == 4)
+		if(numEq > 4)
 			numEq=0;
-		else
-			this.numEq = numEq;
+		
+		this.numEq = numEq;
 		
 		if(isEquipo)
 			this.nombreEq = nombre;
@@ -56,8 +56,7 @@ public class Equipo {
 			posEq[0]=13+1;
 			posEq[1]=31+4;
 			break;
-		default:
-			break;
+		
 		}
 	}
 
