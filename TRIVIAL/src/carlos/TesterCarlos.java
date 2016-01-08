@@ -23,13 +23,13 @@ public class TesterCarlos {
 		System.out.println();
 		tabl.imprimeTablero();
 		
-		tabl.borrarEqTablero(eqJug1);
-		System.out.println("\nMoviendo a la derecha a Carlos");
-		mov.moverIzq(eqJug1, 1, tabl.getCasillasTabl());
-		tabl.establecerEqTablero(eqJug1);
-		System.out.println(eqJug1);
-		tabl.imprimeTablero();
-		tabl.borrarEqTablero(eqJug1);
+//		tabl.borrarEqTablero(eqJug1);
+//		System.out.println("\nMoviendo a la derecha a Carlos");
+//		mov.moverIzq(eqJug1, 1, tabl.getCasillasTabl());
+//		tabl.establecerEqTablero(eqJug1);
+//		System.out.println(eqJug1);
+//		tabl.imprimeTablero();
+//		tabl.borrarEqTablero(eqJug1);
 		
 		//PROBANDO CON EQUIPOS
 		Equipo eqEq1=new Equipo("Actimel", true);

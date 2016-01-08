@@ -21,14 +21,14 @@ public class Casilla {
 		this.posEq1[0] = posFIL;
 		this.posEq1[1] = posCOL;
 		
-		this.posEq2[0] = posFIL+4;
-		this.posEq2[1] = posCOL;
+		this.posEq2[0] = posFIL;
+		this.posEq2[1] = posCOL+4;
 		
-		this.posEq3[0] = posFIL;
-		this.posEq3[1] = posCOL+1;
+		this.posEq3[0] = posFIL+1;
+		this.posEq3[1] = posCOL;
 		
-		this.posEq4[0] = posFIL+4;
-		this.posEq4[1] = posCOL+1;
+		this.posEq4[0] = posFIL+1;
+		this.posEq4[1] = posCOL+4;
 		
 		this.tipo = tipo;
 	}
