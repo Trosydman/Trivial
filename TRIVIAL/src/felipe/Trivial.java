@@ -1,257 +1,362 @@
 package felipe;
+
 import java.util.Arrays;
 import java.util.Random;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 import leer_por_teclado.Leer;
 import norberto.Movimiento;
+import carlos.Casilla;
 import carlos.Equipo;
 import carlos.Tablero;
 import alex.ListadoPreguntas;
 
 public class Trivial {
-	//ATRIBUTOS
+	// ATRIBUTOS
 	Equipo eq1;
 	Equipo eq2;
 	Equipo eq3;
 	Equipo eq4;
 	Equipo[] turno;
-	ListadoPreguntas cache=new ListadoPreguntas();
-	Tablero tab= new Tablero();
+	ListadoPreguntas cache = new ListadoPreguntas();
+	Tablero tab = new Tablero();
 	Movimiento mov = new Movimiento();
-	
-	
-	//CONSTRUCTORES
+
+	// CONSTRUCTORES
 	public Trivial() {
-			
+
 	}
-	
-	
-	//MÉTODOS
-	
-	
-	//ladilla termina switch de elecion de jugadores
-	public void jugarPartida(){
-		int jug, menu, i=0,dado;
-		boolean comproB=true;
-		
-		do{
-		
-		System.out.println("Indicamelo churrita:");
-		System.out.println("1.alone in the world");
-		System.out.println("2.sa pe�a");
-		menu=Leer.datoInt();
-		}while(menu<0 &&  menu >=2);
-		
-		switch(menu){
+
+	// MÉTODOS
+
+	// ladilla termina switch de elecion de jugadores
+	public void jugarPartida() {
+		int jug, menu, i = 0, dado;
+		boolean comproB = true, isFin = false;
+		int[] posPreg;
+		Casilla[][] saveCasilla;
+
+		do {
+
+			System.out.println("Indicamelo churrita:");
+			System.out.println("1.alone in the world");
+			System.out.println("2.sa pe�a");
+			menu = Leer.datoInt();
+		} while (menu < 0 && menu >= 2);
+
+		switch (menu) {
 		case 1:
-			
-			comproB=false;
+
+			comproB = false;
 			do {
 				System.out.println("indica cuantos jugadores sois\nrecuerda que maximo cuatro jugadores:");
-				jug=Leer.datoInt();
-			
-				if (jug<=4 && jug>0){
-						
-						//TODO ladilla el syso se cambia por el metodo german
-						cogerNombre(jug, comproB);
-						
-					
-				}else{
+				jug = Leer.datoInt();
+
+				if (jug <= 4 && jug > 0) {
+
+					// TODO ladilla el syso se cambia por el metodo german
+					cogerNombre(jug, comproB);
+
+				} else {
 					System.out.println("El numero de jugadores no es el correcto\n");
 				}
-			}while(jug>4 || jug<=0);
+			} while (jug > 4 || jug <= 0);
 			break;
-			
+
 		case 2:
-			
-			
-			do{
+
+			do {
 				System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
-				jug=Leer.datoInt();
-				if(jug<=4 && jug>0){
-				
-				//TODO ladilla el syso se cambia por el metodo german
-				
+				jug = Leer.datoInt();
+				if (jug <= 4 && jug > 0) {
+
+					// TODO ladilla el syso se cambia por el metodo german
+
 					cogerNombre(jug, comproB);
-				
-				}else{
-				System.out.println("El numero de jugadores no es el correcto\n");
+
+				} else {
+					System.out.println("El numero de jugadores no es el correcto\n");
 				}
-			
-			}while(jug>4 || jug<=0);
+
+			} while (jug > 4 || jug <= 0);
 			break;
-		
+
 		default:
 			System.out.println("no se contempla esa opcion");
 			break;
-		
+
 		}
-		
-		
-		do{
-			
+
+		do {
+
 			tab.imprimeTablero();
-			
-			if(comproB){
-			System.out.println("Es el turno de "+turno[i].getNombreEq());
-			}else{
-				System.out.println("Es el turno de "+turno[i].getJugador());
+
+			if (comproB) {
+				System.out.println("Es el turno de " + turno[i].getNombreEq());
+			} else {
+				System.out.println("Es el turno de " + turno[i].getJugador());
 			}
-			dado=lanzarDado();
-			System.out.println(dado);
+			System.out.println("quesitos["+Arrays.toString(turno[i].getQuesitos())+"]");
 			
+			dado = lanzarDado();
+			System.out.println(dado);
+
 			tab.borrarEqTablero(turno[i]);
 			mov.escogerMovimiento(turno[i], dado, tab.getCasillasTabl());
 			tab.establecerEqTablero(turno[i]);
 			tab.imprimeTablero();
-			
-			
-			if(cache.imprimirPregBBDD()==false){
-			i++;
-			if(i==turno.length){
-				i=0;
+
+			posPreg = mov.identifiCasilla(turno[i], tab.getCasillasTabl());
+			saveCasilla = tab.getCasillasTabl();
+			switch (saveCasilla[posPreg[0]][posPreg[1]].getTipo()) {
+
+			case Casilla.PROG:
+				
+				System.out.println("has caido en una casilla de programacion");
+				if (cache.imprimirPregPROG() == false) {
+					
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.quitarQuesito(Casilla.PROG, turno[i]);
+					}
+					i++;
+					if (i == turno.length) {
+						i = 0;
+					}
+				}else{
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.darQuesito(Casilla.PROG, turno[i]);
+					}
+
+				}
+				
+				break;
+				
+			case Casilla.BBDD:
+				
+				System.out.println("has caido en una casilla de base de datos");
+				if (cache.imprimirPregBBDD() == false) {
+					
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.quitarQuesito(Casilla.BBDD, turno[i]);
+					}
+					i++;
+					if (i == turno.length) {
+						i = 0;
+					}
+				}else{
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.darQuesito(Casilla.BBDD, turno[i]);
+					}
+
+				}
+				break;
+				
+			case Casilla.HTML:
+				
+				System.out.println("has caido en una casilla de html");
+				if (cache.imprimirPregHTML() == false) {
+					
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.quitarQuesito(Casilla.HTML, turno[i]);
+					}
+					i++;
+					if (i == turno.length) {
+						i = 0;
+					}
+				}else{
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.darQuesito(Casilla.HTML, turno[i]);
+					}
+
+				}
+				break;
+				
+			case Casilla.SIS:
+				
+				System.out.println("has caido en una casilla de sistemas informaticos");
+				if (cache.imprimirPregSIS() == false) {
+					
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.quitarQuesito(Casilla.SIS, turno[i]);
+					}
+					i++;
+					if (i == turno.length) {
+						i = 0;
+					}
+				}else{
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.darQuesito(Casilla.SIS, turno[i]);
+					}
+
+				}
+				break;
+				
+			case Casilla.COL:
+				
+				if(!comprobarAllQuesitos(turno[i])){
+				System.out.println("has caido en una casilla de colegio");
+				if (cache.imprimirPregCOL() == false) {
+					
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.quitarQuesito(Casilla.COL, turno[i]);
+					}
+					i++;
+					if (i == turno.length) {
+						i = 0;
+					}
+				}else{
+					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+						cache.darQuesito(Casilla.COL, turno[i]);
+						
+					}
+
+				}
+				}else{
+					isFin=listadoFinal();
+				}
+				break;
+
 			}
-			}
+
 			
 			
-		}while(comprobarAllQuesitos(turno[i]) || i<turno.length);
-		
-		
-		
-		
-		
-		
+
+		} while ((isFin && comprobarAllQuesitos(turno[i])) || i < turno.length);
+
 	}
-	
-	 
-	
+
 	
 	
 	
 	
 	
 	
-	//ladilla pide los nombres de los jugadores y distribuye con un metodo el orden de los turnos
-	public void cogerNombre(int jug, boolean tipoEquipo) {
-		int  numJ=1;
-		String nomJug;
-		turno= new Equipo[jug];
+	public boolean listadoFinal() {
+		boolean aux =true;
 		
-		
-		
-		for(int i=0;i<jug;i++){
+		for (int i = 0; i < 3 && aux==true; i++) {
 			
-			if(tipoEquipo){
-				
-				System.out.println("Diga el nombre del equipo "+numJ+"(Min 3 caracteres):");
-			
-			}else{
-				
-				System.out.println("Diga el nombre del jugador "+numJ+"(Min 3 caracteres):");
+			if(!cache.imprimirPregCOL()){
+				aux=false;
 			}
 			
-			do{
-				
-				nomJug=Leer.dato();
-				if(nomJug.length()<3){
+		}
+		
+		return aux;
+	}
+
+	// ladilla pide los nombres de los jugadores y distribuye con un metodo el
+	// orden de los turnos
+	public void cogerNombre(int jug, boolean tipoEquipo) {
+		int numJ = 1;
+		String nomJug;
+		turno = new Equipo[jug];
+
+		for (int i = 0; i < jug; i++) {
+
+			if (tipoEquipo) {
+
+				System.out.println("Diga el nombre del equipo " + numJ + "(Min 3 caracteres):");
+
+			} else {
+
+				System.out.println("Diga el nombre del jugador " + numJ + "(Min 3 caracteres):");
+			}
+
+			do {
+
+				nomJug = Leer.dato();
+				if (nomJug.length() < 3) {
 					System.out.println("El nombre debe de tener minimo 3 caractereres.\n Prueba de nuevo: ");
 				}
-				}while(nomJug.length()<3);				
-			
-				switch(i) {
-					case 0:
-						eq1=new Equipo(numJ, nomJug, tipoEquipo);
-						atribuirTurno(eq1);
-						tab.establecerEqTablero(eq1);
-						break;
-			
-					case 1:
-						eq2=new Equipo(numJ, nomJug, tipoEquipo);
-						atribuirTurno(eq2);
-						tab.establecerEqTablero(eq2);
-						break;
-			
-					case 2:
-						eq3=new Equipo(numJ, nomJug,tipoEquipo);
-						atribuirTurno(eq3);
-						tab.establecerEqTablero(eq3);
-						break;
-			
-					case 3:
-						eq4=new Equipo(numJ, nomJug, tipoEquipo );
-						atribuirTurno(eq4);
-						tab.establecerEqTablero(eq4);
-						break;
-				}
-				numJ++;
+			} while (nomJug.length() < 3);
+
+			switch (i) {
+			case 0:
+				eq1 = new Equipo(numJ, nomJug, tipoEquipo);
+				atribuirTurno(eq1);
+				tab.establecerEqTablero(eq1);
+				break;
+
+			case 1:
+				eq2 = new Equipo(numJ, nomJug, tipoEquipo);
+				atribuirTurno(eq2);
+				tab.establecerEqTablero(eq2);
+				break;
+
+			case 2:
+				eq3 = new Equipo(numJ, nomJug, tipoEquipo);
+				atribuirTurno(eq3);
+				tab.establecerEqTablero(eq3);
+				break;
+
+			case 3:
+				eq4 = new Equipo(numJ, nomJug, tipoEquipo);
+				atribuirTurno(eq4);
+				tab.establecerEqTablero(eq4);
+				break;
+			}
+			numJ++;
 		}
-		
+
+	}
+
+	// ladilla metodo para tirar el dado para saber los movimientos
+	public int lanzarDado() {
+		int num, hasta = 6, desde = 1;
+		System.out.println("Intro para tirar los dados");
+		Leer.dato();
+		Random numAle = new Random();
+		num = numAle.nextInt(hasta - desde + 1) + desde;
+		return num;
+	}
+
+	// ladilla metodo para asignar turno aleatoriamente
+
+	public void atribuirTurno(Equipo eqTurn) {
+
+		int num, hasta = turno.length - 1, desde = 0;
+		boolean fin = false;
+
+		do {
+			Random numAle = new Random();
+			num = numAle.nextInt(hasta - desde + 1) + desde;
+			if (turno[num] == null) {
+				turno[num] = eqTurn;
+				fin = true;
+			}
+		} while (turno[num] != null && fin == false);
+	}
+
+	/*
+	 * ladilla metodo para comprobar ganador y establecer fin del juego. Se
+	 * utilizara como condicion para salir del bucle que cogera al metodo
+	 * jugarpartida.
+	 */
+
+	public boolean comprobarAllQuesitos(Equipo eq) {
+		boolean[] proB = eq.getQuesitos();
+		boolean fin = true;
+
+		for (int i = 0; i < proB.length && fin == true; i++) {
+
+			if (false == proB[i]) {
+				fin = false;
+			}
+		}
+		return fin;
 	}
 	
 	
-	
-	//ladilla metodo para tirar el dado para saber los movimientos
-		public int lanzarDado(){
-			int num,hasta=6, desde=1;
-			System.out.println("Intro para tirar los dados");
-			Leer.dato();
-			Random numAle= new Random();
-			num=numAle.nextInt(hasta-desde+1)+desde;
-			return num;
-		}
-	
 
+	// GETTERS, SETTERS Y TOSTRINGS
 
-	// ladilla metodo para asignar turno aleatoriamente
-	
-	
-		public void atribuirTurno(Equipo eqTurn){
-			
-			int num,hasta=turno.length-1,desde=0;
-			boolean fin = false;
-			
-			do {
-				Random numAle=new Random();
-				num=numAle.nextInt(hasta-desde+1)+desde;
-				if(turno[num]==null){
-					turno[num]=eqTurn;
-					fin = true;
-				}
-			}while(turno[num]!=null && fin == false);
-		}
-		
-	/* ladilla metodo para comprobar ganador y establecer fin del juego. 
-	 * Se utilizara como condicion para salir del bucle que cogera al metodo jugarpartida.
-	 */
+	public Tablero getTab() {
+		return tab;
+	}
 
-		public boolean comprobarAllQuesitos(Equipo eq){
-			boolean [] proB =eq.getQuesitos();
-			boolean fin = true;
-			
-			for(int i=0;i<proB.length && fin==true;i++){
-				
-				if(false==proB[i]){
-					fin = false;
-				}
-			}	
-			return fin;
-		}
-	
-	
-	
-	
-	
-	
-	
-	
-	//GETTERS, SETTERS Y TOSTRINGS
-	
-	
-		public Tablero getTab() {
-			return tab;
-		}
-
-
-		public void setTab(Tablero tab) {
-			this.tab = tab;
-		}
+	public void setTab(Tablero tab) {
+		this.tab = tab;
+	}
 }

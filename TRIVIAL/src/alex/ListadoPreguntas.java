@@ -962,17 +962,17 @@ public class ListadoPreguntas {
 		return aux;
 	}
 
-	public void darQuesito(Casilla cas, Equipo eq) {
+	public void darQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
-		aux[cas.getTipo()]= true;
+		aux[tipoCas]= true;
 			eq.setQuesitos(aux);
 		}
 
 	
 
-	public void quitarQuesito(Casilla cas, Equipo eq) {
+	public void quitarQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
-		aux[cas.getTipo()]= false;
+		aux[tipoCas]= false;
 			eq.setQuesitos(aux);
 
 	}
