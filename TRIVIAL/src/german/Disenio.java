@@ -165,10 +165,10 @@ public static void generarNumEq (){
 		System.out.println("===================================================================================================");
 		Disenio.contLin++;
 		if(eq.getJugador()!= null){
-		System.out.println("\t\t\tEstá jugando el jugador "+eq.getJugador());
+		System.out.println("\t\t\t\t\tEstá jugando el jugador "+eq.getJugador());
 		Disenio.contLin++;
 		}else{
-			System.out.println("\t\t\tEstá jugando el equipo "+eq.getNombreEq());	
+			System.out.println("\t\t\t\t\tEstá jugando el equipo "+eq.getNombreEq());	
 			Disenio.contLin++;
 		}
 		Disenio.generarNumQuesitos(eq);
@@ -179,7 +179,7 @@ public static void generarNumEq (){
 
 	public static void generarNumQuesitos(Equipo eq){
 		
-		System.out.print("Tiene los siguientes quesitos:");
+		System.out.print("\t\tTiene los siguientes quesitos:");
 		
 		for (int i = 0; i < eq.getQuesitos().length; i++) {
 			

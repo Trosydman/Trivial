@@ -85,12 +85,15 @@ public class Tablero {
 	}
 
 	public void imprimeTablero() {
-		for (int i = 0; i < tableroBI.length; i++) {
+		for (int i = 0; i < tableroBI.length; i++) {			
 			for (int j = 0; j < tableroBI[i].length; j++) {
+				if(i==0 && j==0)
+					System.out.print("\t\t");
 				System.out.print(tableroBI[i][j]);
 			}
-			System.out.println();
+			System.out.print("\n\t\t");
 		}
+		System.out.println("");
 	}
 	
 	public void establecerEqTablero(Equipo eq) {
