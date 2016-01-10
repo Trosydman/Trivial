@@ -652,7 +652,7 @@ public class ListadoPreguntas {
 	
 	
 	/**
-	 * 
+	 * Array bidimensional que contiene el listado de preguntas de programación
 	 */
 	String[][] listadoProgramacion = {
 
@@ -686,6 +686,9 @@ public class ListadoPreguntas {
 	
 	
 	
+	/**
+	 * Array bidimensional que contiene el listado de preguntas de base de datos
+	 */
 	String[][] listadoBBDD = {
 
 			{ pregBBDDALE1, opcABBDDALE1, opcBBBDDALE1, opcCBBDDALE1 },
@@ -717,6 +720,9 @@ public class ListadoPreguntas {
 	
 	
 	
+	/**
+	 * Array bidimensional que contiene el listado de preguntas de HTML
+	 */
 	String[][] listadoHTML = { { pregHTMLALE1, opcAHTMLALE1, opcBHTMLALE1, opcCHTMLALE1 },
 			{ pregHTMLALE2, opcAHTMLALE2, opcBHTMLALE2, opcCHTMLALE2 },
 			{ pregHTMLALE3, opcAHTMLALE3, opcBHTMLALE3, opcCHTMLALE3 },
@@ -746,6 +752,9 @@ public class ListadoPreguntas {
 	
 	
 	
+	/**
+	 * Array bidimensional que contiene el listado de preguntas de Sistemas informáticos
+	 */
 	String[][] listadoSIS = { { pregSISALE1, opcASISALE1, opcBSISALE1, opcCSISALE1 },
 			{ pregSISALE2, opcASISALE2, opcBSISALE2, opcCSISALE2 },
 			{ pregSISALE3, opcASISALE3, opcBSISALE3, opcCSISALE3 },
@@ -776,6 +785,9 @@ public class ListadoPreguntas {
 	
 	
 	
+	/**
+	 * Array bidimensional que contiene el listado de preguntas sobre el colegio
+	 */
 	String[][] listadoCOL = { { pregCOLALE1, opcACOLALE1, opcBCOLALE1, opcCCOLALE1 },
 			{ pregCOLALE2, opcACOLALE2, opcBCOLALE2, opcCCOLALE2 },
 			{ pregCOLALE3, opcACOLALE3, opcBCOLALE3, opcCCOLALE3 },
@@ -804,10 +816,16 @@ public class ListadoPreguntas {
 
 	};
 
-	// CONSTRUCTORES
+	
 
 	// MÉTODOS
 
+	/**
+	 * Imprime una pregunta aleatoria de programación y desordena sus respuestas, ya que en el array
+	 * la primera respuesta que está guardada es la correcta
+	 * @return Si la respuesta que se lee por teclado es la correcta o no
+	 * @author Alejandro Álvarez Guzmán
+	 */
 	public boolean imprimirPregPROG() {
 		
 		int hasta=3;
@@ -821,25 +839,31 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoProgramacion[numPregunta][0]);
-		System.out.println("\t" + "a) " + listadoProgramacion[numPregunta][numRespuesta1]);
+		System.out.println("\t" + "1) " + listadoProgramacion[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "b) " + listadoProgramacion[numPregunta][numRespuesta2]);
+		System.out.println("\t" + "2) " + listadoProgramacion[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
+		System.out.println("\t" + "3) " + listadoProgramacion[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
 
+	/**
+	 * Imprime una pregunta aleatoria de base de datos y desordena sus respuestas, ya que en el array
+	 * la primera respuesta que está guardada es la correcta
+	 * @return Si la respuesta que se lee por teclado es la correcta o no
+	 * @author Alejandro Álvarez Guzmán
+	 */
 	public boolean imprimirPregBBDD() {
 		
 		int hasta=3;
@@ -871,7 +895,12 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
-
+	/**
+	 * Imprime una pregunta aleatoria de HTML y desordena sus respuestas, ya que en el array
+	 * la primera respuesta que está guardada es la correcta
+	 * @return Si la respuesta que se lee por teclado es la correcta o no
+	 * @author Alejandro Álvarez Guzmán
+	 */
 	public boolean imprimirPregHTML() {
 		int hasta=3;
 		int desdeRes=1;
@@ -902,7 +931,12 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
-
+	/**
+	 * Imprime una pregunta aleatoria de sistemas informáticos y desordena sus respuestas, ya que en el array
+	 * la primera respuesta que está guardada es la correcta
+	 * @return Si la respuesta que se lee por teclado es la correcta o no
+	 * @author Alejandro Álvarez Guzmán
+	 */
 	public boolean imprimirPregSIS() {
 		int hasta=3;
 		int desdeRes=1;
@@ -933,7 +967,12 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
-
+	/**
+	 * Imprime una pregunta aleatoria del colegio y desordena sus respuestas, ya que en el array
+	 * la primera respuesta que está guardada es la correcta
+	 * @return Si la respuesta que se lee por teclado es la correcta o no
+	 * @author Alejandro Álvarez Guzmán
+	 */
 	public boolean imprimirPregCOL() {
 		int hasta=3;
 		int desdeRes=1;
@@ -965,6 +1004,16 @@ public class ListadoPreguntas {
 
 	}
 
+	/**
+	 * Comprueba si la respuesta seleccionada es la correcta
+	 * @param list Listado de preguntas del tipo de la casilla donde haya caído (Programación,
+	 * Base de datos, Sistemas, HTML o Colegio) 
+	 * @param preg Pregunta aleatoria del listado determinado
+	 * @param res1 Primera respuesta de la pregunta que se ha imprimido
+	 * @param res2 Segunda respuesta de la pregunta que se ha imprimido
+	 * @param res3 Tercera respuesta de la pregunta que se ha imprimido
+	 * @return Si la respuesta que se lee por teclado es la correcta o no, boleano 'true' o 'false' en cada caso
+	 */
 	public boolean comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
 		boolean aux=false;
 		switch (Leer.datoInt()) {
@@ -1001,6 +1050,11 @@ public class ListadoPreguntas {
 		return aux;
 	}
 
+	/**
+	 * Da un quesito en el caso que séa
+	 * @param tipoCas Tipo de casilla
+	 * @param eq Nombre de equipo
+	 */
 	public void darQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
 		aux[tipoCas]= true;
@@ -1008,7 +1062,11 @@ public class ListadoPreguntas {
 		}
 
 	
-
+	/**
+	 * Quita un quesito en el caso que séa
+	 * @param tipoCas Tipo de casilla
+	 * @param eq Nombre de equipo
+	 */
 	public void quitarQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
 		aux[tipoCas]= false;
@@ -1016,6 +1074,11 @@ public class ListadoPreguntas {
 
 	}
 	
+	/**
+	 * Imprime como máximo tres preguntas del tipo colegio siempre y cuando se respondan correctamente las tres,
+	 * si se falla alguna de ellas finaliza el método
+	 * @return Devuelve un boleano en función de si las tres respuestas han sido correctas ono
+	 */
 	public boolean listadoFinal() {
 		boolean aux = false;
 
