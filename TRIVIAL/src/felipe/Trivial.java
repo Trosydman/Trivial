@@ -10,6 +10,7 @@ import norberto.Movimiento;
 import carlos.Casilla;
 import carlos.Equipo;
 import carlos.Tablero;
+import german.Disenio;
 import alex.ListadoPreguntas;
 
 /**
@@ -44,10 +45,10 @@ public class Trivial {
 		
 		do {
 
-			System.out.println("Indicamelo churrita:");
-			System.out.println("1.alone in the world");
-			System.out.println("2.sa pe�a");
+			Disenio.generarMenuDatos();
 			menu = Leer.datoInt();
+			Disenio.contLin+=15;
+			Disenio.limpiarConsola();
 		} while (menu < 0 && menu >= 2);
 
 		switch (menu) {
@@ -55,9 +56,9 @@ public class Trivial {
 
 			comproB = false;
 			do {
-				System.out.println("indica cuantos jugadores sois\nrecuerda que maximo cuatro jugadores:");
+				Disenio.generarNumJug();
 				jug = Leer.datoInt();
-
+				
 				if (jug <= 4 && jug > 1) {
 
 					// TODO ladilla el syso se cambia por el metodo german
@@ -72,8 +73,9 @@ public class Trivial {
 		case 2:
 
 			do {
-				System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
+				Disenio.generarNumEq();
 				jug = Leer.datoInt();
+				
 				if (jug <= 4 && jug > 1) {
 
 					// TODO ladilla el syso se cambia por el metodo german
@@ -82,6 +84,7 @@ public class Trivial {
 
 				} else {
 					System.out.println("El numero de jugadores no es el correcto\n");
+					Disenio.contLin+=2;
 				}
 
 			} while (jug > 4 || jug <= 1);
@@ -89,6 +92,7 @@ public class Trivial {
 
 		default:
 			System.out.println("no se contempla esa opcion");
+			Disenio.contLin+=2;
 			break;
 
 		}
@@ -113,19 +117,22 @@ public class Trivial {
 		
 		
 		do {
-
+			Disenio.limpiarConsola();
+			Disenio.generarCabeTab(turno[i]);
 			tab.imprimeTablero();
-
+			/*
+			 
 			if (comproB) {
 				System.out.println("Es el turno de " + turno[i].getNombreEq());
 			} else {
 				System.out.println("Es el turno de " + turno[i].getJugador());
 			}
 			System.out.println("quesitos[" + Arrays.toString(turno[i].getQuesitos()) + "]");
-
+			*/
 			dado = lanzarDado();
-			System.out.println(dado);
-
+			
+			System.out.println("Ha salido el número "+dado+"\n(intro)");
+			Leer.dato();
 //			tab.borrarEqTablero(turno[i]);
 			mov.escogerMovimiento(turno[i], dado, tab, false);
 //			tab.establecerEqTablero(turno[i]);
@@ -279,10 +286,11 @@ public class Trivial {
 			if (tipoEquipo) {
 
 				System.out.println("Diga el nombre del equipo " + numJ + "(Min 3 caracteres):");
-
+				Disenio.contLin+=2;
 			} else {
 
 				System.out.println("Diga el nombre del jugador " + numJ + "(Min 3 caracteres):");
+				Disenio.contLin+=2;
 			}
 
 			do {
@@ -290,6 +298,7 @@ public class Trivial {
 				nomJug = Leer.dato();
 				if (nomJug.length() < 3) {
 					System.out.println("El nombre debe de tener minimo 3 caractereres.\n Prueba de nuevo: ");
+					Disenio.contLin+=3;
 				}
 			} while (nomJug.length() < 3);
 
@@ -326,7 +335,8 @@ public class Trivial {
 	// ladilla metodo para tirar el dado para saber los movimientos
 	public int lanzarDado() {
 		int num, hasta = 6, desde = 1;
-		System.out.println("Intro para tirar los dados");
+		//System.out.println("Intro para tirar los dados");
+		Disenio.tirarDado();
 		Leer.dato();
 		Random numAle = new Random();
 		num = numAle.nextInt(hasta - desde + 1) + desde;

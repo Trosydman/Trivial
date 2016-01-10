@@ -1,6 +1,7 @@
 package carlos;
 
 import felipe.Trivial;
+import german.Disenio;
 import leer_por_teclado.Leer;
 
 /**
@@ -16,21 +17,17 @@ public class Principal {
 		String repetir = "S";
 		int opc;
 
-		// TODO DISEÑO(Germán)
-		// Imprime pantalla de bienvenida con titulo del juego(poner entre
-		// parentesis al final que se pulse intro para continuar)
+		
+		Disenio.generarBienvenida();
+		
+		
 		Leer.dato();
-
+		Disenio.limpiarConsola();
 		do {
-			// TODO DISEÑO(Germán)
-			// Imprimir mensaje con las diferentes opciones:
-			// - Empezar a jugar
-			// - Reglas del juego
-			// - �Quienes somos?
-			// - SALIR DEL MENÚ
-			// (A�adir al final: Elija una opci�n(0-3) siendo el 0 la salida del men�)
+			Disenio.generarMenu();
+			
 			opc = Leer.datoInt();
-
+			Disenio.limpiarConsola();
 			switch (opc) {
 			case 0:
 				repetir = "N";
