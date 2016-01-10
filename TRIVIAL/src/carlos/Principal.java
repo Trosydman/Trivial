@@ -1,11 +1,12 @@
 package carlos;
 
+import felipe.Trivial;
 import leer_por_teclado.Leer;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		//Trivial nuevaPartida;
+		Trivial nuevaPartida;
 		String repetir = "S";
 		int opc;
 
@@ -36,13 +37,13 @@ public class Principal {
 				 * en ambos casos, se piden los nombres de los jugadores o
 				 * el nombre del equipo y los jugadores respectivamente. 
 				 */
-				// nuevaPartida = new Trivial();
+				 nuevaPartida = new Trivial();
 				/*
 				 * TODO FELIPE(Trivial)
 				 * Inmediatamente despu�s de pedir los nombres empezaremos
 				 * a jugar.
 				 */
-				// nuevaPartida.jugarPartida();
+				 nuevaPartida.jugarPartida();
 				break;
 			case 2:
 				// TODO DISE�O(Germ�n)

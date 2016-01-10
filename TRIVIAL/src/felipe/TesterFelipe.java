@@ -1,7 +1,5 @@
 package felipe;
 
-import carlos.Tablero;
-
 public class TesterFelipe {
 
 	public static void main(String[] args) {

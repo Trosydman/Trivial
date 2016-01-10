@@ -24,16 +24,13 @@ public class Trivial {
 	Movimiento mov = new Movimiento();
 
 	// CONSTRUCTORES
-	public Trivial() {
-
-	}
 
 	// MÉTODOS
 
 	// ladilla termina switch de elecion de jugadores
 	public void jugarPartida() {
 		int jug, menu, i = 0, dado;
-		boolean comproB = true, isFin = false;
+		boolean comproB = true, isNotFin = true;
 		int[] posPreg;
 		Casilla[][] saveCasilla;
 
@@ -97,14 +94,14 @@ public class Trivial {
 			} else {
 				System.out.println("Es el turno de " + turno[i].getJugador());
 			}
-			System.out.println("quesitos["+Arrays.toString(turno[i].getQuesitos())+"]");
-			
+			System.out.println("quesitos[" + Arrays.toString(turno[i].getQuesitos()) + "]");
+
 			dado = lanzarDado();
 			System.out.println(dado);
 
-			tab.borrarEqTablero(turno[i]);
-			mov.escogerMovimiento(turno[i], dado, tab.getCasillasTabl());
-			tab.establecerEqTablero(turno[i]);
+//			tab.borrarEqTablero(turno[i]);
+			mov.escogerMovimiento(turno[i], dado, tab, false);
+//			tab.establecerEqTablero(turno[i]);
 			tab.imprimeTablero();
 
 			posPreg = mov.identifiCasilla(turno[i], tab.getCasillasTabl());
@@ -112,137 +109,134 @@ public class Trivial {
 			switch (saveCasilla[posPreg[0]][posPreg[1]].getTipo()) {
 
 			case Casilla.PROG:
-				
+
 				System.out.println("has caido en una casilla de programacion");
 				if (cache.imprimirPregPROG() == false) {
-					
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.PROG, turno[i]);
 					}
 					i++;
 					if (i == turno.length) {
 						i = 0;
 					}
-				}else{
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+				} else {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.PROG, turno[i]);
 					}
 
 				}
-				
+
 				break;
-				
+
 			case Casilla.BBDD:
-				
+
 				System.out.println("has caido en una casilla de base de datos");
 				if (cache.imprimirPregBBDD() == false) {
-					
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.BBDD, turno[i]);
 					}
 					i++;
 					if (i == turno.length) {
 						i = 0;
 					}
-				}else{
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+				} else {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.BBDD, turno[i]);
 					}
 
 				}
 				break;
-				
+
 			case Casilla.HTML:
-				
+
 				System.out.println("has caido en una casilla de html");
 				if (cache.imprimirPregHTML() == false) {
-					
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.HTML, turno[i]);
 					}
 					i++;
 					if (i == turno.length) {
 						i = 0;
 					}
-				}else{
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+				} else {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.HTML, turno[i]);
 					}
 
 				}
 				break;
-				
+
 			case Casilla.SIS:
-				
+
 				System.out.println("has caido en una casilla de sistemas informaticos");
 				if (cache.imprimirPregSIS() == false) {
-					
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.SIS, turno[i]);
 					}
 					i++;
 					if (i == turno.length) {
 						i = 0;
 					}
-				}else{
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
+				} else {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.SIS, turno[i]);
 					}
 
 				}
 				break;
-				
-			case Casilla.COL:
-				
-				if(!comprobarAllQuesitos(turno[i])){
-				System.out.println("has caido en una casilla de colegio");
-				if (cache.imprimirPregCOL() == false) {
-					
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
-						cache.quitarQuesito(Casilla.COL, turno[i]);
-					}
-					i++;
-					if (i == turno.length) {
-						i = 0;
-					}
-				}else{
-					if(saveCasilla[posPreg[0]][posPreg[1]].isQuesito()){
-						cache.darQuesito(Casilla.COL, turno[i]);
-						
-					}
 
-				}
-				}else{
-					isFin=listadoFinal();
+			case Casilla.COL:
+
+				if (!comprobarAllQuesitos(turno[i])) {
+					System.out.println("has caido en una casilla de colegio");
+					if (cache.imprimirPregCOL() == false) {
+
+						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+							cache.quitarQuesito(Casilla.COL, turno[i]);
+						}
+						i++;
+						if (i == turno.length) {
+							i = 0;
+						}
+					} else {
+						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+							cache.darQuesito(Casilla.COL, turno[i]);
+
+						}
+
+					}
+				} else {
+					isNotFin = listadoFinal();
+					if(isNotFin) {
+						i++;
+						if (i == turno.length) {
+							i = 0;
+						}
+					}
 				}
 				break;
 
 			}
 
-			
-			
-
-		} while ((isFin && comprobarAllQuesitos(turno[i])) || i < turno.length);
+		} while (isNotFin);
 
 	}
 
-	
-	
-	
-	
-	
-	
 	public boolean listadoFinal() {
-		boolean aux =true;
-		
-		for (int i = 0; i < 3 && aux==true; i++) {
-			
-			if(!cache.imprimirPregCOL()){
-				aux=false;
+		boolean aux = false;
+
+		for (int i = 0; i < 3 && aux == false; i++) {
+
+			if (!cache.imprimirPregCOL()) {
+				aux = true;
 			}
-			
+
 		}
-		
+
 		return aux;
 	}
 
@@ -347,8 +341,6 @@ public class Trivial {
 		}
 		return fin;
 	}
-	
-	
 
 	// GETTERS, SETTERS Y TOSTRINGS
 

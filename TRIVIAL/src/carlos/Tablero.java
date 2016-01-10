@@ -59,7 +59,7 @@ public class Tablero {
 						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.COL);
 					}
 
-					if (!(tableroBI[i][j].equals("=")) && tableroBI[i][j + 1].equals("=")) {
+					if (tableroBI[i][j + 1].equals("=")) {
 						casillasTabl[contCasFIL][contCasCOL].setQuesito(true);
 					}
 					contCasCOL++;
