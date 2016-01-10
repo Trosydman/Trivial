@@ -2,10 +2,16 @@ package alex;
 
 import java.util.Random;
 
-import carlos.Casilla;
+
 import carlos.Equipo;
 import leer_por_teclado.Leer;
 
+/**
+ * Es una clase que incluye todas las preguntas que se van a utilizar en Trivial
+ * 
+ * @author Alejandro Álvarez Guzmán
+ *
+ */
 public class ListadoPreguntas {
 
 	// PREGUNTAS DE PROGAMACIÓN
@@ -95,20 +101,20 @@ public class ListadoPreguntas {
 	String opcBProgNOL2 = " Los objetos";
 	String opcCProgNOL2 = " Las clases";
 
-	String pregProgNOL3 = " ¿Cuando  una clase no es publica de que tipo es su nivel de acceso?";
-	String opcAProgNOL3 = " Private";
-	String opcBProgNOL3 = " Default";
-	String opcCProgNOL3 = " Abstract";
+	String pregProgNOL3 = " ¿Qué tipos de nivel de acceso puede tener una clase?";
+	String opcAProgNOL3 = " Private, public, protected y no especificado";
+	String opcBProgNOL3 = " Default, open, closed y exclusive";
+	String opcCProgNOL3 = " Abstract, shared, private y public";
 
-	String pregProgNOL4 = " ¿Qué sucede cuando un objeto modifica una variable de clase?";
-	String opcAProgNOL4 = " Al modificarla se hace  visible a todos los objetos";
-	String opcBProgNOL4 = " Se hace visible solo parta el objeto que  la modifica";
+	String pregProgNOL4 = " ¿Qué método se utiliza para modificar atributos de clase?";
+	String opcAProgNOL4 = " Set";
+	String opcBProgNOL4 = " get";
 	String opcCProgNOL4 = " Ninguna de las anteriores";
 
 	String pregProgNOL5 = " ¿En que momento se invoca el método constructor?";
-	String opcAProgNOL5 = "Después de crear un objeto";
-	String opcBProgNOL5 = "Cuando se crea el main";
-	String opcCProgNOL5 = "Cuando es llamado por un objeto";
+	String opcAProgNOL5 = " Al crear un objeto";
+	String opcBProgNOL5 = " Cuando se crea el main";
+	String opcCProgNOL5 = " Cuando es llamado por un objeto";
 
 	String pregProgGER1 = " Los datos elementales están compuestos por...";
 	String opcAProgGER1 = " Numéricos, Alfanuméricos y Lógicos/Booleanos.";
@@ -120,7 +126,7 @@ public class ListadoPreguntas {
 	String opcBProgGER2 = "break, old, true, return, final.";
 	String opcCProgGER2 = "break, old, true, retorno, final.";
 
-	String pregProgGER3 = "En llas estructuras de repetición podemos encontrarnos con ...";
+	String pregProgGER3 = "En las estructuras de repetición podemos encontrarnos con ...";
 	String opcAProgGER3 = "while, do...while y for.";
 	String opcBProgGER3 = "while, dont't...while y forgiven.";
 	String opcCProgGER3 = "while, do...while y forgiven.";
@@ -157,110 +163,110 @@ public class ListadoPreguntas {
 	String opcBBBDDALE4 = " Visualiza todos los productos que no empiecen con el carácter “A” ni después tengan el carácter “_” ni después el carácter %";
 	String opcCBBDDALE4 = " Visualiza todos los productos que empiecen con el carácter “A” después el carácter “_” y después el carácter %";
 
-	String pregBBDDALE5 = "La sentencia SQL “SELECT AVG(salario*14) FROM empleados ”, ¿qué resultado tendría?";
+	String pregBBDDALE5 = " La sentencia SQL “SELECT AVG(salario*14) FROM empleados ”, ¿qué resultado tendría?";
 	String opcABBDDALE5 = " Visualiza la media de salario anual a partir del sueldo anual de todos los empleados";
 	String opcBBBDDALE5 = " Visualiza, para cada empleado, su media de salario al año";
-	String opcCBBDDALE5 = "  Visualiza, para cada empleado, su total de salario al año";
+	String opcCBBDDALE5 = " Visualiza, para cada empleado, su total de salario al año";
 
-	String pregBBDDCAR1 = "ï¿½Quï¿½ trimestre de BBDD viene con curvas?";
-	String opcABBDDCAR1 = "Todos vienen con curvas y vaselina gratis.";
-	String opcBBBDDCAR1 = "El 2ï¿½";
-	String opcCBBDDCAR1 = "El 1ï¿½";
+	String pregBBDDCAR1 = " ¿Qué trimestre de BBDD viene con curvas?";
+	String opcABBDDCAR1 = " Todos vienen con curvas y vaselina gratis.";
+	String opcBBBDDCAR1 = " El 2º";
+	String opcCBBDDCAR1 = " El 1º";
 
-	String pregBBDDCAR2 = "ï¿½Para que sirve la funciï¿½n SOUNDEX?";
-	String opcABBDDCAR2 = "Devuelve el valor fonï¿½tico del texto.";
-	String opcBBBDDCAR2 = "Devuelve la posiciï¿½n del texto.";
-	String opcCBBDDCAR2 = "Devuelve el ex-valor del texto";
+	String pregBBDDCAR2 = " ¿Para que sirve la función SOUNDEX?";
+	String opcABBDDCAR2 = " Devuelve el valor fonético del texto.";
+	String opcBBBDDCAR2 = " Devuelve la posición del texto.";
+	String opcCBBDDCAR2 = " Devuelve el ex-valor del texto";
 
-	String pregBBDDCAR3 = "ï¿½Cï¿½mo se consigue el produccto cartesiano de 2 tablas?";
-	String opcABBDDCAR3 = "FROM TABLA1, TABLA2";
-	String opcBBBDDCAR3 = "FROM TABLA1 JOIN TABLA2 USING(ID)";
-	String opcCBBDDCAR3 = "FROM TABLA1 RIGHT JOIN TABLA2";
+	String pregBBDDCAR3 = " ¿Cómo se consigue el produccto cartesiano de 2 tablas?";
+	String opcABBDDCAR3 = " FROM TABLA1, TABLA2";
+	String opcBBBDDCAR3 = " FROM TABLA1 JOIN TABLA2 USING(ID)";
+	String opcCBBDDCAR3 = " FROM TABLA1 RIGHT JOIN TABLA2";
 
-	String pregBBDDCAR4 = "ï¿½Quï¿½ base de datos es una de las mï¿½s liosas y con mï¿½s tablas con que hemos trabajado?";
-	String opcABBDDCAR4 = "NORTHWIND";
-	String opcBBBDDCAR4 = "BUSES";
-	String opcCBBDDCAR4 = "SYSTEM";
+	String pregBBDDCAR4 = " ¿Qué base de datos es una de las más liosas y con más tablas con que hemos trabajado?";
+	String opcABBDDCAR4 = " NORTHWIND";
+	String opcBBBDDCAR4 = " BUSES";
+	String opcCBBDDCAR4 = " SYSTEM";
 
-	String pregBBDDCAR5 = "ï¿½Se puede escribir en minï¿½scula las consultas de BBDD?";
-	String opcABBDDCAR5 = "Sï¿½";
-	String opcBBBDDCAR5 = "No";
-	String opcCBBDDCAR5 = "Ninguna de las anteriores";
+	String pregBBDDCAR5 = " ¿Se puede escribir en minúscula las consultas de BBDD?";
+	String opcABBDDCAR5 = " Sí";
+	String opcBBBDDCAR5 = " No";
+	String opcCBBDDCAR5 = " ¿Quién sabe?";
 
-	String pregBBDDFEL1 = "Indica la condicion que debe cumplir una tupla.";
-	String opcABBDDFEL1 = "Cada tupla se debe corresponder con un elemento del mundo real.";
-	String opcBBBDDFEL1 = "Todas las tuplas deben estar llenas de datos.";
-	String opcCBBDDFEL1 = "Puede haber dos tuplas iguales(con todos los valores iguales).";
+	String pregBBDDFEL1 = " Indica la condicion que debe cumplir una tupla.";
+	String opcABBDDFEL1 = " Cada tupla se debe corresponder con un elemento del mundo real.";
+	String opcBBBDDFEL1 = " Todas las tuplas deben estar llenas de datos.";
+	String opcCBBDDFEL1 = " Puede haber dos tuplas iguales(con todos los valores iguales).";
 
-	String pregBBDDFEL2 = "El grado...";
-	String opcABBDDFEL2 = "Cuanto mayor es el grado de una relacion, mayor es su complejidad.";
-	String opcBBBDDFEL2 = "Cuanto menor es el grado de una relacion, mayor es su complejidad.";
-	String opcCBBDDFEL2 = "Cuanto mayor es el grado de una relacion, menor es su complejidad.";
+	String pregBBDDFEL2 = " El grado...";
+	String opcABBDDFEL2 = " Cuanto mayor es el grado de una relacion, mayor es su complejidad.";
+	String opcBBBDDFEL2 = " Cuanto menor es el grado de una relacion, mayor es su complejidad.";
+	String opcCBBDDFEL2 = " Cuanto mayor es el grado de una relacion, menor es su complejidad.";
 
-	String pregBBDDFEL3 = "Un sinï¿½nimo de atributo es...";
-	String opcABBDDFEL3 = "Campo.";
-	String opcBBBDDFEL3 = "Registro.";
-	String opcCBBDDFEL3 = "Fichero.";
+	String pregBBDDFEL3 = " Un sinónimo de atributo es...";
+	String opcABBDDFEL3 = " Campo.";
+	String opcBBBDDFEL3 = " Registro.";
+	String opcCBBDDFEL3 = " Fichero.";
 
-	String pregBBDDFEL4 = "Usando la aritmï¿½tica clï¿½sica en valores lï¿½gicos. Si 0.5 es nulo, 1 y 0, respectivamente, son...";
-	String opcABBDDFEL4 = "Verdadero y falso.";
-	String opcBBBDDFEL4 = "Falso y Verdadero.";
-	String opcCBBDDFEL4 = "Ninguna de las otras dos respuestas.";
+	String pregBBDDFEL4 = " Usando la aritmética clásica en valores lógicos. Si 0.5 es nulo, 1 y 0, respectivamente, son...";
+	String opcABBDDFEL4 = " Verdadero y falso.";
+	String opcBBBDDFEL4 = " Falso y Verdadero.";
+	String opcCBBDDFEL4 = " Ninguna de las otras dos respuestas.";
 
-	String pregBBDDFEL5 = "Cï¿½mo se denomina la tabla que proporciona Oracle para realizar consultas a modo de prueba.";
-	String opcABBDDFEL5 = "DUAL.";
-	String opcBBBDDFEL5 = "EMPLOYEES.";
-	String opcCBBDDFEL5 = "PROOF.";
+	String pregBBDDFEL5 = " ¿Cómo se denomina la tabla que proporciona Oracle para realizar consultas a modo de prueba.?";
+	String opcABBDDFEL5 = " DUAL.";
+	String opcBBBDDFEL5 = " EMPLOYEES.";
+	String opcCBBDDFEL5 = " PROOF.";
 
-	String pregBBDDNOL1 = "En que aÃ±o se publica el documento que definio el modelo relacional";
-	String opcABBDDNOL1 = "1970";
-	String opcBBBDDNOL1 = "1972";
-	String opcCBBDDNOL1 = "1968";
+	String pregBBDDNOL1 = " ¿En que año se publicó el documento que definió el modelo relacional?";
+	String opcABBDDNOL1 = " 1970";
+	String opcBBBDDNOL1 = " 1972";
+	String opcCBBDDNOL1 = " 1968";
 
-	String pregBBDDNOL2 = "Cuantas formas normales existen en el modelo relacional";
-	String opcABBDDNOL2 = "Seis";
-	String opcBBBDDNOL2 = "Ocho";
-	String opcCBBDDNOL2 = "Diez";
+	String pregBBDDNOL2 = " ¿Qué es un SGBD?";
+	String opcABBDDNOL2 = " Es una relacion de datos relacionados interrelacionados y un conjunto de programas para acceder a dichos datos";
+	String opcBBBDDNOL2 = " Datos no relacionados pero si se pueden modificar ";
+	String opcCBBDDNOL2 = " Es un programa de Software que no se puede modificar, ni eliminar";
 
-	String pregBBDDNOL3 = "En que momento utiliza la plicaciÃ³n del lÃ¡tigo luismi";
-	String opcABBDDNOL3 = "En los examenes";
-	String opcBBBDDNOL3 = "AL corregir los ejercicios";
-	String opcCBBDDNOL3 = "En los ejercicios de evaluacion";
+	String pregBBDDNOL3 = " ¿En qué momento utiliza la aplicación del látigo Luismi?";
+	String opcABBDDNOL3 = " En los examenes";
+	String opcBBBDDNOL3 = " Al corregir los ejercicios";
+	String opcCBBDDNOL3 = " En los ejercicios de evaluación";
 
-	String pregBBDDNOL4 = "Para que sirve la palabra DISTINCT en una base de datos";
-	String opcABBDDNOL4 = "Para no mostrar los valores duplicados";
-	String opcBBBDDNOL4 = "Para diferenciar una tabla de otra";
-	String opcCBBDDNOL4 = "Para mostrar varias tuplas";
+	String pregBBDDNOL4 = " ¿Para qué sirve la palabra DISTINCT en una base de datos?";
+	String opcABBDDNOL4 = " Para no mostrar los valores duplicados";
+	String opcBBBDDNOL4 = " Para diferenciar una tabla de otra";
+	String opcCBBDDNOL4 = " Para mostrar varias tuplas";
 
-	String pregBBDDNOL5 = "QuÃ© es SQL";
-	String opcABBDDNOL5 = "una interfas de usuario";
-	String opcBBBDDNOL5 = "Un programa de oracle";
-	String opcCBBDDNOL5 = "Un lenguaje de programacion";
+	String pregBBDDNOL5 = " ¿Qué es SQL?";
+	String opcABBDDNOL5 = " Una interfaz de usuario";
+	String opcBBBDDNOL5 = " Un programa de oracle";
+	String opcCBBDDNOL5 = " Un lenguaje de programacion";
 
-	String pregBBDDGER1 = "En los ficheros indexados una de las características es...";
-	String opcABBDDGER1 = "El lento acceso.";
-	String opcBBBDDGER1 = "El acceso rápido o lento según la rapidez del procesador.";
-	String opcCBBDDGER1 = "El rápido acceso.";
+	String pregBBDDGER1 = " En los ficheros indexados una de las características es...";
+	String opcABBDDGER1 = " El rápido acceso.";
+	String opcBBBDDGER1 = " El acceso rápido o lento según la rapidez del procesador.";
+	String opcCBBDDGER1 = " El lento acceso.";
 
-	String pregBBDDGER2 = "En los ficheros con resgistros de tamaño dinámico encontramos...";
-	String opcABBDDGER2 = "Difícil acceso, lo cual es una desventaja.";
-	String opcBBBDDGER2 = "Difícil acceso, lo cual es una ventaja.";
-	String opcCBBDDGER2 = "Acceso remoto, lo cual es una desventaja.";
+	String pregBBDDGER2 = " En los ficheros con resgistros de tamaño dinámico encontramos...";
+	String opcABBDDGER2 = " Difícil acceso, lo cual es una desventaja.";
+	String opcBBBDDGER2 = " Difícil acceso, lo cual es una ventaja.";
+	String opcCBBDDGER2 = " Acceso remoto, lo cual es una desventaja.";
 
-	String pregBBDDGER3 = "En los ficheros con registros de tamaño estatico...";
-	String opcABBDDGER3 = "Hay difícil acceso y baja flexibilidad.";
-	String opcBBBDDGER3 = "Hay fácil acceso y baja flexibilidad.";
-	String opcCBBDDGER3 = "Hay fácil acceso y alta flexibilidad.";
+	String pregBBDDGER3 = " En los ficheros con registros de tamaño estatico...";
+	String opcABBDDGER3 = " Hay difícil acceso y baja flexibilidad.";
+	String opcBBBDDGER3 = " Hay fácil acceso y baja flexibilidad.";
+	String opcCBBDDGER3 = " Hay fácil acceso y alta flexibilidad.";
 
-	String pregBBDDGER4 = "Una propiedad de una tabla indica que...";
-	String opcABBDDGER4 = "Cada atributo de la tabla toma un solo valor en cada tupla.";
-	String opcBBBDDGER4 = "Cada atributo de la tabla toma varios valores en cada tupla.";
-	String opcCBBDDGER4 = "Cada atributo de la tabla toma dos valores en cada tupla.";
+	String pregBBDDGER4 = " Una propiedad de una tabla indica que...";
+	String opcABBDDGER4 = " Cada atributo de la tabla toma un solo valor en cada tupla.";
+	String opcBBBDDGER4 = " Cada atributo de la tabla toma varios valores en cada tupla.";
+	String opcCBBDDGER4 = " Cada atributo de la tabla toma dos valores en cada tupla.";
 
-	String pregBBDDGER5 = "En los valores lógicos de una consulta nos podemos encontrar como operador de valores lógicos...";
-	String opcABBDDGER5 = "AND, OR, NOT.";
-	String opcBBBDDGER5 = "AND, OR, YES.";
-	String opcCBBDDGER5 = "AND, OF, YES.";
+	String pregBBDDGER5 = " En los valores lógicos de una consulta nos podemos encontrar como operador de valores lógicos...";
+	String opcABBDDGER5 = " AND, OR, NOT.";
+	String opcBBBDDGER5 = " AND, OR, YES.";
+	String opcCBBDDGER5 = " AND, OF, YES.";
 
 	// PREGUNTAS DE HTML
 
@@ -269,10 +275,10 @@ public class ListadoPreguntas {
 	String opcBHTMLALE1 = " <!--...--!>";
 	String opcCHTMLALE1 = " <comment>";
 
-	String pregHTMLALE2 = "¿Qué se entiende por HTML?";
-	String opcAHTMLALE2 = " Hyper Text Markup Language";
-	String opcBHTMLALE2 = " Hard Text Markup Language";
-	String opcCHTMLALE2 = " Hyper Text Mask Language";
+	String pregHTMLALE2 = " ¿Cómo se puede poner un contenedor fijo dentro de una página web?";
+	String opcAHTMLALE2 = " position:fixed;";
+	String opcBHTMLALE2 = " float:top;";
+	String opcCHTMLALE2 = " position:static;";
 
 	String pregHTMLALE3 = " ¿Cómo definimos un color en sistema hexadecimal?";
 	String opcAHTMLALE3 = " <#F5F5DC>";
@@ -280,7 +286,7 @@ public class ListadoPreguntas {
 	String opcCHTMLALE3 = " <beige>";
 
 	String pregHTMLALE4 = " ¿Qué etiquetas pueden figurar en la sección <head>?";
-	String opcAHTMLALE4 = " <link>, <title>, <base>";
+	String opcAHTMLALE4 = " <link>, <title>, <style>";
 	String opcBHTMLALE4 = " <style>, <meta>, <table>";
 	String opcCHTMLALE4 = " <link>, <meta>, <p>";
 
@@ -289,114 +295,114 @@ public class ListadoPreguntas {
 	String opcBHTMLALE5 = " Incluir los estilos en las etiquetas HTML para que se carguen y ejecuten antes";
 	String opcCHTMLALE5 = " Incluirlos en la sección cabecera ('head') para agruparlos en unmismo sitio en la misma página";
 
-	String pregHTMLCAR1 = "Sigue la frase: Header arriba, el contenido en medio y...";
-	String opcAHTMLCAR1 = "... footer abajo.";
-	String opcBHTMLCAR1 = "... no me maqueta la pï¿½gina.";
-	String opcCHTMLCAR1 = "... Rafa me pierdo.";
+	String pregHTMLCAR1 = " Sigue la frase: Header arriba, el contenido en medio y...";
+	String opcAHTMLCAR1 = " ... footer abajo.";
+	String opcBHTMLCAR1 = " ... no me maqueta la pï¿½gina.";
+	String opcCHTMLCAR1 = " ... Rafa me pierdo.";
 
-	String pregHTMLCAR2 = "Comando para imprimir espacios en blanco en una pï¿½gina web.";
-	String opcAHTMLCAR2 = "&nbsp;";
-	String opcBHTMLCAR2 = "' '";
-	String opcCHTMLCAR2 = "white-space";
+	String pregHTMLCAR2 = " Comando para imprimir espacios en blanco en una página web.";
+	String opcAHTMLCAR2 = " &nbsp;";
+	String opcBHTMLCAR2 = " ' '";
+	String opcCHTMLCAR2 = " white-space";
 
-	String pregHTMLCAR3 = "ï¿½Quï¿½ etiquetas(entre otras), utilizamos en el head para que nos permita introducir carï¿½cteres con tilde y especiales?";
-	String opcAHTMLCAR3 = "<meta charset='UTF-8'>";
-	String opcBHTMLCAR3 = "<meta charset='UTF'>";
-	String opcCHTMLCAR3 = "<data charconfig='UTF8'>";
+	String pregHTMLCAR3 = " ¿Qué etiquetas(entre otras), utilizamos en el head para que nos permita introducir caracteres con tilde y especiales?";
+	String opcAHTMLCAR3 = " <meta charset='UTF-8'>";
+	String opcBHTMLCAR3 = " <meta charset='UTF'>";
+	String opcCHTMLCAR3 = " <data charconfig='UTF8'>";
 
-	String pregHTMLCAR4 = "ï¿½Quï¿½ comando de css sustituye a la etiqueta pre?";
-	String opcAHTMLCAR4 = "white-space: pre;";
-	String opcBHTMLCAR4 = "white-space: pro;";
-	String opcCHTMLCAR4 = "white space: pre;";
+	String pregHTMLCAR4 = " ¿Qué comando de css sustituye a la etiqueta pre?";
+	String opcAHTMLCAR4 = " white-space: pre;";
+	String opcBHTMLCAR4 = " white-space: pro;";
+	String opcCHTMLCAR4 = " white space: pre;";
 
-	String pregHTMLCAR5 = "ï¿½Quï¿½ le ocurre a Rafa si hay lenguaje a ï¿½ltima hora?";
-	String opcAHTMLCAR5 = "Le entra el sueï¿½o.";
-	String opcBHTMLCAR5 = "Se enfada.";
-	String opcCHTMLCAR5 = "Le entre risa tonta.";
+	String pregHTMLCAR5 = " ¿Qué le ocurre a Rafa si hay lenguaje a última hora?";
+	String opcAHTMLCAR5 = " Le entra el sueño.";
+	String opcBHTMLCAR5 = " Se enfada.";
+	String opcCHTMLCAR5 = " Le entre risa tonta.";
 
-	String pregHTMLNOL1 = "Para que sirve el lenguaje de programacion CSS";
-	String opcAHTMLNOL1 = "Para dar estilo a una pagina web";
-	String opcBHTMLNOL1 = "Para crear una pagina web";
-	String opcCHTMLNOL1 = "Para que el navegador la sea mas rapido";
+	String pregHTMLNOL1 = " ¿Para qué sirve el lenguaje de programacion CSS?";
+	String opcAHTMLNOL1 = " Para dar estilo a una página web";
+	String opcBHTMLNOL1 = " Para crear una pagina web";
+	String opcCHTMLNOL1 = " Para que el navegador la sea más rápido";
 
-	String pregHTMLNOL2 = "QuÃ© es HTML5";
-	String opcAHTMLNOL2 = "Un concepto nuevo para la creacion de paginas web";
-	String opcBHTMLNOL2 = "Una mejora de esta ya antigua tecnologÃ­a";
-	String opcCHTMLNOL2 = "Una vercion del antiguo lenguaje de etiquetas";
+	String pregHTMLNOL2 = " ¿Qué es HTML5?";
+	String opcAHTMLNOL2 = " Un concepto nuevo para la creación de páginas web";
+	String opcBHTMLNOL2 = " Una mejora de esta ya antigua tecnología";
+	String opcCHTMLNOL2 = " Una versión del antiguo lenguaje de etiquetas";
 
-	String pregHTMLNOL3 = "Cuantas caracteristicas provee HTML5";
-	String opcAHTMLNOL3 = "Tres";
-	String opcBHTMLNOL3 = "Cien";
-	String opcCHTMLNOL3 = "Treinta";
+	String pregHTMLNOL3 = " ¿Para qué sirve la etiqueta <map>?";
+	String opcAHTMLNOL3 = " Dividir una imagen en diferentes secciones";
+	String opcBHTMLNOL3 = " Crear un mapa";
+	String opcCHTMLNOL3 = " Cuadricular un mapa";
 
-	String pregHTMLNOL4 = "En que momento vemos mas serio a rafa";
-	String opcAHTMLNOL4 = "En los examnes y ejercicios de evaluacion";
-	String opcBHTMLNOL4 = "En el recreo";
-	String opcCHTMLNOL4 = "Explicando en clase";
+	String pregHTMLNOL4 = " ¿En qué momento vemos más serio a rafa?";
+	String opcAHTMLNOL4 = " En los exámenes y ejercicios de evaluación";
+	String opcBHTMLNOL4 = " En el recreo";
+	String opcCHTMLNOL4 = " Explicando en clase";
 
-	String pregHTMLNOL5 = "<header>, <nav>, <section>, <aside>, <footer>, <article>, <figure>... Que son? ";
-	String opcAHTMLNOL5 = "Elementos";
-	String opcBHTMLNOL5 = "Etiquetas";
-	String opcCHTMLNOL5 = "Cajas o contenedores";
+	String pregHTMLNOL5 = " <header>, <nav>, <section>, <aside>, <footer>, <article>, <b>... Que son? ";
+	String opcAHTMLNOL5 = " Etiquetas";
+	String opcBHTMLNOL5 = " Elementos";
+	String opcCHTMLNOL5 = " Cajas o contenedores";
 
-	String pregHTMLGER1 = "Una herramienta con la que podemos editar de manera eficiente HTML es... ";
-	String opcAHTMLGER1 = "Sublime Text.";
-	String opcBHTMLGER1 = "Sublime Texteo.";
-	String opcCHTMLGER1 = "Texteo Sublime.";
+	String pregHTMLGER1 = " Una herramienta con la que podemos editar de manera eficiente HTML es... ";
+	String opcAHTMLGER1 = " Sublime Text.";
+	String opcBHTMLGER1 = " Sublime Texteo.";
+	String opcCHTMLGER1 = " Texteo Sublime.";
 
-	String pregHTMLGER2 = "Elija la etiqueta apropiada para un texto en negrita.";
-	String opcAHTMLGER2 = "<b>";
-	String opcBHTMLGER2 = "<bold>";
-	String opcCHTMLGER2 = "<bb>";
+	String pregHTMLGER2 = " Elija la etiqueta apropiada para un texto en negrita.";
+	String opcAHTMLGER2 = " <b>";
+	String opcBHTMLGER2 = " <bold>";
+	String opcCHTMLGER2 = " <bb>";
 
-	String pregHTMLGER3 = "Elija la etiqueta que nos dá el título más grande.";
-	String opcAHTMLGER3 = "<h1>";
-	String opcBHTMLGER3 = "<h6>";
-	String opcCHTMLGER3 = "<head>";
+	String pregHTMLGER3 = " Elija la etiqueta que nos dá el título más grande.";
+	String opcAHTMLGER3 = " <h1>";
+	String opcBHTMLGER3 = " <h6>";
+	String opcCHTMLGER3 = " <head>";
 
-	String pregHTMLGER4 = "¿Qué etiqueta define un salto de línea?";
-	String opcAHTMLGER4 = "<br>";
-	String opcBHTMLGER4 = "<break>";
-	String opcCHTMLGER4 = "<linebreak>";
+	String pregHTMLGER4 = " ¿Qué etiqueta define un salto de línea?";
+	String opcAHTMLGER4 = " <br>";
+	String opcBHTMLGER4 = " <break>";
+	String opcCHTMLGER4 = " <linebreak>";
 
-	String pregHTMLGER5 = "¿Qué etiqueta utilizamos para insertar una línea horizontal? ";
-	String opcAHTMLGER5 = "<hr>";
-	String opcBHTMLGER5 = "<br>";
-	String opcCHTMLGER5 = "<line>";
+	String pregHTMLGER5 = " ¿Qué etiqueta utilizamos para insertar una línea horizontal? ";
+	String opcAHTMLGER5 = " <hr>";
+	String opcBHTMLGER5 = " <br>";
+	String opcCHTMLGER5 = " <line>";
 
-	String pregHTMLFEL1 = "Indica el elemento para que un texto aparezca con sombras.";
-	String opcAHTMLFEL1 = "text-shadows.";
-	String opcBHTMLFEL1 = "text-align.";
-	String opcCHTMLFEL1 = "text-indent.";
+	String pregHTMLFEL1 = " Indica el elemento para que un texto aparezca con sombras.";
+	String opcAHTMLFEL1 = " text-shadows.";
+	String opcBHTMLFEL1 = " text-align.";
+	String opcCHTMLFEL1 = " text-indent.";
 
-	String pregHTMLFEL2 = "La fuente 'arial black' a que tipo de fuente corresponde.";
-	String opcAHTMLFEL2 = "sans-serif.";
-	String opcBHTMLFEL2 = "serif.";
-	String opcCHTMLFEL2 = "fantasy.";
+	String pregHTMLFEL2 = " La fuente 'Arial Black' ¿a qué tipo de fuente corresponde?";
+	String opcAHTMLFEL2 = " sans-serif.";
+	String opcBHTMLFEL2 = " serif.";
+	String opcCHTMLFEL2 = " fantasy.";
 
-	String pregHTMLFEL3 = "'em' es una...";
-	String opcAHTMLFEL3 = "medida.";
-	String opcBHTMLFEL3 = "etiqueta.";
-	String opcCHTMLFEL3 = "condicion.";
+	String pregHTMLFEL3 = " 'em' es una...";
+	String opcAHTMLFEL3 = " medida.";
+	String opcBHTMLFEL3 = " etiqueta.";
+	String opcCHTMLFEL3 = " condición.";
 
-	String pregHTMLFEL4 = "Las siglas 'CSS' corresponde a:";
-	String opcAHTMLFEL4 = "Cascading Style Sheets.";
-	String opcBHTMLFEL4 = "Center Style Sheets.";
-	String opcCHTMLFEL4 = "Can She Shave";
+	String pregHTMLFEL4 = " Las siglas 'CSS' corresponde a:";
+	String opcAHTMLFEL4 = " Cascading Style Sheets.";
+	String opcBHTMLFEL4 = " Center Style Sheets.";
+	String opcCHTMLFEL4 = " Can She Shave";
 
-	String pregHTMLFEL5 = "Las siglas 'HTML' corresponde a:";
-	String opcAHTMLFEL5 = "Hyper Text Markup Language";
-	String opcBHTMLFEL5 = "Hall To Main Language";
-	String opcCHTMLFEL5 = "High Text Markup Language";
+	String pregHTMLFEL5 = " Las siglas 'HTML' corresponde a:";
+	String opcAHTMLFEL5 = " Hyper Text Markup Language";
+	String opcBHTMLFEL5 = " Hall To Main Language";
+	String opcCHTMLFEL5 = " High Text Markup Language";
 
 	// PREGUNTAS DE SISTEMAS
 
-	String pregSISALE1 = "¿El número 1010 en binario a qué número decimal corresponde?";
+	String pregSISALE1 = " ¿El número 1010 en binario a qué número decimal corresponde?";
 	String opcASISALE1 = " 10";
 	String opcBSISALE1 = " 100";
 	String opcCSISALE1 = " 1000";
 
-	String pregSISALE2 = "¿Podemos añadir un disco duro nuevo a una máquina virtual que está iniciada?";
+	String pregSISALE2 = " ¿Podemos añadir un disco duro nuevo a una máquina virtual que está iniciada?";
 	String opcASISALE2 = " No podemos añadirlo hasta que la máquina no esté apagada ";
 	String opcBSISALE2 = " Sí podemos, pero es necesario reiniciar el sistema operativo iniciado para que éste reconozca el nuevo disco";
 	String opcCSISALE2 = " Sí podemos, y el disco duro es reconocido directamente por el sistema operativo que esté iniciado";
@@ -416,53 +422,53 @@ public class ListadoPreguntas {
 	String opcBSISALE5 = " Cambiarle el nombre dejándolo con la misma funcionalidad";
 	String opcCSISALE5 = " Añadirle funcionalidades a un método";
 
-	String pregSISCAR1 = "Hemos trabajado con";
-	String opcASISCAR1 = "Arduino UNO";
-	String opcBSISCAR1 = "Arduino UNO!";
-	String opcCSISCAR1 = "Arduino UNO1";
+	String pregSISCAR1 = " Hemos trabajado con:";
+	String opcASISCAR1 = " Arduino UNO";
+	String opcBSISCAR1 = " Arduino UNO!";
+	String opcCSISCAR1 = " Arduino UNO1";
 
-	String pregSISCAR2 = "Los RAIDs principales dados en clase son: RAID0, RAID1 y...";
-	String opcASISCAR2 = "RAID5";
-	String opcBSISCAR2 = "RAIDPRO";
-	String opcCSISCAR2 = "RAID2";
+	String pregSISCAR2 = " Los RAIDs principales dados en clase son: RAID0, RAID1 y...";
+	String opcASISCAR2 = " RAID5";
+	String opcBSISCAR2 = " RAIDPRO";
+	String opcCSISCAR2 = " RAID2";
 
-	String pregSISCAR3 = "ï¿½A quï¿½ 'muerte' se asemeja la muerte de Alan Turing?";
-	String opcASISCAR3 = "A la de Blancanieves.";
-	String opcBSISCAR3 = "A la de Bambi.";
-	String opcCSISCAR3 = "Ninguna de las otras.";
+	String pregSISCAR3 = " ¿A qué 'muerte' se asemeja la muerte de Alan Turing?";
+	String opcASISCAR3 = " A la de Blancanieves.";
+	String opcBSISCAR3 = " A la de Bambi.";
+	String opcCSISCAR3 = " Ninguna de las otras.";
 
-	String pregSISCAR4 = "ï¿½De quï¿½ aï¿½o es el Windows Server que utilizamos en sistemas?";
-	String opcASISCAR4 = "2003";
-	String opcBSISCAR4 = "2000";
-	String opcCSISCAR4 = "2001";
+	String pregSISCAR4 = " ¿De qué año es el Windows Server que utilizamos en sistemas?";
+	String opcASISCAR4 = " 2003";
+	String opcBSISCAR4 = " 2000";
+	String opcCSISCAR4 = " 2001";
 
-	String pregSISCAR5 = "Led IR es lo mismo que decir...";
-	String opcASISCAR5 = "Led de infra rojos";
-	String opcBSISCAR5 = "Led transparente";
-	String opcCSISCAR5 = "Led irrespetuoso";
+	String pregSISCAR5 = " Led IR es lo mismo que decir...";
+	String opcASISCAR5 = " Led de infrarojos";
+	String opcBSISCAR5 = " Led transparente";
+	String opcCSISCAR5 = " Led irrespetuoso";
 
-	String pregSISNOL1 = "Que es el microprocesador";
-	String opcASISNOL1 = "El circuito integrado mas complejo de un sistema informatico";
-	String opcBSISNOL1 = "La memoria del ordenador";
-	String opcCSISNOL1 = "Un circuito de coneccion de la placa base";
+	String pregSISNOL1 = " ¿Qué es el microprocesador?";
+	String opcASISNOL1 = " El circuito integrado más complejo de un sistema informático";
+	String opcBSISNOL1 = " La memoria del ordenador";
+	String opcCSISNOL1 = " Un circuito de conexión de la placa base";
 
-	String pregSISNOL2 = "Segun la ley de Moore, la capacidad de computacion de un ordenador se duplica cada...";
-	String opcASISNOL2 = "18 meses";
-	String opcBSISNOL2 = "20 meses";
-	String opcCSISNOL2 = "36 meses";
+	String pregSISNOL2 = " Según la ley de Moore, la capacidad de computación de un ordenador se duplica cada...";
+	String opcASISNOL2 = " 18 meses";
+	String opcBSISNOL2 = " 20 meses";
+	String opcCSISNOL2 = " 36 meses";
 
-	String pregSISNOL3 = "El termino RAM se utiliza como sinonimo de...";
-	String opcASISNOL3 = "Memoria principal";
-	String opcBSISNOL3 = "Memoria mayor";
-	String opcCSISNOL3 = "Memoria rapida";
+	String pregSISNOL3 = " El termino RAM significa:";
+	String opcASISNOL3 = " Random Access Memory";
+	String opcBSISNOL3 = " Random Aleatory Memory";
+	String opcCSISNOL3 = " Rapid Access Memory";
 
-	String pregSISNOL4 = " Que es subneting";
-	String opcASISNOL4 = " Es dividir una red IP fisica en subredes logicas";
-	String opcBSISNOL4 = " Es un conjunto de redes";
-	String opcCSISNOL4 = " Es una subred que roba bits destinados a host";
+	String pregSISNOL4 = " ¿Cómo se para la máquina de Turing?";
+	String opcASISNOL4 = " HALT ";
+	String opcBSISNOL4 = " STOP";
+	String opcCSISNOL4 = " Break";
 
-	String pregSISNOL5 = " Cuantas clases de direcciones IP hay clasificadas";
-	String opcASISNOL5 = " Cuatro";
+	String pregSISNOL5 = " ¿Cuál suele ser el último dígito de la dirección IP de un router?";
+	String opcASISNOL5 = " Uno";
 	String opcBSISNOL5 = " Dos";
 	String opcCSISNOL5 = " Nueve";
 
@@ -471,7 +477,7 @@ public class ListadoPreguntas {
 	String opcBSISGER1 = " Es la unidad fundamental de datos en los ordenadores personales, un byte son 16 bits contiguos.";
 	String opcCSISGER1 = " Es la unidad fundamental de datos en los ordenadores personales, un byte son 32 bits contiguos.";
 
-	String pregSISGER2 = " ¿Qué es ubunto?";
+	String pregSISGER2 = " ¿Qué es Ubuntu?";
 	String opcASISGER2 = " Es una distribución Linux.";
 	String opcBSISGER2 = " Es una distribución Mac OS.";
 	String opcCSISGER2 = " Es una distribución de Windows,";
@@ -479,7 +485,7 @@ public class ListadoPreguntas {
 	String pregSISGER3 = " ¿Qué es el bus?";
 	String opcASISGER3 = " Es un conjunto de conexiones física (cable, placas de circuito impreso, etc.) ";
 	String opcBSISGER3 = " Es una red de ordenadores conectada a la red Skynet. ";
-	String opcCSISGER3 = " Es un conjunto de conexiones entre microchips de avanzada tecnilogía de silicio-cadmio. ";
+	String opcCSISGER3 = " Es un conjunto de conexiones entre microchips de avanzada tecnología de silicio-cadmio. ";
 
 	String pregSISGER4 = " ¿Que es FAT?";
 	String opcASISGER4 = " Un sistema de archivos desarrollado para MS-DOS.";
@@ -491,22 +497,22 @@ public class ListadoPreguntas {
 	String opcBSISGER5 = " Impresora.";
 	String opcCSISGER5 = " Monitor.";
 
-	String pregSISFEL1 = " Un diso duro dinamico se denomina:";
+	String pregSISFEL1 = " Un diso duro sólido se denomina:";
 	String opcASISFEL1 = " SDD";
 	String opcBSISFEL1 = " USB";
 	String opcCSISFEL1 = " HDD";
 
 	String pregSISFEL2 = " El conectorIEEE1394 conecta a...";
-	String opcASISFEL2 = " Camara de video.";
+	String opcASISFEL2 = " Cámara de video.";
 	String opcBSISFEL2 = " Proyector.";
 	String opcCSISFEL2 = " Impresora láser.";
 
-	String pregSISFEL3 = " Cuantas clavijas tiene el conector en el PC de la corriente.";
+	String pregSISFEL3 = " ¿Cuántas clavijas tiene el conector en el PC de la corriente?";
 	String opcASISFEL3 = " 3";
 	String opcBSISFEL3 = " 1";
 	String opcCSISFEL3 = " 2";
 
-	String pregSISFEL4 = " De que color es el conector de audio(entrante):";
+	String pregSISFEL4 = " ¿De qué color es el conector de audio(entrante)?";
 	String opcASISFEL4 = " Azul";
 	String opcBSISFEL4 = " Rosa.";
 	String opcCSISFEL4 = " Verde.";
@@ -533,169 +539,298 @@ public class ListadoPreguntas {
 	String opcBCOLALE3 = " Jaime Márquez ";
 	String opcCCOLALE3 = " Ninguna de las respuestas anteriores es correcta";
 
-	String pregCOLALE4 = " ";
-	String opcACOLALE4 = " Visualiza todos los productos que empiecen con el carï¿½cter ï¿½Aï¿½ despuï¿½s el carï¿½cter ï¿½_ï¿½ y despuï¿½s el carï¿½cter %";
-	String opcBCOLALE4 = " Visualiza todos los productos que no empiecen con el carï¿½cter ï¿½Aï¿½ ni despuï¿½s tengan el carï¿½cter ï¿½_ï¿½ ni despuï¿½s el carï¿½cter %";
-	String opcCCOLALE4 = " Visualiza todos los productos que no empiezan con A y despuï¿½s no tienen otro carï¿½cter mï¿½s como mï¿½nimo";
+	String pregCOLALE4 = " ¿Porqué llego un dia Miguel con la mano vendada a clase?";
+	String opcACOLALE4 = " Porque se enfadó con los de 2º y le dió un puñetazo a la pared";
+	String opcBCOLALE4 = " Porque se toca demasiado";
+	String opcCCOLALE4 = " Metió la mano donde no debía";
 
-	String pregCOLALE5 = "La sentencia SQL ï¿½SELECT NombreEmpleado, COUNT(Id_pedido) FROM Pedidos p,empleados e WHERE p.id_empleado=e.id_empleado group by id_pedido HAVING COUNT(Id_pedido)=10 ï¿½, ï¿½quï¿½ resultado tendrï¿½a?";
-	String opcACOLALE5 = " Visualiza los empleados que han gestionado el pedido nï¿½mero 10";
-	String opcBCOLALE5 = " Visualiza los empleados que han realizado un nï¿½mero de pedidos igual a 10";
-	String opcCCOLALE5 = " Visualiza todos los empleados y el nï¿½mero de pedidos que han gestionado, incluyendo el pedido igual a 10";
+	String pregCOLALE5 = " ¿Quién a sido el ultimo fichaje de 1º DAM?";
+	String opcACOLALE5 = " Jose Antonio García Panadero";
+	String opcBCOLALE5 = " Fernando Fernández";
+	String opcCCOLALE5 = " Jesús";
 
-	String pregCOLCAR1 = "ï¿½Quï¿½ cantidad media de mensajes de WhatsApp entran el dï¿½a anterior de entregar un boletï¿½n de BBDD?";
-	String opcACOLCAR1 = "100-200";
-	String opcBCOLCAR1 = "0, nadie sabe hacerlo.";
-	String opcCCOLCAR1 = "5-10";
+	String pregCOLCAR1 = " ¿Qué cantidad media de mensajes de WhatsApp entran en los día anteriores de entregar un boletín de BBDD?";
+	String opcACOLCAR1 = " 100-200";
+	String opcBCOLCAR1 = " 0, nadie sabe hacerlo.";
+	String opcCCOLCAR1 = " 5-10";
 
-	String pregCOLCAR2 = "ï¿½Cuï¿½l fue la primera dinï¿½mica de grupo quï¿½ hicimos con Miguel?";
-	String opcACOLCAR2 = "Ambas cosas";
-	String opcBCOLCAR2 = "Comida de convivencia";
-	String opcCCOLCAR2 = "Preguntas personales a los compaï¿½eros y aviones de papel";
+	String pregCOLCAR2 = " ¿Cuál fue la primera dinámica de grupo que hicimos con Miguel?";
+	String opcACOLCAR2 = " Ambas cosas";
+	String opcBCOLCAR2 = " Comida de convivencia";
+	String opcCCOLCAR2 = " Preguntas personales a los compañeros y aviones de papel";
 
-	String pregCOLCAR3 = "ï¿½Quienes reventaron un led RGB en sistemas?";
-	String opcACOLCAR3 = "Felipe y Rafa";
-	String opcBCOLCAR3 = "Fernando Carmona y Galiani";
-	String opcCCOLCAR3 = "Miguel Campos";
+	String pregCOLCAR3 = " ¿Quiénes reventaron un led RGB en sistemas?";
+	String opcACOLCAR3 = " Felipe y Rafa";
+	String opcBCOLCAR3 = " Fernando Carmona y Galiani";
+	String opcCCOLCAR3 = " Miguel Campos";
 
-	String pregCOLCAR4 = "ï¿½Cï¿½mo se llama el portero?";
-	String opcACOLCAR4 = "Manolo";
-	String opcBCOLCAR4 = "Rafa";
-	String opcCCOLCAR4 = "Pedro";
+	String pregCOLCAR4 = " ¿Cómo se llama el portero?";
+	String opcACOLCAR4 = " Manolo";
+	String opcBCOLCAR4 = " Rafa";
+	String opcCCOLCAR4 = " Pedro";
 
-	String pregCOLCAR5 = "ï¿½Quï¿½ foto se puso inicialmente en el grupo de WhatsApp de clase?";
-	String opcACOLCAR5 = "Alan Turing";
-	String opcBCOLCAR5 = "Don Bosco a lo Kanye West";
-	String opcCCOLCAR5 = "'Todos' en el Dominos";
+	String pregCOLCAR5 = " ¿Qué foto se puso inicialmente en el grupo de WhatsApp de clase?";
+	String opcACOLCAR5 = " Alan Turing";
+	String opcBCOLCAR5 = " Don Bosco a lo Kanye West";
+	String opcCCOLCAR5 = " 'Todos' en el Dominos";
 
-	String pregCOLNOL1 = "Como se llama el jefe de estudios de FP";
-	String opcACOLNOL1 = "Ã�ngel";
-	String opcBCOLNOL1 = "Luismi";
-	String opcCCOLNOL1 = "Rafa";
+	String pregCOLNOL1 = " ¿Cómo se llama el jefe de estudios de FP?";
+	String opcACOLNOL1 = " Ángel";
+	String opcBCOLNOL1 = " Luismi";
+	String opcCCOLNOL1 = " Rafa";
 
-	String pregCOLNOL2 = "A que hora se entra del recreo";
-	String opcACOLNOL2 = "11:30";
-	String opcBCOLNOL2 = "11:40";
-	String opcCCOLNOL2 = "11:25";
+	String pregCOLNOL2 = " ¿A qué hora suena la primera campana de fín del recreo?";
+	String opcACOLNOL2 = " 11:25";
+	String opcBCOLNOL2 = " 10:30";
+	String opcCCOLNOL2 = " 11:20";
 
-	String pregCOLNOL3 = "Nombre del actual director del colegio Salesianos de triana";
-	String opcACOLNOL3 = "Fernando BaÃ±ez Martin";
-	String opcBCOLNOL3 = "Francisco VÃ¡zquez Adorna";
-	String opcCCOLNOL3 = "Enrique Vargas Marquez";
+	String pregCOLNOL3 = " Nombre del actual director del colegio Salesianos de triana";
+	String opcACOLNOL3 = " Fernando Báñez Martín";
+	String opcBCOLNOL3 = " Francisco Vázquez Adorna";
+	String opcCCOLNOL3 = " Enrique Vargas Márquez";
 
-	String pregCOLNOL4 = "En que aÃ±o fue inagurado solemnemente el colegio";
-	String opcACOLNOL4 = "1935";
-	String opcBCOLNOL4 = "1930";
-	String opcCCOLNOL4 = "1926";
+	String pregCOLNOL4 = " En que año fue inaugurado solemnemente el colegio";
+	String opcACOLNOL4 = " 1935";
+	String opcBCOLNOL4 = " 1930";
+	String opcCCOLNOL4 = " 1926";
 
-	String pregCOLNOL5 = "Con cuantas aulas comenzo a funcionar el colegio";
-	String opcACOLNOL5 = "Tres";
-	String opcBCOLNOL5 = "Nueve";
-	String opcCCOLNOL5 = "Quince";
+	String pregCOLNOL5 = " ¿Con cuántas aulas comenzo a funcionar el colegio?";
+	String opcACOLNOL5 = " Tres";
+	String opcBCOLNOL5 = " Nueve";
+	String opcCCOLNOL5 = " Quince";
 
-	String pregCOLGER1 = "Juan Melchor Bosco Occhiena nació en...";
-	String opcACOLGER1 = "Italia.";
-	String opcBCOLGER1 = "Rumania.";
-	String opcCCOLGER1 = "España.";
+	String pregCOLGER1 = " Juan Melchor Bosco Occhiena nació en...";
+	String opcACOLGER1 = " Italia.";
+	String opcBCOLGER1 = " Rumania.";
+	String opcCCOLGER1 = " España.";
 
-	String pregCOLGER2 = "La Congregación Salesiana nace el...";
-	String opcACOLGER2 = "18 de diciembre de 1859 en Valdocco (Turín).";
-	String opcBCOLGER2 = "8 de enero de 1960 en Valparaiso (Chile).";
-	String opcCCOLGER2 = "28 de febrero de 1902 en Madrid(España).";
+	String pregCOLGER2 = " La Congregación Salesiana nace el...";
+	String opcACOLGER2 = " 18 de diciembre de 1859 en Valdocco (Turín).";
+	String opcBCOLGER2 = " 8 de enero de 1960 en Valparaiso (Chile).";
+	String opcCCOLGER2 = " 28 de febrero de 1902 en Madrid(España).";
 
-	String pregCOLGER3 = "El nombre secular del PAPA es...";
-	String opcACOLGER3 = "Jorge Mario Bergoglio.";
-	String opcBCOLGER3 = "Ben Stiller.";
-	String opcCCOLGER3 = "Humberto Janeiro López.";
+	String pregCOLGER3 = " El nombre secular del PAPA es...";
+	String opcACOLGER3 = " Jorge Mario Bergoglio.";
+	String opcBCOLGER3 = " Ben Stiller.";
+	String opcCCOLGER3 = " Humberto Janeiro López.";
 
-	String pregCOLGER4 = "¿Deben practicar los católicos la abstinencia alguna vez al año?";
-	String opcACOLGER4 = "Sí.";
-	String opcBCOLGER4 = "No.";
-	String opcCCOLGER4 = "Solo el día de reyes.";
+	String pregCOLGER4 = " ¿Deben practicar los católicos la abstinencia alguna vez al año?";
+	String opcACOLGER4 = " Sí.";
+	String opcBCOLGER4 = " No.";
+	String opcCCOLGER4 = " Solo el día de reyes.";
 
-	String pregCOLGER5 = "¿Qué significa la palabra biblia?";
-	String opcACOLGER5 = "Los libros.";
-	String opcBCOLGER5 = "Libro sagrado.";
-	String opcCCOLGER5 = "La ley.";
+	String pregCOLGER5 = " ¿Qué significa la palabra biblia?";
+	String opcACOLGER5 = " Los libros sagrados";
+	String opcBCOLGER5 = " Libro sagrado.";
+	String opcCCOLGER5 = " La ley.";
 
-	String pregCOLFEL1 = "¿Cual es el año de escritura de los terrenos donde esta hubicado el colegio Salesianos San Pedro?";
-	String opcACOLFEL1 = "1925";
-	String opcBCOLFEL1 = "1935";
-	String opcCCOLFEL1 = "1955";
+	String pregCOLFEL1 = " ¿Cuál es el año de escritura de los terrenos donde está ubicado el colegio Salesianos San Pedro?";
+	String opcACOLFEL1 = " 1925";
+	String opcBCOLFEL1 = " 1935";
+	String opcCCOLFEL1 = " 1955";
 
-	String pregCOLFEL2 = "¿Qué Cardenal bendeció las instalaciones del Colegio Salesianos de Triana?";
-	String opcACOLFEL2 = "Cardenal Ilundain";
-	String opcBCOLFEL2 = "Cardenal Amigo Vallejo";
-	String opcCCOLFEL2 = "Cardenal Bueno Monreal";
+	String pregCOLFEL2 = " ¿Qué Cardenal bendijo las instalaciones del Colegio Salesianos de Triana?";
+	String opcACOLFEL2 = " Cardenal Ilundain";
+	String opcBCOLFEL2 = " Cardenal Amigo Vallejo";
+	String opcCCOLFEL2 = " Cardenal Bueno Monreal";
 
-	String pregCOLFEL3 = "¿Qué año fue inaugurada la Capilla de Maria Auxiliadora(actual Capilla San Juan Bosco)?";
-	String opcACOLFEL3 = "1944";
-	String opcBCOLFEL3 = "1934";
-	String opcCCOLFEL3 = "1962";
+	String pregCOLFEL3 = " ¿En qué año fue inaugurada la Capilla de Maria Auxiliadora(actual Capilla San Juan Bosco)?";
+	String opcACOLFEL3 = " 1944";
+	String opcBCOLFEL3 = " 1934";
+	String opcCCOLFEL3 = " 1962";
 
-	String pregCOLFEL4 = "¿Qué director celebró el 75 aniversario de la Casa Salesiana en Triana?";
-	String opcACOLFEL4 = "José Carmelo Pulido Morales";
-	String opcBCOLFEL4 = "Francisco Vázquez Adorna";
-	String opcCCOLFEL4 = "Fernando Báñez Martín";
+	String pregCOLFEL4 = " ¿Qué director celebró el 75 aniversario de la Casa Salesiana en Triana?";
+	String opcACOLFEL4 = " José Carmelo Pulido Morales";
+	String opcBCOLFEL4 = " Francisco Vázquez Adorna";
+	String opcCCOLFEL4 = " Fernando Báñez Martín";
 
-	String pregCOLFEL5 = "A base de alumnos del Colegio de los Salesianos de Triana ¿qué equipo en los años 70 se forjó en este colegio?";
-	String opcACOLFEL5 = "COLSPE.";
-	String opcBCOLFEL5 = "Triana F.C.";
-	String opcCCOLFEL5 = "Balompédica Trianera.";
+	String pregCOLFEL5 = " A base de alumnos del Colegio de los Salesianos de Triana ¿qué equipo en los años 70 se forjó en este colegio?";
+	String opcACOLFEL5 = " COLSPE.";
+	String opcBCOLFEL5 = " Triana F.C.";
+	String opcCCOLFEL5 = " Balompédica Trianera.";
+	
+	
+	
+	/**
+	 * 
+	 */
+	String[][] listadoProgramacion = {
+
+			{ pregProgALE1, opcAProgALE1, opcBProgALE1, opcCProgALE1 },
+			{ pregProgALE2, opcAProgALE2, opcBProgALE2, opcCProgALE2 },
+			{ pregProgALE3, opcAProgALE3, opcBProgALE3, opcCProgALE3 },
+			{ pregProgALE4, opcAProgALE4, opcBProgALE4, opcCProgALE4 },
+			{ pregProgALE5, opcAProgALE5, opcBProgALE5, opcCProgALE5 },
+			{ pregProgCAR1, opcAProgCAR1, opcBProgCAR1, opcCProgCAR1 },
+			{ pregProgCAR2, opcAProgCAR2, opcBProgCAR2, opcCProgCAR2 },
+			{ pregProgCAR3, opcAProgCAR3, opcBProgCAR3, opcCProgCAR3 },
+			{ pregProgCAR4, opcAProgCAR4, opcBProgCAR4, opcCProgCAR4 },
+			{ pregProgCAR5, opcAProgCAR5, opcBProgCAR5, opcCProgCAR5 },
+			{ pregProgFEL1, opcAProgFEL1, opcBProgFEL1, opcCProgFEL1 },
+			{ pregProgFEL2, opcAProgFEL2, opcBProgFEL2, opcCProgFEL2 },
+			{ pregProgFEL3, opcAProgFEL3, opcBProgFEL3, opcCProgFEL3 },
+			{ pregProgFEL4, opcAProgFEL4, opcBProgFEL4, opcCProgFEL4 },
+			{ pregProgFEL5, opcAProgFEL5, opcBProgFEL5, opcCProgFEL5 },
+			{ pregProgGER1, opcAProgGER1, opcBProgGER1, opcCProgGER1 },
+			{ pregProgGER2, opcAProgGER2, opcBProgGER2, opcCProgGER2 },
+			{ pregProgGER3, opcAProgGER3, opcBProgGER3, opcCProgGER2 },
+			{ pregProgGER4, opcAProgGER4, opcBProgGER4, opcCProgGER4 },
+			{ pregProgGER5, opcAProgGER5, opcBProgGER5, opcCProgGER5 },
+			{ pregProgNOL1, opcAProgNOL1, opcBProgNOL1, opcCProgNOL1 },
+			{ pregProgNOL2, opcAProgNOL2, opcBProgNOL2, opcCProgNOL2 },
+			{ pregProgNOL3, opcAProgNOL3, opcBProgNOL3, opcCProgNOL3 },
+			{ pregProgNOL4, opcAProgNOL4, opcBProgNOL4, opcCProgNOL4 },
+			{ pregProgNOL5, opcAProgNOL5, opcBProgNOL5, opcCProgNOL5 },
+
+	};
+	
+	
+	
+	String[][] listadoBBDD = {
+
+			{ pregBBDDALE1, opcABBDDALE1, opcBBBDDALE1, opcCBBDDALE1 },
+			{ pregBBDDALE2, opcABBDDALE2, opcBBBDDALE2, opcCBBDDALE2 },
+			{ pregBBDDALE3, opcABBDDALE3, opcBBBDDALE3, opcCBBDDALE3 },
+			{ pregBBDDALE4, opcABBDDALE4, opcBBBDDALE4, opcCBBDDALE4 },
+			{ pregBBDDALE5, opcABBDDALE5, opcBBBDDALE5, opcCBBDDALE5 },
+			{ pregBBDDCAR1, opcABBDDCAR1, opcBBBDDCAR1, opcCBBDDCAR1 },
+			{ pregBBDDCAR2, opcABBDDCAR2, opcBBBDDCAR2, opcCBBDDCAR2 },
+			{ pregBBDDCAR3, opcABBDDCAR3, opcBBBDDCAR3, opcCBBDDCAR3 },
+			{ pregBBDDCAR4, opcABBDDCAR4, opcBBBDDCAR4, opcCBBDDCAR4 },
+			{ pregBBDDCAR5, opcABBDDCAR5, opcBBBDDCAR5, opcCBBDDCAR5 },
+			{ pregBBDDNOL1, opcABBDDNOL1, opcBBBDDNOL1, opcCBBDDNOL1 },
+			{ pregBBDDNOL2, opcABBDDNOL2, opcBBBDDNOL2, opcCBBDDNOL2 },
+			{ pregBBDDNOL3, opcABBDDNOL3, opcBBBDDNOL3, opcCBBDDNOL3 },
+			{ pregBBDDNOL4, opcABBDDNOL4, opcBBBDDNOL4, opcCBBDDNOL4 },
+			{ pregBBDDNOL5, opcABBDDNOL5, opcBBBDDNOL5, opcCBBDDNOL5 },
+			{ pregBBDDFEL1, opcABBDDFEL1, opcBBBDDFEL1, opcCBBDDFEL1 },
+			{ pregBBDDFEL2, opcABBDDFEL2, opcBBBDDFEL2, opcCBBDDFEL2 },
+			{ pregBBDDFEL3, opcABBDDFEL3, opcBBBDDFEL3, opcCBBDDFEL3 },
+			{ pregBBDDFEL4, opcABBDDFEL4, opcBBBDDFEL4, opcCBBDDFEL4 },
+			{ pregBBDDFEL5, opcABBDDFEL5, opcBBBDDFEL5, opcCBBDDFEL5 },
+			{ pregBBDDGER1, opcABBDDGER1, opcBBBDDGER1, opcCBBDDGER1 },
+			{ pregBBDDGER2, opcABBDDGER2, opcBBBDDGER2, opcCBBDDGER2 },
+			{ pregBBDDGER3, opcABBDDGER3, opcBBBDDGER3, opcCBBDDGER3 },
+			{ pregBBDDGER4, opcABBDDGER4, opcBBBDDGER4, opcCBBDDGER4 },
+			{ pregBBDDGER5, opcABBDDGER5, opcBBBDDGER5, opcCBBDDGER5 },
+			};
+	
+	
+	
+	String[][] listadoHTML = { { pregHTMLALE1, opcAHTMLALE1, opcBHTMLALE1, opcCHTMLALE1 },
+			{ pregHTMLALE2, opcAHTMLALE2, opcBHTMLALE2, opcCHTMLALE2 },
+			{ pregHTMLALE3, opcAHTMLALE3, opcBHTMLALE3, opcCHTMLALE3 },
+			{ pregHTMLALE4, opcAHTMLALE4, opcBHTMLALE4, opcCHTMLALE4 },
+			{ pregHTMLALE5, opcAHTMLALE5, opcBHTMLALE5, opcCHTMLALE5 },
+			{ pregHTMLCAR1, opcAHTMLCAR1, opcBHTMLCAR1, opcCHTMLCAR1 },
+			{ pregHTMLCAR2, opcAHTMLCAR2, opcBHTMLCAR2, opcCHTMLCAR2 },
+			{ pregHTMLCAR3, opcAHTMLCAR3, opcBHTMLCAR3, opcCHTMLCAR3 },
+			{ pregHTMLCAR4, opcAHTMLCAR4, opcBHTMLCAR4, opcCHTMLCAR4 },
+			{ pregHTMLCAR5, opcAHTMLCAR5, opcBHTMLCAR5, opcCHTMLCAR5 },
+			{ pregHTMLFEL1, opcAHTMLFEL1, opcBHTMLFEL1, opcCHTMLFEL1 },
+			{ pregHTMLFEL2, opcAHTMLFEL2, opcBHTMLFEL2, opcCHTMLFEL2 },
+			{ pregHTMLFEL3, opcAHTMLFEL3, opcBHTMLFEL3, opcCHTMLFEL3 },
+			{ pregHTMLFEL4, opcAHTMLFEL4, opcBHTMLFEL4, opcCHTMLFEL4 },
+			{ pregHTMLFEL5, opcAHTMLFEL5, opcBHTMLFEL5, opcCHTMLFEL5 },
+			{ pregHTMLNOL1, opcAHTMLNOL1, opcBHTMLNOL1, opcCHTMLNOL1 },
+			{ pregHTMLNOL2, opcAHTMLNOL2, opcBHTMLNOL2, opcCHTMLNOL2 },
+			{ pregHTMLNOL3, opcAHTMLNOL3, opcBHTMLNOL3, opcCHTMLNOL3 },
+			{ pregHTMLNOL4, opcAHTMLNOL4, opcBHTMLNOL4, opcCHTMLNOL4 },
+			{ pregHTMLNOL5, opcAHTMLNOL5, opcBHTMLNOL5, opcCHTMLNOL5 },
+			{ pregHTMLGER1, opcAHTMLGER1, opcBHTMLGER1, opcCHTMLGER1 },
+			{ pregHTMLGER2, opcAHTMLGER2, opcBHTMLGER2, opcCHTMLGER2 },
+			{ pregHTMLGER3, opcAHTMLGER3, opcBHTMLGER3, opcCHTMLGER3 },
+			{ pregHTMLGER4, opcAHTMLGER4, opcBHTMLGER4, opcCHTMLGER4 },
+			{ pregHTMLGER5, opcAHTMLGER5, opcBHTMLGER5, opcCHTMLGER5 },
+			};
+	
+	
+	
+	String[][] listadoSIS = { { pregSISALE1, opcASISALE1, opcBSISALE1, opcCSISALE1 },
+			{ pregSISALE2, opcASISALE2, opcBSISALE2, opcCSISALE2 },
+			{ pregSISALE3, opcASISALE3, opcBSISALE3, opcCSISALE3 },
+			{ pregSISALE4, opcASISALE4, opcBSISALE4, opcCSISALE4 },
+			{ pregSISALE5, opcASISALE5, opcBSISALE5, opcCSISALE5 },
+			{ pregSISCAR1, opcASISCAR1, opcBSISCAR1, opcCSISCAR1 },
+			{ pregSISCAR2, opcASISCAR2, opcBSISCAR2, opcCSISCAR2 },
+			{ pregSISCAR3, opcASISCAR3, opcBSISCAR3, opcCSISCAR3 },
+			{ pregSISCAR4, opcASISCAR4, opcBSISCAR4, opcCSISCAR4 },
+			{ pregSISCAR5, opcASISCAR5, opcBSISCAR5, opcCSISCAR5 },
+			{ pregSISNOL1, opcASISNOL1, opcBSISNOL1, opcCSISNOL1 },
+			{ pregSISNOL2, opcASISNOL2, opcBSISNOL2, opcCSISNOL2 },
+			{ pregSISNOL3, opcASISNOL3, opcBSISNOL3, opcCSISNOL3 },
+			{ pregSISNOL4, opcASISNOL4, opcBSISNOL4, opcCSISNOL4 },
+			{ pregSISNOL5, opcASISNOL5, opcBSISNOL5, opcCSISNOL5 },
+			{ pregSISGER1, opcASISGER1, opcBSISGER1, opcCSISGER1 },
+			{ pregSISGER2, opcASISGER2, opcBSISGER2, opcCSISGER2 },
+			{ pregSISGER3, opcASISGER3, opcBSISGER3, opcCSISGER3 },
+			{ pregSISGER4, opcASISGER4, opcBSISGER4, opcCSISGER4 },
+			{ pregSISGER5, opcASISGER5, opcBSISGER5, opcCSISGER5 },
+			{ pregSISFEL1, opcASISFEL1, opcBSISFEL1, opcCSISFEL1 },
+			{ pregSISFEL2, opcASISFEL2, opcBSISFEL2, opcCSISFEL2 },
+			{ pregSISFEL3, opcASISFEL3, opcBSISFEL3, opcCSISFEL3 },
+			{ pregSISFEL4, opcASISFEL4, opcBSISFEL4, opcCSISFEL4 },
+			{ pregSISFEL5, opcASISFEL5, opcBSISFEL5, opcCSISFEL5 },
+
+	};
+	
+	
+	
+	String[][] listadoCOL = { { pregCOLALE1, opcACOLALE1, opcBCOLALE1, opcCCOLALE1 },
+			{ pregCOLALE2, opcACOLALE2, opcBCOLALE2, opcCCOLALE2 },
+			{ pregCOLALE3, opcACOLALE3, opcBCOLALE3, opcCCOLALE3 },
+			{ pregCOLALE4, opcACOLALE4, opcBCOLALE4, opcCCOLALE4 },
+			{ pregCOLALE5, opcACOLALE5, opcBCOLALE5, opcCCOLALE5 },
+			{ pregCOLCAR1, opcACOLCAR1, opcBCOLCAR1, opcCCOLCAR1 },
+			{ pregCOLCAR2, opcACOLCAR2, opcBCOLCAR2, opcCCOLCAR2 },
+			{ pregCOLCAR3, opcACOLCAR3, opcBCOLCAR3, opcCCOLCAR3 },
+			{ pregCOLCAR4, opcACOLCAR4, opcBCOLCAR4, opcCCOLCAR4 },
+			{ pregCOLCAR5, opcACOLCAR5, opcBCOLCAR5, opcCCOLCAR5 },
+			{ pregCOLGER1, opcACOLGER1, opcBCOLGER1, opcCCOLGER1 },
+			{ pregCOLGER2, opcACOLGER2, opcBCOLGER2, opcCCOLGER2 },
+			{ pregCOLGER3, opcACOLGER3, opcBCOLGER3, opcCCOLGER3 },
+			{ pregCOLGER4, opcACOLGER4, opcBCOLGER4, opcCCOLGER4 },
+			{ pregCOLGER5, opcACOLGER5, opcBCOLGER5, opcCCOLGER5 },
+			{ pregCOLNOL1, opcACOLNOL1, opcBCOLNOL1, opcCCOLNOL1 },
+			{ pregCOLNOL2, opcACOLNOL2, opcBCOLNOL2, opcCCOLNOL2 },
+			{ pregCOLNOL3, opcACOLNOL3, opcBCOLNOL3, opcCCOLNOL3 },
+			{ pregCOLNOL4, opcACOLNOL4, opcBCOLNOL4, opcCCOLNOL4 },
+			{ pregCOLNOL5, opcACOLNOL5, opcBCOLNOL5, opcCCOLNOL5 },
+			{ pregCOLFEL1, opcACOLFEL1, opcBCOLFEL1, opcCCOLFEL1 },
+			{ pregCOLFEL2, opcACOLFEL2, opcBCOLFEL2, opcCCOLFEL2 },
+			{ pregCOLFEL3, opcACOLFEL3, opcBCOLFEL3, opcCCOLFEL3 },
+			{ pregCOLFEL4, opcACOLFEL4, opcBCOLFEL4, opcCCOLFEL4 },
+			{ pregCOLFEL5, opcACOLFEL5, opcBCOLFEL5, opcCCOLFEL5 },
+
+	};
 
 	// CONSTRUCTORES
 
 	// MÉTODOS
 
 	public boolean imprimirPregPROG() {
-		String[][] listadoProgramacion = {
-
-				{ pregProgALE1, opcAProgALE1, opcBProgALE1, opcCProgALE1 },
-				{ pregProgALE2, opcAProgALE2, opcBProgALE2, opcCProgALE2 },
-				{ pregProgALE3, opcAProgALE3, opcBProgALE3, opcCProgALE3 },
-				{ pregProgALE4, opcAProgALE4, opcBProgALE4, opcCProgALE4 },
-				{ pregProgALE5, opcAProgALE5, opcBProgALE5, opcCProgALE5 },
-				{ pregProgCAR1, opcAProgCAR1, opcBProgCAR1, opcCProgCAR1 },
-				{ pregProgCAR2, opcAProgCAR2, opcBProgCAR2, opcCProgCAR2 },
-				{ pregProgCAR3, opcAProgCAR3, opcBProgCAR3, opcCProgCAR3 },
-				{ pregProgCAR4, opcAProgCAR4, opcBProgCAR4, opcCProgCAR4 },
-				{ pregProgCAR5, opcAProgCAR5, opcBProgCAR5, opcCProgCAR5 },
-				{ pregProgFEL1, opcAProgFEL1, opcBProgFEL1, opcCProgFEL1 },
-				{ pregProgFEL2, opcAProgFEL2, opcBProgFEL2, opcCProgFEL2 },
-				{ pregProgFEL3, opcAProgFEL3, opcBProgFEL3, opcCProgFEL3 },
-				{ pregProgFEL4, opcAProgFEL4, opcBProgFEL4, opcCProgFEL4 },
-				{ pregProgFEL5, opcAProgFEL5, opcBProgFEL5, opcCProgFEL5 },
-				{ pregProgGER1, opcAProgGER1, opcBProgGER1, opcCProgGER1 },
-				{ pregProgGER2, opcAProgGER2, opcBProgGER2, opcCProgGER2 },
-				{ pregProgGER3, opcAProgGER3, opcBProgGER3, opcCProgGER2 },
-				{ pregProgGER4, opcAProgGER4, opcBProgGER4, opcCProgGER4 },
-				{ pregProgGER5, opcAProgGER5, opcBProgGER5, opcCProgGER5 },
-				{ pregProgNOL1, opcAProgNOL1, opcBProgNOL1, opcCProgNOL1 },
-				{ pregProgNOL2, opcAProgNOL2, opcBProgNOL2, opcCProgNOL2 },
-				{ pregProgNOL3, opcAProgNOL3, opcBProgNOL3, opcCProgNOL3 },
-				{ pregProgNOL4, opcAProgNOL4, opcBProgNOL4, opcCProgNOL4 },
-				{ pregProgNOL5, opcAProgNOL5, opcBProgNOL5, opcCProgNOL5 },
-
-		};
-
+		
+		int hasta=3;
+		int desdeRes=1;
+		int desdePre=0;
 		Random num = new Random(System.nanoTime());
-		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
 
-		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - 0 + 1) + 0;
+		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoProgramacion[numPregunta][0]);
 		System.out.println("\t" + "a) " + listadoProgramacion[numPregunta][numRespuesta1]);
 
 		do {
-			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
 		System.out.println("\t" + "b) " + listadoProgramacion[numPregunta][numRespuesta2]);
 
 		do {
-			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
 		System.out.println("\t" + "c) " + listadoProgramacion[numPregunta][numRespuesta3]);
@@ -706,54 +841,28 @@ public class ListadoPreguntas {
 	}
 
 	public boolean imprimirPregBBDD() {
-		String[][] listadoBBDD = {
-
-				{ pregBBDDALE1, opcABBDDALE1, opcBBBDDALE1, opcCBBDDALE1 },
-				{ pregBBDDALE2, opcABBDDALE2, opcBBBDDALE2, opcCBBDDALE2 },
-				{ pregBBDDALE3, opcABBDDALE3, opcBBBDDALE3, opcCBBDDALE3 },
-				{ pregBBDDALE4, opcABBDDALE4, opcBBBDDALE4, opcCBBDDALE4 },
-				{ pregBBDDALE5, opcABBDDALE5, opcBBBDDALE5, opcCBBDDALE5 },
-				{ pregBBDDCAR1, opcABBDDCAR1, opcBBBDDCAR1, opcCBBDDCAR1 },
-				{ pregBBDDCAR2, opcABBDDCAR2, opcBBBDDCAR2, opcCBBDDCAR2 },
-				{ pregBBDDCAR3, opcABBDDCAR3, opcBBBDDCAR3, opcCBBDDCAR3 },
-				{ pregBBDDCAR4, opcABBDDCAR4, opcBBBDDCAR4, opcCBBDDCAR4 },
-				{ pregBBDDCAR5, opcABBDDCAR5, opcBBBDDCAR5, opcCBBDDCAR5 },
-				{ pregBBDDNOL1, opcABBDDNOL1, opcBBBDDNOL1, opcCBBDDNOL1 },
-				{ pregBBDDNOL2, opcABBDDNOL2, opcBBBDDNOL2, opcCBBDDNOL2 },
-				{ pregBBDDNOL3, opcABBDDNOL3, opcBBBDDNOL3, opcCBBDDNOL3 },
-				{ pregBBDDNOL4, opcABBDDNOL4, opcBBBDDNOL4, opcCBBDDNOL4 },
-				{ pregBBDDNOL5, opcABBDDNOL5, opcBBBDDNOL5, opcCBBDDNOL5 },
-				{ pregBBDDFEL1, opcABBDDFEL1, opcBBBDDFEL1, opcCBBDDFEL1 },
-				{ pregBBDDFEL2, opcABBDDFEL2, opcBBBDDFEL2, opcCBBDDFEL2 },
-				{ pregBBDDFEL3, opcABBDDFEL3, opcBBBDDFEL3, opcCBBDDFEL3 },
-				{ pregBBDDFEL4, opcABBDDFEL4, opcBBBDDFEL4, opcCBBDDFEL4 },
-				{ pregBBDDFEL5, opcABBDDFEL5, opcBBBDDFEL5, opcCBBDDFEL5 },
-				{ pregBBDDGER1, opcABBDDGER1, opcBBBDDGER1, opcCBBDDGER1 },
-				{ pregBBDDGER2, opcABBDDGER2, opcBBBDDGER2, opcCBBDDGER2 },
-				{ pregBBDDGER3, opcABBDDGER3, opcBBBDDGER3, opcCBBDDGER3 },
-				{ pregBBDDGER4, opcABBDDGER4, opcBBBDDGER4, opcCBBDDGER4 },
-				{ pregBBDDGER5, opcABBDDGER5, opcBBBDDGER5, opcCBBDDGER5 },
-
-		};
-
+		
+		int hasta=3;
+		int desdeRes=1;
+		int desdePre=0;
 		Random num = new Random(System.nanoTime());
-		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
 
-		int numPregunta = num.nextInt((listadoBBDD.length - 1) - 0 + 1) + 0;
+		int numPregunta = num.nextInt((listadoBBDD.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoBBDD[numPregunta][0]);
 		System.out.println("\t" + "a) " + listadoBBDD[numPregunta][numRespuesta1]);
 
 		do {
-			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
 		System.out.println("\t" + "b) " + listadoBBDD[numPregunta][numRespuesta2]);
 
 		do {
-			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
 		System.out.println("\t" + "c) " + listadoBBDD[numPregunta][numRespuesta3]);
@@ -764,49 +873,27 @@ public class ListadoPreguntas {
 	}
 
 	public boolean imprimirPregHTML() {
-		String[][] listadoHTML = { { pregHTMLALE1, opcAHTMLALE1, opcBHTMLALE1, opcCHTMLALE1 },
-				{ pregHTMLALE2, opcAHTMLALE2, opcBHTMLALE2, opcCHTMLALE2 },
-				{ pregHTMLALE3, opcAHTMLALE3, opcBHTMLALE3, opcCHTMLALE3 },
-				{ pregHTMLALE4, opcAHTMLALE4, opcBHTMLALE4, opcCHTMLALE4 },
-				{ pregHTMLALE5, opcAHTMLALE5, opcBHTMLALE5, opcCHTMLALE5 },
-				{ pregHTMLCAR1, opcAHTMLCAR1, opcBHTMLCAR1, opcCHTMLCAR1 },
-				{ pregHTMLCAR2, opcAHTMLCAR2, opcBHTMLCAR2, opcCHTMLCAR2 },
-				{ pregHTMLCAR3, opcAHTMLCAR3, opcBHTMLCAR3, opcCHTMLCAR3 },
-				{ pregHTMLCAR4, opcAHTMLCAR4, opcBHTMLCAR4, opcCHTMLCAR4 },
-				{ pregHTMLCAR5, opcAHTMLCAR5, opcBHTMLCAR5, opcCHTMLCAR5 },
-				{ pregHTMLFEL1, opcAHTMLFEL1, opcBHTMLFEL1, opcCHTMLFEL1 },
-				{ pregHTMLFEL2, opcAHTMLFEL2, opcBHTMLFEL2, opcCHTMLFEL2 },
-				{ pregHTMLFEL3, opcAHTMLFEL3, opcBHTMLFEL3, opcCHTMLFEL3 },
-				{ pregHTMLFEL4, opcAHTMLFEL4, opcBHTMLFEL4, opcCHTMLFEL4 },
-				{ pregHTMLFEL5, opcAHTMLFEL5, opcBHTMLFEL5, opcCHTMLFEL5 },
-				{ pregHTMLNOL1, opcAHTMLNOL1, opcBHTMLNOL1, opcCHTMLNOL1 },
-				{ pregHTMLNOL2, opcAHTMLNOL2, opcBHTMLNOL2, opcCHTMLNOL2 },
-				{ pregHTMLNOL3, opcAHTMLNOL3, opcBHTMLNOL3, opcCHTMLNOL3 },
-				{ pregHTMLNOL4, opcAHTMLNOL4, opcBHTMLNOL4, opcCHTMLNOL4 },
-				{ pregHTMLNOL5, opcAHTMLNOL5, opcBHTMLNOL5, opcCHTMLNOL5 },
-				{ pregHTMLGER1, opcAHTMLGER1, opcBHTMLGER1, opcCHTMLGER1 },
-				{ pregHTMLGER2, opcAHTMLGER2, opcBHTMLGER2, opcCHTMLGER2 },
-				{ pregHTMLGER3, opcAHTMLGER3, opcBHTMLGER3, opcCHTMLGER3 },
-				{ pregHTMLGER4, opcAHTMLGER4, opcBHTMLGER4, opcCHTMLGER4 },
-				{ pregHTMLGER5, opcAHTMLGER5, opcBHTMLGER5, opcCHTMLGER5 }, };
+		int hasta=3;
+		int desdeRes=1;
+		int desdePre=0;
 		Random num = new Random(System.nanoTime());
-		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
 
-		int numPregunta = num.nextInt((listadoHTML.length - 1) - 0 + 1) + 0;
+		int numPregunta = num.nextInt((listadoHTML.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoHTML[numPregunta][0]);
 		System.out.println("\t" + "a) " + listadoHTML[numPregunta][numRespuesta1]);
 
 		do {
-			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
 		System.out.println("\t" + "b) " + listadoHTML[numPregunta][numRespuesta2]);
 
 		do {
-			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
 		System.out.println("\t" + "c) " + listadoHTML[numPregunta][numRespuesta3]);
@@ -817,51 +904,27 @@ public class ListadoPreguntas {
 	}
 
 	public boolean imprimirPregSIS() {
-		String[][] listadoSIS = { { pregSISALE1, opcASISALE1, opcBSISALE1, opcCSISALE1 },
-				{ pregSISALE2, opcASISALE2, opcBSISALE2, opcCSISALE2 },
-				{ pregSISALE3, opcASISALE3, opcBSISALE3, opcCSISALE3 },
-				{ pregSISALE4, opcASISALE4, opcBSISALE4, opcCSISALE4 },
-				{ pregSISALE5, opcASISALE5, opcBSISALE5, opcCSISALE5 },
-				{ pregSISCAR1, opcASISCAR1, opcBSISCAR1, opcCSISCAR1 },
-				{ pregSISCAR2, opcASISCAR2, opcBSISCAR2, opcCSISCAR2 },
-				{ pregSISCAR3, opcASISCAR3, opcBSISCAR3, opcCSISCAR3 },
-				{ pregSISCAR4, opcASISCAR4, opcBSISCAR4, opcCSISCAR4 },
-				{ pregSISCAR5, opcASISCAR5, opcBSISCAR5, opcCSISCAR5 },
-				{ pregSISNOL1, opcASISNOL1, opcBSISNOL1, opcCSISNOL1 },
-				{ pregSISNOL2, opcASISNOL2, opcBSISNOL2, opcCSISNOL2 },
-				{ pregSISNOL3, opcASISNOL3, opcBSISNOL3, opcCSISNOL3 },
-				{ pregSISNOL4, opcASISNOL4, opcBSISNOL4, opcCSISNOL4 },
-				{ pregSISNOL5, opcASISNOL5, opcBSISNOL5, opcCSISNOL5 },
-				{ pregSISGER1, opcASISGER1, opcBSISGER1, opcCSISGER1 },
-				{ pregSISGER2, opcASISGER2, opcBSISGER2, opcCSISGER2 },
-				{ pregSISGER3, opcASISGER3, opcBSISGER3, opcCSISGER3 },
-				{ pregSISGER4, opcASISGER4, opcBSISGER4, opcCSISGER4 },
-				{ pregSISGER5, opcASISGER5, opcBSISGER5, opcCSISGER5 },
-				{ pregSISFEL1, opcASISFEL1, opcBSISFEL1, opcCSISFEL1 },
-				{ pregSISFEL2, opcASISFEL2, opcBSISFEL2, opcCSISFEL2 },
-				{ pregSISFEL3, opcASISFEL3, opcBSISFEL3, opcCSISFEL3 },
-				{ pregSISFEL4, opcASISFEL4, opcBSISFEL4, opcCSISFEL4 },
-				{ pregSISFEL5, opcASISFEL5, opcBSISFEL5, opcCSISFEL5 },
-
-		};
+		int hasta=3;
+		int desdeRes=1;
+		int desdePre=0;
 		Random num = new Random(System.nanoTime());
-		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
 
-		int numPregunta = num.nextInt((listadoSIS.length - 1) - 0 + 1) + 0;
+		int numPregunta = num.nextInt((listadoSIS.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoSIS[numPregunta][0]);
 		System.out.println("\t" + "a) " + listadoSIS[numPregunta][numRespuesta1]);
 
 		do {
-			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
 		System.out.println("\t" + "b) " + listadoSIS[numPregunta][numRespuesta2]);
 
 		do {
-			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
 		System.out.println("\t" + "c) " + listadoSIS[numPregunta][numRespuesta3]);
@@ -872,45 +935,21 @@ public class ListadoPreguntas {
 	}
 
 	public boolean imprimirPregCOL() {
-		String[][] listadoCOL = { { pregCOLALE1, opcACOLALE1, opcBCOLALE1, opcCCOLALE1 },
-				{ pregCOLALE2, opcACOLALE2, opcBCOLALE2, opcCCOLALE2 },
-				{ pregCOLALE3, opcACOLALE3, opcBCOLALE3, opcCCOLALE3 },
-				{ pregCOLALE4, opcACOLALE4, opcBCOLALE4, opcCCOLALE4 },
-				{ pregCOLALE5, opcACOLALE5, opcBCOLALE5, opcCCOLALE5 },
-				{ pregCOLCAR1, opcACOLCAR1, opcBCOLCAR1, opcCCOLCAR1 },
-				{ pregCOLCAR2, opcACOLCAR2, opcBCOLCAR2, opcCCOLCAR2 },
-				{ pregCOLCAR3, opcACOLCAR3, opcBCOLCAR3, opcCCOLCAR3 },
-				{ pregCOLCAR4, opcACOLCAR4, opcBCOLCAR4, opcCCOLCAR4 },
-				{ pregCOLCAR5, opcACOLCAR5, opcBCOLCAR5, opcCCOLCAR5 },
-				{ pregCOLGER1, opcACOLGER1, opcBCOLGER1, opcCCOLGER1 },
-				{ pregCOLGER2, opcACOLGER2, opcBCOLGER2, opcCCOLGER2 },
-				{ pregCOLGER3, opcACOLGER3, opcBCOLGER3, opcCCOLGER3 },
-				{ pregCOLGER4, opcACOLGER4, opcBCOLGER4, opcCCOLGER4 },
-				{ pregCOLGER5, opcACOLGER5, opcBCOLGER5, opcCCOLGER5 },
-				{ pregCOLNOL1, opcACOLNOL1, opcBCOLNOL1, opcCCOLNOL1 },
-				{ pregCOLNOL2, opcACOLNOL2, opcBCOLNOL2, opcCCOLNOL2 },
-				{ pregCOLNOL3, opcACOLNOL3, opcBCOLNOL3, opcCCOLNOL3 },
-				{ pregCOLNOL4, opcACOLNOL4, opcBCOLNOL4, opcCCOLNOL4 },
-				{ pregCOLNOL5, opcACOLNOL5, opcBCOLNOL5, opcCCOLNOL5 },
-				{ pregCOLFEL1, opcACOLFEL1, opcBCOLFEL1, opcCCOLFEL1 },
-				{ pregCOLFEL2, opcACOLFEL2, opcBCOLFEL2, opcCCOLFEL2 },
-				{ pregCOLFEL3, opcACOLFEL3, opcBCOLFEL3, opcCCOLFEL3 },
-				{ pregCOLFEL4, opcACOLFEL4, opcBCOLFEL4, opcCCOLFEL4 },
-				{ pregCOLFEL5, opcACOLFEL5, opcBCOLFEL5, opcCCOLFEL5 },
-
-		};
+		int hasta=3;
+		int desdeRes=1;
+		int desdePre=0;
 		Random num = new Random(System.nanoTime());
-		int numRespuesta1 = num.nextInt(3 - 1 + 1) + 1;
+		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
 
-		int numPregunta = num.nextInt((listadoCOL.length - 1) - 0 + 1) + 0;
+		int numPregunta = num.nextInt((listadoCOL.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoCOL[numPregunta][0]);
 		System.out.println("\t" + "a) " + listadoCOL[numPregunta][numRespuesta1]);
 
 		do {
-			numRespuesta2 = num.nextInt(3 - 1 + 1) + 1;
+			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
 		System.out.println("\t" + "b) " + listadoCOL[numPregunta][numRespuesta2]);
@@ -975,5 +1014,19 @@ public class ListadoPreguntas {
 		aux[tipoCas]= false;
 			eq.setQuesitos(aux);
 
+	}
+	
+	public boolean listadoFinal() {
+		boolean aux = false;
+
+		for (int i = 0; i < 3 && aux == false; i++) {
+
+			if (!imprimirPregCOL()) {
+				aux = true;
+			}
+
+		}
+
+		return aux;
 	}
 }
