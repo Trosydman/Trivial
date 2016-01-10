@@ -3,6 +3,12 @@ package carlos;
 import felipe.Trivial;
 import leer_por_teclado.Leer;
 
+/**
+ * Clase desde la cuál se arranca el programa del Trivial
+ * 
+ * @author Carlos Mesquita Mansilla
+ *
+ */
 public class Principal {
 
 	public static void main(String[] args) {
@@ -43,7 +49,7 @@ public class Principal {
 				 * Inmediatamente despu�s de pedir los nombres empezaremos
 				 * a jugar.
 				 */
-				 nuevaPartida.jugarPartida();
+				 nuevaPartida.jugarPartida(nuevaPartida.pedirDatos());
 				break;
 			case 2:
 				// TODO DISE�O(Germ�n)
