@@ -8,7 +8,7 @@ public class TesterFelipe {
 		
 		
 		
-		a.jugarPartida();
+		a.jugarPartida(a.pedirDatos());
 		
 		
 		

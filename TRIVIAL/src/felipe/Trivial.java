@@ -12,6 +12,14 @@ import carlos.Equipo;
 import carlos.Tablero;
 import alex.ListadoPreguntas;
 
+/**
+ * Clase donde se desarrolla el juevo "TRIVIAL" con un tablero donde se mueven tantas fichas como jugadores/equipos 
+ * se encuentren en la partida.
+ * 
+ * @author Felipe Fernandez Barrero
+ *
+ */
+
 public class Trivial {
 	// ATRIBUTOS
 	Equipo eq1;
@@ -27,13 +35,13 @@ public class Trivial {
 
 	// MÉTODOS
 
-	// ladilla termina switch de elecion de jugadores
-	public void jugarPartida() {
-		int jug, menu, i = 0, dado;
-		boolean comproB = true, isNotFin = true;
-		int[] posPreg;
-		Casilla[][] saveCasilla;
-
+	
+	
+	public boolean pedirDatos(){
+		int menu, jug;
+		boolean comproB=true;
+		
+		
 		do {
 
 			System.out.println("Indicamelo churrita:");
@@ -50,7 +58,7 @@ public class Trivial {
 				System.out.println("indica cuantos jugadores sois\nrecuerda que maximo cuatro jugadores:");
 				jug = Leer.datoInt();
 
-				if (jug <= 4 && jug > 0) {
+				if (jug <= 4 && jug > 1) {
 
 					// TODO ladilla el syso se cambia por el metodo german
 					cogerNombre(jug, comproB);
@@ -58,7 +66,7 @@ public class Trivial {
 				} else {
 					System.out.println("El numero de jugadores no es el correcto\n");
 				}
-			} while (jug > 4 || jug <= 0);
+			} while (jug > 4 || jug <= 1);
 			break;
 
 		case 2:
@@ -66,7 +74,7 @@ public class Trivial {
 			do {
 				System.out.println("indica cuantos equipos sois\nrecuerda que maximo cuatro equipos:");
 				jug = Leer.datoInt();
-				if (jug <= 4 && jug > 0) {
+				if (jug <= 4 && jug > 1) {
 
 					// TODO ladilla el syso se cambia por el metodo german
 
@@ -76,7 +84,7 @@ public class Trivial {
 					System.out.println("El numero de jugadores no es el correcto\n");
 				}
 
-			} while (jug > 4 || jug <= 0);
+			} while (jug > 4 || jug <= 1);
 			break;
 
 		default:
@@ -84,7 +92,26 @@ public class Trivial {
 			break;
 
 		}
+		return comproB;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	// ladilla metodo donde se desarrolla el juego
+	public void jugarPartida(boolean comproB) {
+		int i = 0, dado;
+		boolean  isNotFin = true;
+		int[] posPreg;
+		Casilla[][] saveCasilla;
 
+	
+		
+		
 		do {
 
 			tab.imprimeTablero();
@@ -329,6 +356,12 @@ public class Trivial {
 	 * jugarpartida.
 	 */
 
+	/**
+	 * Método que comprueba si tiene todos los quesitos rellenos de un jugador/equipo, utilizándose como condición para 
+	 * saber quién accede al listado final de preguntas. Si tiene todos los quesitos terminará el juego y se proclama ganador.
+	 * @param eq parámetro que identifica el jugador/equipo del turno correspondiente.
+	 * @return boleano que indica el acceso al {@link #cache.listadoFinal() listado final}.
+	 */
 	public boolean comprobarAllQuesitos(Equipo eq) {
 		boolean[] proB = eq.getQuesitos();
 		boolean fin = true;
