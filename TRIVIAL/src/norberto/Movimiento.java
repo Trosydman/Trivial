@@ -11,13 +11,13 @@ import leer_por_teclado.Leer;
 public class Movimiento {
 
 	/**
-	 *Este  método sirve para escoger el tipo de movimiento que se desea realizar,
-	 *también se utiliza o es llamado en el momento que uno de los movimientos escogidos
-	 *se encuentra en una intercepción y da la opción de escoger otro movimiento que sea 
+	 *Este  mÃ©todo sirve para escoger el tipo de movimiento que se desea realizar,
+	 *tambiÃ©n se utiliza o es llamado en el momento que uno de los movimientos escogidos
+	 *se encuentra en una intercepciÃ³n y da la opciÃ³n de escoger otro movimiento que sea 
 	 *adecuado.  
 	 * 
 	 * @param triv es el equipo que se quiere mover.
-	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el nÃºmero aleatorio que indica la cantidad de casillas que debe 
 	 * mover el equipo.
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -26,11 +26,11 @@ public class Movimiento {
 		int intro;
 		
 		/*
-		 *Variable booleana que al ser verdadera permitirá ver el menú de los movimientos
+		 *Variable booleana que al ser verdadera permitirï¿½ ver el menï¿½ de los movimientos
 		 *que se pueden realizar y ejecutarlo, si la variable es falsa se ejecuta un mensaje que nos
 		 *dice que el movimiento no puede ser realizado.
-		 *Será verdadera cuando se pueda realizar el movimiento y
-		 *será falsa cuando el movimiento no se pueda realizar. 
+		 *Serï¿½ verdadera cuando se pueda realizar el movimiento y
+		 *serï¿½ falsa cuando el movimiento no se pueda realizar. 
 		 *   
 		 */
 		boolean comprobar = true;
@@ -44,16 +44,16 @@ public class Movimiento {
 				Disenio.generarCabeTab(triv);
 				tab.imprimeTablero();
 				System.out.println(
-						triv.getNombreEq()!=null?triv.getNombreEq()+" es necesario girar en una dirección. Te quedan "+dado+" movimientos.":
-							triv.getJugador()+" es necesario girar en una dirección. Te quedan "+dado+" movimientos.");
+						triv.getNombreEq()!=null?triv.getNombreEq()+" es necesario girar en una direcciï¿½n. Te quedan "+dado+" movimientos.":
+							triv.getJugador()+" es necesario girar en una direcciï¿½n. Te quedan "+dado+" movimientos.");
 				girar = false;
 			}
-			System.out.println("¿Para donde quieres moverte?\n"
+			System.out.println("ï¿½Para donde quieres moverte?\n"
 							 + "\t(1) Derecha.\n"
 							 + "\t(2) Izquierda.\n"
 							 + "\t(3) Arriba.\n"
 							 + "\t(4) Abajo.");
-			System.out.println("Eleige un número del 1-4 : ");
+			System.out.println("Eleige un nï¿½mero del 1-4 : ");
 			intro = Leer.datoInt();
 			System.out.println();
 			switch (intro) {
@@ -89,12 +89,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este método es el encargado de realizar el moviento para la derecha, su funcionamiento 
-	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersección es el método moverDer quien llama a  escogerMoviento.
+	 * Este mï¿½todo es el encargado de realizar el moviento para la derecha, su funcionamiento 
+	 * comienza en el momento que el mï¿½todo escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersecciï¿½n es el mï¿½todo moverDer quien llama a  escogerMoviento.
 	 *     
 	 * @param triv es el equipo que se quiere mover.
-	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el nï¿½mero aleatorio que indica la cantidad de casillas que debe 
 	 * mover el  equipo 
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique. 
@@ -108,7 +108,7 @@ public class Movimiento {
 		tab.borrarEqTablero(triv);
 		
 		/*
-		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condición
+		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condiciï¿½n
 		 * una variable booleana que debe ser true (verdadera) para que se ejecute.
 		 */
 		for (int i = 1; i <= dado && movi == true; i++) {
@@ -141,11 +141,11 @@ public class Movimiento {
 		return movi;
 	}
     /**
-     * Este método es el encargado de realizar el moviento para la izquierda, su funcionamiento 
-	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersección es el método moverIzq quien llama a  escogerMoviento.
+     * Este mï¿½todo es el encargado de realizar el moviento para la izquierda, su funcionamiento 
+	 * comienza en el momento que el mï¿½todo escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersecciï¿½n es el mï¿½todo moverIzq quien llama a  escogerMoviento.
      * @param triv es el equipo que se quiere mover.
-     * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
+     * @param dado es el nï¿½mero aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
      * @param tab  tablero del juego.
      * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -159,7 +159,7 @@ public class Movimiento {
 		tab.borrarEqTablero(triv);
 		
 		/*
-		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condición
+		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condiciï¿½n
 		 * una variable booleana que debe ser true (verdadera) para que se ejecute.
 		 */
 		for (int i = 1; i <= dado; i++) {
@@ -194,12 +194,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este método es el encargado de realizar el moviento para arriba, su funcionamiento 
-	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersección es el método moverNort quien llama a  escogerMoviento.
+	 * Este mï¿½todo es el encargado de realizar el moviento para arriba, su funcionamiento 
+	 * comienza en el momento que el mï¿½todo escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersecciï¿½n es el mï¿½todo moverNort quien llama a  escogerMoviento.
 	 * 
      * @param triv es el equipo que se quiere mover.
-	 * @param dado  es el número aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado  es el nï¿½mero aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -212,7 +212,7 @@ public class Movimiento {
 		
 		tab.borrarEqTablero(triv);
         /*
-         * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condición
+         * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condiciï¿½n
 		 * una variable booleana que debe ser true (verdadera) para que se ejecute.
          */
 		for (int i = 1; i <= dado; i++) {
@@ -246,12 +246,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este método es el encargado de realizar el moviento para abajo, su funcionamiento 
-	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersección es el método moverSur quien llama a  escogerMoviento.
+	 * Este mï¿½todo es el encargado de realizar el moviento para abajo, su funcionamiento 
+	 * comienza en el momento que el mï¿½todo escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersecciï¿½n es el mï¿½todo moverSur quien llama a  escogerMoviento.
 	 * 
 	 * @param triv  es el equipo que se quiere mover.
-	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el nï¿½mero aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -264,7 +264,7 @@ public class Movimiento {
 		tab.borrarEqTablero(triv);
 		
 		/*
-		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condición
+		 * Este bucle  se repite  la cantidad de veces que nos de  el dado y tiene en su condiciï¿½n
 		 * una variable booleana que debe ser true (verdadera) para que se ejecute.
 		 */
 		for (int i = 1; i <= dado; i++) {
@@ -299,10 +299,10 @@ public class Movimiento {
 
 	
 	/**
-	 * Método  para identificar la casilla donde se encuentra el equipo en ese momento. 
+	 * Mï¿½todo  para identificar la casilla donde se encuentra el equipo en ese momento. 
 	 * @param triv es el equipo que se quiere mover.
 	 * @param punto es el array bidimencional donde se encuentran las casillas del tablero.
-	 * @return la posición de la casilla.
+	 * @return la posiciï¿½n de la casilla.
 	 */
 	public int[] identifiCasilla(Equipo triv, Casilla[][] punto) {
 		int posit[] = new int[2];
