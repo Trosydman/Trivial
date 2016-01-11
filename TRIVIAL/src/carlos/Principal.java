@@ -34,16 +34,14 @@ public class Principal {
 				 nuevaPartida.jugarPartida(nuevaPartida.pedirDatos());
 				break;
 			case 2:
-				// TODO DISE�O(Germ�n)
-				// Imprime las reglas del juego. (Adem�s poner entre
-				// parentesis que se pulse intro para continuar)
+				Disenio.generarOpcReglas();
 				Leer.dato();
+				Disenio.limpiarConsola();
 				break;
 			case 3:
-				// TODO DISE�O(Germ�n)
-				// Imprime los componentes del grupo. (Adem�s poner entre
-				// parentesis que se pulse intro para continuar)
+				Disenio.generarOpcComp();
 				Leer.dato();
+				Disenio.limpiarConsola();
 				break;
 			default:
 				System.out.println("ERROR DE OPCIÓN: la opción seleccionadano no existe. Inténtelo de nuevo.");				

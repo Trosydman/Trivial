@@ -845,7 +845,7 @@ public class ListadoPreguntas {
 		/*Una vez seleccionaa e imprimida la pregunta se imprime la primera opción de dicha pregunta, cuyo índice
 		 * se generó anteriormente entre (1 y 3). Esto se hace porque el array tiene asignado para cada pregunta
 		 * sus 3 respuestas, de las cuales la de la primera posición es la respuesta correcta*/
-		System.out.println("\t" + "1) " + listadoProgramacion[numPregunta][numRespuesta1]);
+		System.out.println("\t1) " + listadoProgramacion[numPregunta][numRespuesta1]);
 		
 		/*La función del siguiente código es hacer que se impriman correctamente las tres respuestas
 		 * de la pregunta sin que se repita ninguna*/
@@ -853,13 +853,13 @@ public class ListadoPreguntas {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "2) " + listadoProgramacion[numPregunta][numRespuesta2]);
+		System.out.println("\t2) " + listadoProgramacion[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "3) " + listadoProgramacion[numPregunta][numRespuesta3]);
+		System.out.println("\t3) " + listadoProgramacion[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoProgramacion, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -885,19 +885,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoBBDD.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoBBDD[numPregunta][0]);
-		System.out.println("\t" + "1) " + listadoBBDD[numPregunta][numRespuesta1]);
+		System.out.println("\t1) " + listadoBBDD[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "2) " + listadoBBDD[numPregunta][numRespuesta2]);
+		System.out.println("\t2) " + listadoBBDD[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "3) " + listadoBBDD[numPregunta][numRespuesta3]);
+		System.out.println("\t3) " + listadoBBDD[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -921,19 +921,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoHTML.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoHTML[numPregunta][0]);
-		System.out.println("\t" + "1) " + listadoHTML[numPregunta][numRespuesta1]);
+		System.out.println("\t1) " + listadoHTML[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "2) " + listadoHTML[numPregunta][numRespuesta2]);
+		System.out.println("\t2) " + listadoHTML[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "3) " + listadoHTML[numPregunta][numRespuesta3]);
+		System.out.println("\t3) " + listadoHTML[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -957,19 +957,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoSIS.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoSIS[numPregunta][0]);
-		System.out.println("\t" + "1) " + listadoSIS[numPregunta][numRespuesta1]);
+		System.out.println("\t1) " + listadoSIS[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "2) " + listadoSIS[numPregunta][numRespuesta2]);
+		System.out.println("\t2) " + listadoSIS[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "3) " + listadoSIS[numPregunta][numRespuesta3]);
+		System.out.println("\t3) " + listadoSIS[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -993,19 +993,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoCOL.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoCOL[numPregunta][0]);
-		System.out.println("\t" + "1) " + listadoCOL[numPregunta][numRespuesta1]);
+		System.out.println("\t1) " + listadoCOL[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "2) " + listadoCOL[numPregunta][numRespuesta2]);
+		System.out.println("\t2) " + listadoCOL[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "3) " + listadoCOL[numPregunta][numRespuesta3]);
+		System.out.println("\t3) " + listadoCOL[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoCOL, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);

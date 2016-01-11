@@ -24,6 +24,8 @@ public class Trivial {
 	// ATRIBUTOS
 	Equipo[] turno;
 	Tablero tab = new Tablero();
+	Movimiento mov = new Movimiento();
+	ListadoPreguntas cache = new ListadoPreguntas();
 	
 
 	// CONSTRUCTOR
@@ -68,7 +70,7 @@ public class Trivial {
 					cogerNombre(jug, comproB);
 
 				} else {
-					System.out.println("El numero de jugadores no es el correcto\n");
+					System.out.println("El número de jugadores no es el correcto.\n");
 				}
 			} while (jug > 4 || jug <= 1);
 			break;
@@ -85,7 +87,7 @@ public class Trivial {
 					cogerNombre(jug, comproB);
 
 				} else {
-					System.out.println("El numero de jugadores no es el correcto\n");
+					System.out.println("El número de equipos no es el correcto.\n");
 					Disenio.contLin+=2;
 				}
 
@@ -93,7 +95,7 @@ public class Trivial {
 			break;
 
 		default:
-			System.out.println("no se contempla esa opcion");
+			System.out.println("No se contempla esa opción.");
 			Disenio.contLin+=2;
 			break;
 
@@ -115,11 +117,6 @@ public class Trivial {
 		boolean  isNotFin = true;
 		int[] posPreg;
 		Casilla[][] saveCasilla;
-		Movimiento mov = new Movimiento();
-		ListadoPreguntas cache = new ListadoPreguntas();
-
-	
-		
 		
 		do {
 			Disenio.limpiarConsola();
@@ -135,6 +132,7 @@ public class Trivial {
 			
 			mov.escogerMovimiento(turno[i], dado, tab, false);
 			
+			Disenio.generarCabeTab(turno[i]);
 			tab.imprimeTablero();
 			Disenio.generarLeyenda();
 
@@ -148,9 +146,10 @@ public class Trivial {
 				Disenio.generarCabeceraPreg(Casilla.PROG);
 				if (cache.imprimirPregPROG() == false) {
 
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && turno[i].getQuesitos()[Casilla.PROG]) {
 						cache.quitarQuesito(Casilla.PROG, turno[i]);
-						System.out.println("\t\tHas perdido un quesito de PROGRAMACIÓN.");
+						System.out.println("\t\t\t\tHas perdido un quesito de PROGRAMACIÓN.\n(Intro)");
+						Leer.dato();
 					}
 					i++;
 					if (i == turno.length) {
@@ -159,7 +158,8 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.PROG, turno[i]);
-						System.out.println("\t\t¡Has ganado un quesito de PROGRAMACIÓN!");
+						System.out.println("\t\t\t\t¡Has ganado un quesito de PROGRAMACIÓN!\n(Intro)");
+						Leer.dato();
 					}
 
 				}
@@ -171,9 +171,10 @@ public class Trivial {
 				Disenio.generarCabeceraPreg(Casilla.BBDD);
 				if (cache.imprimirPregBBDD() == false) {
 
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && turno[i].getQuesitos()[Casilla.BBDD]) {
 						cache.quitarQuesito(Casilla.BBDD, turno[i]);
-						System.out.println("\t\tHas perdido un quesito de BBDD.");
+						System.out.println("\t\t\t\tHas perdido un quesito de BBDD.\n(Intro)");
+						Leer.dato();
 					}
 					i++;
 					if (i == turno.length) {
@@ -182,7 +183,8 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.BBDD, turno[i]);
-						System.out.println("\t\t¡Has ganado un quesito de BBDD!");
+						System.out.println("\t\t\t\t¡Has ganado un quesito de BBDD!\n(Intro)");
+						Leer.dato();
 					}
 
 				}
@@ -193,9 +195,10 @@ public class Trivial {
 				Disenio.generarCabeceraPreg(Casilla.HTML);
 				if (cache.imprimirPregHTML() == false) {
 
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && turno[i].getQuesitos()[Casilla.HTML]) {
 						cache.quitarQuesito(Casilla.HTML, turno[i]);
-						System.out.println("\t\tHas perdido un quesito de HTML.");
+						System.out.println("\t\t\t\tHas perdido un quesito de HTML.\n(Intro)");
+						Leer.dato();
 					}
 					i++;
 					if (i == turno.length) {
@@ -204,7 +207,8 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.HTML, turno[i]);
-						System.out.println("\t\t¡Has ganado un quesito de HTML!");
+						System.out.println("\t\t\t\t¡Has ganado un quesito de HTML!\n(Intro)");
+						Leer.dato();
 					}
 
 				}
@@ -215,9 +219,10 @@ public class Trivial {
 				Disenio.generarCabeceraPreg(Casilla.SIS);
 				if (cache.imprimirPregSIS() == false) {
 
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && turno[i].getQuesitos()[Casilla.SIS]) {
 						cache.quitarQuesito(Casilla.SIS, turno[i]);
-						System.out.println("\t\tHas perdido un quesito de SISTEMAS.");
+						System.out.println("\t\t\t\tHas perdido un quesito de SISTEMAS.\n(Intro)");
+						Leer.dato();
 					}
 					i++;
 					if (i == turno.length) {
@@ -226,7 +231,8 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.SIS, turno[i]);
-						System.out.println("\t\t¡Has ganado un quesito de SISTEMAS!");
+						System.out.println("\t\t\t\t¡Has ganado un quesito de SISTEMAS!\n(Intro)");
+						Leer.dato();
 					}
 
 				}
@@ -238,9 +244,10 @@ public class Trivial {
 					Disenio.generarCabeceraPreg(Casilla.COL);
 					if (cache.imprimirPregCOL() == false) {
 
-						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && turno[i].getQuesitos()[Casilla.COL]) {
 							cache.quitarQuesito(Casilla.COL, turno[i]);
-							System.out.println("\t\tHas perdido un quesito de COLEGIO.");
+							System.out.println("\t\t\t\tHas perdido un quesito de COLEGIO.\n(Intro)");
+							Leer.dato();
 						}
 						i++;
 						if (i == turno.length) {
@@ -249,8 +256,8 @@ public class Trivial {
 					} else {
 						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 							cache.darQuesito(Casilla.COL, turno[i]);
-							System.out.println("\t\t¡Has ganado un quesito de COLEGIO!");
-
+							System.out.println("\t\t\t\t¡Has ganado un quesito de COLEGIO!\n(Intro)");
+							Leer.dato();
 						}
 
 					}
@@ -296,11 +303,11 @@ public class Trivial {
 
 			if (tipoEquipo) {
 
-				System.out.println("Diga el nombre del equipo " + numJ + "(Min 3 caracteres):");
+				System.out.println("\nDiga el nombre del equipo " + numJ + "(Mín 3 caracteres):");
 				Disenio.contLin+=2;
 			} else {
 
-				System.out.println("Diga el nombre del jugador " + numJ + "(Min 3 caracteres):");
+				System.out.println("\nDiga el nombre del jugador " + numJ + "(Mín 3 caracteres):");
 				Disenio.contLin+=2;
 			}
 

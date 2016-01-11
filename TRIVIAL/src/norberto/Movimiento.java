@@ -44,16 +44,16 @@ public class Movimiento {
 				Disenio.generarCabeTab(triv);
 				tab.imprimeTablero();
 				System.out.println(
-						triv.getNombreEq()!=null?triv.getNombreEq()+" es necesario girar en una direcci�n. Te quedan "+dado+" movimientos.":
-							triv.getJugador()+" es necesario girar en una direcci�n. Te quedan "+dado+" movimientos.");
+						triv.getNombreEq()!=null?triv.getNombreEq()+" es necesario girar en una dirección. Te quedan "+dado+" movimientos.":
+							triv.getJugador()+" es necesario girar en una dirección. Te quedan "+dado+" movimientos.");
 				girar = false;
 			}
-			System.out.println("�Para donde quieres moverte?\n"
+			System.out.println("¿Para donde quieres moverte?\n"
 							 + "\t(1) Derecha.\n"
 							 + "\t(2) Izquierda.\n"
 							 + "\t(3) Arriba.\n"
 							 + "\t(4) Abajo.");
-			System.out.println("Eleige un n�mero del 1-4 : ");
+			System.out.println("Elige un movimiento (1-4): ");
 			intro = Leer.datoInt();
 			System.out.println();
 			switch (intro) {
