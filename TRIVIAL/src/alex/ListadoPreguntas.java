@@ -4,6 +4,7 @@ import java.util.Random;
 
 
 import carlos.Equipo;
+import german.Disenio;
 import leer_por_teclado.Leer;
 
 /**
@@ -1019,31 +1020,37 @@ public class ListadoPreguntas {
 		switch (Leer.datoInt()) {
 		case 1:
 			if (list[preg][res1].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");
+				Disenio.responderBien();
+				Leer.dato();
 				aux = true;
 				}
 			else{
-				System.out.println("Respuesta incorrecta");
+				Disenio.responderMal();
+				Leer.dato();
 			}
 			break;
 
 		case 2:
 			if (list[preg][res2].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");
+				Disenio.responderBien();
+				Leer.dato();
 				aux = true;
 			}
 			else{
-				System.out.println("Respuesta incorrecta");
+				Disenio.responderMal();
+				Leer.dato();
 			}
 			break;
 
 		case 3:
 			if (list[preg][res3].equals(list[preg][1])){
-				System.out.println("Respuesta correcta");
+				Disenio.responderBien();
+				Leer.dato();
 				aux=true;
 			}
 			else{
-				System.out.println("Respuesta incorrecta");
+				Disenio.responderMal();
+				Leer.dato();
 			}
 			break;
 		}

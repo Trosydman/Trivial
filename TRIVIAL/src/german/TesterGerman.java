@@ -14,6 +14,9 @@ public class TesterGerman {
 		Disenio.generarMenuDatos();
 		Disenio.generarNumEq();
 		
+		Disenio.responderBien();
+		Disenio.responderMal();
+		
 		
 }
 }

@@ -120,6 +120,7 @@ public class Trivial {
 			Disenio.limpiarConsola();
 			Disenio.generarCabeTab(turno[i]);
 			tab.imprimeTablero();
+			Disenio.generarLeyenda();
 			/*
 			 
 			if (comproB) {
@@ -137,6 +138,7 @@ public class Trivial {
 			mov.escogerMovimiento(turno[i], dado, tab, false);
 //			tab.establecerEqTablero(turno[i]);
 			tab.imprimeTablero();
+			Disenio.generarLeyenda();
 
 			posPreg = mov.identifiCasilla(turno[i], tab.getCasillasTabl());
 			saveCasilla = tab.getCasillasTabl();
@@ -144,11 +146,12 @@ public class Trivial {
 
 			case Casilla.PROG:
 
-				System.out.println("has caido en una casilla de programacion");
+				Disenio.generarCabeceraPreg(Casilla.PROG);
 				if (cache.imprimirPregPROG() == false) {
 
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.PROG, turno[i]);
+						System.out.println("\t\tHas perdido un quesito de PROGRAMACIÓN.");
 					}
 					i++;
 					if (i == turno.length) {
@@ -157,6 +160,7 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.PROG, turno[i]);
+						System.out.println("\t\t¡Has ganado un quesito de PROGRAMACIÓN!");
 					}
 
 				}
@@ -165,11 +169,12 @@ public class Trivial {
 
 			case Casilla.BBDD:
 
-				System.out.println("has caido en una casilla de base de datos");
+				Disenio.generarCabeceraPreg(Casilla.BBDD);
 				if (cache.imprimirPregBBDD() == false) {
 
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.BBDD, turno[i]);
+						System.out.println("\t\tHas perdido un quesito de BBDD.");
 					}
 					i++;
 					if (i == turno.length) {
@@ -178,6 +183,7 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.BBDD, turno[i]);
+						System.out.println("\t\t¡Has ganado un quesito de BBDD!");
 					}
 
 				}
@@ -185,11 +191,12 @@ public class Trivial {
 
 			case Casilla.HTML:
 
-				System.out.println("has caido en una casilla de html");
+				Disenio.generarCabeceraPreg(Casilla.HTML);
 				if (cache.imprimirPregHTML() == false) {
 
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.HTML, turno[i]);
+						System.out.println("\t\tHas perdido un quesito de HTML.");
 					}
 					i++;
 					if (i == turno.length) {
@@ -198,6 +205,7 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.HTML, turno[i]);
+						System.out.println("\t\t¡Has ganado un quesito de HTML!");
 					}
 
 				}
@@ -205,11 +213,12 @@ public class Trivial {
 
 			case Casilla.SIS:
 
-				System.out.println("has caido en una casilla de sistemas informaticos");
+				Disenio.generarCabeceraPreg(Casilla.SIS);
 				if (cache.imprimirPregSIS() == false) {
 
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.quitarQuesito(Casilla.SIS, turno[i]);
+						System.out.println("\t\tHas perdido un quesito de SISTEMAS.");
 					}
 					i++;
 					if (i == turno.length) {
@@ -218,6 +227,7 @@ public class Trivial {
 				} else {
 					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 						cache.darQuesito(Casilla.SIS, turno[i]);
+						System.out.println("\t\t¡Has ganado un quesito de SISTEMAS!");
 					}
 
 				}
@@ -226,11 +236,12 @@ public class Trivial {
 			case Casilla.COL:
 
 				if (!comprobarAllQuesitos(turno[i])) {
-					System.out.println("has caido en una casilla de colegio");
+					Disenio.generarCabeceraPreg(Casilla.COL);
 					if (cache.imprimirPregCOL() == false) {
 
 						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 							cache.quitarQuesito(Casilla.COL, turno[i]);
+							System.out.println("\t\tHas perdido un quesito de COLEGIO.");
 						}
 						i++;
 						if (i == turno.length) {
@@ -239,6 +250,7 @@ public class Trivial {
 					} else {
 						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
 							cache.darQuesito(Casilla.COL, turno[i]);
+							System.out.println("\t\t¡Has ganado un quesito de COLEGIO!");
 
 						}
 
