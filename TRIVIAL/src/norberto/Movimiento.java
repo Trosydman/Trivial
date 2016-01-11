@@ -75,6 +75,10 @@ public class Movimiento {
 			case 4:
 				comprobar = moverSur(triv, dado, tab, girar);
 				break;
+				
+			default:
+				comprobar = false;
+				break;
 
 			}
 

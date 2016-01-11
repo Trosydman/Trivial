@@ -9,10 +9,10 @@ public class TesterCarlos {
 		Movimiento mov = new Movimiento();
 		
 		//PROBANDO CON JUGADORES
-		Equipo eqJug1=new Equipo("Carlos", false);
-		Equipo eqJug2=new Equipo("Felipe", false);
-		Equipo eqJug3= new Equipo("Germán", false);
-		Equipo eqJug4= new Equipo("Norberto", false);
+		Equipo eqJug1=new Equipo(1, "Carlos", false);
+		Equipo eqJug2=new Equipo(2, "Felipe", false);
+		Equipo eqJug3= new Equipo(3, "Germán", false);
+		Equipo eqJug4= new Equipo(4, "Norberto", false);
 		
 		System.out.println(eqJug1+"\n\n"+eqJug2+"\n\n"+eqJug3+"\n\n"+eqJug4);
 		
@@ -32,10 +32,10 @@ public class TesterCarlos {
 //		tabl.borrarEqTablero(eqJug1);
 		
 		//PROBANDO CON EQUIPOS
-		Equipo eqEq1=new Equipo("Actimel", true);
-		Equipo eqEq2=new Equipo("DuoDinámico", true);
-		Equipo eqEq3= new Equipo("AC DC", true);
-		Equipo eqEq4= new Equipo("DAM", true);
+		Equipo eqEq1=new Equipo(1, "Actimel", true);
+		Equipo eqEq2=new Equipo(2, "DuoDinámico", true);
+		Equipo eqEq3= new Equipo(3, "AC DC", true);
+		Equipo eqEq4= new Equipo(4, "DAM", true);
 		
 		System.out.println(eqEq1+"\n\n"+eqEq2+"\n\n"+eqEq3+"\n\n"+eqEq4);
 		

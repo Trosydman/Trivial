@@ -11,10 +11,10 @@ public class TesterNorberto {
 		
 		Movimiento mov=new Movimiento();
 		
-		Equipo equip=new Equipo("AAA", true);
-		Equipo equip2 = new Equipo("BBB", true);
-		Equipo equip3 = new Equipo("CCC", true);
-		Equipo equip4 = new Equipo("DDD", true);
+		Equipo equip=new Equipo(1, "AAA", true);
+		Equipo equip2 = new Equipo(2, "BBB", true);
+		Equipo equip3 = new Equipo(3, "CCC", true);
+		Equipo equip4 = new Equipo(4, "DDD", true);
 		
 		Tablero tablet=new Tablero();
 		Random numale= new Random(System.nanoTime());
@@ -25,7 +25,7 @@ public class TesterNorberto {
 		tablet.imprimeTablero();
 		System.out.println(dado);
 		System.out.println();
-		mov.escogerMovimiento(equip4, dado, tablet.getCasillasTabl());
+		mov.escogerMovimiento(equip4, dado, tablet, false);
 	    tablet.establecerEqTablero(equip4);
 		tablet.imprimeTablero();
 		System.out.println(equip4.toString());

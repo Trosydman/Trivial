@@ -17,15 +17,11 @@ public class Principal {
 		String repetir = "S";
 		int opc;
 
-		
 		Disenio.generarBienvenida();
-		
-		
 		Leer.dato();
 		Disenio.limpiarConsola();
 		do {
 			Disenio.generarMenu();
-			
 			opc = Leer.datoInt();
 			Disenio.limpiarConsola();
 			switch (opc) {
@@ -33,19 +29,7 @@ public class Principal {
 				repetir = "N";
 				break;
 			case 1:
-				/*
-				 * TODO TRIVIAL(Felipe)
-				 * Dentro de este constructor se debería preguntar si
-				 * el juego va a ser individual o por equipos y despu�s,
-				 * en ambos casos, se piden los nombres de los jugadores o
-				 * el nombre del equipo y los jugadores respectivamente. 
-				 */
 				 nuevaPartida = new Trivial();
-				/*
-				 * TODO FELIPE(Trivial)
-				 * Inmediatamente despu�s de pedir los nombres empezaremos
-				 * a jugar.
-				 */
 				 nuevaPartida.jugarPartida(nuevaPartida.pedirDatos());
 				break;
 			case 2:
@@ -61,11 +45,7 @@ public class Principal {
 				Leer.dato();
 				break;
 			default:
-				// TODO DISE�O(Germ�n)
-				// Imprime el siguiente mensaje:
-				// System.out.println("ERROR DE OPCI�N: la opci�n seleccionada
-				// no existe. Int�ntelo de nuevo.\n"
-				// + "(Pulse intro)");
+				System.out.println("ERROR DE OPCIÓN: la opción seleccionadano no existe. Inténtelo de nuevo.");				
 				break;
 			}
 		} while (repetir.toUpperCase() == "S");
