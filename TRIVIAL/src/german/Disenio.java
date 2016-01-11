@@ -4,10 +4,25 @@ import carlos.Casilla;
 import carlos.Equipo;
 import leer_por_teclado.Leer;
 
+/**
+ * @author Carlos
+ *
+ */
 public class Disenio {
-
+	
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static int contLin;
 
+	
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarCabecera() {
 
 		System.out.println(
@@ -21,6 +36,11 @@ public class Disenio {
 		Disenio.contLin++;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarBienvenida() {
 
 		Disenio.generarCabecera();
@@ -51,6 +71,11 @@ public class Disenio {
 
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarMenu() {
 
 		System.out.println(
@@ -102,6 +127,11 @@ public class Disenio {
 
 	}
 	
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarOpcReglas() {
 		System.out.println("                       _____    ______    _____   _                    _____\n"+
 						   "======================|  __ \\  |  ____|  / ____| | |          /\\      / ____|======================\n"+
@@ -128,6 +158,11 @@ public class Disenio {
 		Disenio.contLin+=7;
 	}
 	
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarOpcComp(){
 		System.out.println("   _____    ____    __  __   _____     ____    _   _   ______   _   _   _______   ______    _____\n"+ 
 						   "  / ____|  / __ \\  |  \\/  | |  __ \\   / __ \\  | \\ | | |  ____| | \\ | | |__   __| |  ____|  / ____|\n"+
@@ -166,6 +201,11 @@ public class Disenio {
 		System.out.println("(Intro)");
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarMenuDatos() {
 
 		System.out.println("   _____                                   _                           _         ___  \n"
@@ -193,6 +233,11 @@ public class Disenio {
 		Disenio.contLin += 5;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarNumJug() {
 
 		System.out.println("  ___             _   _                                                       \n"
@@ -212,6 +257,11 @@ public class Disenio {
 
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarNumEq() {
 
 		System.out.println("  ___             _   _                                                       \n"
@@ -230,6 +280,12 @@ public class Disenio {
 
 	}
 
+	/**
+	 * 
+	 * 
+	 * @param eq
+	 * @author 
+	 */
 	public static void generarCabeTab(Equipo eq) {
 
 		System.out.println(
@@ -248,6 +304,12 @@ public class Disenio {
 		Disenio.contLin++;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @param eq
+	 * @author
+	 */
 	public static void generarNumQuesitos(Equipo eq) {
 
 		System.out.print("\t\tTiene los siguientes quesitos:");
@@ -318,6 +380,11 @@ public class Disenio {
 		Disenio.contLin+=3;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void tirarDado() {
 		System.out.println(
 				"                          		    ______    \n" + "                          		   /     /\\   \n"
@@ -329,6 +396,12 @@ public class Disenio {
 		Disenio.contLin+=5;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @param tipo
+	 * @author 
+	 */
 	public static void generarCabeceraPreg (int tipo){
 		System.out.println();
 		switch (tipo){
@@ -387,6 +460,11 @@ public class Disenio {
 		
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void responderMal() {
 
 		System.out.println(
@@ -400,6 +478,11 @@ public class Disenio {
 		Disenio.contLin+=4;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void responderBien() {
 
 		System.out.println(
@@ -412,6 +495,11 @@ public class Disenio {
 		Disenio.contLin+=4;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarLeyenda() {
 
 		System.out.println("\t*** PROG \t--- BBDD \t+++ HTML \t/// SISTEMAS \t === COLEGIO ");
@@ -419,6 +507,11 @@ public class Disenio {
 		Disenio.contLin+=2;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void generarDespedida(){
 		
 		System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n"+
@@ -445,6 +538,11 @@ public class Disenio {
 	}
 	
 	
+	/**
+	 * 
+	 * 
+	 * @author
+	 */
 	public static void limpiarConsola() {
 
 		for (int i = 0; i < Disenio.contLin; i++) {
