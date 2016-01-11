@@ -256,7 +256,7 @@ public class Trivial {
 
 					}
 				} else {
-					isNotFin = listadoFinal();
+					isNotFin = cache.listadoFinal();
 					if(isNotFin) {
 						i++;
 						if (i == turno.length) {
@@ -271,21 +271,6 @@ public class Trivial {
 		} while (isNotFin);
 
 	}
-
-	public boolean listadoFinal() {
-		boolean aux = false;
-
-		for (int i = 0; i < 3 && aux == false; i++) {
-
-			if (!cache.imprimirPregCOL()) {
-				aux = true;
-			}
-
-		}
-
-		return aux;
-	}
-
 	// ladilla pide los nombres de los jugadores y distribuye con un metodo el
 	// orden de los turnos
 	public void cogerNombre(int jug, boolean tipoEquipo) {
@@ -382,7 +367,7 @@ public class Trivial {
 	 * Método que comprueba si tiene todos los quesitos rellenos de un jugador/equipo, utilizándose como condición para 
 	 * saber quién accede al listado final de preguntas. Si tiene todos los quesitos terminará el juego y se proclama ganador.
 	 * @param eq parámetro que identifica el jugador/equipo del turno correspondiente.
-	 * @return boleano que indica el acceso al {@link #cache.listadoFinal() listado final}.
+	 * @return boleano que indica el acceso al @link #cache.listadoFinal() listado final.
 	 */
 	public boolean comprobarAllQuesitos(Equipo eq) {
 		boolean[] proB = eq.getQuesitos();
