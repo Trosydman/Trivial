@@ -27,6 +27,7 @@ public class Principal {
 			switch (opc) {
 			case 0:
 				repetir = "N";
+				Disenio.generarDespedida();
 				break;
 			case 1:
 				 nuevaPartida = new Trivial();
