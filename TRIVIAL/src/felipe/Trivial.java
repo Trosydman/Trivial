@@ -1,9 +1,9 @@
 package felipe;
 
-import java.util.Arrays;
+
 import java.util.Random;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 
 import leer_por_teclado.Leer;
 import norberto.Movimiento;
@@ -14,8 +14,7 @@ import german.Disenio;
 import alex.ListadoPreguntas;
 
 /**
- * Clase donde se desarrolla el juevo "TRIVIAL" con un tablero donde se mueven tantas fichas como jugadores/equipos 
- * se encuentren en la partida.
+ * Establece los jugadores/equipos para iniciar jugar partida.
  * 
  * @author Felipe Fernandez Barrero
  *
@@ -23,21 +22,25 @@ import alex.ListadoPreguntas;
 
 public class Trivial {
 	// ATRIBUTOS
-	Equipo eq1;
-	Equipo eq2;
-	Equipo eq3;
-	Equipo eq4;
 	Equipo[] turno;
-	ListadoPreguntas cache = new ListadoPreguntas();
 	Tablero tab = new Tablero();
-	Movimiento mov = new Movimiento();
+	
 
-	// CONSTRUCTORES
+	// CONSTRUCTOR
+	
+	public Trivial(){
+		
+	}
 
 	// MÉTODOS
 
 	
-	
+	/**
+	 * Recoge, en un menu, la cantidad y los nombres de los jugadores/equipos.
+	 * 
+	 * @return tipo boleano: indica jugadores o equipos
+	 * @author Felipe Fernández Barrero
+	 */
 	public boolean pedirDatos(){
 		int menu, jug;
 		boolean comproB=true;
@@ -61,7 +64,7 @@ public class Trivial {
 				
 				if (jug <= 4 && jug > 1) {
 
-					// TODO ladilla el syso se cambia por el metodo german
+					
 					cogerNombre(jug, comproB);
 
 				} else {
@@ -78,8 +81,7 @@ public class Trivial {
 				
 				if (jug <= 4 && jug > 1) {
 
-					// TODO ladilla el syso se cambia por el metodo german
-
+					
 					cogerNombre(jug, comproB);
 
 				} else {
@@ -101,17 +103,20 @@ public class Trivial {
 	
 	
 	
-	
-	
-	
-	
-	
-	// ladilla metodo donde se desarrolla el juego
+	/**
+	 * Desarrolla los movimientos en el tablero. Reconoce la posición en el tablero,
+	 * mostrando la pregunta correspondiente.
+	 * 
+	 * @param comproB tipo boleano:indica jugador o equipo, recibe de {@link #pedirDatos()}
+	 * @author Felipe Fernández Barrero
+	 */
 	public void jugarPartida(boolean comproB) {
 		int i = 0, dado;
 		boolean  isNotFin = true;
 		int[] posPreg;
 		Casilla[][] saveCasilla;
+		Movimiento mov = new Movimiento();
+		ListadoPreguntas cache = new ListadoPreguntas();
 
 	
 		
@@ -121,27 +126,21 @@ public class Trivial {
 			Disenio.generarCabeTab(turno[i]);
 			tab.imprimeTablero();
 			Disenio.generarLeyenda();
-			/*
-			 
-			if (comproB) {
-				System.out.println("Es el turno de " + turno[i].getNombreEq());
-			} else {
-				System.out.println("Es el turno de " + turno[i].getJugador());
-			}
-			System.out.println("quesitos[" + Arrays.toString(turno[i].getQuesitos()) + "]");
-			*/
+			
+			
 			dado = lanzarDado();
 			
 			System.out.println("Ha salido el número "+dado+"\n(intro)");
 			Leer.dato();
-//			tab.borrarEqTablero(turno[i]);
+			
 			mov.escogerMovimiento(turno[i], dado, tab, false);
-//			tab.establecerEqTablero(turno[i]);
+			
 			tab.imprimeTablero();
 			Disenio.generarLeyenda();
 
 			posPreg = mov.identifiCasilla(turno[i], tab.getCasillasTabl());
 			saveCasilla = tab.getCasillasTabl();
+			
 			switch (saveCasilla[posPreg[0]][posPreg[1]].getTipo()) {
 
 			case Casilla.PROG:
@@ -271,10 +270,25 @@ public class Trivial {
 		} while (isNotFin);
 
 	}
-	// ladilla pide los nombres de los jugadores y distribuye con un metodo el
-	// orden de los turnos
+	
+	
+	
+	
+	
+	/**
+	 * Recoger y guarda los nombres de los jugadores/equipos. Atribuye los turnos, 
+	 * una vez guardados los nombres.
+	 * 
+	 * @param jug tipo int: recibe el numero de jugadores/equipos.
+	 * @param tipoEquipo tipo boleano: recibe si son jugadores o equipos.
+	 * @author Felipe Fernández Barrero
+	 */
 	public void cogerNombre(int jug, boolean tipoEquipo) {
 		int numJ = 1;
+		Equipo eq1;
+		Equipo eq2;
+		Equipo eq3;
+		Equipo eq4;
 		String nomJug;
 		turno = new Equipo[jug];
 
@@ -329,7 +343,13 @@ public class Trivial {
 
 	}
 
-	// ladilla metodo para tirar el dado para saber los movimientos
+	
+	/**
+	 * Numero aleatorio que se utiliza para realizar los movimientos de las fichas en el tablero.
+	 * 
+	 * @return tipo int: numero del 1 al 6
+	 * @author Felipe Fernández Barrero
+	 */
 	public int lanzarDado() {
 		int num, hasta = 6, desde = 1;
 		//System.out.println("Intro para tirar los dados");
@@ -340,8 +360,13 @@ public class Trivial {
 		return num;
 	}
 
-	// ladilla metodo para asignar turno aleatoriamente
-
+	
+	/**
+	 * Asigna el turno de cada jugador/equipo de manera aleatoria. Creando un orden diferente
+	 * al que se introducen los datos en {@link #pedirDatos()}
+	 * 
+	 * @param eqTurn tipo Equipo: recibe el equipo correspondiente.
+	 */
 	public void atribuirTurno(Equipo eqTurn) {
 
 		int num, hasta = turno.length - 1, desde = 0;
@@ -357,15 +382,14 @@ public class Trivial {
 		} while (turno[num] != null && fin == false);
 	}
 
-	/*
-	 * ladilla metodo para comprobar ganador y establecer fin del juego. Se
-	 * utilizara como condicion para salir del bucle que cogera al metodo
-	 * jugarpartida.
-	 */
+	
 
 	/**
-	 * Método que comprueba si tiene todos los quesitos rellenos de un jugador/equipo, utilizándose como condición para 
-	 * saber quién accede al listado final de preguntas. Si tiene todos los quesitos terminará el juego y se proclama ganador.
+	 * Comprueba si tiene todos los quesitos rellenos de un jugador/equipo, utilizándose 
+	 * como condición para 
+	 * saber quién accede al listado final de preguntas. Si tiene todos los quesitos 
+	 * terminará el juego y se proclama ganador.
+	 * 
 	 * @param eq parámetro que identifica el jugador/equipo del turno correspondiente.
 	 * @return boleano que indica el acceso al @link #cache.listadoFinal() listado final.
 	 */
