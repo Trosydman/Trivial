@@ -877,19 +877,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoBBDD.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoBBDD[numPregunta][0]);
-		System.out.println("\t" + "a) " + listadoBBDD[numPregunta][numRespuesta1]);
+		System.out.println("\t" + "1) " + listadoBBDD[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "b) " + listadoBBDD[numPregunta][numRespuesta2]);
+		System.out.println("\t" + "2) " + listadoBBDD[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "c) " + listadoBBDD[numPregunta][numRespuesta3]);
+		System.out.println("\t" + "3) " + listadoBBDD[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -913,19 +913,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoHTML.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoHTML[numPregunta][0]);
-		System.out.println("\t" + "a) " + listadoHTML[numPregunta][numRespuesta1]);
+		System.out.println("\t" + "1) " + listadoHTML[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "b) " + listadoHTML[numPregunta][numRespuesta2]);
+		System.out.println("\t" + "2) " + listadoHTML[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "c) " + listadoHTML[numPregunta][numRespuesta3]);
+		System.out.println("\t" + "3) " + listadoHTML[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -949,19 +949,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoSIS.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoSIS[numPregunta][0]);
-		System.out.println("\t" + "a) " + listadoSIS[numPregunta][numRespuesta1]);
+		System.out.println("\t" + "1) " + listadoSIS[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "b) " + listadoSIS[numPregunta][numRespuesta2]);
+		System.out.println("\t" + "2) " + listadoSIS[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "c) " + listadoSIS[numPregunta][numRespuesta3]);
+		System.out.println("\t" + "3) " + listadoSIS[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
@@ -985,19 +985,19 @@ public class ListadoPreguntas {
 		int numPregunta = num.nextInt((listadoCOL.length - 1) - desdePre + 1) + desdePre;
 
 		System.out.println(listadoCOL[numPregunta][0]);
-		System.out.println("\t" + "a) " + listadoCOL[numPregunta][numRespuesta1]);
+		System.out.println("\t" + "1) " + listadoCOL[numPregunta][numRespuesta1]);
 
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
 
-		System.out.println("\t" + "b) " + listadoCOL[numPregunta][numRespuesta2]);
+		System.out.println("\t" + "2) " + listadoCOL[numPregunta][numRespuesta2]);
 
 		do {
 			numRespuesta3 = num.nextInt(3 - 1 + 1) + 1;
 		} while (numRespuesta1 == numRespuesta3 || numRespuesta2 == numRespuesta3);
 
-		System.out.println("\t" + "c) " + listadoCOL[numPregunta][numRespuesta3]);
+		System.out.println("\t" + "3) " + listadoCOL[numPregunta][numRespuesta3]);
 		System.out.println("Introduzca la respuesta(1,2,3)");
 
 		return comprobarRespuesta(listadoCOL, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
