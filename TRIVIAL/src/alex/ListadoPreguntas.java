@@ -832,16 +832,23 @@ public class ListadoPreguntas {
 		int hasta=3;
 		int desdeRes=1;
 		int desdePre=0;
+		
+		/*Crea el aleatorio entre 1 y 3 y lo guarda en la variable del índice de la primera respuesta*/
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
-
+			/*Crea el aleatorio que selecciona una pregunta al azar de entre todas las de programación*/
 		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - desdePre + 1) + desdePre;
-
+			/*Cada pregunta del listado está en una posición del array, que es la generada anteriormente*/
 		System.out.println(listadoProgramacion[numPregunta][0]);
+		/*Una vez seleccionaa e imprimida la pregunta se imprime la primera opción de dicha pregunta, cuyo índice
+		 * se generó anteriormente entre (1 y 3). Esto se hace porque el array tiene asignado para cada pregunta
+		 * sus 3 respuestas, de las cuales la de la primera posición es la respuesta correcta*/
 		System.out.println("\t" + "1) " + listadoProgramacion[numPregunta][numRespuesta1]);
-
+		
+		/*La función del siguiente código es hacer que se impriman correctamente las tres respuestas
+		 * de la pregunta sin que se repita ninguna*/
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
