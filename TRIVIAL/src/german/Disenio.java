@@ -13,7 +13,7 @@ public class Disenio {
 	/**
 	 * 
 	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static int contLin;
 
@@ -21,7 +21,7 @@ public class Disenio {
 	/**
 	 * 
 	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void generarCabecera() {
 
@@ -37,9 +37,9 @@ public class Disenio {
 	}
 
 	/**
+	 * El título del programa, se crea la cabecera.
 	 * 
-	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void generarBienvenida() {
 
@@ -72,9 +72,9 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
-	 * @author
+	 * Se elabora el menú del programa que veremos al empezar
+	 *  a interactuar con él después de ver la pantalla del título.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarMenu() {
 
@@ -128,9 +128,10 @@ public class Disenio {
 	}
 	
 	/**
-	 * 
-	 * 
-	 * @author
+	 * Se crea el conjunto de reglas que hay que seguir
+	 * para que el usuario sepa como tiene que 
+	 * interactuar con el programa.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarOpcReglas() {
 		System.out.println("                       _____    ______    _____   _                    _____\n"+
@@ -159,9 +160,10 @@ public class Disenio {
 	}
 	
 	/**
-	 * 
-	 * 
-	 * @author
+	 * La pantalla donde se ven las 
+	 * líneas de credito con los 
+	 * componentes del programa.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarOpcComp(){
 		System.out.println("   _____    ____    __  __   _____     ____    _   _   ______   _   _   _______   ______    _____\n"+ 
@@ -202,9 +204,9 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
-	 * @author
+	 * La pantalla de elección del modo
+	 * de juego si solo o por equipos.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarMenuDatos() {
 
@@ -234,9 +236,10 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
-	 * @author
+	 * En esta pantalla debemos introducir 
+	 * el número de componentes que tendrá
+	 * el juego.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarNumJug() {
 
@@ -258,9 +261,9 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
-	 * @author
+	 * En la siguiente pantalla indicamos
+	 * el número de equipos.
+	 * @author Germán López Pedriza
 	 */
 	public static void generarNumEq() {
 
@@ -281,10 +284,11 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
+	 * Una cabecera para ir indicando que jugador
+	 * o equipo juega en ese momento y el número 
+	 * de quesitos que lleva.
 	 * @param eq
-	 * @author 
+	 * @author  Germán López Pedriza
 	 */
 	public static void generarCabeTab(Equipo eq) {
 
@@ -305,10 +309,10 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
+	 * Indica el número de quesitos que 
+	 * Lleva el jugador y su tipo.
 	 * @param eq
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void generarNumQuesitos(Equipo eq) {
 
@@ -381,9 +385,10 @@ public class Disenio {
 	}
 
 	/**
+	 * Un diseño para acompañar la 
+	 * tirada del dado.
 	 * 
-	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void tirarDado() {
 		System.out.println(
@@ -397,10 +402,11 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
+	 * Una cabecera para mostrar el tipo de pregunta en cada 
+	 * caso. Se introduce la variable tipo para decidir el tipo
+	 * de pregunta.
 	 * @param tipo
-	 * @author 
+	 * @author Germán López Pedriza
 	 */
 	public static void generarCabeceraPreg (int tipo){
 		System.out.println();
@@ -461,9 +467,10 @@ public class Disenio {
 	}
 
 	/**
+	 * Método de diseño para generar un texto en
+	 * una respuesta que no es correcta.
 	 * 
-	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void responderMal() {
 
@@ -479,9 +486,9 @@ public class Disenio {
 	}
 
 	/**
-	 * 
-	 * 
-	 * @author
+	 * Método de diseño para generar un texto en
+	 * una respuesta que es correcta.
+	 * @author Germán López Pedriza
 	 */
 	public static void responderBien() {
 
@@ -496,9 +503,10 @@ public class Disenio {
 	}
 
 	/**
+	 * Una leyenda que indica algunos datos del juego
+	 * para estar informados a tiempo real.
 	 * 
-	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void generarLeyenda() {
 
@@ -508,9 +516,9 @@ public class Disenio {
 	}
 
 	/**
+	 * Texto de despedida.
 	 * 
-	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void generarDespedida(){
 		
@@ -541,7 +549,7 @@ public class Disenio {
 	/**
 	 * 
 	 * 
-	 * @author
+	 * @author Germán López Pedriza
 	 */
 	public static void limpiarConsola() {
 
