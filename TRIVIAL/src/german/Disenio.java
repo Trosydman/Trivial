@@ -2,10 +2,11 @@ package german;
 
 import carlos.Casilla;
 import carlos.Equipo;
-import leer_por_teclado.Leer;
 
 /**
- * @author Carlos
+ * Imprime por pantalla diseños concretos del Trivial
+ * 
+ * @author Germán López Pedriza
  *
  */
 public class Disenio {
@@ -16,8 +17,6 @@ public class Disenio {
 	 * más tarde en el texto con la 
 	 * finalidad de ver más limpio
 	 * el programa.
-	 * 
-	 * @author Germán López Pedriza
 	 */
 	public static int contLin;
 
@@ -85,7 +84,7 @@ public class Disenio {
 	public static void generarMenu() {
 
 		System.out.println(
-				"                                  __  __   ______   _   _   _    _         /                        \n"
+				"                                  __  __   ______   _   _   _  / _                        \n"
 						+ "=================================|  \\/  | |  ____| | \\ | | | |  | |================================\n"
 						+ "=================================| \\  / | | |__    |  \\| | | |  | |================================\n"
 						+ "=================================| |\\/| | |  __|   |     | | |  | |================================\n"
@@ -111,14 +110,14 @@ public class Disenio {
 		Disenio.contLin += 6;
 		System.out.println(
 				"  ____ __      ___           _                                                           ___ \n"
-						+ " |__ / \\ \\    / _ \\   _  _  (_)  ___   _ _    ___   ___    ___  ___   _ __    ___   ___ |__ \\\n"
+						+ " |__ / \\ \\    / _ \\   _  _  (_)  _/_   _ _    ___   ___    ___  ___   _ __    ___   ___ |__ \\\n"
 						+ "  |_ \\  | |  | (_) | | || | | | / -_) | ' \\  / -_) (_-<   (_-< / _ \\ | '  \\  / _ \\ (_-<   /_/\n"
 						+ " |___/  | |   \\__\\_\\  \\_,_| |_| \\___| |_||_| \\___| /__/   /__/ \\___/ |_|_|_| \\___/ /__/  (_) \n"
 						+ "       /_/                                                                                       ");
 
 		Disenio.contLin += 6;
 		System.out.println("   __  __      ___          _   _              _         _                               \n"
-				+ "  /  \\ \\ \\    / __|  __ _  | | (_)  _ _     __| |  ___  | |    _ __    ___   _ _    _  _/ \n"
+				+ "  /  \\ \\ \\    / __|  __ _  | | (_)  _ _     __| |  ___  | |    _ __    ___   _ _    _ /_ \n"
 				+ " | () | | |   \\__ \\ / _` | | | | | | '_|   / _` | / -_) | |   | '  \\  / -_) | ' \\  | || |\n"
 				+ "  \\__/  | |   |___/ \\__,_| |_| |_| |_|     \\__,_| \\___| |_|   |_|_|_| \\___| |_||_|  \\_,_|\n"
 				+ "       /_/                                                                               \n");
@@ -187,12 +186,12 @@ public class Disenio {
 						   "  \\___| \\__,_| |_|   |_| \\___/ /__/   |_|  |_| \\___| /__/ \\__, |  \\_,_| |_|  \\__| \\__,_|   |_|  |_| \\__,_| |_||_| /__/ |_| |_| |_| \\__,_|\n"+
 						   "                                                             |_|");
 		System.out.println("  ___         _   _                  ___                                       _                ___\n"+                                      
-						   " | __|  ___  | | (_)  _ __   ___    | __|  ___   _ _   _ _    __ /_   _ _    __| |  ___   ___   | _ )  __ _   _ _   _ _   ___   _ _   ___\n"+ 
+						   " | __|  ___  | | (_)  _ __   ___    | __|  ___   _ _   _ _    __/_   _ _    __| |  ___   ___   | _ )  __ _   _ _   _ _   ___   _ _   ___\n"+ 
 						   " | _|  / -_) | | | | | '_ \\ / -_)   | _|  / -_) | '_| | ' \\  / _` | | ' \\  / _` | / -_) |_ /   | _ \\ / _` | | '_| | '_| / -_) | '_| / _ \\\n"+
 						   " |_|   \\___| |_| |_| | .__/ \\___|   |_|   \\___| |_|   |_||_| \\__,_| |_||_| \\__,_| \\___| /__|   |___/ \\__,_| |_|   |_|   \\___| |_|   \\___/\n"+
 						   "                     |_|");
-		System.out.println("    _     _           _                    _                   _     _                                    ___\n"+                                   
-						   "   /_\\   | |  ___    (_)  __ _   _ _    __| |  _ _   ___      /_\\   | | __ __  __ _   _ _   ___   ___    / __|  _  _   ___  _ __    __ _   _ _\n"+  
+		System.out.println("    _     _           _                    _                   _/    _                                    ___\n"+                                   
+						   "   /_\\   | |  ___    (_)  __ _   _ _    __| |  _ _   ___      /_\\   | | __ __  __ _   _ _   ___   ___    / __|  _  _   ___  _ __    __/_   _ _\n"+  
 						   "  / _ \\  | | / -_)   | | / _` | | ' \\  / _` | | '_| / _ \\    / _ \\  | | \\ V / / _` | | '_| / -_) |_ /   | (_ | | || | |_ / | '  \\  / _` | | ' \\\n"+ 
 						   " /_/ \\_\\ |_| \\___|  _/ | \\__,_| |_||_| \\__,_| |_|   \\___/   /_/ \\_\\ |_|  \\_/  \\__,_| |_|   \\___| /__|    \\___|  \\_,_| /__| |_|_|_| \\__,_| |_||_|\n"+
 						   "                   |__/\n");
@@ -201,7 +200,7 @@ public class Disenio {
 						   " | .` | / _ \\ | '_| | '_ \\ / -_) | '_| |  _| / _ \\   | (_ | / _ \\ | ' \\  |_ / / _` | | | / -_) |_ /   |   / / -_) | ' \\  / _` | / _ \\ | ' \\\n"+ 
 						   " |_|\\_| \\___/ |_|   |_.__/ \\___| |_|    \\__| \\___/    \\___| \\___/ |_||_| /__| \\__,_| |_| \\___| /__|   |_|_\\ \\___| |_||_| \\__,_| \\___/ |_||_|\n");
 		System.out.println("   ___                                       _                                ___            _         _\n"+             
-						   "  / __|  ___   _ _   _ __    __ /_   _ _     | |     __/_   _ __   ___   ___   | _ \\  ___   __| |  _ _  (_)  ___  __ _\n"+ 
+						   "  / __|  ___   _ _   _ __    __/_   _ _     | |     __/   _ __   ___   ___   | _ \\  ___   __| |  _ _  (_)  ___  __ _\n"+ 
 						   " | (_ | / -_) | '_| | '  \\  / _` | | ' \\    | |__  / _ \\ | '_ \\ / -_) |_ /   |  _/ / -_) / _` | | '_| | | |_ / / _` |\n"+
 						   "  \\___| \\___| |_|   |_|_|_| \\__,_| |_||_|   |____| \\___/ | .__/ \\___| /__|   |_|   \\___| \\__,_| |_|   |_| /__| \\__,_|\n"+
 						   "                                                         |_|");
@@ -218,7 +217,7 @@ public class Disenio {
 
 		System.out.println("   _____                                   _                           _         ___  \n"
 				+ "  / ____|                                 (_)                         (_)       |__ \\ \n"
-				+ " | |        ___    _ __ ___     ___        _   _   _    __ _    __ _   _   ___     ) |\n"
+				+ " | |        ___    _ __ ___     ___        _   _   _    __ _    __/_   _   ___     ) |\n"
 				+ " | |       / _ \\  | '_ ` _ \\   / _ \\      | | | | | |  / _` |  / _` | | | / __|   / / \n"
 				+ " | |____  | (_) | | | | | | | | (_) |     | | | |_| | | (_| | | (_| | | | \\__ \\  |_|  \n"
 				+ "  \\_____|  \\___/  |_| |_| |_|  \\___/      | |  \\__,_|  \\__, |  \\__,_| |_| |___/  (_)  \n"
@@ -250,7 +249,7 @@ public class Disenio {
 	public static void generarNumJug() {
 
 		System.out.println("  ___             _   _                                                       \n"
-				+ " |_ _|  _ _    __| | (_)  __   __ _     _ _    _  _   _ __    ___   _ _   ___ \n"
+				+ " |_ _|  _ _    __| | (_)  __   __ _     _ _    _ /_   _ __    ___   _ _   ___ \n"
 				+ "  | |  | ' \\  / _` | | | / _| / _` |   | ' \\  | || | | '  \\  / -_) | '_| / _ \\ \n"
 				+ " |___| |_||_| \\__,_| |_| \\__| \\__,_|   |_||_|  \\_,_| |_|_|_| \\___| |_|   \\___/");
 		Disenio.contLin += 10;
@@ -274,7 +273,7 @@ public class Disenio {
 	public static void generarNumEq() {
 
 		System.out.println("  ___             _   _                                                       \n"
-				+ " |_ _|  _ _    __| | (_)  __   __ _     _ _    _  _   _ __    ___   _ _   ___ \n"
+				+ " |_ _|  _ _    __| | (_)  __   __ _     _ _    _ /_   _ __    ___   _ _   ___ \n"
 				+ "  | |  | ' \\  / _` | | | / _| / _` |   | ' \\  | || | | '  \\  / -_) | '_| / _ \\ \n"
 				+ " |___| |_||_| \\__,_| |_| \\__| \\__,_|   |_||_|  \\_,_| |_|_|_| \\___| |_|   \\___/");
 		Disenio.contLin += 10;
@@ -293,7 +292,7 @@ public class Disenio {
 	 * Una cabecera para ir indicando que jugador
 	 * o equipo juega en ese momento y el número 
 	 * de quesitos que lleva.
-	 * @param eq
+	 * @param eq equipo que juega en ese momento
 	 * @author  Germán López Pedriza
 	 */
 	public static void generarCabeTab(Equipo eq) {
@@ -317,7 +316,7 @@ public class Disenio {
 	/**
 	 * Indica el número de quesitos que 
 	 * Lleva el jugador y su tipo.
-	 * @param eq
+	 * @param eq equipo que juega en ese momento
 	 * @author Germán López Pedriza
 	 */
 	public static void generarNumQuesitos(Equipo eq) {
@@ -411,7 +410,7 @@ public class Disenio {
 	 * Una cabecera para mostrar el tipo de pregunta en cada 
 	 * caso. Se introduce la variable tipo para decidir el tipo
 	 * de pregunta.
-	 * @param tipo
+	 * @param tipo tipo de la casilla dónde se ha caido
 	 * @author Germán López Pedriza
 	 */
 	public static void generarCabeceraPreg (int tipo){
@@ -507,6 +506,21 @@ public class Disenio {
 		System.out.println("(Intro)");
 		Disenio.contLin+=4;
 	}
+	
+	/**
+	 * Cabecera para el listado final
+	 * 
+	 * @author Carlos Mesquita Mansilla
+	 */
+	public static void generarCabListFinal() {
+		System.out.println(" _       _____   _____  _______          _____    ____         ______  _____  _   _            _\n"+      
+							"| |     |_   _| / ____||__   __|  /\\    |  __ \\  / __ \\       |  ____||_   _|| \\ | |    /\\    | |\n"+     
+							"| |       | |  | (___     | |    /  \\   | |  | || |  | |      | |__     | |  |  \\| |   /  \\   | |\n"+     
+							"| |       | |   \\___ \\    | |   / /\\ \\  | |  | || |  | |      |  __|    | |  | . ` |  / /\\ \\  | |\n"+     
+							"| |____  _| |_  ____) |   | |  / ____ \\ | |__| || |__| |      | |      _| |_ | |\\  | / ____ \\ | |____ \n"+
+							"|______||_____||_____/    |_| /_/    \\_\\|_____/  \\____/       |_|     |_____||_| \\_|/_/    \\_\\|______|");
+		Disenio.contLin+=6;
+	}
 
 	/**
 	 * Una leyenda que indica algunos datos del juego
@@ -519,6 +533,27 @@ public class Disenio {
 		System.out.println("\t*** PROG \t--- BBDD \t+++ HTML \t/// SISTEMAS \t === COLEGIO ");
 		System.out.println("*== Quesito PROG \t-== Quesito BBDD \t+== Quesito HTML \t/== SIS \t=== COL");
 		Disenio.contLin+=2;
+	}
+	
+	/**
+	 * Pie para el ganador final
+	 * 
+	 * @param eq equipo que gana en ese momento
+	 * 
+	 * @author Carlos Mesquita Mansilla
+	 */
+	public static void generarGanador(Equipo eq) {
+		Disenio.generarCabeTab(eq);
+		System.out.println("'##::::'##::::'###:::::'######::::::'######::::::'###::::'##::: ##::::'###::::'########:::'#######::\n"+
+							" ##:::: ##:::'## ##:::'##... ##::::'##... ##::::'## ##::: ###:: ##:::'## ##::: ##.... ##:'##.... ##:\n"+
+							" ##:::: ##::'##:. ##:: ##:::..::::: ##:::..::::'##:. ##:: ####: ##::'##:. ##:: ##:::: ##: ##:::: ##:\n"+
+							" #########:'##:::. ##:. ######::::: ##::'####:'##:::. ##: ## ## ##:'##:::. ##: ##:::: ##: ##:::: ##:\n"+
+							" ##.... ##: #########::..... ##:::: ##::: ##:: #########: ##. ####: #########: ##:::: ##: ##:::: ##:\n"+
+							" ##:::: ##: ##.... ##:'##::: ##:::: ##::: ##:: ##.... ##: ##:. ###: ##.... ##: ##:::: ##: ##:::: ##:\n"+
+							" ##:::: ##: ##:::: ##:. ######:::::. ######::: ##:::: ##: ##::. ##: ##:::: ##: ########::. #######::\n"+
+							"..:::::..::..:::::..:::......:::::::......::::..:::::..::..::::..::..:::::..::........::::.......:::\n"+
+							"(Intro)");
+		Disenio.contLin+=10;
 	}
 
 	/**
@@ -553,7 +588,7 @@ public class Disenio {
 	
 	
 	/**
-	 * 
+	 * Limpia las cadenas de carácteres impresas por pantalla introduciendoles \n
 	 * 
 	 * @author Germán López Pedriza
 	 */

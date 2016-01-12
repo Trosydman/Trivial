@@ -156,7 +156,7 @@ public class Trivial {
 						i = 0;
 					}
 				} else {
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && !turno[i].getQuesitos()[Casilla.PROG]) {
 						cache.darQuesito(Casilla.PROG, turno[i]);
 						System.out.println("\t\t\t\t¡Has ganado un quesito de PROGRAMACIÓN!\n(Intro)");
 						Leer.dato();
@@ -181,7 +181,7 @@ public class Trivial {
 						i = 0;
 					}
 				} else {
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && !turno[i].getQuesitos()[Casilla.BBDD]) {
 						cache.darQuesito(Casilla.BBDD, turno[i]);
 						System.out.println("\t\t\t\t¡Has ganado un quesito de BBDD!\n(Intro)");
 						Leer.dato();
@@ -205,7 +205,7 @@ public class Trivial {
 						i = 0;
 					}
 				} else {
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && !turno[i].getQuesitos()[Casilla.HTML]) {
 						cache.darQuesito(Casilla.HTML, turno[i]);
 						System.out.println("\t\t\t\t¡Has ganado un quesito de HTML!\n(Intro)");
 						Leer.dato();
@@ -229,7 +229,7 @@ public class Trivial {
 						i = 0;
 					}
 				} else {
-					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+					if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && !turno[i].getQuesitos()[Casilla.SIS]) {
 						cache.darQuesito(Casilla.SIS, turno[i]);
 						System.out.println("\t\t\t\t¡Has ganado un quesito de SISTEMAS!\n(Intro)");
 						Leer.dato();
@@ -254,7 +254,7 @@ public class Trivial {
 							i = 0;
 						}
 					} else {
-						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito()) {
+						if (saveCasilla[posPreg[0]][posPreg[1]].isQuesito() && !turno[i].getQuesitos()[Casilla.COL]) {
 							cache.darQuesito(Casilla.COL, turno[i]);
 							System.out.println("\t\t\t\t¡Has ganado un quesito de COLEGIO!\n(Intro)");
 							Leer.dato();
@@ -262,6 +262,8 @@ public class Trivial {
 
 					}
 				} else {
+					Disenio.contLin+=10;
+					Disenio.limpiarConsola();
 					isNotFin = cache.listadoFinal();
 					if(isNotFin) {
 						i++;
@@ -275,6 +277,11 @@ public class Trivial {
 			}
 
 		} while (isNotFin);
+		
+		Disenio.limpiarConsola();
+		Disenio.generarGanador(turno[i]);
+		Leer.dato();
+		Disenio.limpiarConsola();
 
 	}
 	

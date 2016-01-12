@@ -2,7 +2,6 @@ package alex;
 
 import java.util.Random;
 
-
 import carlos.Equipo;
 import german.Disenio;
 import leer_por_teclado.Leer;
@@ -22,7 +21,7 @@ public class ListadoPreguntas {
 	String opcBProgALE1 = " Es una clase que no puede ser instanciada";
 	String opcCProgALE1 = " Secuencia de caracteres delimitada entre comillas simples";
 
-	String pregProgALE2 = " ¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programaciónn orientada a objetos?";
+	String pregProgALE2 = " ¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programación orientada a objetos?";
 	String opcAProgALE2 = " Es un modelo o plantilla a partir de la cual creamos objetos";
 	String opcBProgALE2 = " Es un tipo particular de variable";
 	String opcCProgALE2 = " Es una categoria de datos ordenada secuencialmente";
@@ -649,9 +648,7 @@ public class ListadoPreguntas {
 	String opcACOLFEL5 = " COLSPE.";
 	String opcBCOLFEL5 = " Triana F.C.";
 	String opcCCOLFEL5 = " Balompédica Trianera.";
-	
-	
-	
+
 	/**
 	 * Array bidimensional que contiene el listado de preguntas de programación
 	 */
@@ -684,9 +681,7 @@ public class ListadoPreguntas {
 			{ pregProgNOL5, opcAProgNOL5, opcBProgNOL5, opcCProgNOL5 },
 
 	};
-	
-	
-	
+
 	/**
 	 * Array bidimensional que contiene el listado de preguntas de base de datos
 	 */
@@ -716,11 +711,8 @@ public class ListadoPreguntas {
 			{ pregBBDDGER2, opcABBDDGER2, opcBBBDDGER2, opcCBBDDGER2 },
 			{ pregBBDDGER3, opcABBDDGER3, opcBBBDDGER3, opcCBBDDGER3 },
 			{ pregBBDDGER4, opcABBDDGER4, opcBBBDDGER4, opcCBBDDGER4 },
-			{ pregBBDDGER5, opcABBDDGER5, opcBBBDDGER5, opcCBBDDGER5 },
-			};
-	
-	
-	
+			{ pregBBDDGER5, opcABBDDGER5, opcBBBDDGER5, opcCBBDDGER5 }, };
+
 	/**
 	 * Array bidimensional que contiene el listado de preguntas de HTML
 	 */
@@ -748,13 +740,11 @@ public class ListadoPreguntas {
 			{ pregHTMLGER2, opcAHTMLGER2, opcBHTMLGER2, opcCHTMLGER2 },
 			{ pregHTMLGER3, opcAHTMLGER3, opcBHTMLGER3, opcCHTMLGER3 },
 			{ pregHTMLGER4, opcAHTMLGER4, opcBHTMLGER4, opcCHTMLGER4 },
-			{ pregHTMLGER5, opcAHTMLGER5, opcBHTMLGER5, opcCHTMLGER5 },
-			};
-	
-	
-	
+			{ pregHTMLGER5, opcAHTMLGER5, opcBHTMLGER5, opcCHTMLGER5 }, };
+
 	/**
-	 * Array bidimensional que contiene el listado de preguntas de Sistemas informáticos
+	 * Array bidimensional que contiene el listado de preguntas de Sistemas
+	 * informáticos
 	 */
 	String[][] listadoSIS = { { pregSISALE1, opcASISALE1, opcBSISALE1, opcCSISALE1 },
 			{ pregSISALE2, opcASISALE2, opcBSISALE2, opcCSISALE2 },
@@ -783,9 +773,7 @@ public class ListadoPreguntas {
 			{ pregSISFEL5, opcASISFEL5, opcBSISFEL5, opcCSISFEL5 },
 
 	};
-	
-	
-	
+
 	/**
 	 * Array bidimensional que contiene el listado de preguntas sobre el colegio
 	 */
@@ -817,38 +805,54 @@ public class ListadoPreguntas {
 
 	};
 
-	
-
 	// MÉTODOS
 
 	/**
-	 * Imprime una pregunta aleatoria de programación y desordena sus respuestas, ya que en el array
-	 * la primera respuesta que está guardada es la correcta
+	 * Imprime una pregunta aleatoria de programación y desordena sus
+	 * respuestas, ya que en el array la primera respuesta que está guardada es
+	 * la correcta
+	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
 	 * @author Alejandro Álvarez Guzmán
 	 */
 	public boolean imprimirPregPROG() {
-		
-		int hasta=3;
-		int desdeRes=1;
-		int desdePre=0;
-		
-		/*Crea el aleatorio entre 1 y 3 y lo guarda en la variable del índice de la primera respuesta*/
+
+		int hasta = 3;
+		int desdeRes = 1;
+		int desdePre = 0;
+
+		/*
+		 * Crea el aleatorio entre 1 y 3 y lo guarda en la variable del índice
+		 * de la primera respuesta
+		 */
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
 		int numRespuesta3;
-			/*Crea el aleatorio que selecciona una pregunta al azar de entre todas las de programación*/
+		/*
+		 * Crea el aleatorio que selecciona una pregunta al azar de entre todas
+		 * las de programación
+		 */
 		int numPregunta = num.nextInt((listadoProgramacion.length - 1) - desdePre + 1) + desdePre;
-			/*Cada pregunta del listado está en una posición del array, que es la generada anteriormente*/
+		/*
+		 * Cada pregunta del listado está en una posición del array, que es la
+		 * generada anteriormente
+		 */
 		System.out.println(listadoProgramacion[numPregunta][0]);
-		/*Una vez seleccionaa e imprimida la pregunta se imprime la primera opción de dicha pregunta, cuyo índice
-		 * se generó anteriormente entre (1 y 3). Esto se hace porque el array tiene asignado para cada pregunta
-		 * sus 3 respuestas, de las cuales la de la primera posición es la respuesta correcta*/
+		/*
+		 * Una vez seleccionaa e imprimida la pregunta se imprime la primera
+		 * opción de dicha pregunta, cuyo índice se generó anteriormente entre
+		 * (1 y 3). Esto se hace porque el array tiene asignado para cada
+		 * pregunta sus 3 respuestas, de las cuales la de la primera posición es
+		 * la respuesta correcta
+		 */
 		System.out.println("\t1) " + listadoProgramacion[numPregunta][numRespuesta1]);
-		
-		/*La función del siguiente código es hacer que se impriman correctamente las tres respuestas
-		 * de la pregunta sin que se repita ninguna*/
+
+		/*
+		 * La función del siguiente código es hacer que se impriman
+		 * correctamente las tres respuestas de la pregunta sin que se repita
+		 * ninguna
+		 */
 		do {
 			numRespuesta2 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		} while (numRespuesta1 == numRespuesta2);
@@ -867,16 +871,18 @@ public class ListadoPreguntas {
 	}
 
 	/**
-	 * Imprime una pregunta aleatoria de base de datos y desordena sus respuestas, ya que en el array
-	 * la primera respuesta que está guardada es la correcta
+	 * Imprime una pregunta aleatoria de base de datos y desordena sus
+	 * respuestas, ya que en el array la primera respuesta que está guardada es
+	 * la correcta
+	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
 	 * @author Alejandro Álvarez Guzmán
 	 */
 	public boolean imprimirPregBBDD() {
-		
-		int hasta=3;
-		int desdeRes=1;
-		int desdePre=0;
+
+		int hasta = 3;
+		int desdeRes = 1;
+		int desdePre = 0;
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
@@ -903,16 +909,18 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoBBDD, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
+
 	/**
-	 * Imprime una pregunta aleatoria de HTML y desordena sus respuestas, ya que en el array
-	 * la primera respuesta que está guardada es la correcta
+	 * Imprime una pregunta aleatoria de HTML y desordena sus respuestas, ya que
+	 * en el array la primera respuesta que está guardada es la correcta
+	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
 	 * @author Alejandro Álvarez Guzmán
 	 */
 	public boolean imprimirPregHTML() {
-		int hasta=3;
-		int desdeRes=1;
-		int desdePre=0;
+		int hasta = 3;
+		int desdeRes = 1;
+		int desdePre = 0;
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
@@ -939,16 +947,19 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoHTML, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
+
 	/**
-	 * Imprime una pregunta aleatoria de sistemas informáticos y desordena sus respuestas, ya que en el array
-	 * la primera respuesta que está guardada es la correcta
+	 * Imprime una pregunta aleatoria de sistemas informáticos y desordena sus
+	 * respuestas, ya que en el array la primera respuesta que está guardada es
+	 * la correcta
+	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
 	 * @author Alejandro Álvarez Guzmán
 	 */
 	public boolean imprimirPregSIS() {
-		int hasta=3;
-		int desdeRes=1;
-		int desdePre=0;
+		int hasta = 3;
+		int desdeRes = 1;
+		int desdePre = 0;
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
@@ -975,16 +986,18 @@ public class ListadoPreguntas {
 		return comprobarRespuesta(listadoSIS, numPregunta, numRespuesta1, numRespuesta2, numRespuesta3);
 
 	}
+
 	/**
-	 * Imprime una pregunta aleatoria del colegio y desordena sus respuestas, ya que en el array
-	 * la primera respuesta que está guardada es la correcta
+	 * Imprime una pregunta aleatoria del colegio y desordena sus respuestas, ya
+	 * que en el array la primera respuesta que está guardada es la correcta
+	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
 	 * @author Alejandro Álvarez Guzmán
 	 */
 	public boolean imprimirPregCOL() {
-		int hasta=3;
-		int desdeRes=1;
-		int desdePre=0;
+		int hasta = 3;
+		int desdeRes = 1;
+		int desdePre = 0;
 		Random num = new Random(System.nanoTime());
 		int numRespuesta1 = num.nextInt(hasta - desdeRes + 1) + desdeRes;
 		int numRespuesta2;
@@ -1014,88 +1027,111 @@ public class ListadoPreguntas {
 
 	/**
 	 * Comprueba si la respuesta seleccionada es la correcta
-	 * @param list Listado de preguntas del tipo de la casilla donde haya caído (Programación,
-	 * Base de datos, Sistemas, HTML o Colegio) 
-	 * @param preg Pregunta aleatoria del listado determinado
-	 * @param res1 Primera respuesta de la pregunta que se ha imprimido
-	 * @param res2 Segunda respuesta de la pregunta que se ha imprimido
-	 * @param res3 Tercera respuesta de la pregunta que se ha imprimido
-	 * @return Si la respuesta que se lee por teclado es la correcta o no, boleano 'true' o 'false' en cada caso
+	 * 
+	 * @param list
+	 *            Listado de preguntas del tipo de la casilla donde haya caído
+	 *            (Programación, Base de datos, Sistemas, HTML o Colegio)
+	 * @param preg
+	 *            Pregunta aleatoria del listado determinado
+	 * @param res1
+	 *            Primera respuesta de la pregunta que se ha imprimido
+	 * @param res2
+	 *            Segunda respuesta de la pregunta que se ha imprimido
+	 * @param res3
+	 *            Tercera respuesta de la pregunta que se ha imprimido
+	 * @return Si la respuesta que se lee por teclado es la correcta o no,
+	 *         boleano 'true' o 'false' en cada caso
 	 */
 	public boolean comprobarRespuesta(String[][] list, int preg, int res1, int res2, int res3) {
-		boolean aux=false;
-		switch (Leer.datoInt()) {
-		case 1:
-			if (list[preg][res1].equals(list[preg][1])){
-				Disenio.responderBien();
-				Leer.dato();
-				aux = true;
+		boolean aux = false;
+		boolean numInc = true;
+		do {
+			switch (Leer.datoInt()) {
+			case 1:
+				if (list[preg][res1].equals(list[preg][1])) {
+					Disenio.responderBien();
+					Leer.dato();
+					aux = true;
+					numInc = false;
+				} else {
+					Disenio.responderMal();
+					Leer.dato();
+					numInc = false;
 				}
-			else{
-				Disenio.responderMal();
-				Leer.dato();
-			}
-			break;
+				break;
 
-		case 2:
-			if (list[preg][res2].equals(list[preg][1])){
-				Disenio.responderBien();
-				Leer.dato();
-				aux = true;
-			}
-			else{
-				Disenio.responderMal();
-				Leer.dato();
-			}
-			break;
+			case 2:
+				if (list[preg][res2].equals(list[preg][1])) {
+					Disenio.responderBien();
+					Leer.dato();
+					aux = true;
+					numInc = false;
+				} else {
+					Disenio.responderMal();
+					Leer.dato();
+					numInc = false;
+				}
+				break;
 
-		case 3:
-			if (list[preg][res3].equals(list[preg][1])){
-				Disenio.responderBien();
-				Leer.dato();
-				aux=true;
+			case 3:
+				if (list[preg][res3].equals(list[preg][1])) {
+					Disenio.responderBien();
+					Leer.dato();
+					aux = true;
+					numInc = false;
+				} else {
+					Disenio.responderMal();
+					Leer.dato();
+					numInc = false;
+				}
+				break;
+			default:
+				System.out.println("\nOPCIÓN INCORRECTA.\nIntroduzca otra respuesta:");
 			}
-			else{
-				Disenio.responderMal();
-				Leer.dato();
-			}
-			break;
-		}
+		} while (numInc);
 		return aux;
 	}
 
 	/**
 	 * Da un quesito en el caso que séa
-	 * @param tipoCas Tipo de casilla
-	 * @param eq Nombre de equipo
+	 * 
+	 * @param tipoCas
+	 *            Tipo de casilla
+	 * @param eq
+	 *            Nombre de equipo
 	 */
 	public void darQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
-		aux[tipoCas]= true;
-			eq.setQuesitos(aux);
-		}
+		aux[tipoCas] = true;
+		eq.setQuesitos(aux);
+	}
 
-	
 	/**
 	 * Quita un quesito en el caso que séa
-	 * @param tipoCas Tipo de casilla
-	 * @param eq Nombre de equipo
+	 * 
+	 * @param tipoCas
+	 *            Tipo de casilla
+	 * @param eq
+	 *            Nombre de equipo
 	 */
 	public void quitarQuesito(int tipoCas, Equipo eq) {
 		boolean[] aux = eq.getQuesitos();
-		aux[tipoCas]= false;
-			eq.setQuesitos(aux);
+		aux[tipoCas] = false;
+		eq.setQuesitos(aux);
 
 	}
-	
+
 	/**
-	 * Imprime como máximo tres preguntas del tipo colegio siempre y cuando se respondan correctamente las tres,
-	 * si se falla alguna de ellas finaliza el método
-	 * @return Devuelve un boleano en función de si las tres respuestas han sido correctas ono
+	 * Imprime como máximo tres preguntas del tipo colegio siempre y cuando se
+	 * respondan correctamente las tres, si se falla alguna de ellas finaliza el
+	 * método
+	 * 
+	 * @return Devuelve un boleano en función de si las tres respuestas han sido
+	 *         correctas ono
 	 */
 	public boolean listadoFinal() {
 		boolean aux = false;
-
+		Disenio.generarCabListFinal();
 		for (int i = 0; i < 3 && aux == false; i++) {
 
 			if (!imprimirPregCOL()) {

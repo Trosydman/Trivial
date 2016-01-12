@@ -1,8 +1,23 @@
 package carlos;
 
+/**
+ * Gestiona todo tipo de acciones con el tablero y además lo crea.
+ * 
+ * @author Carlos Mesquita Mansilla
+ *
+ */
 public class Tablero {
+	/**
+	 * Array bidimensional, dónde se guardan todos los caracteres del tablero.
+	 */
 	String[][] tableroBI = new String[28][69];
+	/**
+	 * Array bidimensional con las {@link Casilla casillas} del tablero en orden de disposición.
+	 */
 	Casilla[][] casillasTabl = new Casilla[7][7];
+	/**
+	 * Array dónde se guardan los diferentes Strings para después utilizarlo en {@link #Tablero() Tablero()}
+	 */
 	String[] tablero = { "********* +++++++++ ///////// *===*===* --------- +++++++++ /////////",
 			"*       * +       + /       / =       = -       - +       + /       /",
 			"*       * +       + /       / =       = -       - +       + /       /",
@@ -32,6 +47,10 @@ public class Tablero {
 			"+       + /       / *       * =       = +       + /       / *       *",
 			"+++++++++ ///////// ********* -===-===- +++++++++ ///////// *********" };
 
+	/**
+	 * Constructor vacío que divide los String del array de {@link #tablero} en caracteres y los introduce en
+	 * {@link #tableroBI}
+	 */
 	public Tablero() {
 		for (int i = 0; i < tablero.length; i++) {
 			tableroBI[i] = tablero[i].split("");
@@ -39,6 +58,9 @@ public class Tablero {
 		identificaCasilla();
 	}
 	
+	/**
+	 * Método que obtiene de {@link #tableroBI} las características de cada {@link Casilla} para introducirlas en {@link #casillasTabl}
+	 */
 	public void identificaCasilla() {
 		int contCasFIL = 0;
 		int contCasCOL = 0;
@@ -46,7 +68,6 @@ public class Tablero {
 		for (int i = 0; i < tableroBI.length; i += 4) {
 			for (int j = 0; j < tableroBI[i].length; j += 10) {
 				if (tableroBI[i][j] != " ") {
-					//TODO tal vez le venga mejor un switch...
 					if (tableroBI[i][j].equals("*")) {
 						casillasTabl[contCasFIL][contCasCOL] = new Casilla(i + 1, j + 1, Casilla.PROG);
 					} else if (tableroBI[i][j].equals("-")) {
@@ -72,6 +93,9 @@ public class Tablero {
 
 	}
 
+	/**
+	 * Método que comprueba si las {@link Casilla casillas} de {@link #casillasTabl} son intersecciones o no
+	 */
 	private void comprobInters() {
 		for(int i = 0; i < casillasTabl.length; i++) {
 			for (int j = 0; j < casillasTabl[i].length; j++) {
@@ -84,6 +108,9 @@ public class Tablero {
 		}
 	}
 
+	/**
+	 * Método que imprime el tablero dejando una tabulación a su izquierda
+	 */
 	public void imprimeTablero() {
 		for (int i = 0; i < tableroBI.length; i++) {			
 			for (int j = 0; j < tableroBI[i].length; j++) {
@@ -96,6 +123,11 @@ public class Tablero {
 		System.out.println("");
 	}
 	
+	/**
+	 * Método que coge la ficha de ese {@link Equipo equipo} y la establece dentro del {@link #tableroBI tablero}
+	 * 
+	 * @param eq equipo que está jugando en ese momento
+	 */
 	public void establecerEqTablero(Equipo eq) {
 		for (int i = 0; i < 3; i++) {
 			if(eq.getJugador() != null)
@@ -105,6 +137,11 @@ public class Tablero {
 		}
 	}
 	
+	/**
+	 * Método que coge la ficha de ese {@link Equipo equipo} y la borra de dentro del {@link #tableroBI tablero}
+	 * 
+	 * @param eq equipo que está jugando en ese momento
+	 */
 	public void borrarEqTablero(Equipo eq) {
 		for (int i = 0; i < 3; i++) {
 			if(eq.getJugador() != null)

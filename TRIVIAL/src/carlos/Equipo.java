@@ -2,23 +2,49 @@ package carlos;
 
 import java.util.Arrays;
 
+/**
+ * Ayuda a gestionar los equipos/jugadores
+ * 
+ * @author Carlos Mesquita Mansilla
+ *
+ */
 public class Equipo {
 	// ATRIBUTOS
-	/*
-	 * El número de "equipo2(numEq) tiene que ser static para que
-	 * el resto de números de "equipos" sea correlativo, sino 
-	 * todos serían el mismo número.
+	/**
+	 * Número del equipo
 	 */
 	private int numEq = 0;
+	
+	/**
+	 * Nombre del EQUIPO
+	 */
 	private String nombreEq;
-	//Creo que los nombres de los jugadores no son imprescindibles
+	/**
+	 * Nombre del JUGADOR
+	 */
 	private String jugador;
+	
+	/**
+	 * Array de booleanos que indica los quesitos que se tienen
+	 */
 	private boolean[] quesitos = new boolean[5];
+	/**
+	 * Posicion(filas, columnas) en el {@link Tablero}
+	 */
 	private int[] posEq = new int[2];
 
 	
 	
 	// CONSTRUCTORES
+	/**
+	 * Constructor principal de {@link Equipo} que establece algunos valores y
+	 * coloca a los {@link Equipo equipos} en el centro del tablero, en su lugar
+	 * en la casilla
+	 * 
+	 * @param numEq número del equipo/jugador
+	 * @param nombre nombre del equipo/jugador
+	 * @param isEquipo identifica si lo que va a ser tratado es un equipo o un jugador
+	 */
 	public Equipo(int numEq, String nombre, boolean isEquipo) {
 		/*
 		 * Si se quisiera volver a jugar, el número de equipo

@@ -1,13 +1,17 @@
 package norberto;
 
-import com.sun.media.sound.SimpleSoundbank;
-
 import carlos.Casilla;
 import carlos.Equipo;
 import carlos.Tablero;
 import german.Disenio;
 import leer_por_teclado.Leer;
 
+/**
+ * Se utiliza para mover las fichas de los equipos.
+ * 
+ * @author Norberto González Rendón 
+ *
+ */
 public class Movimiento {
 
 	/**
@@ -89,12 +93,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este m�todo es el encargado de realizar el moviento para la derecha, su funcionamiento 
-	 * comienza en el momento que el m�todo escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersecci�n es el m�todo moverDer quien llama a  escogerMoviento.
+	 * Este método es el encargado de realizar el moviento para la derecha, su funcionamiento 
+	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersección es el método moverDer quien llama a  escogerMoviento.
 	 *     
 	 * @param triv es el equipo que se quiere mover.
-	 * @param dado es el n�mero aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
 	 * mover el  equipo 
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique. 
@@ -143,9 +147,9 @@ public class Movimiento {
     /**
      * Este m�todo es el encargado de realizar el moviento para la izquierda, su funcionamiento 
 	 * comienza en el momento que el m�todo escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersecci�n es el m�todo moverIzq quien llama a  escogerMoviento.
+	 * con una intersección es el método moverIzq quien llama a  escogerMoviento.
      * @param triv es el equipo que se quiere mover.
-     * @param dado es el n�mero aleatorio que indica la cantidad de casillas que debe 
+     * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
      * @param tab  tablero del juego.
      * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -194,12 +198,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este m�todo es el encargado de realizar el moviento para arriba, su funcionamiento 
-	 * comienza en el momento que el m�todo escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersecci�n es el m�todo moverNort quien llama a  escogerMoviento.
+	 * Este método es el encargado de realizar el moviento para arriba, su funcionamiento 
+	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersección es el método moverNort quien llama a  escogerMoviento.
 	 * 
      * @param triv es el equipo que se quiere mover.
-	 * @param dado  es el n�mero aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -246,12 +250,12 @@ public class Movimiento {
 	}
 
 	/**
-	 * Este m�todo es el encargado de realizar el moviento para abajo, su funcionamiento 
-	 * comienza en el momento que el m�todo escogerMovimiento lo llama, pero cuando se encuentra 
-	 * con una intersecci�n es el m�todo moverSur quien llama a  escogerMoviento.
+	 * Este método es el encargado de realizar el moviento para abajo, su funcionamiento 
+	 * comienza en el momento que el método escogerMovimiento lo llama, pero cuando se encuentra 
+	 * con una intersección es el método moverSur quien llama a  escogerMoviento.
 	 * 
 	 * @param triv  es el equipo que se quiere mover.
-	 * @param dado es el n�mero aleatorio que indica la cantidad de casillas que debe 
+	 * @param dado es el número aleatorio que indica la cantidad de casillas que debe 
      * mover el  equipo.
 	 * @param tab tablero del juego.
 	 * @param girar es una variable encargada de hacer girar al equipo para dende este se lo indique.
@@ -299,10 +303,10 @@ public class Movimiento {
 
 	
 	/**
-	 * M�todo  para identificar la casilla donde se encuentra el equipo en ese momento. 
+	 * Método  para identificar la casilla donde se encuentra el equipo en ese momento. 
 	 * @param triv es el equipo que se quiere mover.
 	 * @param punto es el array bidimencional donde se encuentran las casillas del tablero.
-	 * @return la posici�n de la casilla.
+	 * @return la posición de la casilla.
 	 */
 	public int[] identifiCasilla(Equipo triv, Casilla[][] punto) {
 		int posit[] = new int[2];

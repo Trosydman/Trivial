@@ -1,5 +1,19 @@
 package carlos;
 
+/*
+ * Grupo 1: Proyecto Trivial - Programación 1DAM
+ * 
+ * Carlos Mesquita Mansilla: Principal, Equipo, Tablero y Casilla
+ * Felipe Fernández Barrero: Trivial
+ * Alejandro Álvarez Guzmán: ListadoPreguntas
+ * Norberto González Rendón: Movimiento
+ * Germán López Pedriza: Disenio
+ * 
+ *  Pueden verse los comentarios generados en la carpeta "doc", en all-classes-frame.html .
+ * 
+ */
+
+
 import felipe.Trivial;
 import german.Disenio;
 import leer_por_teclado.Leer;
