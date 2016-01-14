@@ -9,7 +9,7 @@ import leer_por_teclado.Leer;
 /**
  * Es una clase que incluye todas las preguntas que se van a utilizar en Trivial
  * 
- * @author Alejandro Álvarez Guzmán
+ * @author Alejandro Alvarez Guzman
  *
  */
 public class ListadoPreguntas {
@@ -153,17 +153,17 @@ public class ListadoPreguntas {
 	String opcBBBDDALE2 = " Modelo de base de datos jerárquico";
 	String opcCBBDDALE2 = " Modelo de base de datos en red";
 
-	String pregBBDDALE3 = " La sentencia SQL “SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULL”, ¿qué resultado tendría?";
+	String pregBBDDALE3 = " La sentencia SQL ''SELECT NombreEmpleado, salario,comision FROM empleados WHERE comision IS NOT NULL'', ¿qué resultado tendría?";
 	String opcABBDDALE3 = " Visualiza todos los empleados con sus respectivos salarios y comisiones";
 	String opcBBBDDALE3 = " Visualiza todos los empleados que no tienen comisión";
 	String opcCBBDDALE3 = " Ninguna de las respuestas anteriores es correcta";
 
-	String pregBBDDALE4 = " La sentencia SQL “SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE ‘A_%’ ”, ¿qué resultado tendría?";
-	String opcABBDDALE4 = " Visualiza todos los productos que no empiezan con A y después no tienen otro carácter más como mínimo";
-	String opcBBBDDALE4 = " Visualiza todos los productos que no empiecen con el carácter “A” ni después tengan el carácter “_” ni después el carácter %";
-	String opcCBBDDALE4 = " Visualiza todos los productos que empiecen con el carácter “A” después el carácter “_” y después el carácter %";
+	String pregBBDDALE4 = " La sentencia SQL ''SELECT Nombreproducto,precio FROM productos WHERE nombreproducto NOT LIKE ‘A_%’ '', ¿que resultado tendria?";
+	String opcABBDDALE4 = " Visualiza todos los productos que no empiezan con A y despues no tienen otro carácter mas como mínimo";
+	String opcBBBDDALE4 = " Visualiza todos los productos que no empiecen con el caracter 'A' ni despues tengan el carácter '_' ni despues el caracter %";
+	String opcCBBDDALE4 = " Visualiza todos los productos que empiecen con el caracter 'A' después el carácter '_' y después el caracter %";
 
-	String pregBBDDALE5 = " La sentencia SQL “SELECT AVG(salario*14) FROM empleados ”, ¿qué resultado tendría?";
+	String pregBBDDALE5 = " La sentencia SQL 'SELECT AVG(salario*14) FROM empleados' , ¿que resultado tendría?";
 	String opcABBDDALE5 = " Visualiza la media de salario anual a partir del sueldo anual de todos los empleados";
 	String opcBBBDDALE5 = " Visualiza, para cada empleado, su media de salario al año";
 	String opcCBBDDALE5 = " Visualiza, para cada empleado, su total de salario al año";
@@ -575,7 +575,7 @@ public class ListadoPreguntas {
 	String opcCCOLCAR5 = " 'Todos' en el Dominos";
 
 	String pregCOLNOL1 = " ¿Cómo se llama el jefe de estudios de FP?";
-	String opcACOLNOL1 = " Ángel";
+	String opcACOLNOL1 = " Angel";
 	String opcBCOLNOL1 = " Luismi";
 	String opcCCOLNOL1 = " Rafa";
 
@@ -813,7 +813,7 @@ public class ListadoPreguntas {
 	 * la correcta
 	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
-	 * @author Alejandro Álvarez Guzmán
+	 * @author Alejandro Alvarez Guzman
 	 */
 	public boolean imprimirPregPROG() {
 
@@ -876,7 +876,7 @@ public class ListadoPreguntas {
 	 * la correcta
 	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
-	 * @author Alejandro Álvarez Guzmán
+	 * @author Alejandro Alvarez Guzman
 	 */
 	public boolean imprimirPregBBDD() {
 
@@ -915,7 +915,7 @@ public class ListadoPreguntas {
 	 * en el array la primera respuesta que está guardada es la correcta
 	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
-	 * @author Alejandro Álvarez Guzmán
+	 * @author Alejandro Alvarez Guzman
 	 */
 	public boolean imprimirPregHTML() {
 		int hasta = 3;
@@ -954,7 +954,7 @@ public class ListadoPreguntas {
 	 * la correcta
 	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
-	 * @author Alejandro Álvarez Guzmán
+	 * @author Alejandro Alvarez Guzman
 	 */
 	public boolean imprimirPregSIS() {
 		int hasta = 3;
@@ -992,7 +992,7 @@ public class ListadoPreguntas {
 	 * que en el array la primera respuesta que está guardada es la correcta
 	 * 
 	 * @return Si la respuesta que se lee por teclado es la correcta o no
-	 * @author Alejandro Álvarez Guzmán
+	 * @author Alejandro Alvarez Guzman
 	 */
 	public boolean imprimirPregCOL() {
 		int hasta = 3;
