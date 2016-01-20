@@ -1,22 +1,22 @@
 package carlos;
 
 /**
- * Gestiona todo tipo de acciones con el tablero y adem√°s lo crea.
+ * Gestiona todo tipo de acciones con el tablero y adem·s lo crea.
  * 
  * @author Carlos Mesquita Mansilla
  *
  */
 public class Tablero {
 	/**
-	 * Array bidimensional, d√≥nde se guardan todos los caracteres del tablero.
+	 * Array bidimensional, dÛnde se guardan todos los caracteres del tablero.
 	 */
 	String[][] tableroBI = new String[28][69];
 	/**
-	 * Array bidimensional con las {@link Casilla casillas} del tablero en orden de disposici√≥n.
+	 * Array bidimensional con las {@link Casilla casillas} del tablero en orden de disposiciÛn.
 	 */
 	Casilla[][] casillasTabl = new Casilla[7][7];
 	/**
-	 * Array d√≥nde se guardan los diferentes Strings para despu√©s utilizarlo en {@link #Tablero() Tablero()}
+	 * Array dÛnde se guardan los diferentes Strings para despuÈs utilizarlo en {@link #Tablero() Tablero()}
 	 */
 	String[] tablero = { "********* +++++++++ ///////// *===*===* --------- +++++++++ /////////",
 			"*       * +       + /       / =       = -       - +       + /       /",
@@ -48,7 +48,7 @@ public class Tablero {
 			"+++++++++ ///////// ********* -===-===- +++++++++ ///////// *********" };
 
 	/**
-	 * Constructor vac√≠o que divide los String del array de {@link #tablero} en caracteres y los introduce en
+	 * Constructor vacÌo que divide los String del array de {@link #tablero} en caracteres y los introduce en
 	 * {@link #tableroBI}
 	 */
 	public Tablero() {
@@ -59,7 +59,7 @@ public class Tablero {
 	}
 	
 	/**
-	 * M√©todo que obtiene de {@link #tableroBI} las caracter√≠sticas de cada {@link Casilla} para introducirlas en {@link #casillasTabl}
+	 * MÈtodo que obtiene de {@link #tableroBI} las caracterÌsticas de cada {@link Casilla} para introducirlas en {@link #casillasTabl}
 	 */
 	public void identificaCasilla() {
 		int contCasFIL = 0;
@@ -94,7 +94,7 @@ public class Tablero {
 	}
 
 	/**
-	 * M√©todo que comprueba si las {@link Casilla casillas} de {@link #casillasTabl} son intersecciones o no
+	 * MÈtodo que comprueba si las {@link Casilla casillas} de {@link #casillasTabl} son intersecciones o no
 	 */
 	private void comprobInters() {
 		for(int i = 0; i < casillasTabl.length; i++) {
@@ -109,7 +109,7 @@ public class Tablero {
 	}
 
 	/**
-	 * M√©todo que imprime el tablero dejando una tabulaci√≥n a su izquierda
+	 * MÈtodo que imprime el tablero dejando una tabulaciÛn a su izquierda
 	 */
 	public void imprimeTablero() {
 		for (int i = 0; i < tableroBI.length; i++) {			
@@ -124,9 +124,9 @@ public class Tablero {
 	}
 	
 	/**
-	 * M√©todo que coge la ficha de ese {@link Equipo equipo} y la establece dentro del {@link #tableroBI tablero}
+	 * MÈtodo que coge la ficha de ese {@link Equipo equipo} y la establece dentro del {@link #tableroBI tablero}
 	 * 
-	 * @param eq equipo que est√° jugando en ese momento
+	 * @param eq equipo que est· jugando en ese momento
 	 */
 	public void establecerEqTablero(Equipo eq) {
 		for (int i = 0; i < 3; i++) {
@@ -138,9 +138,9 @@ public class Tablero {
 	}
 	
 	/**
-	 * M√©todo que coge la ficha de ese {@link Equipo equipo} y la borra de dentro del {@link #tableroBI tablero}
+	 * MÈtodo que coge la ficha de ese {@link Equipo equipo} y la borra de dentro del {@link #tableroBI tablero}
 	 * 
-	 * @param eq equipo que est√° jugando en ese momento
+	 * @param eq equipo que est· jugando en ese momento
 	 */
 	public void borrarEqTablero(Equipo eq) {
 		for (int i = 0; i < 3; i++) {
