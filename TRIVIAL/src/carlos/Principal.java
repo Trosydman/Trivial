@@ -2,15 +2,15 @@ package carlos;
 
 /*
  * Grupo 1: Proyecto Trivial - Programaci√≥n 1DAM
- * 
+ *
  * Carlos Mesquita Mansilla: Principal, Equipo, Tablero y Casilla
- * Felipe Fern·ndez Barrero: Trivial
- * Alejandro ¡lvarez Guzm·n: ListadoPreguntas
- * Norberto Gonz·lez RendÛn: Movimiento
- * Germ·n LÛpez Pedriza: Disenio
- * 
+ * Felipe Fernandez Barrero: Trivial
+ * Alejandro Alvarez Guzman: ListadoPreguntas
+ * Norberto Gonzalez Rendon: Movimiento
+ * German Lopez Pedriza: Disenio
+ *
  *  Pueden verse los comentarios generados en la carpeta "doc", en all-classes-frame.html .
- * 
+ *
  */
 
 
@@ -20,7 +20,7 @@ import leer_por_teclado.Leer;
 
 /**
  * Clase desde la cu√°l se arranca el programa del Trivial
- * 
+ *
  * @author Carlos Mesquita Mansilla
  *
  */
@@ -58,7 +58,7 @@ public class Principal {
 				Disenio.limpiarConsola();
 				break;
 			default:
-				System.out.println("ERROR DE OPCI√ìN: la opci√≥n seleccionadano no existe. Int√©ntelo de nuevo.");				
+				System.out.println("ERROR DE OPCI√ìN: la opci√≥n seleccionadano no existe. Int√©ntelo de nuevo.");
 				break;
 			}
 		} while (repetir.toUpperCase() == "S");
